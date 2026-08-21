@@ -1,5 +1,905 @@
 [
   {
+    "id": "720403728",
+    "title": "평생 중식만 먹기 vs 일식만 먹기",
+    "source_url": "https://www.dogdrip.net/dogdrip/720403728?sort_index=popular&page=1",
+    "thumbnail": "assets/720403728/3ced40be3e757059.jpg",
+    "votes": "107",
+    "comments": "96",
+    "published": "53 분 전",
+    "archived_at": "2026-08-21T11:22:04",
+    "archived_comment_count": 48,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720401667",
+    "title": "전북 초등학교 진상 학부모 근황",
+    "source_url": "https://www.dogdrip.net/dogdrip/720401667?sort_index=popular&page=1",
+    "thumbnail": "assets/720401667/b44a1f5b8d2dd9ea.jpg",
+    "votes": "144",
+    "comments": "90",
+    "published": "1 시간 전",
+    "archived_at": "2026-08-21T11:22:24",
+    "archived_comment_count": 40,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720394889",
+    "title": "손목시계에 남성용 여성용 나눈 이유",
+    "source_url": "https://www.dogdrip.net/dogdrip/720394889?sort_index=popular&page=1",
+    "thumbnail": "assets/720394889/fe500b72cbdd0653.jpg",
+    "votes": "175",
+    "comments": "77",
+    "published": "1 시간 전",
+    "archived_at": "2026-08-21T11:22:34",
+    "archived_comment_count": 27,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720394679",
+    "title": "전라남도, 통합하자마자 지자체 채무 전국 최고 달성",
+    "source_url": "https://www.dogdrip.net/dogdrip/720394679?sort_index=popular&page=1",
+    "thumbnail": "assets/720394679/8ba3eea204e43a8f.jpg",
+    "votes": "117",
+    "comments": "85",
+    "published": "1 시간 전",
+    "archived_at": "2026-08-21T11:22:57",
+    "archived_comment_count": 35,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720381680",
+    "title": "차장과 과장이 싸움난 이유",
+    "source_url": "https://www.dogdrip.net/dogdrip/720381680?sort_index=popular&page=1",
+    "thumbnail": "assets/720381680/1a87e9e5aa0354ba.jpg",
+    "votes": "102",
+    "comments": "56",
+    "published": "2 시간 전",
+    "archived_at": "2026-08-21T11:23:06",
+    "archived_comment_count": 6,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720376503",
+    "title": "'경복궁' 짱/퀴벌레들 근황.jpg",
+    "source_url": "https://www.dogdrip.net/dogdrip/720376503?sort_index=popular&page=1",
+    "thumbnail": "assets/720376503/87e0bb65883946b3.jpg",
+    "votes": "156",
+    "comments": "118",
+    "published": "2 시간 전",
+    "archived_at": "2026-08-21T11:23:23",
+    "archived_comment_count": 17,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720374140",
+    "title": "\"무릎 뭐 그렇게 아깝다고\" 발언에 대한 지디 현재 생각",
+    "source_url": "https://www.dogdrip.net/dogdrip/720374140?sort_index=popular&page=1",
+    "thumbnail": "assets/720374140/b017989bf18856af.jpg",
+    "votes": "192",
+    "comments": "51",
+    "published": "3 시간 전",
+    "archived_at": "2026-08-21T11:23:34",
+    "archived_comment_count": 1,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720371110",
+    "title": "새덕후) 경찰이 동물 보호법 위반으로 조사",
+    "source_url": "https://www.dogdrip.net/dogdrip/720371110?sort_index=popular&page=1",
+    "thumbnail": "assets/720371110/59a026e9bee9771a.jpg",
+    "votes": "100",
+    "comments": "48",
+    "published": "3 시간 전",
+    "archived_at": "2026-08-21T11:23:47",
+    "archived_comment_count": 48,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720369192",
+    "title": "요즘 심각하다는 4050 취업난",
+    "source_url": "https://www.dogdrip.net/dogdrip/720369192?sort_index=popular&page=1",
+    "thumbnail": "assets/720369192/11bf6eb76ef7b5bd.jpg",
+    "votes": "91",
+    "comments": "146",
+    "published": "4 시간 전",
+    "archived_at": "2026-08-21T11:24:04",
+    "archived_comment_count": 48,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720366947",
+    "title": "모수 근황",
+    "source_url": "https://www.dogdrip.net/dogdrip/720366947?sort_index=popular&page=1",
+    "thumbnail": "assets/720366947/8b37ff244c786ca9.jpg",
+    "votes": "231",
+    "comments": "98",
+    "published": "4 시간 전",
+    "archived_at": "2026-08-21T11:24:19",
+    "archived_comment_count": 48,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720366627",
+    "title": "“신음 등 장난전화는 제발…” 제주 실종 장미란씨 가족의 호소",
+    "source_url": "https://www.dogdrip.net/dogdrip/720366627?sort_index=popular&page=1",
+    "thumbnail": "assets/720366627/971a2fc193f8192f.jpg",
+    "votes": "134",
+    "comments": "79",
+    "published": "4 시간 전",
+    "archived_at": "2026-08-21T11:26:34",
+    "archived_comment_count": 29,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720359721",
+    "title": "\"좀 닥치고~ 제발 상담원 통화 좀 하자\"…복장 터지는 AI 고객센터",
+    "source_url": "https://www.dogdrip.net/dogdrip/720359721?sort_index=popular&page=1",
+    "thumbnail": "assets/720359721/720ca78cffad3097.jpg",
+    "votes": "132",
+    "comments": "104",
+    "published": "2 시간 전",
+    "archived_at": "2026-08-21T11:26:45",
+    "archived_comment_count": 4,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720359738",
+    "title": "어느 웹툰의 디테일한 총기 고증.jpg",
+    "source_url": "https://www.dogdrip.net/dogdrip/720359738?sort_index=popular&page=1",
+    "thumbnail": "assets/720359738/d32cf3988f7b0159.jpg",
+    "votes": "141",
+    "comments": "56",
+    "published": "5 시간 전",
+    "archived_at": "2026-08-21T11:26:56",
+    "archived_comment_count": 6,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720354933",
+    "title": "육대전))크레모아 격발 중 폭발사고",
+    "source_url": "https://www.dogdrip.net/dogdrip/720354933?sort_index=popular&page=1",
+    "thumbnail": "assets/720354933/f89bcb09d26cd6bb.jpg",
+    "votes": "164",
+    "comments": "80",
+    "published": "7 시간 전",
+    "archived_at": "2026-08-21T11:27:08",
+    "archived_comment_count": 32,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720354418",
+    "title": "도저히 이해가 불가능한 현재 전주시 재정 상황 JPG",
+    "source_url": "https://www.dogdrip.net/dogdrip/720354418?sort_index=popular&page=1",
+    "thumbnail": "assets/720354418/8990abd65b48eb00.jpg",
+    "votes": "123",
+    "comments": "66",
+    "published": "7 시간 전",
+    "archived_at": "2026-08-21T11:28:12",
+    "archived_comment_count": 16,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720353378",
+    "title": "외국인들이 맛들리고 있는 한국 음식",
+    "source_url": "https://www.dogdrip.net/dogdrip/720353378?sort_index=popular&page=1",
+    "thumbnail": "assets/720353378/77e4e5a9c5cdb99e.jpg",
+    "votes": "112",
+    "comments": "92",
+    "published": "5 시간 전",
+    "archived_at": "2026-08-21T11:28:44",
+    "archived_comment_count": 42,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720352365",
+    "title": "일본에서 반응 안좋다는 운동부 매니저",
+    "source_url": "https://www.dogdrip.net/dogdrip/720352365?sort_index=popular&page=1",
+    "thumbnail": "assets/720352365/0165d21c182ef774.jpg",
+    "votes": "104",
+    "comments": "139",
+    "published": "5 시간 전",
+    "archived_at": "2026-08-21T11:29:10",
+    "archived_comment_count": 39,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720352199",
+    "title": "캐데헌 그래프 근황",
+    "source_url": "https://www.dogdrip.net/dogdrip/720352199?sort_index=popular&page=1",
+    "thumbnail": "assets/720352199/9568442a8fd210fe.jpg",
+    "votes": "102",
+    "comments": "65",
+    "published": "4 시간 전",
+    "archived_at": "2026-08-21T11:29:41",
+    "archived_comment_count": 16,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720350638",
+    "title": "후쿠시마 근황",
+    "source_url": "https://www.dogdrip.net/dogdrip/720350638?sort_index=popular&page=1",
+    "thumbnail": "assets/720350638/579d0941996de01e.jpg",
+    "votes": "95",
+    "comments": "73",
+    "published": "3 시간 전",
+    "archived_at": "2026-08-21T11:30:23",
+    "archived_comment_count": 24,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720350592",
+    "title": "강형욱이랑 싸우는 강아지유튜버 ㄷㄷ",
+    "source_url": "https://www.dogdrip.net/dogdrip/720350592?page=2&sort_index=popular",
+    "thumbnail": "assets/720350592/171345d1b7e6435f.jpg",
+    "votes": "108",
+    "comments": "236",
+    "published": "9 시간 전",
+    "archived_at": "2026-08-21T11:30:58",
+    "archived_comment_count": 37,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720349690",
+    "title": "한전에 정신나간 블라가 많았던 이유",
+    "source_url": "https://www.dogdrip.net/dogdrip/720349690?page=2&sort_index=popular",
+    "thumbnail": "assets/720349690/0266b67d2cc28466.jpg",
+    "votes": "148",
+    "comments": "70",
+    "published": "10 시간 전",
+    "archived_at": "2026-08-21T11:31:18",
+    "archived_comment_count": 20,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720349619",
+    "title": "AI 여친 생기자마자 기안84가 시킨 짓",
+    "source_url": "https://www.dogdrip.net/dogdrip/720349619?page=2&sort_index=popular",
+    "thumbnail": "assets/720349619/b79aebf328e3174b.jpg",
+    "votes": "104",
+    "comments": "39",
+    "published": "5 시간 전",
+    "archived_at": "2026-08-21T11:32:04",
+    "archived_comment_count": 39,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720347907",
+    "title": "한남 일남이 공감을 나누는 순간",
+    "source_url": "https://www.dogdrip.net/dogdrip/720347907?page=2&sort_index=popular",
+    "thumbnail": "assets/720347907/6a430a020273ad70.jpg",
+    "votes": "210",
+    "comments": "54",
+    "published": "10 시간 전",
+    "archived_at": "2026-08-21T11:33:52",
+    "archived_comment_count": 5,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720344500",
+    "title": "중국의 스케일에 익숙해진 한국인은 이해하지 못하는 망가.manga",
+    "source_url": "https://www.dogdrip.net/dogdrip/720344500?page=2&sort_index=popular",
+    "thumbnail": "assets/720344500/05044eb589d75058.jpg",
+    "votes": "107",
+    "comments": "38",
+    "published": "11 시간 전",
+    "archived_at": "2026-08-21T11:34:40",
+    "archived_comment_count": 38,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720343685",
+    "title": "안원잘부 거제편 장소 근황",
+    "source_url": "https://www.dogdrip.net/dogdrip/720343685?page=2&sort_index=popular",
+    "thumbnail": "assets/720343685/eb7a093bc34b5296.jpg",
+    "votes": "85",
+    "comments": "32",
+    "published": "12 시간 전",
+    "archived_at": "2026-08-21T11:37:49",
+    "archived_comment_count": 32,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720339662",
+    "title": "저능아 계집년화된 한국사회",
+    "source_url": "https://www.dogdrip.net/dogdrip/720339662?page=2&sort_index=popular",
+    "thumbnail": "assets/720339662/7f7e4625dcda73f3.jpg",
+    "votes": "381",
+    "comments": "125",
+    "published": "12 시간 전",
+    "archived_at": "2026-08-21T11:38:00",
+    "archived_comment_count": 28,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720340271",
+    "title": "AI 여친 생기자마자 기안84가 한 일.jpg",
+    "source_url": "https://www.dogdrip.net/dogdrip/720340271?page=2&sort_index=popular",
+    "thumbnail": "assets/720340271/81e6b055d7782ddd.jpg",
+    "votes": "205",
+    "comments": "64",
+    "published": "13 시간 전",
+    "archived_at": "2026-08-21T11:38:18",
+    "archived_comment_count": 14,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720339837",
+    "title": "새덕후 라이브 채널에서 어이 없는 소식",
+    "source_url": "https://www.dogdrip.net/dogdrip/720339837?page=2&sort_index=popular",
+    "thumbnail": "assets/720339837/864337104a9a7393.jpg",
+    "votes": "231",
+    "comments": "37",
+    "published": "13 시간 전",
+    "archived_at": "2026-08-21T11:38:28",
+    "archived_comment_count": 37,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720335441",
+    "title": "딸배들이 싫어하는 천룡인 아파트들 의문인 점",
+    "source_url": "https://www.dogdrip.net/dogdrip/720335441?page=2&sort_index=popular",
+    "thumbnail": "assets/720335441/3f42d36b8aff5389.jpg",
+    "votes": "195",
+    "comments": "81",
+    "published": "13 시간 전",
+    "archived_at": "2026-08-21T11:38:38",
+    "archived_comment_count": 31,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720334106",
+    "title": "지나치게 정중한 손님들 욀케 짜증나지",
+    "source_url": "https://www.dogdrip.net/dogdrip/720334106?page=2&sort_index=popular",
+    "thumbnail": "assets/720334106/a650a3f3e6af4ba2.jpg",
+    "votes": "93",
+    "comments": "105",
+    "published": "13 시간 전",
+    "archived_at": "2026-08-21T11:38:56",
+    "archived_comment_count": 6,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720333804",
+    "title": "켓맘,켓대디한테 테러당하는 새덕후",
+    "source_url": "https://www.dogdrip.net/dogdrip/720333804?page=2&sort_index=popular",
+    "thumbnail": "assets/720333804/fb7d711b0feca788.jpg",
+    "votes": "159",
+    "comments": "76",
+    "published": "13 시간 전",
+    "archived_at": "2026-08-21T11:39:07",
+    "archived_comment_count": 25,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720329885",
+    "title": "피자집에서 언니 전남친 만났거든",
+    "source_url": "https://www.dogdrip.net/dogdrip/720329885?page=2&sort_index=popular",
+    "thumbnail": "assets/720329885/47583687e4ae1b5a.jpg",
+    "votes": "135",
+    "comments": "105",
+    "published": "7 시간 전",
+    "archived_at": "2026-08-21T11:39:48",
+    "archived_comment_count": 5,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720326863",
+    "title": "삼성전자를 퇴사하고 버스 기사를 선택한 이유",
+    "source_url": "https://www.dogdrip.net/dogdrip/720326863?page=2&sort_index=popular",
+    "thumbnail": "",
+    "votes": "200",
+    "comments": "150",
+    "published": "14 시간 전",
+    "archived_at": "2026-08-21T11:41:06",
+    "archived_comment_count": 1,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720316069",
+    "title": "음주운전 무죄 판결을 내리며 판사가 한탄한 이유.jpg",
+    "source_url": "https://www.dogdrip.net/dogdrip/720316069?page=2&sort_index=popular",
+    "thumbnail": "assets/720316069/11a19cc11214eda6.jpg",
+    "votes": "92",
+    "comments": "35",
+    "published": "15 시간 전",
+    "archived_at": "2026-08-21T11:41:27",
+    "archived_comment_count": 34,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720315914",
+    "title": "\"자네의 초능력은 뭐지?\"",
+    "source_url": "https://www.dogdrip.net/dogdrip/720315914?page=2&sort_index=popular",
+    "thumbnail": "assets/720315914/298bafa30617835b.jpg",
+    "votes": "99",
+    "comments": "26",
+    "published": "3 시간 전",
+    "archived_at": "2026-08-21T11:41:37",
+    "archived_comment_count": 26,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720310863",
+    "title": "이번 나솔 기수 시청 포인트",
+    "source_url": "https://www.dogdrip.net/dogdrip/720310863?sort_index=popular&page=3",
+    "thumbnail": "assets/720310863/8e02a37bba3a6e63.jpg",
+    "votes": "130",
+    "comments": "109",
+    "published": "15 시간 전",
+    "archived_at": "2026-08-21T11:42:24",
+    "archived_comment_count": 10,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720308285",
+    "title": "서울시 임대주택 거주자가 요구하는 4가지",
+    "source_url": "https://www.dogdrip.net/dogdrip/720308285?sort_index=popular&page=3",
+    "thumbnail": "assets/720308285/233af2d2877a6fd5.jpg",
+    "votes": "100",
+    "comments": "69",
+    "published": "14 시간 전",
+    "archived_at": "2026-08-21T11:43:50",
+    "archived_comment_count": 19,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720279862",
+    "title": "분실 에어팟, 자동 연결돼 찾으러갔더니... 범인은 ‘경찰’",
+    "source_url": "https://www.dogdrip.net/dogdrip/720279862?sort_index=popular&page=3",
+    "thumbnail": "assets/720279862/2d4118a54ae1c83d.jpg",
+    "votes": "121",
+    "comments": "55",
+    "published": "19 시간 전",
+    "archived_at": "2026-08-21T11:44:07",
+    "archived_comment_count": 6,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720244869",
+    "title": "인천 롯데시네마 중국인 행패에 상영중지 후 경찰 연행",
+    "source_url": "https://www.dogdrip.net/dogdrip/720244869?sort_index=popular&page=4",
+    "thumbnail": "assets/720244869/ace33ec4d2d75aca.jpg",
+    "votes": "90",
+    "comments": "47",
+    "published": "23 시간 전",
+    "archived_at": "2026-08-21T11:44:18",
+    "archived_comment_count": 47,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720237908",
+    "title": "ㅆㄷ) 개드립 은근 씹덕들 많네",
+    "source_url": "https://www.dogdrip.net/dogdrip/720237908?sort_index=popular&page=5",
+    "thumbnail": "assets/720237908/60805842bf78e3ea.jpg",
+    "votes": "103",
+    "comments": "51",
+    "published": "21 시간 전",
+    "archived_at": "2026-08-21T11:45:46",
+    "archived_comment_count": 2,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720150307",
+    "title": "피안도 근황.jpg",
+    "source_url": "https://www.dogdrip.net/dogdrip/720150307?sort_index=popular&page=8",
+    "thumbnail": "assets/720150307/9f6e1c2da8078e4e.jpg",
+    "votes": "125",
+    "comments": "91",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:46:11",
+    "archived_comment_count": 41,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720141400",
+    "title": "호남반도체 촛불행동 \"반미\" 노래 가사ㅋㅋㅋㅋㅋㅋㅋㅋ",
+    "source_url": "https://www.dogdrip.net/dogdrip/720141400?sort_index=popular&page=8",
+    "thumbnail": "assets/720141400/0a8105a6859b85a9.jpg",
+    "votes": "294",
+    "comments": "160",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:46:36",
+    "archived_comment_count": 10,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720138491",
+    "title": "정보공개청구로 '공무원 죽이기'라는 말 나올 정도면 ㅋㅋㅋㅋ",
+    "source_url": "https://www.dogdrip.net/dogdrip/720138491?sort_index=popular&page=8",
+    "thumbnail": "assets/720138491/bed6ff4502e80c0d.jpg",
+    "votes": "209",
+    "comments": "199",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:46:59",
+    "archived_comment_count": 48,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720136119",
+    "title": "20년 장기전세 임대아파트 절때 못나가 토론등판",
+    "source_url": "https://www.dogdrip.net/dogdrip/720136119?sort_index=popular&page=8",
+    "thumbnail": "assets/720136119/597ff5db7196556b.jpg",
+    "votes": "256",
+    "comments": "240",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:48:05",
+    "archived_comment_count": 40,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720131112",
+    "title": "팬들이랑 서든어택 하면서 긁히는 연예인ㅋㅋㅋㅋ",
+    "source_url": "https://www.dogdrip.net/dogdrip/720131112?sort_index=popular&page=8",
+    "thumbnail": "assets/720131112/a2005f544a3042c9.jpg",
+    "votes": "119",
+    "comments": "60",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:48:49",
+    "archived_comment_count": 10,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720128842",
+    "title": "ㅇㅎ) 이걸로 하루종일 힘낼 수 있나요?",
+    "source_url": "https://www.dogdrip.net/dogdrip/720128842?sort_index=popular&page=8",
+    "thumbnail": "",
+    "votes": "153",
+    "comments": "46",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:48:58",
+    "archived_comment_count": 46,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720128645",
+    "title": "여사친 플스 빌려준 후기",
+    "source_url": "https://www.dogdrip.net/dogdrip/720128645?sort_index=popular&page=8",
+    "thumbnail": "assets/720128645/958b5de20cb98ec0.jpg",
+    "votes": "152",
+    "comments": "163",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:49:16",
+    "archived_comment_count": 13,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720126423",
+    "title": "속보) 최초의 암백신 임상 3상 성공",
+    "source_url": "https://www.dogdrip.net/dogdrip/720126423?sort_index=popular&page=8",
+    "thumbnail": "assets/720126423/15c8f5e8d9dbe7e2.jpg",
+    "votes": "151",
+    "comments": "155",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:49:34",
+    "archived_comment_count": 5,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720124125",
+    "title": "언제나 말없이 내원 하시던 환자분.manwha",
+    "source_url": "https://www.dogdrip.net/dogdrip/720124125?sort_index=popular&page=8",
+    "thumbnail": "assets/720124125/56568fb6825432e0.jpg",
+    "votes": "229",
+    "comments": "63",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:50:23",
+    "archived_comment_count": 13,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720121836",
+    "title": "인천공항에 '새치기 방지' 울타리 설치 이후 근황",
+    "source_url": "https://www.dogdrip.net/dogdrip/720121836?sort_index=popular&page=8",
+    "thumbnail": "assets/720121836/93d0f04ba65bfab9.jpg",
+    "votes": "219",
+    "comments": "78",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:50:54",
+    "archived_comment_count": 28,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720121659",
+    "title": "술취해 자는동안 조카에게 성xx 당한 이모",
+    "source_url": "https://www.dogdrip.net/dogdrip/720121659?sort_index=popular&page=8",
+    "thumbnail": "assets/720121659/e93775dda09c6bde.jpg",
+    "votes": "151",
+    "comments": "85",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:51:09",
+    "archived_comment_count": 35,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720121619",
+    "title": "시대별 미국 미녀상의 변화",
+    "source_url": "https://www.dogdrip.net/dogdrip/720121619?sort_index=popular&page=8",
+    "thumbnail": "assets/720121619/cfaee6145977b35a.jpg",
+    "votes": "159",
+    "comments": "81",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:51:22",
+    "archived_comment_count": 31,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720121313",
+    "title": "S26 울트라 유저들 근황",
+    "source_url": "https://www.dogdrip.net/dogdrip/720121313?sort_index=popular&page=8",
+    "thumbnail": "assets/720121313/f3ab8052179e4f44.jpg",
+    "votes": "171",
+    "comments": "130",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:51:36",
+    "archived_comment_count": 30,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720118869",
+    "title": "중국 MZ세대 남녀갈등 근황",
+    "source_url": "https://www.dogdrip.net/dogdrip/720118869?sort_index=popular&page=8",
+    "thumbnail": "assets/720118869/c87a93e16a46f54a.jpg",
+    "votes": "174",
+    "comments": "103",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:51:55",
+    "archived_comment_count": 3,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720118929",
+    "title": "요즘 인기 빵집 가격 논란",
+    "source_url": "https://www.dogdrip.net/dogdrip/720118929?sort_index=popular&page=8",
+    "thumbnail": "assets/720118929/ed740b39b5fa6166.jpg",
+    "votes": "154",
+    "comments": "165",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:52:11",
+    "archived_comment_count": 15,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720117583",
+    "title": "임자 제대로 만난 캣맘 ㅋㅋㅋㅋ",
+    "source_url": "https://www.dogdrip.net/dogdrip/720117583?sort_index=popular&page=8",
+    "thumbnail": "assets/720117583/4bcb4c34e61c92e5.jpg",
+    "votes": "313",
+    "comments": "88",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:52:48",
+    "archived_comment_count": 38,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720115813",
+    "title": "미 구축함 정전 사태로 혼란에 빠졌다는 중국 해군",
+    "source_url": "https://www.dogdrip.net/dogdrip/720115813?sort_index=popular&page=9",
+    "thumbnail": "assets/720115813/13321c8200f600d9.jpg",
+    "votes": "184",
+    "comments": "60",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:52:57",
+    "archived_comment_count": 10,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720114819",
+    "title": "중국산 시멘트보다 품질이 딸린다는 한국 시멘트",
+    "source_url": "https://www.dogdrip.net/dogdrip/720114819?sort_index=popular&page=9",
+    "thumbnail": "assets/720114819/6bca6d4fa8b5c000.jpg",
+    "votes": "200",
+    "comments": "184",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:53:33",
+    "archived_comment_count": 34,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720114934",
+    "title": "스트리머 밥 대신 시켜주고 리뷰 써주는 시청자",
+    "source_url": "https://www.dogdrip.net/dogdrip/720114934?sort_index=popular&page=9",
+    "thumbnail": "assets/720114934/365b5012e8f26288.jpg",
+    "votes": "156",
+    "comments": "37",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:53:51",
+    "archived_comment_count": 37,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720113921",
+    "title": "일본에서 400년된 절이 불탔는데 범인이",
+    "source_url": "https://www.dogdrip.net/dogdrip/720113921?sort_index=popular&page=9",
+    "thumbnail": "assets/720113921/2aa7bfeecfa40939.jpg",
+    "votes": "129",
+    "comments": "48",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:54:06",
+    "archived_comment_count": 48,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720111973",
+    "title": "여러분의 친절한 이웃, 스파이더맨",
+    "source_url": "https://www.dogdrip.net/dogdrip/720111973?sort_index=popular&page=9",
+    "thumbnail": "assets/720111973/fe9f3207beedda64.jpg",
+    "votes": "216",
+    "comments": "65",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:54:34",
+    "archived_comment_count": 15,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720109173",
+    "title": "리센느 이름으로 거제에 총 1억원 기부",
+    "source_url": "https://www.dogdrip.net/dogdrip/720109173?sort_index=popular&page=9",
+    "thumbnail": "assets/720109173/61565f50108e8940.jpg",
+    "votes": "186",
+    "comments": "85",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:54:50",
+    "archived_comment_count": 35,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720108584",
+    "title": "미친놈은 개미친놈처럼 상대해야함",
+    "source_url": "https://www.dogdrip.net/dogdrip/720108584?sort_index=popular&page=9",
+    "thumbnail": "assets/720108584/695f9beb87ed8653.jpg",
+    "votes": "251",
+    "comments": "84",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:55:25",
+    "archived_comment_count": 34,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720108342",
+    "title": "중국 부정부패 근황.jpg",
+    "source_url": "https://www.dogdrip.net/dogdrip/720108342?sort_index=popular&page=9",
+    "thumbnail": "assets/720108342/4c611c1749b336fc.jpg",
+    "votes": "195",
+    "comments": "54",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:55:36",
+    "archived_comment_count": 4,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720108378",
+    "title": "유퀴즈가 길바닥 근본을 잊은 이유",
+    "source_url": "https://www.dogdrip.net/dogdrip/720108378?sort_index=popular&page=9",
+    "thumbnail": "assets/720108378/7f3382238c6c78de.jpg",
+    "votes": "187",
+    "comments": "70",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:55:49",
+    "archived_comment_count": 20,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720107643",
+    "title": "메탈슬러그 한 대에 쓰인 도트 스프라이트 갯수",
+    "source_url": "https://www.dogdrip.net/dogdrip/720107643?sort_index=popular&page=9",
+    "thumbnail": "assets/720107643/541d510d640d62c4.jpg",
+    "votes": "101",
+    "comments": "67",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:56:07",
+    "archived_comment_count": 17,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720107039",
+    "title": "임신한 아내 몰래 680만원짜리 군용 2.5톤 트럭을 산 남자",
+    "source_url": "https://www.dogdrip.net/dogdrip/720107039?sort_index=popular&page=9",
+    "thumbnail": "assets/720107039/01c7ed36317c12c1.jpg",
+    "votes": "218",
+    "comments": "103",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:57:09",
+    "archived_comment_count": 3,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720106468",
+    "title": "강연금 작가 자캐가 젖소인 이유",
+    "source_url": "https://www.dogdrip.net/dogdrip/720106468?sort_index=popular&page=9",
+    "thumbnail": "assets/720106468/ee462a2d1d780e77.jpg",
+    "votes": "115",
+    "comments": "51",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:57:19",
+    "archived_comment_count": 1,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720105259",
+    "title": "와이프 친오빠가 1500만원 빌려달라는 불페너",
+    "source_url": "https://www.dogdrip.net/dogdrip/720105259?sort_index=popular&page=9",
+    "thumbnail": "assets/720105259/0062cc5d81b7928a.jpg",
+    "votes": "144",
+    "comments": "153",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:57:32",
+    "archived_comment_count": 3,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720097760",
+    "title": "솔직히 전쟁나면 금지시켜야 되는거",
+    "source_url": "https://www.dogdrip.net/dogdrip/720097760?sort_index=popular&page=9",
+    "thumbnail": "assets/720097760/ac3b179423eb74a1.jpg",
+    "votes": "154",
+    "comments": "92",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:57:52",
+    "archived_comment_count": 42,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720096835",
+    "title": "독서실 아줌마 임신시킨 남자.",
+    "source_url": "https://www.dogdrip.net/dogdrip/720096835?sort_index=popular&page=9",
+    "thumbnail": "assets/720096835/7106682eb005c380.jpg",
+    "votes": "126",
+    "comments": "38",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:58:07",
+    "archived_comment_count": 38,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720095459",
+    "title": "퇴사자가 남긴 인수인계 파일",
+    "source_url": "https://www.dogdrip.net/dogdrip/720095459?sort_index=popular&page=9",
+    "thumbnail": "assets/720095459/bf42c71d6e02540c.jpg",
+    "votes": "237",
+    "comments": "48",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T11:58:16",
+    "archived_comment_count": 48,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720094129",
+    "title": "추방당한 상인은 돈의 힘으로 세계를 구한다 manhwa",
+    "source_url": "https://www.dogdrip.net/dogdrip/720094129?sort_index=popular&page=9",
+    "thumbnail": "assets/720094129/3e62b03e84889070.jpg",
+    "votes": "115",
+    "comments": "105",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T12:01:37",
+    "archived_comment_count": 5,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720094247",
+    "title": "🚗  2억 벤츠를 골프채로 박살낸 이유 💥",
+    "source_url": "https://www.dogdrip.net/dogdrip/720094247?sort_index=popular&page=9",
+    "thumbnail": "assets/720094247/22fccab2f636a25e.jpg",
+    "votes": "145",
+    "comments": "62",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T12:02:09",
+    "archived_comment_count": 12,
+    "comment_archive_version": 2
+  },
+  {
+    "id": "720093671",
+    "title": "회사 매각하고 전 직원에게 6억 보너스 뿌린 CEO",
+    "source_url": "https://www.dogdrip.net/dogdrip/720093671?sort_index=popular&page=9",
+    "thumbnail": "assets/720093671/5c2fdeb5ff0a9644.jpg",
+    "votes": "181",
+    "comments": "41",
+    "published": "1 일 전",
+    "archived_at": "2026-08-21T12:02:25",
+    "archived_comment_count": 41,
+    "comment_archive_version": 2
+  },
+  {
     "id": "720301528",
     "title": "손님이 춤춰서 2개월 영업정지 맞은 라이브클럽..jpg",
     "source_url": "https://www.dogdrip.net/dogdrip/720301528?sort_index=popular&page=1",
@@ -7,59 +907,9 @@
     "votes": "98",
     "comments": "68",
     "published": "3 시간 전",
-    "archived_comments": [
-      {
-        "author": "색색봉봉",
-        "published": "2 시간 전",
-        "body": "법이 낡았으니 개정해주세요 라는 내용이잖아. 세금 잘 낼테니 등록할수있게 도와주세요 내용인데 하나하나 반박하면 팩폭하는거같고 본인이 멋진것같냐?\n그리고 나도 읽어보니, 개인 규제의 내용이라 없애는거에 동의가는데, 그저~ 법에 있으니 지켜라  이러고있네."
-      },
-      {
-        "author": "날마다잠자",
-        "published": "2 시간 전",
-        "body": "저거 보통 단속하는게 공무원이라 그냥 가서 단속하는게 아니라 누가 수시로 민원 넣어야 어쩔수 없이 가서 단속함.. 갔던날 춤추는거 없음 그냥 넘어가는거고  요지는 민원이 많이 들어 왔다는거"
-      },
-      {
-        "author": "익명",
-        "published": "",
-        "body": "글치 공무원이 ㅄ도아니고 악의적인 민원지속적으로 접수되었다고 함 ㅋㅋ"
-      },
-      {
-        "author": "색색봉봉",
-        "published": "2 시간 전",
-        "body": "[손님 춤추면 안됩니다]를 밈으로 만들어서 말리는척만 하면 될듯"
-      },
-      {
-        "author": "야스",
-        "published": "2 시간 전",
-        "body": "스텝들이 호응 유도 하는 것 처럼 춤추시면 안됩니다~ 이ㅈㄹ 하는 문화 생기면 진짜 웃기겠네ㅋㅋㅋ"
-      },
-      {
-        "author": "날마다잠자",
-        "published": "1 시간 전",
-        "body": "참고로 부산에서도 조례로 감성주점 영업가능함 일반음식점도 춤을 허용해 단지 자기 객석에서 춤을 추라는거고 업주가 따로 장소를 만들어서 춤출수 있는 장소 만들면 불법임... 걸렸다면 다이유가 있다"
-      },
-      {
-        "author": "익명",
-        "published": "",
-        "body": "일단 애초에 춤추라고 만든 장소가 아니고 공연장 특성 상 스테이지 앞에 객석일뿐..\n법령상 춤의 기준이 없어서 스탠딩이다보니 리듬타거나 걍 끄덕이고 흔들기만해도 춤으로 민원접수가 가능함.\n현행법 상 당연히 문제가 되니까 개붕이가 말하는 걸린 이유가 되는거겠지\n그리고 본문은 그 현행법이 구시대적이니까 개선해달라는 내용이고"
-      },
-      {
-        "author": "날마다잠자",
-        "published": "1 시간 전",
-        "body": "보니까 진구에만 조례가 있고 오방가르드가 있는 남구에는 조례가 없는가 보내"
-      },
-      {
-        "author": "전자참새",
-        "published": "1 시간 전",
-        "body": "오방가르드가 언더그라운드 음악씬에선 엄청 상징적이고 중요한 곳인가보더라 부산 뿐 아니라 전국 인디 뮤지션들이 우수수 입장문 내더라. 아마 현실적으론 마포구나 서대문구처럼 예외 조례로 해결될 거 같긴 한데 근본적으로 일반음식점/유흥업소로 양분되고 전자에서는 '춤을 추면 안된다'는 약간 좀 이상한 구석이 있는 조항이 해결이 되어야 한다 뭐 이런 얘기인 거 같음."
-      },
-      {
-        "author": "돌대가리박과장",
-        "published": "1 분 전",
-        "body": "와 김밥천국에서 춤추면 김밥천국 2개월 정지임?\n미성년자가 몰래 술담배 산다음 신고해서 영업정지 시키는 것 같은 병12신같은 법이네"
-      }
-    ],
-    "archived_at": "2026-08-20T22:12:06"
+    "archived_at": "2026-08-20T22:12:06",
+    "archived_comment_count": 13,
+    "comment_archive_version": 2
   },
   {
     "id": "720261619",
@@ -69,49 +919,9 @@
     "votes": "225",
     "comments": "58",
     "published": "7 시간 전",
-    "archived_comments": [
-      {
-        "author": "년도가입",
-        "published": "5 시간 전",
-        "body": "ㄹㅇ ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 자기계발서책 낸사람들 강연가보면 하나같이 한단소리가 다 저거임 진짜 존나 줘패고싶음 ㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "퇴근하세요",
-        "published": "5 시간 전",
-        "body": "개처웃기네ㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "멕시코산아보카도",
-        "published": "5 시간 전",
-        "body": "그래도 니네는 영앤 리치는 아니지만\n영은 가졌잖아\n난 영도 아니고 리치도 아니라 너무 슬프다\n흑흑늙크크"
-      },
-      {
-        "author": "그까이꺼대충",
-        "published": "4 시간 전",
-        "body": "나도! 개붕이도 할수있어!\n0 and Lich"
-      },
-      {
-        "author": "욕정컴미",
-        "published": "4 시간 전",
-        "body": "돈이랑 니 젊음이랑 바꿀까 못 바꾸지 에베베베베 ㅋㅋㅋ\n하려고하는소리ㅜ아님?"
-      },
-      {
-        "author": "독고무영",
-        "published": "1 시간 전",
-        "body": "그럼 바꿔줘 시발..."
-      },
-      {
-        "author": "술콩",
-        "published": "1 시간 전",
-        "body": "늙크크"
-      },
-      {
-        "author": "플랫브라운",
-        "published": "18 분 전",
-        "body": "ㄹㅇㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:12:17"
+    "archived_at": "2026-08-20T22:12:17",
+    "archived_comment_count": 10,
+    "comment_archive_version": 2
   },
   {
     "id": "720260905",
@@ -121,59 +931,9 @@
     "votes": "171",
     "comments": "94",
     "published": "8 시간 전",
-    "archived_comments": [
-      {
-        "author": "존나잘쉬는청년",
-        "published": "6 시간 전",
-        "body": "이번 오디세이는 액션 괜찮았던 거 같은데\n구렸더라도 뭔가 티는 안 났음 그것도 어떻게 보면 능력인 듯"
-      },
-      {
-        "author": "지하왕국",
-        "published": "5 시간 전",
-        "body": "워머신 진짜 불구될뻔했네"
-      },
-      {
-        "author": "배똘",
-        "published": "5 시간 전",
-        "body": "엘더스크롤 처럼 몰입감은 죽여쥬는데 액션이ㅋ\n닼라 빼곤 뭐 몸싸움 별로 없어서 붕쯔도 별생각 안듦"
-      },
-      {
-        "author": "BigJay",
-        "published": "4 시간 전",
-        "body": "ㄹㅇ 액션씬을 못찍긴 함 ㅋㅋㅋㅋ 근데 역설적으로 그러고도 대존잼 결과물을 만드는게 개쩌는 부분 ㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "배똘",
-        "published": "4 시간 전",
-        "body": "진짜 신기함 놀란영화는 끝나는게 아쉽더라\n다른 감독 영화는 클라이맥스 앤딩리 궁금한게\n큰데 놀란은 풀어내는게 그냥 미쳤나봄\n남들은 분석도 잘하면서 보는데 나한텐 몰입력 하나만으로 갓임 붕쯔붕쯔야 다 잘보고 나서 놀리기지 ㅋ"
-      },
-      {
-        "author": "BigJay",
-        "published": "4 시간 전",
-        "body": "대중하고 평자를 다 잡는게 말이 쉽지.. 슈퍼히어로에 철학를 담는게 말이 쉽지.. 존나 대단함 진짜로"
-      },
-      {
-        "author": "배똘",
-        "published": "4 시간 전",
-        "body": "인셉 인터 개봉도 모르고 지나간게 너무 아쉽다 ㅠ"
-      },
-      {
-        "author": "클럽",
-        "published": "3 시간 전",
-        "body": "아이언맨 슈트 직접 만들겠지 ..\n대기권까지는 스턴트 날리고\n성층권 부터는 CG"
-      },
-      {
-        "author": "번째가슴",
-        "published": "42 분 전",
-        "body": "배우가 죽을 수도 있습니다??\nㄹㅇ임"
-      },
-      {
-        "author": "아니뭐해",
-        "published": "5 분 전",
-        "body": "오펜하이머 개봉때쯤 일론머스크의 조력을 받아 만든 아이언맨 수트 마지막 시운전성공\n토르 묠니르에 번개치는 장면을 실제로 넣으려다 감전되어 크리스햄스워스 전신 3도화상\n옆에서 스톰브레이커 가지고 리허설 하던 캡틴아메리카는 사망\n스파이더맨이 에보니모의 우주선에 잠입하는 장면을 실제로 촬영하다\n스타크씨 수트에서 새차냄새가 나요를 마지막 유언으로 남기고 산소부족으로 실족사"
-      }
-    ],
-    "archived_at": "2026-08-20T22:12:29"
+    "archived_at": "2026-08-20T22:12:29",
+    "archived_comment_count": 47,
+    "comment_archive_version": 2
   },
   {
     "id": "720256303",
@@ -183,59 +943,9 @@
     "votes": "119",
     "comments": "118",
     "published": "8 시간 전",
-    "archived_comments": [
-      {
-        "author": "대범한또라이",
-        "published": "2 시간 전",
-        "body": "후반엔 임진왜란 경신대기근 을병대기근 100만 100만 100만 죽은게 너무컸다고봄"
-      },
-      {
-        "author": "도쿄피에스타",
-        "published": "2 시간 전",
-        "body": "진짜 마지막 경신대기근 을병대기근은 정말 타격이 컸음"
-      },
-      {
-        "author": "켄트지",
-        "published": "2 시간 전",
-        "body": "고려-조선 초에 상업 망해서 나라 망하는걸 겪어버리니까 아예 상업을 교조적으로 기피한 경향도 있긴 하댔음"
-      },
-      {
-        "author": "PGoose",
-        "published": "1 시간 전",
-        "body": "개인적 추측으로는, 당대에 아시아에서 통용사용 되던 원나라 종이화폐 구실을 하던 교초?가 이미 과다 발행된 상태에서 공급망 교란으로 붕괴한게, 조선이 농업국가를 고수한 큰 동기가 아닐까 한다."
-      },
-      {
-        "author": "후로게이머",
-        "published": "38 분 전",
-        "body": "당나라 어음 비전이 부도난것도 크지"
-      },
-      {
-        "author": "모두예할때아니요함",
-        "published": "57 분 전",
-        "body": "조선의 몰락을 이야기할때 삼정의 문란부터 시작하지않나? 갑짜기 흑사병이랑 건국초기부터 시작하면 뭐 말을 얼마나 길게하겠다는"
-      },
-      {
-        "author": "후로게이머",
-        "published": "39 분 전",
-        "body": "저거 한가지가 아님. 진짜 조선은 복합적으로 글러 먹었슴. 보통 국가가 기둥을 세우고 100~200년이 지나면 체계 문제가 하나씩 터지는데 그걸 바로 잡는걸 경장이라 부름. 싹다 바꾼다고 보면됨. 근데 조선은 500년이 지나서야 시도함."
-      },
-      {
-        "author": "제대로알고하는헤이트",
-        "published": "25 분 전",
-        "body": "조금 끼워맞춘 것도 보이는데.. 새로운 시각도 있어서 좋긴 한데 너무 간단하게 하려다보니 조금 납득하기 힘든 부분도 있긴 하다."
-      },
-      {
-        "author": "알파카털파카",
-        "published": "23 분 전",
-        "body": "님이 말한건 조선전기 이야기인데 애당초에 누가 조선 건국할떄나 조선전기 문제삼음? 중반(임란)이나 후반(영정조~망할떄까지)에 체제개혁 못한게 가장 크지\n조선의 문제는 세조 성종시대나 임란 이후부터 무려 흥선대원군 시기까지. 대동법 정도를 제외하고 제대로 된 시스템 개혁을 하나도 해내지 못하고 기득권 위주로 고여서 썩고 곪아간게 가장 크다고 봄."
-      },
-      {
-        "author": "김춘식",
-        "published": "18 분 전",
-        "body": "왜란 호란 연속 크리가 치명적이었지\n조선초부터 성종까지는 멀쩡히 잘 굴러갔음\n원글에서 조선 공예가 일본보다 뒤쳐졌다는데 오히려 반대임\n전국시대 일본은 창길이 활길이 도량형 통일도 못했을때 조선은 강력한 중앙집권하에 중앙에서 자척, 메뉴얼 뿌려서 획일하게 만드는 시스템 확립함\n메이드인 경상도나 메이드인 함경도나 표준규격대로 물건 만들었음\n같은 시기 일본은 워낙 낙후돼서 팔게 없어 사람팔아다 조총 사왔음\n은이 풍부했다는게 천운인데 그것도 조선에서 연은분리법 훔쳐다 증산 성공한거\n고려불화(=세밀화) 면화재배법 연은분리법 인삼재배법 도예기술 석축축성법 죄다 일본이 조선에서 가져간거고 그거 토대로 서양이랑 교역해서 부 축적하고 서양에 지들 문화대국인양 PR함\n그렇게 얻은 부로 에도 막부 300년간 낙후된 과거사 완벽하게 세탁 성공한거\n에도 막부 이전까지 일본은 하까마는 커녕 맨발에 빤쓰 입고 다녔어\n조선이 서양이랑 교역할까봐 조선통신사 더러 조공국 사절이라고 사다리 걷어차기까지 시전~\n결국 호란 뒤 효종때나 되어서, 일본보다 100년 늦게 서구 물문 들어옴"
-      }
-    ],
-    "archived_at": "2026-08-20T22:13:09"
+    "archived_at": "2026-08-20T22:13:09",
+    "archived_comment_count": 41,
+    "comment_archive_version": 2
   },
   {
     "id": "720259465",
@@ -245,19 +955,9 @@
     "votes": "86",
     "comments": "52",
     "published": "8 시간 전",
-    "archived_comments": [
-      {
-        "author": "시라누이Q",
-        "published": "6 시간 전",
-        "body": "와 씨 삼겹살 물 딱 보자마자 감탄을 금치 못했다 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "아니뭐해",
-        "published": "2 분 전",
-        "body": "근데 난 라면은 순정이 젤 낫더라\n계란 정도만 가끔 넣거나"
-      }
-    ],
-    "archived_at": "2026-08-20T22:13:27"
+    "archived_at": "2026-08-20T22:13:27",
+    "archived_comment_count": 17,
+    "comment_archive_version": 2
   },
   {
     "id": "720258607",
@@ -267,34 +967,9 @@
     "votes": "133",
     "comments": "55",
     "published": "7 시간 전",
-    "archived_comments": [
-      {
-        "author": "크킹충",
-        "published": "4 시간 전",
-        "body": "남친 민주주의제 ㄷㄷ"
-      },
-      {
-        "author": "망고모찌",
-        "published": "4 시간 전",
-        "body": "확률이 2의 13승 ㄷㄷㄷ"
-      },
-      {
-        "author": "락크준",
-        "published": "2 시간 전",
-        "body": "어느정도 키워 놓으면 자동육아 가능해짐. 그라고 형이 저롷게 많으면 동생은 얌전해짐 한댜씩만 쳐맞아도 병원 입원해야함"
-      },
-      {
-        "author": "고랭지오렌지",
-        "published": "2 시간 전",
-        "body": "잭슨 10남매 ㅎㄷㄷ 했었는데 15남매... 상상도 안 된다"
-      },
-      {
-        "author": "기분좋은향기나는모코코",
-        "published": "40 분 전",
-        "body": "첫째가 28살 ㄷㄷ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:13:54"
+    "archived_at": "2026-08-20T22:13:54",
+    "archived_comment_count": 16,
+    "comment_archive_version": 2
   },
   {
     "id": "720257792",
@@ -304,59 +979,9 @@
     "votes": "204",
     "comments": "143",
     "published": "8 시간 전",
-    "archived_comments": [
-      {
-        "author": "놀리아니",
-        "published": "7 시간 전",
-        "body": "문해력이 이렇게 낮아졌네.\n포로 죽이면 힘들어지니까 죽이지 말라고 적혀 있잖아."
-      },
-      {
-        "author": "개똥말똥소똥",
-        "published": "7 시간 전",
-        "body": "개드리퍼:여자는 사살하고 남자를 약탈해라!!"
-      },
-      {
-        "author": "장위동김폐인",
-        "published": "7 시간 전",
-        "body": "하지만 갈라쳐졌죠?"
-      },
-      {
-        "author": "건설안전온열질환",
-        "published": "7 시간 전",
-        "body": "대체 같은 글을 본게 맞냐 본문은 이해를 어떻게 하는거지\n이게 문해력 차이인가.."
-      },
-      {
-        "author": "늅늅하고운다",
-        "published": "6 시간 전",
-        "body": "걍퍼오다보니 글쓴이의 지능까지 같이 퍼온거 아닐까?"
-      },
-      {
-        "author": "도플갱어2",
-        "published": "5 시간 전",
-        "body": "세줄요약 안해놔서 못읽나보네 우리나라사람은ㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "IPHONE12",
-        "published": "5 시간 전",
-        "body": "문제는\n인권타령하는 몇몇 단체랑\n몰래 숨어있던 간첩들 선동질\n그리고 아직 대가리로 제대로 판단 못하는 10대들\n이 셋이서 SNS고 오프라인이고 깽판치면서\n같은 민족이다 어쩌고, 포로를 죽이다니 이 살인마 우우 어쩌고 등등 하면서 지랄 놓으면\n그대로 나라 멸망"
-      },
-      {
-        "author": "4829571",
-        "published": "5 시간 전",
-        "body": "마지막에\n끝까지 싸워보자에서\n참 지랄이다 라는 생각밖에 안드네"
-      },
-      {
-        "author": "낮에나온반달",
-        "published": "3 시간 전",
-        "body": "21세기 레드팀 용병국가 메타로 bm바꾼건 지옥에서 일성이도 지 손주새끼보고 기립박수칠듯\n개미친새끼들"
-      },
-      {
-        "author": "콩냉이순장고",
-        "published": "42 분 전",
-        "body": "저능아붐;;;"
-      }
-    ],
-    "archived_at": "2026-08-20T22:14:47"
+    "archived_at": "2026-08-20T22:14:47",
+    "archived_comment_count": 49,
+    "comment_archive_version": 2
   },
   {
     "id": "720255571",
@@ -366,59 +991,9 @@
     "votes": "123",
     "comments": "62",
     "published": "8 시간 전",
-    "archived_comments": [
-      {
-        "author": "감귤온천",
-        "published": "6 시간 전",
-        "body": "여간 기합이 아니였다"
-      },
-      {
-        "author": "제대로알고하는헤이트",
-        "published": "5 시간 전",
-        "body": "한국문학은 부고만"
-      },
-      {
-        "author": "팡팡팡팡팡팡",
-        "published": "5 시간 전",
-        "body": "자멸하면 그만이긴 함\n글의 입지가 안 그래도 좁아지는데\n어떻게든 저변 늘리려고 똥꼬쑈를 해야할 판에\n독자 폭을 지들이 좁혀서 가두리를 치고 있으니.\n다 망해야 새로이 설 수 있음ㅋㅋ"
-      },
-      {
-        "author": "초시공무적여고생",
-        "published": "5 시간 전",
-        "body": "군대랑 남자 게이들 ㅈㄴ 나오니까 군사주의적 젠더 서사라는건가? ㅋㅋㅋ"
-      },
-      {
-        "author": "구리네스",
-        "published": "5 시간 전",
-        "body": "돈도 안되는 문학이 얼마나 쩌든거냐\n재네말고는 읽고 소비해줒사람조차없단거자너"
-      },
-      {
-        "author": "베댓전문가",
-        "published": "5 시간 전",
-        "body": "그러니까 여자들이 읽고 흥건히 젖을 정도로 야한 게이물이자\n여자들의  군대 문화에 대한 환상을 충족시켜줄 만큼의 리얼리티가 섞인 군대문학이라\n그네들의 입맛에 딱 맞다는 거지?"
-      },
-      {
-        "author": "쿠폰아까워",
-        "published": "5 시간 전",
-        "body": "강간을 순애로 만들어버리네ㅋㅋ 강간은 한 인생을 바쳐 여자를 원하는거니까 순애라던 디씨글이 생각난다"
-      },
-      {
-        "author": "네비두라",
-        "published": "3 시간 전",
-        "body": "여성향 로맨스소설에선 강간도 여자들의 로망중 하나라는건가?"
-      },
-      {
-        "author": "VSZMA",
-        "published": "3 시간 전",
-        "body": "말하자면 장르 문법임. 마치 NTR물에서 여주인공은 빡대가리가 되어야 한다는 규칙이나, 남성향에서 연인 사이가 아닌 여자와 관계를 맺었는데 그땐 좋다던 여자가 며칠 뒤 남주를 신고하는 상황 같은건 다루지 않는 것처럼 여성향 로맨스의 남주는 강압적인 애정을 행사할 정도로 여주를 원할 뿐 현실의 성범죄에서 뒤따를만한 문제들은 일으키지 않는다는 일종의 합의가 있는거지.\n물론 지들은 저러면서 남의 장르에는 현실이 어쩌니 저쩌니 시비 털고 다니니까 문제지만."
-      },
-      {
-        "author": "잡학좋아하는사람",
-        "published": "8 분 전",
-        "body": "상당히 메이저한 페티쉬임 관련 태그로 폭군이란 키워드가 있는데 19금 수위면 여주 강압적으로 다루거나 강간하는 경우도 예사임 물론 회귀든 관계진전이든 하면 후회하고 여주한테 감화돼서 성군 되는 스토리긴 하지만, 이 기저에 깔린 심리가 그 정도로 남주가 여주를 좋아한다라는 관계성과 감히 그런 범죄를 나한테 저질러? 그렇게 잔인하고 완벽한 폭군이 오직 여주한테만큼은 내심 미안함 + 깨깽하게 하는 심리적 갑을 관계성을 만듦 거기다 더 음습한 작품들은 여주의 도덕성 까지 챙기려고 폭군이 여주 정적을 다 치워버리거나 죽여서 사이다 줌 근데 폭군이 여주를 너무 좋아해서 멋대로 그런 거라는 논리로 여주는 착한 척함 ㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:15:16"
+    "archived_at": "2026-08-20T22:15:16",
+    "archived_comment_count": 15,
+    "comment_archive_version": 2
   },
   {
     "id": "720255925",
@@ -428,59 +1003,9 @@
     "votes": "157",
     "comments": "79",
     "published": "8 시간 전",
-    "archived_comments": [
-      {
-        "author": "bittersalt",
-        "published": "8 시간 전",
-        "body": "우크라이나가 외교만 잘했어도.."
-      },
-      {
-        "author": "글쓰고싶어짐",
-        "published": "7 시간 전",
-        "body": "동쪽은 친러\n서쪽은 친유럽\n당연히 한목소리가 안됨 우크라가 외교가 개판나면 이득보는건 친러 주민들이라서\n일치단결 안되니 부정부패도 ㅈ되고"
-      },
-      {
-        "author": "뉴비곰",
-        "published": "7 시간 전",
-        "body": "외교를 잘했으면 이지경까지 오지도 않았겠지 약소국이 살아남으려면 외교를 잘해야하는데 동북아에 대해서 지원을 요청할거면 최소한 동북아 국가들간의 관계라도 알아야지 시발 야스쿠니 신사가서 참배하고 한국에 도움요청하면 잘도 해주겠음 ㅋㅋㅋ"
-      },
-      {
-        "author": "VSZMA",
-        "published": "4 시간 전",
-        "body": "우크라 외교 못하는거랑 별개로 우리가 우크라 지원 잘 안해주는거는 걍 멀리 떨어져 있고 제 코가 석자니 그런거지 외교는 핑계지... 정작 러시아는 대놓고 북한하고 붙어먹고 아예 대사도 어그로 끌고 다니는데"
-      },
-      {
-        "author": "뉴비곰",
-        "published": "4 시간 전",
-        "body": "그렇다고 우리가 러시아 지원해주는거는 아니니까"
-      },
-      {
-        "author": "채권팔이소년",
-        "published": "7 시간 전",
-        "body": "사오십대 되어 보이시네. 대단하시다"
-      },
-      {
-        "author": "IllIlII",
-        "published": "7 시간 전",
-        "body": "옳고그름을 떠나서 명복을 빕니다"
-      },
-      {
-        "author": "유메노아이카찹살젖통",
-        "published": "7 시간 전",
-        "body": "댓글에 헛소리 말고 명복만 빌자 아님 그냥 나가고"
-      },
-      {
-        "author": "깨꼬닭",
-        "published": "4 시간 전",
-        "body": "어쨌든 북괴놈들하고 싸웠으니 난 저 아저씨 명복을 빌어줄란다"
-      },
-      {
-        "author": "창릉신도시",
-        "published": "2 시간 전",
-        "body": "우크라이나 병신들 ...."
-      }
-    ],
-    "archived_at": "2026-08-20T22:15:41"
+    "archived_at": "2026-08-20T22:15:41",
+    "archived_comment_count": 38,
+    "comment_archive_version": 2
   },
   {
     "id": "720250603",
@@ -490,59 +1015,9 @@
     "votes": "223",
     "comments": "116",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "하루에세번똥싸",
-        "published": "3 시간 전",
-        "body": "나만 왜이렇게 한가한가 싶으면 괜찮은 루팡인거냐??? ㅋㅋㅋㅋㅋㅋ 왜케 다들 바쁘지ㅜㅜ"
-      },
-      {
-        "author": "진흙에도꽃은펴",
-        "published": "4 시간 전",
-        "body": "ㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "에테르",
-        "published": "4 시간 전",
-        "body": "사원 3년 / 팀장 5년 / 코파운더 1년 / 대표 3년\n대충 이 정도 경력인데,\n올라가면 올라갈수록 순수 근무시간을 떠나서 그냥 ‘일을 할 수 있는 시간’ 자체가 늘어나는 기분임.\n사원 때는 기본적으로 9 to 6이고, 해봤자 가끔 야근이나 특근 정도였음.\n팀장 되니까 일 있으면 10시 퇴근, 11시 퇴근도 하게 되고\n코파운더 때는 새벽 퇴근도 하고\n대표 되고 나니까 주말 근무는 그냥 자연스러운 일이 됨.\n물론 사원 입장에서는 윗사람이 놀고 있는 것처럼 보일 수도 있음.\n근데 사원이 퇴근한 뒤에 일하는 사람이 있고,\n주말에 문제 터졌을 때 전화받는 사람이 있고,\n결정해야 할 일이 생겼을 때 대신 판단해야 하는 사람이 있다면\n대부분 그게 윗사람임.\n당연히 라인 잘 타서 자리만 차지하고 꿀 빠는 사람도 있겠지.\n근데 윗사람이 한가해 보이는 것과 실제로 한가한 건 전혀 다른 문제라는 것도 알아줬으면 좋겠음.\n결국 고객사든 회사든 더 윗선이든 가서 깨지고 수습해야 하는 건 책임자고,\n그래서 그 자리에 있는 거라고 생각함.\n물론 책임져야 할 순간에 실무자 뒤에 숨어버리는 상급자라면 욕먹어도 할 말 없고.\n근데 그것과\n‘윗사람은 하는 일 없이 놀면서 돈만 더 받는다’는 건 다른 얘기라고 봄.\n결국 각 자리에 직접 있어봐야\n그 자리가 뭐가 힘든지 알게 되는 것 같음."
-      },
-      {
-        "author": "베지밀오렌지",
-        "published": "4 시간 전",
-        "body": "ㅇㄱㅆㄹㅇ 회사에서 놀아도 상급자는 집가서 완전히 못놈"
-      },
-      {
-        "author": "에테르",
-        "published": "3 시간 전",
-        "body": "출근전에 장실에있을때 카톡오면 답장하고\n퇴근하고 술먹다가 전화오면 맨정신인척 받고\n주말에 연락오면 답장하고 업무보고\n누구 연차쓰면 대타로 가서 일하고\n이런말하면 '나도 그거 다 하는데?'라고 하는 애들 있을 수 있는데\n비율로 놓고보면 직원일때 저런게 많겠냐 위로 올라갔을때 저런게 많겠냐 싶음\n무튼 고생이많다 다들"
-      },
-      {
-        "author": "누에",
-        "published": "3 시간 전",
-        "body": "엑셀 팡숀? 쓰지마세요"
-      },
-      {
-        "author": "레이셀",
-        "published": "2 시간 전",
-        "body": "과장쯤 되면 손이 퇴화해서 지 손으로 택배를 못붙임"
-      },
-      {
-        "author": "디쿠벵두",
-        "published": "1 시간 전",
-        "body": "불합리하긴한데 꼬우면 먼저들어왔어야함\n꼬우니까 그만둔건데 그만두면 지손해임\n계획이있는상태에서 더 좋은 방향성을 갖고 그만둬야 의미가있는거지\n그냥 저이유로 꼴보기싫다고 그만두는건 손해지\n인생에 정답은없는데 나에게 이득이 되는방향으로 살고싶다면 저런이유로 그만두면안됨"
-      },
-      {
-        "author": "오니기리죠",
-        "published": "1 시간 전",
-        "body": "걍 위치에 따라 보이는 만큼 보는거임."
-      },
-      {
-        "author": "원소번호11번",
-        "published": "1 시간 전",
-        "body": "걍 존나 기성세대가 책임지는 꼬라지를 배우질 못함."
-      }
-    ],
-    "archived_at": "2026-08-20T22:16:01"
+    "archived_at": "2026-08-20T22:16:01",
+    "archived_comment_count": 35,
+    "comment_archive_version": 2
   },
   {
     "id": "720251945",
@@ -552,59 +1027,9 @@
     "votes": "106",
     "comments": "95",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "소설파마후참설",
-        "published": "7 시간 전",
-        "body": "뒤로갈수록 받는게 크고 그래서 글지 공무원에 때려치지않을 정도로 적성에 맞으면\n대기업 공기업 공무원\n이 라인업임 ㅇㅇ"
-      },
-      {
-        "author": "AssA",
-        "published": "7 시간 전",
-        "body": "아무리 빨리 들어갔어도 30대에 6급 8천 인생된다면 공무원 월급 안올려줘도 되것네ㅋㅋ"
-      },
-      {
-        "author": "사죄와배상맨",
-        "published": "7 시간 전",
-        "body": "공무원 월급 적다는건 9급8급 얘기지 연차 쌓이면 일도 적어지고 잘리지도 않고 돈도 많이받음"
-      },
-      {
-        "author": "붐업단2",
-        "published": "3 시간 전",
-        "body": "와 6급이면 8천임?\n7급으로 들어가면 몇년 버티면 9천임?"
-      },
-      {
-        "author": "MessiOfTFT",
-        "published": "3 시간 전",
-        "body": "6급이 딸깍까진 아니던데"
-      },
-      {
-        "author": "동행복권",
-        "published": "2 시간 전",
-        "body": "이씨발 싸이버거내놔라이"
-      },
-      {
-        "author": "맨탈폭격기",
-        "published": "1 시간 전",
-        "body": "6급이 8천이 되나 ㅋㅋㅋ\n한5천~6천 어딘가 일것 같은데\n4급정도 되야되지않나"
-      },
-      {
-        "author": "김치수류탄",
-        "published": "1 시간 전",
-        "body": "승진개빠르네.."
-      },
-      {
-        "author": "그뢰이재됬냐",
-        "published": "1 시간 전",
-        "body": "옛날엔 교행 대부분 교사를 부러워했었는데\n요새는 반대야?"
-      },
-      {
-        "author": "디쿠벵두",
-        "published": "1 시간 전",
-        "body": "지금시대에 연봉8천이 자랑인가 한달에 300저금은 가능하려나"
-      }
-    ],
-    "archived_at": "2026-08-20T22:16:42"
+    "archived_at": "2026-08-20T22:16:42",
+    "archived_comment_count": 2,
+    "comment_archive_version": 2
   },
   {
     "id": "720251368",
@@ -614,14 +1039,9 @@
     "votes": "169",
     "comments": "101",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "락스온더락",
-        "published": "1 시간 전",
-        "body": "좆찰새끼들 야사권코립 타령 한번만 더해봐 ㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:17:12"
+    "archived_at": "2026-08-20T22:17:12",
+    "archived_comment_count": 9,
+    "comment_archive_version": 2
   },
   {
     "id": "720250953",
@@ -631,59 +1051,9 @@
     "votes": "215",
     "comments": "124",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "훈디판다",
-        "published": "4 시간 전",
-        "body": "뭐 저러냐 인간이"
-      },
-      {
-        "author": "가로쉬",
-        "published": "4 시간 전",
-        "body": "시벌련이 온갖 계기를 다 제공해놓고 왜 그러냐니 ㅋㅋ"
-      },
-      {
-        "author": "앙타코띠",
-        "published": "4 시간 전",
-        "body": ""
-      },
-      {
-        "author": "파이리꼬리",
-        "published": "3 시간 전",
-        "body": "꼴보기싫다 라는 표현을 하는 년이랑 결혼을 하다니. 무덤으로 들어갔네.."
-      },
-      {
-        "author": "시비좀그만걸자",
-        "published": "3 시간 전",
-        "body": "남편에 대한 존중과 배려가 하나도 없네\n본인 하고싶은건 냅다 지르면서 말이야"
-      },
-      {
-        "author": "웃으며겜합시다",
-        "published": "3 시간 전",
-        "body": "니가\n선택한\n한녀다"
-      },
-      {
-        "author": "레벨한우도살자",
-        "published": "2 시간 전",
-        "body": "어항 또 사도 뭐라고 안하는 우리 마누라 사랑합니다"
-      },
-      {
-        "author": "HUoAK",
-        "published": "2 시간 전",
-        "body": "저거 한번으로 저렇게는 안된다"
-      },
-      {
-        "author": "파라부트",
-        "published": "13 분 전",
-        "body": "진짜 한녀랑 결혼 왜 하는거냐?? 해외 가보면 주재원/ 파견러들도 한국인 술집 절대 안간다 병신같은 다양성 억압, 눈치주기, 표독한 표정 찌푸리기 무조건 있는데"
-      },
-      {
-        "author": "파라부트",
-        "published": "12 분 전",
-        "body": "ㄹㅇ 나는 거를수 있다는 놈들 여시가 80만이 넘고 표독더쿠 월 실이용수 6600만임. 뭔 니가 만나는 한녀는 얼굴도 괜찮은데 돈도 모았고 개념도 있고 남편 하는말 다 존중해주고 취향 입맛 포용해주고 할거같음? 존나 극소수인데 다 채가고 없지"
-      }
-    ],
-    "archived_at": "2026-08-20T22:17:31"
+    "archived_at": "2026-08-20T22:17:31",
+    "archived_comment_count": 35,
+    "comment_archive_version": 2
   },
   {
     "id": "720248220",
@@ -693,34 +1063,9 @@
     "votes": "124",
     "comments": "55",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "부르기어려운닉네임",
-        "published": "5 시간 전",
-        "body": "자폐아동한테 고양이 붙여주면 되게 좋다는얘기를 좀 들었음\n서로 아껴주면서 잘 있는다고"
-      },
-      {
-        "author": "묘성이",
-        "published": "5 시간 전",
-        "body": "생각보다 큰도움은 안됨, 정서적 안정은 되는데 결국 인간의 소통에는 도움이 안되고 오히려 늦출수도 있음"
-      },
-      {
-        "author": "정답없음",
-        "published": "4 시간 전",
-        "body": "자폐 부모는 자식의 정상화를 바라는게 아니라\n정서적 안정을 원하는 거임\n물론 소통의 정상화 인격의 정상화 정서의 정상화를 궁극적으로 원하겠지 우리 아이가 나아져서 나 없이도 살아갈 수 있겠구나\n하지만 정서적 안정이 1차원적이고 2차원적인 목표임\n(사촌이 그랬고 내 중학교 짝궁이 그랬음)"
-      },
-      {
-        "author": "개갓겜테라리아",
-        "published": "4 시간 전",
-        "body": "감동적인 글인데 주변사람들 왜 이렇게 말 좆같이 하는 사람들이 많냐\n다 한사람인가"
-      },
-      {
-        "author": "부마루불",
-        "published": "4 시간 전",
-        "body": "그런 사람도 하나는 있어야지\n희망고문만 받으면 어떡해"
-      }
-    ],
-    "archived_at": "2026-08-20T22:17:58"
+    "archived_at": "2026-08-20T22:17:58",
+    "archived_comment_count": 17,
+    "comment_archive_version": 2
   },
   {
     "id": "720246323",
@@ -730,59 +1075,9 @@
     "votes": "96",
     "comments": "40",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "읏흥",
-        "published": "8 시간 전",
-        "body": "다..들 점심먹심들.. 먹고 와요."
-      },
-      {
-        "author": "Ultragear",
-        "published": "8 시간 전",
-        "body": "34이면 좀..."
-      },
-      {
-        "author": "라우페이",
-        "published": "8 시간 전",
-        "body": "딱봐도 백두혈통이네"
-      },
-      {
-        "author": "박제",
-        "published": "7 시간 전",
-        "body": "저런 사람은 그냥 병먹금이 답임\n사회생활 하면서 사회랑 섞이기 싫은 사람들이니까 알아서 하겠지 뭐 ㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "장우",
-        "published": "7 시간 전",
-        "body": "'개붕씨 여기 학교 아니고 회사구요. 눈치 좀 보면서 말씀 하세요.'\n?? : 아니 제가 못할 말 했나요? 이정도는 말할 수 있는거 아니에요? 민주사회에서?\n안 알려줄 거면 얘기 하지 마세요."
-      },
-      {
-        "author": "시라누이Q",
-        "published": "7 시간 전",
-        "body": "맨새끼네 맨새끼"
-      },
-      {
-        "author": "하위헌스",
-        "published": "5 시간 전",
-        "body": ""
-      },
-      {
-        "author": "배똘",
-        "published": "3 시간 전",
-        "body": "맛집은 씨발 폭행하고 싶네"
-      },
-      {
-        "author": "Alchemy",
-        "published": "2 시간 전",
-        "body": "사장한테 아빠나 큰아빠, 삼촌 하면 다 이해되는 행동이됨"
-      },
-      {
-        "author": "타운트",
-        "published": "2 시간 전",
-        "body": "이쁘고 젖탱이 크면 저래도 됨"
-      }
-    ],
-    "archived_at": "2026-08-20T22:18:21"
+    "archived_at": "2026-08-20T22:18:21",
+    "archived_comment_count": 43,
+    "comment_archive_version": 2
   },
   {
     "id": "720242933",
@@ -792,54 +1087,9 @@
     "votes": "162",
     "comments": "109",
     "published": "10 시간 전",
-    "archived_comments": [
-      {
-        "author": "다주택중과세폐지",
-        "published": "5 시간 전",
-        "body": "저런 상사 ㅈㄴ싫더라\n찍던말던 끝까지 당당하게 쳐먹던가\n왜 찍냐고 하는거면 다른곳에 알려지면\n그 행동이 창피하고 곤란하단거자나\n그럴짓을 왜하지"
-      },
-      {
-        "author": "아라그니아",
-        "published": "3 시간 전",
-        "body": "저럴거면 차라리 가격이 낮은 다른걸로 5인분 사오면 안될까 영포티 이하는 밥이랑 국 고집 잘 안하는데"
-      },
-      {
-        "author": "속이안좋아",
-        "published": "3 시간 전",
-        "body": "개주작아님? 시발 요즘 만원짜리 저런 도시락이 어딨음?"
-      },
-      {
-        "author": "팡파루엣",
-        "published": "3 시간 전",
-        "body": "사주고 욕먹는 방식중 탑티어네 ㅋㅋ"
-      },
-      {
-        "author": "와촌짱",
-        "published": "3 시간 전",
-        "body": "먹는걸로 치사하게 왜저러냐 주질 말던가"
-      },
-      {
-        "author": "잠왕ㅇ",
-        "published": "3 시간 전",
-        "body": "차라리 좀 더 싼거로 5인분을 시키면 되잖아"
-      },
-      {
-        "author": "냥팔자가상팔자",
-        "published": "3 시간 전",
-        "body": "이거 해병대 훈련소에서 본건대"
-      },
-      {
-        "author": "굿굿굿",
-        "published": "2 시간 전",
-        "body": "회사에서 4개 시켜주면 5인이서 돈 걷어서 하나만 추가로 시키면 되자나 뭘 그냥 받아 처 먹기만 하냐 회사가 일단 개 ㅈ 같은데 그냥 저러고 먹는 사람들도 답답하네"
-      },
-      {
-        "author": "라만챠",
-        "published": "1 시간 전",
-        "body": "0.7이 아니라 0.8인데"
-      }
-    ],
-    "archived_at": "2026-08-20T22:18:35"
+    "archived_at": "2026-08-20T22:18:35",
+    "archived_comment_count": 18,
+    "comment_archive_version": 2
   },
   {
     "id": "720242126",
@@ -849,59 +1099,9 @@
     "votes": "204",
     "comments": "77",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "DuobleA",
-        "published": "7 시간 전",
-        "body": "우리집 뽀삐…"
-      },
-      {
-        "author": "정보사령부",
-        "published": "3 시간 전",
-        "body": "내곁에 오랫동안 건강히 있어다오!"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "나쁜일이 아니라면 저렇게 확고한 취미 있는게 부럽더라"
-      },
-      {
-        "author": "사람판별기",
-        "published": "6 시간 전",
-        "body": "콘솔 써가며 노는 거 재밌긴 함. ㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "헌트릭스",
-        "published": "6 시간 전",
-        "body": "옛날에 노홍철이 하던짓 같은데 ㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "코코아맛있어",
-        "published": "4 시간 전",
-        "body": "내 경험상 싸이키가 최고였음"
-      },
-      {
-        "author": "천무하적",
-        "published": "3 시간 전",
-        "body": "진짜 광기네 좋은 의미로"
-      },
-      {
-        "author": "우쥬설아",
-        "published": "3 시간 전",
-        "body": "성덕이네...ㄷㄷㄷ\n업계인한테 즉시전력감이라고 칭찬도받고 행복하겠다"
-      },
-      {
-        "author": "그치만이렇게하지않으면",
-        "published": "2 시간 전",
-        "body": "와 집에 저걸 두네\n열기 괜찮나?"
-      },
-      {
-        "author": "LN2폭발준비",
-        "published": "54 분 전",
-        "body": "스모그 키다가 화재 신고 당한 적 있을 거 같음"
-      }
-    ],
-    "archived_at": "2026-08-20T22:20:44"
+    "archived_at": "2026-08-20T22:20:44",
+    "archived_comment_count": 28,
+    "comment_archive_version": 2
   },
   {
     "id": "720241950",
@@ -911,59 +1111,9 @@
     "votes": "221",
     "comments": "76",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "Elkori",
-        "published": "6 시간 전",
-        "body": "범죄자 컷 ㅋㅋ"
-      },
-      {
-        "author": "낌끼유",
-        "published": "6 시간 전",
-        "body": "ㅋㅋㅋ 재밌네"
-      },
-      {
-        "author": "콘푸로스트",
-        "published": "5 시간 전",
-        "body": "집유기간ㅋㅋㅋㅋㅋㅋㅋ오늘만 사는 새끼였네"
-      },
-      {
-        "author": "쿠폰아까워",
-        "published": "5 시간 전",
-        "body": "집윤데도 저러네ㅋㅋㅋ"
-      },
-      {
-        "author": "락스계",
-        "published": "5 시간 전",
-        "body": "집유는 교화가댐? ㅋㅋㅋ"
-      },
-      {
-        "author": "출산맛집대한민국",
-        "published": "5 시간 전",
-        "body": "ㅋㅋㅋㅋ 찍다걸려놓고 또찍네"
-      },
-      {
-        "author": "리르으라를",
-        "published": "5 시간 전",
-        "body": "저 정도면 진짜 중독아니냐?\n집유기간이고 전과가 있는데도 또 저런다고?\n저건 진짜 치료받아야 할거같은데....."
-      },
-      {
-        "author": "리온",
-        "published": "5 시간 전",
-        "body": "집유인데 저지랄 할 정도면 그냥 습관이다 어휴 씨 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "Lvofpp",
-        "published": "3 시간 전",
-        "body": "재연장면이 아니었어...???"
-      },
-      {
-        "author": "백설보추",
-        "published": "2 시간 전",
-        "body": "저게  중독되면 범죄인걸 알면서도 하는거지 성도착증인듯"
-      }
-    ],
-    "archived_at": "2026-08-20T22:21:00"
+    "archived_at": "2026-08-20T22:21:00",
+    "archived_comment_count": 32,
+    "comment_archive_version": 2
   },
   {
     "id": "720240480",
@@ -973,59 +1123,9 @@
     "votes": "135",
     "comments": "77",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "줄건줘",
-        "published": "2 시간 전",
-        "body": ""
-      },
-      {
-        "author": "구멍",
-        "published": "7 시간 전",
-        "body": "재밌겠다.. 난 근데 이제 방수방진 없으면 못쓴다 ㅠ"
-      },
-      {
-        "author": "헬조선반도",
-        "published": "7 시간 전",
-        "body": "'혁'   '신'"
-      },
-      {
-        "author": "님금임은벗거벌",
-        "published": "7 시간 전",
-        "body": "20년전 폰들이 개성은 오졌지"
-      },
-      {
-        "author": "즐기시게냅둬",
-        "published": "7 시간 전",
-        "body": "부품수리 DIY에 의의가 있을듯\n모듈화라고 해봤자 딱히 특별하게 더 할 수 있는건 거의 없는듯"
-      },
-      {
-        "author": "새콤달콤동치미",
-        "published": "7 시간 전",
-        "body": "LG폰 옵티머스 LTE때부터 썼었는데 걍 폰 수명이 2년을 못 넘김.\n내가 하드하게 게임을 하는것도 아니고, 하루 30분 남짓하고 자기전에 웹툰 30분 남짓 보고\n그 외에는 그냥 일상적인 통화가 전부였는데 그렇게 써도 폰이 2년을 못 넘기고 어느 날 안켜짐.\n뷰2까지 쓰다가 걍 그 뒤로 갤럭시로 갈아탔다."
-      },
-      {
-        "author": "년 째 과일장사",
-        "published": "7 시간 전",
-        "body": "프로젝트 아라 존나 기대했는데"
-      },
-      {
-        "author": "ㅇ益ㅇ",
-        "published": "6 시간 전",
-        "body": "저 쓰레기를 제이슨 스타뎀까지 섭외해가며 홍보함 ㅋㅋㅋ"
-      },
-      {
-        "author": "공갈포",
-        "published": "3 시간 전",
-        "body": "엘지 g2 괜찮다고 해서 써봤는데 최적화고 뭐고 간에 업무상 통화할 일이 많았는데 오지도 않은 전화가 부재중도 아니고 매너콜로 자꾸 뜨는거 보고 이러다 큰일나겠다 싶어서 갤럭시s7 엣지로 넘어간 기억난다. 화면 두번터치하면 켜고 꺼지는거 처음 싸봤는데 그거 하나만 편했던 기억이 있네"
-      },
-      {
-        "author": "감자",
-        "published": "48 분 전",
-        "body": "저 모듈폰 떨어트리면 배터리 분리된다는 소리 있었음.."
-      }
-    ],
-    "archived_at": "2026-08-20T22:21:18"
+    "archived_at": "2026-08-20T22:21:18",
+    "archived_comment_count": 34,
+    "comment_archive_version": 2
   },
   {
     "id": "720239458",
@@ -1035,59 +1135,9 @@
     "votes": "141",
     "comments": "145",
     "published": "10 시간 전",
-    "archived_comments": [
-      {
-        "author": "앙타코띠",
-        "published": "4 시간 전",
-        "body": "어차피 최종보스는 검은수염 아님?"
-      },
-      {
-        "author": "닭칼국수",
-        "published": "3 시간 전",
-        "body": "날개 윗부분 새같긴 하네"
-      },
-      {
-        "author": "털달린바퀴벌레",
-        "published": "3 시간 전",
-        "body": "얘가 ㅁ ㅓㄴ 최종보스야 최종보스는 검은수염이지"
-      },
-      {
-        "author": "뚜루뚜빠라바라",
-        "published": "3 시간 전",
-        "body": "캬 빨리 다음화 보고싶다"
-      },
-      {
-        "author": "그려그럼그램",
-        "published": "2 시간 전",
-        "body": "임펠타운 마젤란 삼켰나"
-      },
-      {
-        "author": "심도령",
-        "published": "1 시간 전",
-        "body": "오 날개가 악마날개가 아니라 새 날개처럼 보이네\n앵무새설이 정설이되네"
-      },
-      {
-        "author": "타운트",
-        "published": "1 시간 전",
-        "body": "그냥 씨발 빨리 앵무모드나 되라고 ㅋㅋ"
-      },
-      {
-        "author": "도루묵이",
-        "published": "1 시간 전",
-        "body": "난 나루토 디자인이 블리치보다 훨 나은디. 아카츠키 깔쌈하고 담백하면서 임팩트 있고"
-      },
-      {
-        "author": "문명의붕괴",
-        "published": "1 시간 전",
-        "body": "앵무새야?"
-      },
-      {
-        "author": "친뽀다이슷끼",
-        "published": "22 분 전",
-        "body": "앵무새 들키니까 더 ㅈ박은 디자인으로 바꾼거아녀? ㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:21:28"
+    "archived_at": "2026-08-20T22:21:28",
+    "archived_comment_count": 2,
+    "comment_archive_version": 2
   },
   {
     "id": "720239449",
@@ -1097,54 +1147,9 @@
     "votes": "172",
     "comments": "109",
     "published": "8 시간 전",
-    "archived_comments": [
-      {
-        "author": "중갑부대1",
-        "published": "6 시간 전",
-        "body": "지농 예금 이벤트 하는거보면 가능할 것 같기도 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "이오타쿠노미새키들",
-        "published": "3 시간 전",
-        "body": "지농은 말라죽지 자살골은 안참"
-      },
-      {
-        "author": "개똥말똥소똥",
-        "published": "6 시간 전",
-        "body": "와 작년이랑 반응이 너무 크게 틀린데?"
-      },
-      {
-        "author": "힘내라",
-        "published": "6 시간 전",
-        "body": "똥글은 좀 퍼오지 말자"
-      },
-      {
-        "author": "엔비디아에물렸다",
-        "published": "5 시간 전",
-        "body": "아무리 읽어도 상식적으로 말이 안돼서 3번을 읽었는데 역시나였군"
-      },
-      {
-        "author": "네비두라",
-        "published": "4 시간 전",
-        "body": "뭔 소린가 했더니\n헛소리 였구만"
-      },
-      {
-        "author": "서어엉자아앙",
-        "published": "3 시간 전",
-        "body": "저런일이 가능하것냐고"
-      },
-      {
-        "author": "도대체없는닉네임이뭔시데발",
-        "published": "3 시간 전",
-        "body": ""
-      },
-      {
-        "author": "개똥철학자",
-        "published": "2 시간 전",
-        "body": "주작같은디"
-      }
-    ],
-    "archived_at": "2026-08-20T22:21:48"
+    "archived_at": "2026-08-20T22:21:48",
+    "archived_comment_count": 11,
+    "comment_archive_version": 2
   },
   {
     "id": "720239180",
@@ -1154,59 +1159,9 @@
     "votes": "284",
     "comments": "169",
     "published": "10 시간 전",
-    "archived_comments": [
-      {
-        "author": "SE0UL",
-        "published": "2 시간 전",
-        "body": "그들에게 팩트와 이성은 중요하지 않음 ㅋㅋ"
-      },
-      {
-        "author": "NMNSe",
-        "published": "2 시간 전",
-        "body": ""
-      },
-      {
-        "author": "고랭지오렌지",
-        "published": "2 시간 전",
-        "body": "퉤"
-      },
-      {
-        "author": "코인의정석",
-        "published": "2 시간 전",
-        "body": "이 분 하버드 출신에\n듣보 교수도 아니고 석좌교수라 우리나라 학계 상위 0.0x%인데\n입맛 안맞다고 엄청 까이네ㅋㅋㅋㅋ\n무식한놈이 더 발언권 쎈세상이다 요샌\n우리나라는 지식인들이 괜히 미디어 노출 싫어하는게 아닌듯"
-      },
-      {
-        "author": "d개r드i리p퍼",
-        "published": "57 분 전",
-        "body": "연락한적 없는데 연락했다고 해서 까이고 있는거 아님? 페미니즘 발언도 한거고?\n학계 상위 0.0x%인지 뭔지 하면 어떤말을 해도 오오 교수님이 말씀하셨다 찬양하라 해야됌?"
-      },
-      {
-        "author": "닥치고눈팅7년",
-        "published": "55 분 전",
-        "body": "학계 상위 몇퍼센트면 개소리해도 다 받아줘야됨?\n철구는 너보다 돈 존나 많이 버니깐 아닥해야됨이랑 똑같은 소리하네ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "powerdry",
-        "published": "38 분 전",
-        "body": "????\n학자로서 엄청난 커리어나 업적이 있다고 해도 그 학술분야에 한정될 뿐, 그게 다른 어떤것도 담보하지 않음."
-      },
-      {
-        "author": "익명",
-        "published": "",
-        "body": "님 논리면 님 초졸 병신에 존나 무식한 새끼니까 니가 하는 말은 일고의 가치도 없을꺼 같은데요. 그치만 무식한 남초안티페미사이트에 오신김에 설명좀 할까 합니다.  저 교수님은 페미니스트에 길고양이보호자인데 당연히 옹호하고 믿어줘야 하죠. 맞습니다. 그니까 저 교수님이 말한대로 페미니스트가 되야하고 길고양이 보호하자고 했으니까 그대로 따라가실꺼죠? 페미 해야겠죠? ㅇㅋ? 에? 페미는 싫다고요? 그럼 아까 한말은 뭐에요? ㅋㅋ"
-      },
-      {
-        "author": "하고싶은닉이12자가넘는",
-        "published": "5 분 전",
-        "body": "권위에 맞서지말라 이걸 몸소 보여주시네 ㅋㅋ"
-      },
-      {
-        "author": "솜털보지",
-        "published": "1 시간 전",
-        "body": "스윗"
-      }
-    ],
-    "archived_at": "2026-08-20T22:22:15"
+    "archived_at": "2026-08-20T22:22:15",
+    "archived_comment_count": 37,
+    "comment_archive_version": 2
   },
   {
     "id": "720235991",
@@ -1216,59 +1171,9 @@
     "votes": "223",
     "comments": "184",
     "published": "10 시간 전",
-    "archived_comments": [
-      {
-        "author": "하위헌스",
-        "published": "6 시간 전",
-        "body": ""
-      },
-      {
-        "author": "크래프트블랙",
-        "published": "4 시간 전",
-        "body": "맞말 아닌가??\n개드립식 흑백논리 나온건지 반응이 이상하네"
-      },
-      {
-        "author": "dkqndk",
-        "published": "4 시간 전",
-        "body": "근데 은근 맞는 말도 섞으면서 지 입맛에 맞게 말하고 있네. 호주나 다른 나라에서 벌어지는 지표로 나타낸걸로 고양이를 살처분해야한다는것에는 우리나라에 맞는건가? 라고 말하는게 물론 다를 순 있겠지 하지만, 새덕후님은 늘상 새를 보고 촬영하면서 현장에 가는 사람임. 즉 전쟁으로 표현하면 최전선에 나가 전쟁을 하고 현장을 보는 사람이라는 얘기임. 아마 처음 한두번으로 그런건 아니겠지, 계속 유튜브 하면서 몇년동안 누적되어오던게 있었던거고 고양이가 새를 죽이는 모습들 꼭 새 뿐만 아니라 거기의 희생된 개체들을 보면서 또 사람들은 고양이를 애호하는 비 이성적인 모습들을 보면 언젠가 고양이가 씨를 말라 죽일거다라는 결론은 거의 맞다고 보면 되. 조선시대 하물며 고려시대도 아니고 한반도에 호랑이가 있던 시절은 이미 현대 대한민국에서 사라졌음. 그렇기에 외래종인 고양이가 한반도에 들어왔고 최상위 포식자로 군김하고 있어. 그나마 수리부엉이가 그 고양이 위로 군림하고 있는데 고양이를 음식으로 취급하고 동물은 극소수에 가깝지. 하지만 고양이는 식사때뿐만 아니라 놀이로 사냥을 즐기고 있고 죽지 말아야할 생명체까지 죽어나가고 있는데, 현장에서 지켜본 사람이 틀린말을 할까? 지표가 중요하다는게 과연 맞을까? 난 좀 아니라고 생각해.\n한국에 지표가 없으니까 현장에 있는 사람을 더 신뢰할 필요가 있는거지. 새덕후가 고양이를 살처분해서 얻는 이득이 뭘까? 그것만 좀 생각해보자고, 난 솔직히 없다고 보는게 맞는데? 그럼 그저 자연을 생각하는 마음에 진정성있는 논리를 거쳐 나온 현장직에 있던 사람의 답이 아닐까? 계속 아니다 해봐.\n지금 시각에서 당장에 보이지 않을 뿐인 이 현상..그냥 당장 나몰라라 하는데,\n새와 동물은 사라지고 고양이만 득실득실한 대한민국 진짜 궁금하다.\n그땐 이미 다 늦었겠지. 그렇게 되면 지표만 찾던 어리석은 대한민국의 지식인들과 애호가들의 역사적 결과의 반증이겠지.\n그래서 궁금해. 그런데 재밌게도 그때가 되면 다 나몰라라 하겠지. 그럴거라고 봐."
-      },
-      {
-        "author": "르세라접힘",
-        "published": "4 시간 전",
-        "body": "이게 덧글에서도 보이는게 . . 진짜 길고양이한태 금전적 피해를 본 사람이 있다면 길고양이 캣맘 캣대디한태 좋은 시선은 안감\n나는 집에 고양이 키우지만 길고양이한태는 밥도 안주는대 집 앞에 고양이 밥 주는 샊땜에 차 안에서 3년째 매년 한마리씩 뒤져서 수리비만 엄청나게 나옴"
-      },
-      {
-        "author": "피냐타",
-        "published": "2 시간 전",
-        "body": "일반인도 체감하는걸 못느낀다고?"
-      },
-      {
-        "author": "종이면봉",
-        "published": "2 시간 전",
-        "body": "그 원래 한 분야에 권위있는 교수가 사라져야 그다음에 연구가 활발하게 업그레이드 된다고 하잖아, 저분이 권위있고 대단한 사람은 맞는데 이제 그만하실때가 된거지, 새로운 의견을 받아들일 생각이 없으니깐"
-      },
-      {
-        "author": "IIlIIllllI",
-        "published": "1 시간 전",
-        "body": "이화여대 교수 ㄷㄷ"
-      },
-      {
-        "author": "하드코어미식가",
-        "published": "1 시간 전",
-        "body": "띠용!"
-      },
-      {
-        "author": "게이브뉴웰",
-        "published": "1 시간 전",
-        "body": "예전에 등대지기가 고양이 한마리 데려갔다가 그 섬에만 서식하는 새가 멸종한 적도 있는데"
-      },
-      {
-        "author": "네셔널디스커버리mlb이름만빌린옷",
-        "published": "50 분 전",
-        "body": "아니 할아버지 되게 진실된거처럼 말하셧는데..."
-      }
-    ],
-    "archived_at": "2026-08-20T22:22:48"
+    "archived_at": "2026-08-20T22:22:48",
+    "archived_comment_count": 49,
+    "comment_archive_version": 2
   },
   {
     "id": "720233050",
@@ -1278,59 +1183,9 @@
     "votes": "154",
     "comments": "74",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "일진교육미이수자",
-        "published": "9 시간 전",
-        "body": "보면 볼수록 똥꼬 찢어버리고 싶은 새끼.."
-      },
-      {
-        "author": "닉네임짓기제일어렵",
-        "published": "5 시간 전",
-        "body": "오히려 쾌감 느낄듯"
-      },
-      {
-        "author": "BlairAthol",
-        "published": "8 시간 전",
-        "body": "저때 더 사야 했다 ㅅㅂ"
-      },
-      {
-        "author": "양태진짜나빠요",
-        "published": "8 시간 전",
-        "body": "그와 중에 삼성로고 보니 자부심은 느껴지네"
-      },
-      {
-        "author": "나라를위한노인은없다",
-        "published": "7 시간 전",
-        "body": "창고에 evo 4tb 2개 , 860pro 1tb 20개정도 있는데 좋은거지? 워크에서 나온거라 as 안된다고 정상작동하는데 그냥 킵해놨는데"
-      },
-      {
-        "author": "스미티워밴재거맨젠슨",
-        "published": "7 시간 전",
-        "body": "애플 상폐하고 파산했으면 좋겠어"
-      },
-      {
-        "author": "에궁님",
-        "published": "6 시간 전",
-        "body": "저따위로 하는데도 산다고 하면 또 넙죽 팔잖아\n아무리 자본주의에 돈이 최고라지만 좆같아서 너한테는 안팔아 개새끼야!는 불가능한걸까"
-      },
-      {
-        "author": "인터넷",
-        "published": "6 시간 전",
-        "body": "돈은 죄가 없어요~\n대신에 애플처럼 통수짓 못하게 무조건 선입금 후납 계약식으로 바꼈다더라"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "기업끼리 거래하는데 자존심이 어딨겠냐\n다만 예전처럼 개지랄못떨게 확실하게 정리하고 파는거지"
-      },
-      {
-        "author": "각주미니어처",
-        "published": "2 시간 전",
-        "body": "못(안) 팜\n쟤들 아니여도 현재 수요 조차 감당할 공급 라인이 없음\n너한테는 안팔아 개새끼야!는 불가능해도 꼬우면 니가 어쩔껀데? 줄서 병신새끼야! 하면서 보자마자 시무룩해지는 개똥같은 번호표는 줄 수 있음"
-      }
-    ],
-    "archived_at": "2026-08-20T22:23:24"
+    "archived_at": "2026-08-20T22:23:24",
+    "archived_comment_count": 26,
+    "comment_archive_version": 2
   },
   {
     "id": "720233691",
@@ -1340,59 +1195,9 @@
     "votes": "106",
     "comments": "91",
     "published": "10 시간 전",
-    "archived_comments": [
-      {
-        "author": "만원과금",
-        "published": "9 시간 전",
-        "body": "그러니까 이게 결국 외지주라는거지?"
-      },
-      {
-        "author": "vitadolce",
-        "published": "9 시간 전",
-        "body": "그래도 구청장급은 넘어섰잖아 한잔해"
-      },
-      {
-        "author": "해으응",
-        "published": "9 시간 전",
-        "body": "아가멤논이 크면 어른멤논 엌ㅋ"
-      },
-      {
-        "author": "진짜로",
-        "published": "4 시간 전",
-        "body": "응애멤논"
-      },
-      {
-        "author": "니소그",
-        "published": "4 시간 전",
-        "body": "한반도 내의 전쟁이라는 것도 전세계로 보면 스케일 엄청 작은 거라..."
-      },
-      {
-        "author": "팥팥콩팥",
-        "published": "4 시간 전",
-        "body": "ㄴㄴ 오디세우스 스페인 동쪽 바르셀로나 인근까지 떠내려갔었다. 어떤 알못 새끼가 이딴 자료를 만들어서 퍼뜨리노?"
-      },
-      {
-        "author": "sil",
-        "published": "1 시간 전",
-        "body": "왕성이 판타지에서 보던 웅장함이 아니라 반쯤 허물어진 느낌이라 현실고증하면 이런느낌이구나 했음"
-      },
-      {
-        "author": "scendo",
-        "published": "1 시간 전",
-        "body": "저게 우습게 느껴지면 빠가사리 아닌가"
-      },
-      {
-        "author": "powerdry",
-        "published": "22 분 전",
-        "body": "뻥뚫린 도로 차타고 다니니 경상남도가 우스워 보이지\n걸어가고 말타고 가봐라....."
-      },
-      {
-        "author": "LaNoir",
-        "published": "4 분 전",
-        "body": "아무리 그래도 8년 헤멜거같진 않아.."
-      }
-    ],
-    "archived_at": "2026-08-20T22:24:07"
+    "archived_at": "2026-08-20T22:24:07",
+    "archived_comment_count": 11,
+    "comment_archive_version": 2
   },
   {
     "id": "720228778",
@@ -1402,59 +1207,9 @@
     "votes": "143",
     "comments": "88",
     "published": "9 시간 전",
-    "archived_comments": [
-      {
-        "author": "카오",
-        "published": "8 시간 전",
-        "body": "저걸 들을 수 있을 정도로 말했으면 이미 트레이너 귀에 들어가서 저 할배 환불 처리 당했을 텐데 지랄을 하네 ㅋㅋ"
-      },
-      {
-        "author": "또한번봄",
-        "published": "8 시간 전",
-        "body": "저런 할배가 헬스장에 올리가?"
-      },
-      {
-        "author": "오르다말아",
-        "published": "6 시간 전",
-        "body": "실패한 망생이들의 라스트찬스"
-      },
-      {
-        "author": "할말은하는새끼",
-        "published": "6 시간 전",
-        "body": "시발 왜 가족엔딩이 아니냐"
-      },
-      {
-        "author": "컴잘알",
-        "published": "6 시간 전",
-        "body": "우리동네 헬스장에는 저런일이 안일어나서 다행이군"
-      },
-      {
-        "author": "할머님사랑꾼",
-        "published": "6 시간 전",
-        "body": "파딱글은 걍 읽는 시간 자체가 인생의 손해임"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "진정한 헬창들은 옆에서 뭔 지랄을 하던 근육에 집중하느라 신경 안쓸텐데"
-      },
-      {
-        "author": "년뒤",
-        "published": "4 시간 전",
-        "body": "저러면 관장이 쫒아냄\n몸에 잔뜩 낙서 한 애들도 가리고 오던지 오지말던지 하라고 하는 판국에 ㅋㅋ"
-      },
-      {
-        "author": "zensation2",
-        "published": "3 시간 전",
-        "body": "4,50대와 예쁘심이 같이 나오는건 이영애급 아니면 하지마라"
-      },
-      {
-        "author": "천고뉴비",
-        "published": "3 시간 전",
-        "body": "좆위터\n파딱"
-      }
-    ],
-    "archived_at": "2026-08-20T22:24:27"
+    "archived_at": "2026-08-20T22:24:27",
+    "archived_comment_count": 39,
+    "comment_archive_version": 2
   },
   {
     "id": "720227961",
@@ -1464,39 +1219,9 @@
     "votes": "154",
     "comments": "56",
     "published": "10 시간 전",
-    "archived_comments": [
-      {
-        "author": "버거는인앤아웃",
-        "published": "7 시간 전",
-        "body": "요즘은 울나라 사람들끼리도 식상하다고 저런 대화 안하지 않냐? ㅎㅎㅎㅎㅎ"
-      },
-      {
-        "author": "퍄퍄존슨",
-        "published": "1 시간 전",
-        "body": "저런 개드립 대화는 좋아하는데 잘못하면 부장님 개그가 되서 잘하는 사람 아니면 잘 안 하지"
-      },
-      {
-        "author": "헌트릭스",
-        "published": "6 시간 전",
-        "body": "진짜 웃긴사람들이네 ㅋㅋㅋㅋ 전부 하는짓이 귀엽다 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "개소리에과민반응",
-        "published": "5 시간 전",
-        "body": "뭔 뇌에서 혼동이 온다 ㅋㅋㅋ"
-      },
-      {
-        "author": "주차뿔라",
-        "published": "4 시간 전",
-        "body": "스킨패치 오류났네 ㅋㅋ"
-      },
-      {
-        "author": "플랫브라운",
-        "published": "30 분 전",
-        "body": "OS는 다 한국인이네 ㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:25:04"
+    "archived_at": "2026-08-20T22:25:04",
+    "archived_comment_count": 9,
+    "comment_archive_version": 2
   },
   {
     "id": "720215194",
@@ -1506,59 +1231,9 @@
     "votes": "101",
     "comments": "70",
     "published": "11 시간 전",
-    "archived_comments": [
-      {
-        "author": "야니네코",
-        "published": "10 시간 전",
-        "body": "부럽다 기증신청해놨는데 10년째 연락한번안왔우"
-      },
-      {
-        "author": "더블대시",
-        "published": "9 시간 전",
-        "body": "나도 신청하고 기한까지 몇 년 안남은 상태인데\n내 기증까지 필요할만큼 아픈 사람이 많지 않아서 다행이라고 생각하려고"
-      },
-      {
-        "author": "체크레인",
-        "published": "9 시간 전",
-        "body": "신청한지 7년째인데 아직도 연락이 없따.."
-      },
-      {
-        "author": "감귤와이파이",
-        "published": "8 시간 전",
-        "body": "넌 한사람을 살렸다 고맙다"
-      },
-      {
-        "author": "물질전달",
-        "published": "6 시간 전",
-        "body": "10년도 전에 했는데 연락없어서 다행"
-      },
-      {
-        "author": "닉네임짓기제일어렵",
-        "published": "5 시간 전",
-        "body": "파이어 하게되면 헌혈계속 나가야지"
-      },
-      {
-        "author": "배똘",
-        "published": "4 시간 전",
-        "body": "너 멋지다 뽀뽀받을래?"
-      },
-      {
-        "author": "날마다잠자",
-        "published": "3 시간 전",
-        "body": "멋지다"
-      },
-      {
-        "author": "Brownie",
-        "published": "3 시간 전",
-        "body": "10년전에 했는데 연락이 안와..."
-      },
-      {
-        "author": "두루도리",
-        "published": "2 시간 전",
-        "body": "너 진짜 대단한일 한거야\n진짜 엄청난 일을 한거야 칭찬 100번 1000번 해주고 싶다."
-      }
-    ],
-    "archived_at": "2026-08-20T22:25:26"
+    "archived_at": "2026-08-20T22:25:26",
+    "archived_comment_count": 28,
+    "comment_archive_version": 2
   },
   {
     "id": "720225038",
@@ -1568,59 +1243,9 @@
     "votes": "120",
     "comments": "29",
     "published": "11 시간 전",
-    "archived_comments": [
-      {
-        "author": "춤추는삐에로",
-        "published": "2 시간 전",
-        "body": "유치원이면 30초반일수도있음ㅋㅋ"
-      },
-      {
-        "author": "번육개장먹는사람",
-        "published": "11 시간 전",
-        "body": ""
-      },
-      {
-        "author": "뇌절금지",
-        "published": "11 시간 전",
-        "body": "나는 어릴때 뚱뚱해서 너무 못뛰니까 가족들이 하도웃어서 다신 뛰기싫어졌음 ㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "나비에",
-        "published": "11 시간 전",
-        "body": "그거 평생 가니까 애들이 진지하게 웃긴 짓 하면 어른들은 최대한 웃참 해야함ㅋㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "제잘못입니다",
-        "published": "11 시간 전",
-        "body": "당시 엄마 아빠 둘다 야간까지 일했는데 몇시간 자지도 않고 새벽에 김밥싸서 내 운동회 같이 와준거 기억난다"
-      },
-      {
-        "author": "드립잘치고십따",
-        "published": "47 분 전",
-        "body": "ㅠ 크면 기억남 감사하고 죄송한 마음 ㅠ"
-      },
-      {
-        "author": "구름이ㅇ",
-        "published": "11 시간 전",
-        "body": "애들 운동회떄 진짜 엄빠들보고 뛰게 하는거 개애바인듯..\n엄마들은 그래도 설렁설렁 하시는데, 아빠들은 정말 목숨걸고 하더라 에휴.. ㅠㅠ"
-      },
-      {
-        "author": "아호다",
-        "published": "9 시간 전",
-        "body": "군제대 이후 평생 안뛰다가 애 운동회날 뛰다 다리 풀리는분들 많지 ㄲㄲ"
-      },
-      {
-        "author": "가지전사",
-        "published": "6 시간 전",
-        "body": "뭐지 방금 안에 싼다!!! 제목 보고 들어왔는데 왜 엄마가 나와?"
-      },
-      {
-        "author": "아는거나오면링크달아줌",
-        "published": "4 시간 전",
-        "body": "먹먹bait"
-      }
-    ],
-    "archived_at": "2026-08-20T22:25:40"
+    "archived_at": "2026-08-20T22:25:40",
+    "archived_comment_count": 31,
+    "comment_archive_version": 2
   },
   {
     "id": "720223074",
@@ -1630,59 +1255,9 @@
     "votes": "107",
     "comments": "62",
     "published": "11 시간 전",
-    "archived_comments": [
-      {
-        "author": "아냐포저",
-        "published": "2 시간 전",
-        "body": "의자 개비쌈 괜히 현대에서 직접생산 하는게 아님"
-      },
-      {
-        "author": "정씨",
-        "published": "2 시간 전",
-        "body": "외주인걸로 아는데 그것도 한 곳"
-      },
-      {
-        "author": "아냐포저",
-        "published": "1 시간 전",
-        "body": "대유에이텍이나 다스 아니면 현대트랜시스인데 대부분은 트랜시스에서 하지 돈 안되는것만 외주줌"
-      },
-      {
-        "author": "화해가오",
-        "published": "2 시간 전",
-        "body": "누가그럼 직접생산한다고? ㅋㅋ"
-      },
-      {
-        "author": "아냐포저",
-        "published": "1 시간 전",
-        "body": "윗댓참조"
-      },
-      {
-        "author": "고구마우유",
-        "published": "4 시간 전",
-        "body": ""
-      },
-      {
-        "author": "번마",
-        "published": "4 시간 전",
-        "body": "?? 샀는데 저랬다는거임?"
-      },
-      {
-        "author": "번항게",
-        "published": "2 시간 전",
-        "body": "ㄴㄴ 지렸음 아마 물똥싼듯"
-      },
-      {
-        "author": "콩냉이순장고",
-        "published": "2 시간 전",
-        "body": ""
-      },
-      {
-        "author": "상수동카우보이",
-        "published": "방금 전",
-        "body": "고형 건더기 형태는 포함되지 않았으며, 우유 점도 정도의 황토빛 물똥으로 예상됩니다."
-      }
-    ],
-    "archived_at": "2026-08-20T22:26:11"
+    "archived_at": "2026-08-20T22:26:11",
+    "archived_comment_count": 15,
+    "comment_archive_version": 2
   },
   {
     "id": "720220001",
@@ -1692,59 +1267,9 @@
     "votes": "117",
     "comments": "221",
     "published": "8 시간 전",
-    "archived_comments": [
-      {
-        "author": "rclone",
-        "published": "3 시간 전",
-        "body": "https://youtube.com/shorts/XarB-Gk2D5w\n이건가?"
-      },
-      {
-        "author": "무호흡남탓",
-        "published": "3 시간 전",
-        "body": "노래랑 안무가 찰짐"
-      },
-      {
-        "author": "보약탐지견",
-        "published": "2 시간 전",
-        "body": "체이스 인피니티 이쁘다"
-      },
-      {
-        "author": "아기늑대",
-        "published": "2 시간 전",
-        "body": "노래가 좋기도 하고 저 안무에 저 눈빛이 ㅈ사기임"
-      },
-      {
-        "author": "명동콜링",
-        "published": "2 시간 전",
-        "body": "쟤도 멋있는데 도황이 지림"
-      },
-      {
-        "author": "당근이지당근",
-        "published": "1 시간 전",
-        "body": "라이브 보면 도황은 MV랑 다른 느낌\n왜소해보임\n라이브랑 MV랑 차이 없는게 최산\n에이티즈는 최산 원툴그룹 아니냐는 말도 있음"
-      },
-      {
-        "author": "아들아빠",
-        "published": "2 시간 전",
-        "body": "저 눈빛이랑 몸매가 쩌는거같음ㅋㅋ"
-      },
-      {
-        "author": "하루2틀4흘",
-        "published": "2 시간 전",
-        "body": "옛날에 박재범 느낌인가?"
-      },
-      {
-        "author": "카케구루이",
-        "published": "1 시간 전",
-        "body": "헤으응 멋있긴해~"
-      },
-      {
-        "author": "당근이지당근",
-        "published": "1 시간 전",
-        "body": "쟤들 한국에서도 유명했음.\n해외가 돈이 되니까 해외쪽에 집중한거고.\n잘 안알려져서 그렇지 탑급임.\n나라별로 선호하는 아이돌이 다르다던데 남미쪽인가 거기서 1군 아이돌\n근데 남자 아이돌판은 요즘 국내에 알려지는 애들이 적은듯.\n쟤들은 실력도 있고 기본이 됨.\n대학교 축제에 연애인들 온다고해서 구경가면 대부분 축제 몇탕씩 뛰고와서 쉰목소리에 설렁설렁\n실력보고 카메라빨이 쩌는거였네 했었는데\n쟤들은 축제 몇개 돌고 옴 + 안무가 빡세서 죽을것 같은 얼굴로 최선을 다해서 춤추고 노래했음.\n저런 연애인 처음본다 싶어서 아직도 기억함.\n그때가 무명도 아니었는데.\n프로미스나인은 라이브 실력보고 놀랬고 노래실력을 떠나서 축제 느낌들게 놀줄 아는 연애인은 하하\n개인적인 경험"
-      }
-    ],
-    "archived_at": "2026-08-20T22:35:04"
+    "archived_at": "2026-08-20T22:35:04",
+    "archived_comment_count": 26,
+    "comment_archive_version": 2
   },
   {
     "id": "720219779",
@@ -1754,59 +1279,9 @@
     "votes": "112",
     "comments": "50",
     "published": "10 시간 전",
-    "archived_comments": [
-      {
-        "author": "지급요청서",
-        "published": "7 시간 전",
-        "body": "JA!!!!!!"
-      },
-      {
-        "author": "시라누이Q",
-        "published": "6 시간 전",
-        "body": "두 번째 뭐냐 ㅋㅋㅋㅋ 바로 Sieg Heil 마렵네 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "년차드립퍼",
-        "published": "6 시간 전",
-        "body": ""
-      },
-      {
-        "author": "엄마도사람이야",
-        "published": "5 시간 전",
-        "body": "ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "니소그",
-        "published": "3 시간 전",
-        "body": "독일인이 히틀러 개그 치면 그냥 무적치트키잖아\n반칙이야"
-      },
-      {
-        "author": "RESCENE",
-        "published": "2 시간 전",
-        "body": "하이 히틀러!"
-      },
-      {
-        "author": "의사양반과상하이",
-        "published": "1 시간 전",
-        "body": ""
-      },
-      {
-        "author": "뜨거원",
-        "published": "1 시간 전",
-        "body": "와 두번째 미친 ㅋㅋ"
-      },
-      {
-        "author": "번마",
-        "published": "52 분 전",
-        "body": ""
-      },
-      {
-        "author": "그뢰이재됬냐",
-        "published": "27 분 전",
-        "body": "두번째 억양 ㅈ되네 ㅋㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:36:08"
+    "archived_at": "2026-08-20T22:36:08",
+    "archived_comment_count": 1,
+    "comment_archive_version": 2
   },
   {
     "id": "720218634",
@@ -1816,59 +1291,9 @@
     "votes": "106",
     "comments": "60",
     "published": "12 시간 전",
-    "archived_comments": [
-      {
-        "author": "언니",
-        "published": "11 시간 전",
-        "body": "말을 알아듣는 기생 ㅎㅎ"
-      },
-      {
-        "author": "homage",
-        "published": "11 시간 전",
-        "body": "이제 저 여자가 간첩이거나 사이비 종교인이고 트럼트 세뇌 조종한게 밝혀지면 영화 한 편 나올텐데"
-      },
-      {
-        "author": "춤추는삐에로",
-        "published": "19 분 전",
-        "body": "위험해"
-      },
-      {
-        "author": "sksjwu",
-        "published": "8 시간 전",
-        "body": "검은옷 개꼴리네"
-      },
-      {
-        "author": "책임없는쾌락",
-        "published": "6 시간 전",
-        "body": "한자어 첩실보다는 순우리말 좆집을 써주세용^^"
-      },
-      {
-        "author": "K95Platinum",
-        "published": "3 시간 전",
-        "body": "트럼프 좆집~~"
-      },
-      {
-        "author": "하이웨이",
-        "published": "1 시간 전",
-        "body": "서나?"
-      },
-      {
-        "author": "싼디스크",
-        "published": "1 시간 전",
-        "body": "트럼프 취향인가보네"
-      },
-      {
-        "author": "초격아츠",
-        "published": "1 시간 전",
-        "body": "안봐도 비디오네"
-      },
-      {
-        "author": "아이스티",
-        "published": "16 분 전",
-        "body": "빌 클린턴 : ㅎㅎ;"
-      }
-    ],
-    "archived_at": "2026-08-20T22:36:19"
+    "archived_at": "2026-08-20T22:36:19",
+    "archived_comment_count": 13,
+    "comment_archive_version": 2
   },
   {
     "id": "720217559",
@@ -1878,59 +1303,9 @@
     "votes": "159",
     "comments": "85",
     "published": "11 시간 전",
-    "archived_comments": [
-      {
-        "author": "사진조아",
-        "published": "7 시간 전",
-        "body": "흡인력이 맞아 얘들아"
-      },
-      {
-        "author": "퍼리퍼리퍼리퍼리",
-        "published": "7 시간 전",
-        "body": "미친 잠깐 정신놓고보니까 다봤네"
-      },
-      {
-        "author": "사붕이",
-        "published": "7 시간 전",
-        "body": "너무 극과극이네 ㅋㅋ"
-      },
-      {
-        "author": "류사슴",
-        "published": "7 시간 전",
-        "body": "제목이 야망4인조 라네요"
-      },
-      {
-        "author": "린남미소년",
-        "published": "6 시간 전",
-        "body": "미친만력이다... 빨려들어간다"
-      },
-      {
-        "author": "배고픈누렁이",
-        "published": "6 시간 전",
-        "body": "와 시발 존나재밌네"
-      },
-      {
-        "author": "히루",
-        "published": "6 시간 전",
-        "body": "레이디 피스트네 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "시라누이Q",
-        "published": "5 시간 전",
-        "body": "미쳤네 진짜 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "파송송심영탁",
-        "published": "4 시간 전",
-        "body": "약물앞에 남녀가 어딨어!"
-      },
-      {
-        "author": "지하왕국",
-        "published": "3 시간 전",
-        "body": "사마귀도 오독대 아빠 사주받고 보약침 놓으려한건가"
-      }
-    ],
-    "archived_at": "2026-08-20T22:37:34"
+    "archived_at": "2026-08-20T22:37:34",
+    "archived_comment_count": 37,
+    "comment_archive_version": 2
   },
   {
     "id": "720218031",
@@ -1940,59 +1315,9 @@
     "votes": "104",
     "comments": "81",
     "published": "6 시간 전",
-    "archived_comments": [
-      {
-        "author": "쪼아아",
-        "published": "4 시간 전",
-        "body": "곧있으면 지하철때매 공사 또 할탠데"
-      },
-      {
-        "author": "colim",
-        "published": "4 시간 전",
-        "body": "서부간선도 존나 길었는데 여긴 더 심함ㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "우리말지킴이",
-        "published": "4 시간 전",
-        "body": "서울 인천 다니는데 죽을 맛임"
-      },
-      {
-        "author": "킹갓핑크",
-        "published": "4 시간 전",
-        "body": "여기가 민원이 계속들어와서 공사하다 멈추고 하다멈추고해서 더 미뤄졌대"
-      },
-      {
-        "author": "아비렉스",
-        "published": "3 시간 전",
-        "body": "진짜 다 한번 까봤으면 좋겠음 진짜 제대로 하고있는거 맞나 싶을정도로 오래걸려서 이럴거면 처음부터 걍 공사안하고 냅두는게 더 안막힐것같음"
-      },
-      {
-        "author": "애아",
-        "published": "3 시간 전",
-        "body": "저기가 한국의 사그라다 파밀리아 대성당인 것입니까"
-      },
-      {
-        "author": "IIllllIIIlI",
-        "published": "2 시간 전",
-        "body": "개봉역주변 공사 끊임없다\n1992~2001 침수구역으로 지정되서 준공 얼마안된 아파트까지 싹다 재건축 공사들어감\n2006~2016 개봉역앞 남부순환로 지하화사업\n2019~2024 개봉고가 정비(완전 뜯어서 재시공)\n2016~2026 오류ic-개봉1동 남부순환로 평탄화 사업"
-      },
-      {
-        "author": "출퇴헬잠",
-        "published": "2 시간 전",
-        "body": "안전하게 하는거니 개붕이들 기다리쟈"
-      },
-      {
-        "author": "당근이만땅",
-        "published": "2 시간 전",
-        "body": "부마선보다 더 오래걸린다고?"
-      },
-      {
-        "author": "닉으로드립치고싶냐",
-        "published": "1 시간 전",
-        "body": "양재대로 거기도 공사 슬슬 끝날때 되지 않았나"
-      }
-    ],
-    "archived_at": "2026-08-20T22:37:41"
+    "archived_at": "2026-08-20T22:37:41",
+    "archived_comment_count": 33,
+    "comment_archive_version": 2
   },
   {
     "id": "720215342",
@@ -2002,59 +1327,9 @@
     "votes": "135",
     "comments": "79",
     "published": "11 시간 전",
-    "archived_comments": [
-      {
-        "author": "렙호구",
-        "published": "9 시간 전",
-        "body": "작가가 비슷한 사기치다가 걸렸나, 저걸 뭐 어떻게 해석해야 주인공이고 피해자가 되는거임? ㅋㅋ"
-      },
-      {
-        "author": "함부르거",
-        "published": "9 시간 전",
-        "body": "회계 담당 이사가 회사돈 빼돌려서 불법조직에 투자하고 직원들에게는 중고 썩차나 법인차로 타고 다니라는 상황. ㅋㅋㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "뫼에엥",
-        "published": "9 시간 전",
-        "body": "상인은 전투직, 보조직도 아니잖아\n애초에 왜 파티편성한거야;"
-      },
-      {
-        "author": "유루캠",
-        "published": "9 시간 전",
-        "body": "아주 씹쌔끼네 저거"
-      },
-      {
-        "author": "건설안전온열질환",
-        "published": "9 시간 전",
-        "body": "평범한 사업가잖아?"
-      },
-      {
-        "author": "다메다메요",
-        "published": "8 시간 전",
-        "body": "따갚되 희망편 ㄷㄷ"
-      },
-      {
-        "author": "고양이왕",
-        "published": "8 시간 전",
-        "body": "아 루이즈, 시엘이랑 섹스하고 싶다."
-      },
-      {
-        "author": "시라누이Q",
-        "published": "8 시간 전",
-        "body": "배임횡령 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "뫼엥이란뭘까",
-        "published": "4 시간 전",
-        "body": "많이 참았네ㅋㅋ 곱게 보내준거에 감사해라"
-      },
-      {
-        "author": "망곰이",
-        "published": "1 시간 전",
-        "body": "넌 좀 나가라"
-      }
-    ],
-    "archived_at": "2026-08-20T22:38:52"
+    "archived_at": "2026-08-20T22:38:52",
+    "archived_comment_count": 31,
+    "comment_archive_version": 2
   },
   {
     "id": "720214163",
@@ -2064,59 +1339,9 @@
     "votes": "186",
     "comments": "179",
     "published": "11 시간 전",
-    "archived_comments": [
-      {
-        "author": "banana",
-        "published": "5 시간 전",
-        "body": "나도 씨발 할머니 암수술하셔서 연차쓰고 왔다갔다 하는데\n너말고 다른사람이ㅜ가면 안되냐 너가 해버릇해서 아무도 안하는거다 너가 안하면 다른사람이 한다 이지랄 ㅋㅋ"
-      },
-      {
-        "author": "알라후앜발",
-        "published": "5 시간 전",
-        "body": "난 일이랑 동료 수준\n첫직장은 너무 놀아서 이직했고 지금은 동료 수준 낮음 + 엔지니어인데 매니징롤을 너무 많이시킴 때문에 이직시도중"
-      },
-      {
-        "author": "마더핸드파이",
-        "published": "5 시간 전",
-        "body": "임금체불..."
-      },
-      {
-        "author": "로맥",
-        "published": "3 시간 전",
-        "body": "유닛장이 자꾸 개소리 씨부려서 들이박고 퇴사 갈김"
-      },
-      {
-        "author": "군인복무규율",
-        "published": "3 시간 전",
-        "body": "대학교 다녀보려하는데 자꾸 학교 못 가게해서 ㅋㅋㅋ"
-      },
-      {
-        "author": "아르미2",
-        "published": "2 시간 전",
-        "body": "직장상사 ㅈ같은놈 있었는데 버티고 3년 채웠는데 연봉 기대성과보다 안올라서 나감"
-      },
-      {
-        "author": "싹퉁뱅이",
-        "published": "2 시간 전",
-        "body": "연봉 뻥튀기는 이직이 답임"
-      },
-      {
-        "author": "리폿쓰다잠들었다면서",
-        "published": "2 시간 전",
-        "body": "한글 키보드를 두벌식이 아닌 세벌씩 쓴다고 뭐라해서 관뒀다ㅋㅋㅋ"
-      },
-      {
-        "author": "존재하지않는닉네임입니다",
-        "published": "1 시간 전",
-        "body": "다 돈이지 뭐\n좋같음을 이길수잇는 돈을주면 붙어잇지"
-      },
-      {
-        "author": "결혼",
-        "published": "1 시간 전",
-        "body": "첫회사는 현장직 개좆으로 취급해서 때려침\n부장이 종무식에 가오가 안살았는지 야간조까지 싹다 깨워서 행사장에 집합시키더니 병풍처럼 세워놓고 행사 끝나자마자 이따 일해야 하는 사람들은 아무것도 하지말고 집에 가라며 해산시키는 꼬라지에 그나마 있던 정나미마저 떨어져서 다른 직종에서 기술 배우기로 굳게 결심함"
-      }
-    ],
-    "archived_at": "2026-08-20T22:39:01"
+    "archived_at": "2026-08-20T22:39:01",
+    "archived_comment_count": 31,
+    "comment_archive_version": 2
   },
   {
     "id": "720211044",
@@ -2126,59 +1351,9 @@
     "votes": "97",
     "comments": "118",
     "published": "12 시간 전",
-    "archived_comments": [
-      {
-        "author": "상태쨩",
-        "published": "7 시간 전",
-        "body": "신기하네\n눈쪽은 젊어보이는데 하관의 수염보면 흰색이 많고\n정수리를 보면 비어가는게 보이고\n얼굴이 되게 다양하시군\n뭔가 마른 나훈아 느낌도 있으신거 같고"
-      },
-      {
-        "author": "귤까라",
-        "published": "5 시간 전",
-        "body": "초창기 마비노기도 저렇지 않았나?\n하루 2시간 무료라서 그 전에 길드원 혹은 파티원이랑 던전 들어가서 모닥불피우고 노가리 까고 놀고\n꼭 전투만이 아니라 생산쪽으로 캐릭터 키우기도 하고"
-      },
-      {
-        "author": "구리네스",
-        "published": "4 시간 전",
-        "body": "겜하면서 겜 자체가 재미있는 것 보다\n같이 하는 사람들이랑 재밋는게 더 큰 거 같음"
-      },
-      {
-        "author": "얍의행정",
-        "published": "4 시간 전",
-        "body": "이 게임도 결국 무료라 스킨장사 해야하기때문에 토끼겅듀룩 존나 많아서 이질감 개쩔어서 접음"
-      },
-      {
-        "author": "원소번호11번",
-        "published": "4 시간 전",
-        "body": "아시아 CBT 이후에 합류한듯?\n그리고 하이지와 배그의 관계는 크게는 그냥 다른게임에 종속된 모드냐 아니면 완전히 스탠스 얼론의 게임이냐 이 차이임.\n세부적으로 가면 큰 차이들이 많지만 제일 큰건 이거임.\n그리고 원조를 따지면 아르마에 있던 배틀로얄이 원조지 하이지는 아님.\n그리고 배그가 그 스탠드 얼론으로 만들면서 이 장르의 표준을 세웠다고 보면 됨.\n원래 배그 기획 초기에는 보물찾기 같은 요소도 고려했었다고 했었음. 그러다가 그런거 싹 다 쳐내고 배틀로얄에만 집중하고, 아르마의 현실성과 하이지의 가벼움 그 사이를 노렸다고 말함. 그리고 이게 배그의 핵심이고.\n그리고 이걸 당시 블루홀 지노게임즈에서 김창한이랑 최준혁 기획팀장 그리고 그 밑에 20여명의 팀원들이랑 기획해서  기획 완성본을 만든거고. 그리고 이 완성본으로 사내에서 프로젝트 하냐 마냐 허락맡을 때 경영진에서 리스크 줄이려고 '원작자 데려와라' 라고 해서 원작자이자 하이지에 컨설턴트로 참여한 브랜든 그린을 데려오게 된거임"
-      },
-      {
-        "author": "에스페란사",
-        "published": "3 시간 전",
-        "body": "파밍의 즐거움? 좀보이드로 오세요 여러분"
-      },
-      {
-        "author": "rclone",
-        "published": "2 시간 전",
-        "body": "초창기에 친구랑 듀오할때 진짜 재밌었어\n비오고 안개껴도 둘이서 떠들면서 파밍하고 집에 처박혀서 떠들기만해도 재밌었어"
-      },
-      {
-        "author": "동행복권",
-        "published": "2 시간 전",
-        "body": "초창기배그 진짜 재밋엇지 걍 암대나 내려서 경치구경하고 차타고 돌아댕기기만해도 재밋엇음 ㄹㅇ"
-      },
-      {
-        "author": "드립좀",
-        "published": "1 시간 전",
-        "body": "요약"
-      },
-      {
-        "author": "병신을보먼짖는새",
-        "published": "36 분 전",
-        "body": "글에서 말하는 부분도 동감가는데 사막맵 나오기 전후로 반동 자꾸 건들고 핵 못잡아서 접음"
-      }
-    ],
-    "archived_at": "2026-08-20T22:39:36"
+    "archived_at": "2026-08-20T22:39:36",
+    "archived_comment_count": 21,
+    "comment_archive_version": 2
   },
   {
     "id": "720210300",
@@ -2188,49 +1363,9 @@
     "votes": "160",
     "comments": "58",
     "published": "12 시간 전",
-    "archived_comments": [
-      {
-        "author": "책임없는쾌락",
-        "published": "12 시간 전",
-        "body": "ㅁㅊㅋㅋㅋㄱㅋㅋㅋ"
-      },
-      {
-        "author": "메아리",
-        "published": "11 시간 전",
-        "body": "데스노트는 지금 10대도 알지 않을까"
-      },
-      {
-        "author": "급공노비",
-        "published": "7 시간 전",
-        "body": "원본짤은 ㅇㄱㄸ군"
-      },
-      {
-        "author": "하위헌스",
-        "published": "7 시간 전",
-        "body": ""
-      },
-      {
-        "author": "시츄네",
-        "published": "6 시간 전",
-        "body": ""
-      },
-      {
-        "author": "불꽃전신군밤권법",
-        "published": "4 시간 전",
-        "body": "ㅋㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "꼭사라",
-        "published": "3 시간 전",
-        "body": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "후장섹스",
-        "published": "56 분 전",
-        "body": ""
-      }
-    ],
-    "archived_at": "2026-08-20T22:39:43"
+    "archived_at": "2026-08-20T22:39:43",
+    "archived_comment_count": 8,
+    "comment_archive_version": 2
   },
   {
     "id": "720207888",
@@ -2240,59 +1375,9 @@
     "votes": "136",
     "comments": "87",
     "published": "12 시간 전",
-    "archived_comments": [
-      {
-        "author": "sitiydu",
-        "published": "10 시간 전",
-        "body": "이새끼들 '호남'반도체로 어그로끌면서 갈라치기 시전하는거 보니까 보통고수가 아니더라 ㅋㅋ 간첩내지 중국지령받는놈들임"
-      },
-      {
-        "author": "팡팡팡팡팡팡",
-        "published": "10 시간 전",
-        "body": "구독자 40만?? 미친"
-      },
-      {
-        "author": "혼신의힘",
-        "published": "10 시간 전",
-        "body": "이런건 옳그떠글 아닌가? 대놓고 올리고 잡지도 않네"
-      },
-      {
-        "author": "형님이새끼웃는데요",
-        "published": "10 시간 전",
-        "body": "저거 걍 지령받은 빨갱이새끼들아님?\n어차피 건들지도 못하니까 더 설치는게 개꼴사납네"
-      },
-      {
-        "author": "지져쓰",
-        "published": "9 시간 전",
-        "body": "미친 빨갱이간첩새끼들"
-      },
-      {
-        "author": "신림동버핏",
-        "published": "8 시간 전",
-        "body": "극우시위 하는애들이랑 같이 손잡고 바다에 다이빙 해주면 좋겠다 ㅋㅋ"
-      },
-      {
-        "author": "으으으으으으그",
-        "published": "8 시간 전",
-        "body": "뭐 뻔해"
-      },
-      {
-        "author": "닉네임변경212",
-        "published": "7 시간 전",
-        "body": "쟤들 이번 부정선거에 입도 뻥긋안함. 이게 팩트임."
-      },
-      {
-        "author": "하위헌스",
-        "published": "7 시간 전",
-        "body": ""
-      },
-      {
-        "author": "버거왕버거킹",
-        "published": "7 시간 전",
-        "body": "올공단이나 쟤네나"
-      }
-    ],
-    "archived_at": "2026-08-20T22:40:32"
+    "archived_at": "2026-08-20T22:40:32",
+    "archived_comment_count": 38,
+    "comment_archive_version": 2
   },
   {
     "id": "720208047",
@@ -2302,14 +1387,9 @@
     "votes": "227",
     "comments": "201",
     "published": "12 시간 전",
-    "archived_comments": [
-      {
-        "author": "감자",
-        "published": "1 시간 전",
-        "body": "1인가구 중위소득이 256만원이라던데 1.5를 일상적인 점심에 태우긴 좀 부담스럽긴 할 것 같애"
-      }
-    ],
-    "archived_at": "2026-08-20T22:40:40"
+    "archived_at": "2026-08-20T22:40:40",
+    "archived_comment_count": 2,
+    "comment_archive_version": 2
   },
   {
     "id": "720205178",
@@ -2319,59 +1399,9 @@
     "votes": "101",
     "comments": "74",
     "published": "10 시간 전",
-    "archived_comments": [
-      {
-        "author": "인천빠순이",
-        "published": "10 시간 전",
-        "body": "저런경우 은근히많음 임대주택은 잘모르겠고 공원이런곳에서 장사하는거 조건부임대라서 예를들어 인천거주/장애인이라던지 뭐 할튼 그런사람들이 임대입찰받음 나라라던지 공기업에서하기떄문에 엄청싸게해줌 그걸 재임대해서 월세처받음 내가본것중에 최악은 임대 재임대까지해서 아주시발"
-      },
-      {
-        "author": "박제",
-        "published": "10 시간 전",
-        "body": "와 그럼 저 월세 주고 살고있었던 30대 여성 세입자는 어떻게 되는건가"
-      },
-      {
-        "author": "파랑하늘",
-        "published": "9 시간 전",
-        "body": "뭐 그리되는거겠지"
-      },
-      {
-        "author": "초강력먼지제거제",
-        "published": "4 시간 전",
-        "body": "나가야지 뭐 ㅎㅎ"
-      },
-      {
-        "author": "탈모요정",
-        "published": "9 시간 전",
-        "body": "ㅋㅋㅋ하숙 룸렌트같이 돌리는건 절대못막겠네"
-      },
-      {
-        "author": "오늘부터우리는",
-        "published": "9 시간 전",
-        "body": "창조경제네"
-      },
-      {
-        "author": "꼬부꼬부기",
-        "published": "5 시간 전",
-        "body": "꼴랑 벌금 300이야?"
-      },
-      {
-        "author": "번마",
-        "published": "4 시간 전",
-        "body": "공교롭게도 그세대네"
-      },
-      {
-        "author": "honeytea",
-        "published": "3 시간 전",
-        "body": "얼마전에 임대 실거주 전수조사한다니까 국가가 감기하네 뭐네 하던 애들 잔뜩 있었는데 ㅋㅋㅋ"
-      },
-      {
-        "author": "사람판별기",
-        "published": "4 분 전",
-        "body": "임대주택을 전대해?? ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:41:14"
+    "archived_at": "2026-08-20T22:41:14",
+    "archived_comment_count": 28,
+    "comment_archive_version": 2
   },
   {
     "id": "720205618",
@@ -2381,14 +1411,9 @@
     "votes": "278",
     "comments": "151",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "굴렀던곰",
-        "published": "3 시간 전",
-        "body": "대체 김치찌개를 얼마나 맛있게 하길래... 마누라가 해준거 아무말 없이 일주일치를 다먹는거지?"
-      }
-    ],
-    "archived_at": "2026-08-20T22:41:49"
+    "archived_at": "2026-08-20T22:41:49",
+    "archived_comment_count": 3,
+    "comment_archive_version": 2
   },
   {
     "id": "720205074",
@@ -2398,19 +1423,9 @@
     "votes": "198",
     "comments": "251",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "이걸이렇게받아들인다고",
-        "published": "3 시간 전",
-        "body": "그럼 거기서 만나면 되잖아. 왜 나왔어! 청년부라고 거기서 잘들 만나서 결혼하고 그러더만"
-      },
-      {
-        "author": "전자참새",
-        "published": "2 시간 전",
-        "body": "개드립 개늙은이커뮤라고 반 농담으로 자조했는데 ㅊㅈ 보니까 찐으로 현타오네"
-      }
-    ],
-    "archived_at": "2026-08-20T22:41:59"
+    "archived_at": "2026-08-20T22:41:59",
+    "archived_comment_count": 2,
+    "comment_archive_version": 2
   },
   {
     "id": "720204417",
@@ -2420,59 +1435,9 @@
     "votes": "154",
     "comments": "63",
     "published": "11 시간 전",
-    "archived_comments": [
-      {
-        "author": "써니레드",
-        "published": "9 시간 전",
-        "body": "신호등 건널때 꼭 병신같이 건널목 한가운데에 서있는 새끼들 있는데 헐크돼서 뒤집어버리고 싶음"
-      },
-      {
-        "author": "로맥",
-        "published": "3 시간 전",
-        "body": "아는 형이 그랬다가 횡단보도 건너는 시민한테 사진 찍혀서 벌금 맞음ㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "Soyuz",
-        "published": "9 시간 전",
-        "body": "꼭 병신들이 요실금마냥 정지선에서 세웠다가 지리듯이 조금씩 앞으로가더라"
-      },
-      {
-        "author": "INTP",
-        "published": "8 시간 전",
-        "body": "프로그램 취지가 좋아서 잘 챙겨봤는데 이건 개웃기네ㅋㅋ"
-      },
-      {
-        "author": "배똘",
-        "published": "8 시간 전",
-        "body": "요즘도 급정거도 아닌데  정지선 쳐밟고 넘어가는새끼 개많음 이런 놈들은 스타트나 직진 하는거 부터 좆같음"
-      },
-      {
-        "author": "번마",
-        "published": "5 시간 전",
-        "body": "ㅈ.. 저는 .ㅎ상 ㅈ..지켜요"
-      },
-      {
-        "author": "악동무지성",
-        "published": "3 시간 전",
-        "body": "ㅠㅠ"
-      },
-      {
-        "author": "무명의ㅇㅇ",
-        "published": "5 시간 전",
-        "body": "지금도 안지키는 새끼들이 절반임"
-      },
-      {
-        "author": "책임없는쾌락",
-        "published": "5 시간 전",
-        "body": "난 유도선 못지키는 병신들도 면허뺏으면좋겠음ㅠㅠ"
-      },
-      {
-        "author": "dagdha",
-        "published": "4 시간 전",
-        "body": "근데 저 방송 이후로 확실히 사람들이 정지선은 잘 지키게 되었다고 하더라."
-      }
-    ],
-    "archived_at": "2026-08-20T22:42:59"
+    "archived_at": "2026-08-20T22:42:59",
+    "archived_comment_count": 15,
+    "comment_archive_version": 2
   },
   {
     "id": "720203887",
@@ -2482,59 +1447,9 @@
     "votes": "141",
     "comments": "250",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "헬조선반도",
-        "published": "7 시간 전",
-        "body": "다 진실이라고 치면 인간이 개폐급인거임"
-      },
-      {
-        "author": "하위헌스",
-        "published": "7 시간 전",
-        "body": ""
-      },
-      {
-        "author": "dandelion",
-        "published": "7 시간 전",
-        "body": "예상1 - 해당 파트는 특정 전문적인 기술사무직이라 봄 아니면 영업직이거나\n그와중에 경력도 영업능력도 일천한 아줌마가 왔으니 개좆같지\n예상2 - 아예 펜스룰로 회식 안부르는걸로 보임 아니면 고객사 회식인데 괜히 대려왔다가 좆될거 막은거임\n한우회식이나 위스키바 같은건 자기 근무내 통틀어서 손에 꼽을 정도였을텐데 매우 과장하는걸로 보이고\n세상에 그런걸 매주 시켜주는 회사는 없음...\n애초에 '자기들 빼고 회식을 매주간다' 라는것도 고객사 접대를 회식이랑 구분을 못하는지 아니면 팀원끼리 가는 식사조차 회식이라 하는건지\n예상3 - 굳이 서류보고에서 구두보고로 바뀐건 그 최소한의 서류작성도 제대로 못한걸로 보임 서류보고 하면 위로 줄줄이 올라가는데 어느날 위에서 한번 보고 팀장이 존나 깨졌겠지\n구두보고에서 서류보고로 바뀌는 케이스는 많아도 그 반대는 듣도보도못함\n예상4 - 본인이 생각하기에 누구든지 배우면 할수 있다고 생각했겠지만 그럴리가 없음...\n너무나 무능력 했을뿐더러 영업직이었다면 영업을 따오고 고객사 관리하는게 아니면 하는일이란게 얼마나 있겠음\n본인이 맡은 얼마 안되는 업무외에 걍 시키질 않은거임\n언급했던 '본인업무가 아닌걸 시켰다'는건 100% 본인업무거나 최소한 전임자는 했을업무임\n여초들이 자주 하는 '자기일 아닌데 시켰다'는 주장\n예상5 - 그리고 이와같은 핍박을 받으면서도 최소 1년이상 버틴거면 생각보다 매우 다닐만 했고\n팀원들도 시간을 보내며 업무에 적응할 시간을 준것으로 보임 그래서 겨우 겨우 0.5인분 정도 하게될 시점에 퇴사박아버렸으니 개빡쳤겠지\n본인이 인내의 시간을 보냈다고 여겼겠지만 사실은 팀원들이 참아준거임"
-      },
-      {
-        "author": "쉽지않다",
-        "published": "7 시간 전",
-        "body": "매주 금요일마다 어디?"
-      },
-      {
-        "author": "마늘갈릭",
-        "published": "6 시간 전",
-        "body": "첫문단부터 망상글"
-      },
-      {
-        "author": "종미니",
-        "published": "6 시간 전",
-        "body": "부장이데리고왔는데. 부장이 쳐다보지도얺고 내팽겨두고있다고?  말도안되지"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "주작도 지능과 경험이 있어야 잘함"
-      },
-      {
-        "author": "화간호사",
-        "published": "6 시간 전",
-        "body": "비싼 스벅 지내들끼리에서 실소 터짐\nㅋㅋ\n고추색히들은 그딴거 안마셔 ㅋㅋㅋ"
-      },
-      {
-        "author": "정답없음",
-        "published": "4 시간 전",
-        "body": "ㅋㅋㅋ남초 회사인데 스벅가는 역사가 없었다\n경리나 얘기해야 어 사와 이러지"
-      },
-      {
-        "author": "첼지구나",
-        "published": "3 시간 전",
-        "body": "주작인데 글도 제대로 못씀"
-      }
-    ],
-    "archived_at": "2026-08-20T22:43:22"
+    "archived_at": "2026-08-20T22:43:22",
+    "archived_comment_count": 1,
+    "comment_archive_version": 2
   },
   {
     "id": "720204101",
@@ -2544,59 +1459,9 @@
     "votes": "181",
     "comments": "216",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "루온하",
-        "published": "6 시간 전",
-        "body": "오히려 저렇게 단호하면 더 좋지 ㅋㅋ 스탑럴커들이 씹새들이고"
-      },
-      {
-        "author": "장송의프리렌",
-        "published": "5 시간 전",
-        "body": "왜 나온거임 그럼? 교회에서 찾아야지"
-      },
-      {
-        "author": "파라부트",
-        "published": "5 시간 전",
-        "body": "한녀 원래 거르는데 교회다니는 한녀랑 결혼하는것들은 진짜 제정신이긴 하냐?"
-      },
-      {
-        "author": "파라부트",
-        "published": "5 시간 전",
-        "body": "교회 한녀는 대댓글 욕 안박히는거 보면 그건 알고들 있네 ㅋㅋㅋㅋㅋ 일요일 엄한 시간에 꼬박꼬박 시간박았다 갈리지 마라들! 교회다니는 이웃이 존나 잘해줘도 쳐다도 보지말던가 청년부 안하는 시간에 얼굴비추고 튀어라 ㅋㅋㅋ"
-      },
-      {
-        "author": "버팔로1122",
-        "published": "4 시간 전",
-        "body": "그러던가 말던가 긴 한데....\n그럼 교회에서 소개팅 하던가 전국방송에 나와서 교회타령은 왜함?\n우리나라 개신교 비율이 30%가 안될텐데?"
-      },
-      {
-        "author": "대장암",
-        "published": "4 시간 전",
-        "body": "하나님이 해결해주시겠지~"
-      },
-      {
-        "author": "뜌따이",
-        "published": "4 시간 전",
-        "body": "성직자로 전직하십쇼"
-      },
-      {
-        "author": "제주가고싶다",
-        "published": "4 시간 전",
-        "body": "평생 그리사십시오. 딴사람인생 조지지 말고."
-      },
-      {
-        "author": "보약탐지견",
-        "published": "3 시간 전",
-        "body": "그럼에도 연애랑 결혼은 하고 싶은가 보네 그냥 상대를 교회에서 찾아야 되는거 아니냐"
-      },
-      {
-        "author": "마쉬멜로",
-        "published": "3 시간 전",
-        "body": "교회 미친애들 보면 보통 첫경험은 대부분 교회 오빠들이였음....그리고 결혼 상대자는 교회 신도 확충에 도움이 안되서 그런지 교회 내에서 안 찾더라. 또 한가지 목사 따라서 움직임"
-      }
-    ],
-    "archived_at": "2026-08-20T22:44:01"
+    "archived_at": "2026-08-20T22:44:01",
+    "archived_comment_count": 30,
+    "comment_archive_version": 2
   },
   {
     "id": "720203601",
@@ -2606,59 +1471,9 @@
     "votes": "166",
     "comments": "134",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "마덴",
-        "published": "9 시간 전",
-        "body": "노래로 뜬게 아닌데 그런걸 바라시면...."
-      },
-      {
-        "author": "호구머니",
-        "published": "9 시간 전",
-        "body": "개인 팬미팅이나 콘서트는 코어가 80~90이고 나머지가 대중임\n성시경, 아이유, 싸이 이런 예외 케이스가 아니면 무조건 팬덤이 커야 감당 가능함\n그리고 자기가 적자 봐도 상관없다면 티켓값이라도 낮출수 있는데\n인원 적으면 티켓값도 비싸지고 일반인도 접근성 떨어짐"
-      },
-      {
-        "author": "닉으로드립치고싶냐",
-        "published": "8 시간 전",
-        "body": "하하 나오면 웃기고 재밌고 잘 즐기는데 그러게 하하 단독으로 했던게 있었나 싶긴하네\n그래도 라디오 텐텐클럽때는 청취율 꽤 나왔었는데"
-      },
-      {
-        "author": "문명의붕괴",
-        "published": "33 분 전",
-        "body": "텐텐클럽을 알다니"
-      },
-      {
-        "author": "닉으로드립치고싶냐",
-        "published": "31 분 전",
-        "body": "사실 하하 군대가기전 논란에서 무도에서 제작진들이 멋대로 적은 자막으로 \"사회에서의 마지막 햄버거\" 이거보다\n하하가 직접 라디오에서 나는 퇴근하고 라디오 들을수 있지롱~~ 했던게 더 기억에 남았었음ㅋㅋ"
-      },
-      {
-        "author": "더넌",
-        "published": "6 시간 전",
-        "body": "본인이 지금까지 혼자온게 아니다보니 단독은 좀................."
-      },
-      {
-        "author": "이걸이렇게받아들인다고",
-        "published": "4 시간 전",
-        "body": "히트곡이... 있기야 있는데 굳이 가서 듣기엔.."
-      },
-      {
-        "author": "허리디스커",
-        "published": "3 시간 전",
-        "body": "지갑 여는게 쉽지않지"
-      },
-      {
-        "author": "배고픈누렁이",
-        "published": "3 시간 전",
-        "body": "그냥 이 사람 인방 봤으면 왜 이러는지 이해 감 ㅋㅋㅋ"
-      },
-      {
-        "author": "모닝푸딩",
-        "published": "4 분 전",
-        "body": "Mc유재석에 스컬이라도 데려오면.."
-      }
-    ],
-    "archived_at": "2026-08-20T22:45:43"
+    "archived_at": "2026-08-20T22:45:43",
+    "archived_comment_count": 37,
+    "comment_archive_version": 2
   },
   {
     "id": "720201197",
@@ -2668,59 +1483,9 @@
     "votes": "125",
     "comments": "91",
     "published": "12 시간 전",
-    "archived_comments": [
-      {
-        "author": "김덕순화덕파스타",
-        "published": "7 시간 전",
-        "body": "아니 재들이 남자를 만나서 연애를 해봤겠냐고....망상속에서 사는데 현실구분을 어캐해.."
-      },
-      {
-        "author": "ontpp",
-        "published": "7 시간 전",
-        "body": "여성 타겟용 쇼츠를 좋다고 가져오면 ㅅㅂ ㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "팡파루엣",
-        "published": "7 시간 전",
-        "body": "ㅋㅋ 더치 해본적없는 사람들 댓글 보면서 화내지들 말어 ㅋㅋㅋ저 댓글작성자 대부분이 남자랑 1대1로 대화도 못해봤을걸 ㅋㅋㅋ"
-      },
-      {
-        "author": "65호구",
-        "published": "7 시간 전",
-        "body": "저거야 말로 가부장적 개씹마초 문화 아님? 참 기준을 어디에 맞추라고"
-      },
-      {
-        "author": "하위헌스",
-        "published": "7 시간 전",
-        "body": ""
-      },
-      {
-        "author": "sleeder",
-        "published": "6 시간 전",
-        "body": "유부녀가 남편한테 밥 챙겨주면 노예냐고 조리돌림 하면서 더치페이는 싫다니 거참"
-      },
-      {
-        "author": "돈안지유돈",
-        "published": "5 시간 전",
-        "body": "그러니깐 양남 만나라니깐 왜 양남 안만나고 징징거리고있어?"
-      },
-      {
-        "author": "부평Q평E평가평",
-        "published": "5 시간 전",
-        "body": "데이트할일도없는 좆병신년들이 왜 아는척하고 지랄들이여 ㅋㅋㅋ"
-      },
-      {
-        "author": "매콤한펩시",
-        "published": "5 시간 전",
-        "body": "도태되면 환상에 허우적 대다가 빠져 죽는거임 ㅋㅋ"
-      },
-      {
-        "author": "별헤는밤",
-        "published": "3 시간 전",
-        "body": "매번 느끼는거지만\n모르는게 아님\n알면서 모른체하는거지"
-      }
-    ],
-    "archived_at": "2026-08-20T22:46:14"
+    "archived_at": "2026-08-20T22:46:14",
+    "archived_comment_count": 42,
+    "comment_archive_version": 2
   },
   {
     "id": "720202029",
@@ -2730,59 +1495,9 @@
     "votes": "152",
     "comments": "65",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "비나비",
-        "published": "6 시간 전",
-        "body": "애초에 비빔밥이랑 비슷한 결이라\n맛있는거 넣고 비비면 맛있으니 그 기억이 남아있는거지"
-      },
-      {
-        "author": "ㅇㅇr",
-        "published": "6 시간 전",
-        "body": "나는 누렁이어서 그런가 맛있게먹음;"
-      },
-      {
-        "author": "꾸짖을갈보",
-        "published": "6 시간 전",
-        "body": "신기하다"
-      },
-      {
-        "author": "뭐이자식아?",
-        "published": "6 시간 전",
-        "body": "니가 잘하는 부대 안가봐서 그래\n난 비쥬얼 보고 첨엔 으시발 개밥이냐? 싶었는데 진짜 조오오오온나 맛있었다 부대마다 비법소스 다른게 분명함"
-      },
-      {
-        "author": "너재능있어계속해",
-        "published": "6 시간 전",
-        "body": "행보관마다 다름 ㅋㅋㅋㅋ 가끔 끓여주셨던 오뎅탕은 그립네 겨울에 축구하고나서 급양관한테 버너랑 취사기구 끄내서 오뎅탕 끓여주셨는데"
-      },
-      {
-        "author": "춥고배고파요",
-        "published": "4 시간 전",
-        "body": "누렁아 밥먹자~"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "아사히 귀엽지\n샤니마스 겜 한때 재밌게 했었는데 돈이 너무 많이들어서 포기했고"
-      },
-      {
-        "author": "교수님의씨뿌리기",
-        "published": "4 시간 전",
-        "body": "난 저거 맛있었는뎅.."
-      },
-      {
-        "author": "교수님의씨뿌리기",
-        "published": "4 시간 전",
-        "body": "동봉된 아몬드케이크? 파운드케이크?가 맛있어서 안 먹는 선후임 꺼 받아다까 장박아놓고 간식으로 까먹었음"
-      },
-      {
-        "author": "배똘",
-        "published": "4 시간 전",
-        "body": "걱정 많이 햇나보넼ㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:46:28"
+    "archived_at": "2026-08-20T22:46:28",
+    "archived_comment_count": 15,
+    "comment_archive_version": 2
   },
   {
     "id": "720201802",
@@ -2792,14 +1507,9 @@
     "votes": "93",
     "comments": "50",
     "published": "4 시간 전",
-    "archived_comments": [
-      {
-        "author": "드드드든",
-        "published": "6 분 전",
-        "body": "헐크박사"
-      }
-    ],
-    "archived_at": "2026-08-20T22:46:36"
+    "archived_at": "2026-08-20T22:46:36",
+    "archived_comment_count": 49,
+    "comment_archive_version": 2
   },
   {
     "id": "720201226",
@@ -2809,19 +1519,9 @@
     "votes": "109",
     "comments": "102",
     "published": "12 시간 전",
-    "archived_comments": [
-      {
-        "author": "초코다이제",
-        "published": "5 시간 전",
-        "body": "애초에 영화를 인질잡고 만들어버리니까\n영화 팬들은 영화 팬대로 ㅈ같네가 되버려서\n거기에 pc범벅에 ㅌㅋㅌㅌ"
-      },
-      {
-        "author": "sksjwu",
-        "published": "2 시간 전",
-        "body": "마블캐릭터 이용해서 뻔한 양산형 미드 만드니까 재미가없음"
-      }
-    ],
-    "archived_at": "2026-08-20T22:46:50"
+    "archived_at": "2026-08-20T22:46:50",
+    "archived_comment_count": 2,
+    "comment_archive_version": 2
   },
   {
     "id": "720199951",
@@ -2831,49 +1531,9 @@
     "votes": "200",
     "comments": "58",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "적록색약",
-        "published": "10 시간 전",
-        "body": "카메라감독인데 카메라 감독 이름도 나와?"
-      },
-      {
-        "author": "케치마인드장재미슴",
-        "published": "4 시간 전",
-        "body": "찾고자하면 나올껄?\n드라마 다시보기 한다음에 스텝롤 보면 첫페이지에 나올듯"
-      },
-      {
-        "author": "시라누이Q",
-        "published": "8 시간 전",
-        "body": ""
-      },
-      {
-        "author": "린남미소년",
-        "published": "7 시간 전",
-        "body": "누구임?"
-      },
-      {
-        "author": "서어엉자아앙",
-        "published": "6 시간 전",
-        "body": "포미닛 남지현"
-      },
-      {
-        "author": "글렌모렌지시그넷",
-        "published": "6 시간 전",
-        "body": "에이 감독이 누구냐고 물은거겠지 설마 제목에 떡하니 있는데"
-      },
-      {
-        "author": "평택슬릭백",
-        "published": "5 시간 전",
-        "body": "첫드라마 카메라감독 대충 알겠는데"
-      },
-      {
-        "author": "초격아츠",
-        "published": "1 시간 전",
-        "body": "그당시 남지현보고 못생겼다고 할정도면 눈깔이 고자인데 카메라감독을 어케했지?"
-      }
-    ],
-    "archived_at": "2026-08-20T22:46:57"
+    "archived_at": "2026-08-20T22:46:57",
+    "archived_comment_count": 10,
+    "comment_archive_version": 2
   },
   {
     "id": "720199598",
@@ -2883,59 +1543,9 @@
     "votes": "105",
     "comments": "70",
     "published": "12 시간 전",
-    "archived_comments": [
-      {
-        "author": "DrukHigh",
-        "published": "5 시간 전",
-        "body": "쇠고기면이면 충분하잖어"
-      },
-      {
-        "author": "거유",
-        "published": "12 시간 전",
-        "body": "초딩때 치킨집 중국집 스티커 자주돌렷엇는데"
-      },
-      {
-        "author": "꽁치김치찌개",
-        "published": "12 시간 전",
-        "body": "정말 열심히 살았네 어릴때 너도 지금의 너도 대단하고 성실해"
-      },
-      {
-        "author": "웰시고기맛감자칩",
-        "published": "10 시간 전",
-        "body": "ㅋㅋㄹㅇ 나도구랫는데\n요즘은 사장님들이 안줄듯ㅋㅋ"
-      },
-      {
-        "author": "아이폰16pro",
-        "published": "12 시간 전",
-        "body": "나같으면 한 30불 팁으로 얹어서 줄듯ㅋㅋ\n20불이면 둘이서 치폴레도 못사먹는데 기특하네"
-      },
-      {
-        "author": "톱밥님",
-        "published": "10 시간 전",
-        "body": "귀여운거봐 ㅋㅋㅋ"
-      },
-      {
-        "author": "크킹충",
-        "published": "7 시간 전",
-        "body": "나 술먹고 집가다가 갑자기 고딩남자애가 걸어가길래 '야 너 고딩이냐? 고딩이냐고' '네..' '야 빵사먹어' 하고 2만원줬던거 생각나네"
-      },
-      {
-        "author": "뭐야가입언제풀림",
-        "published": "6 시간 전",
-        "body": "오늘부터 너네 동네에서 잠복근무한다"
-      },
-      {
-        "author": "드높은천상물반도",
-        "published": "4 시간 전",
-        "body": "형님 형님 포티세요? 포티냐고요. 용돈좀주세요"
-      },
-      {
-        "author": "냥팔자가상팔자",
-        "published": "3 시간 전",
-        "body": "내가 미장 하는 이유 ^^"
-      }
-    ],
-    "archived_at": "2026-08-20T22:47:16"
+    "archived_at": "2026-08-20T22:47:16",
+    "archived_comment_count": 20,
+    "comment_archive_version": 2
   },
   {
     "id": "720197799",
@@ -2945,59 +1555,9 @@
     "votes": "270",
     "comments": "75",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "팽드시에클",
-        "published": "12 시간 전",
-        "body": "그래서 천주교 단체에서도 전장연 깠잖음. 거기가 어지간하면 남 비판 안 하는데 저긴 진짜 ㅋㅋㅋ 근데도 전장연 옹호하던 새끼들은 멍청한 건지. 쓰레긴 건지."
-      },
-      {
-        "author": "펠라티오국제고등학교",
-        "published": "11 시간 전",
-        "body": "고건불가"
-      },
-      {
-        "author": "루리웹",
-        "published": "10 시간 전",
-        "body": "대한민국에서 장애, 여성 두가지는 돈과 권력"
-      },
-      {
-        "author": "버팔로1122",
-        "published": "10 시간 전",
-        "body": "그..... 대한민국에서 뭔가 좀 극단적으로 목소리 내는 애들은 다 돈이 목적이라는 사설을 본기억이 있긴 하다...\n페미도 남성연합도 전장연도 XX노조도 결국은 다 돈하고 얽혀있음\n우익단체 좌익단체 환경단체 마찬가지임 다 정부지원금 노리는거임 눈먼돈이거든"
-      },
-      {
-        "author": "할말은하는새끼",
-        "published": "10 시간 전",
-        "body": "아 서울에 집달라는게 아니라 더 ㅈ같은곳이였네"
-      },
-      {
-        "author": "수석졸업",
-        "published": "10 시간 전",
-        "body": "약자는 정치적 도구로 이용된다"
-      },
-      {
-        "author": "싼디스크",
-        "published": "9 시간 전",
-        "body": "범죄잖아 시발"
-      },
-      {
-        "author": "Avekgiks",
-        "published": "9 시간 전",
-        "body": "추악하다"
-      },
-      {
-        "author": "51번째주",
-        "published": "7 시간 전",
-        "body": "제발 구라라고 해주셈 사실이라면 절멸수용소 운영권 달라고 하는거잖아"
-      },
-      {
-        "author": "뭔지몰라요",
-        "published": "6 시간 전",
-        "body": "망치로 꿀밤 마렵네"
-      }
-    ],
-    "archived_at": "2026-08-20T22:47:35"
+    "archived_at": "2026-08-20T22:47:35",
+    "archived_comment_count": 27,
+    "comment_archive_version": 2
   },
   {
     "id": "720196343",
@@ -3007,59 +1567,9 @@
     "votes": "149",
     "comments": "97",
     "published": "12 시간 전",
-    "archived_comments": [
-      {
-        "author": "didnotfinish",
-        "published": "10 시간 전",
-        "body": "역병의사 가면도 마찬가지지 죳간지나면 장땡인거야"
-      },
-      {
-        "author": "카레참치",
-        "published": "10 시간 전",
-        "body": "뭔소리야\n너 각시탈 몰라?!!"
-      },
-      {
-        "author": "x0은0",
-        "published": "10 시간 전",
-        "body": "풍자 희화"
-      },
-      {
-        "author": "FBI",
-        "published": "8 시간 전",
-        "body": "근데 저거 양반탈 아님?"
-      },
-      {
-        "author": "문학소녀",
-        "published": "8 시간 전",
-        "body": "무섭긴 일본 여자 탈이 존나무섭던데"
-      },
-      {
-        "author": "2001년생김민정",
-        "published": "8 시간 전",
-        "body": "ㅈ간지긴해"
-      },
-      {
-        "author": "아재아제바라아재",
-        "published": "8 시간 전",
-        "body": "신 암행어사 팬텀솔져는 지금봐도 ㅈ간지긴 해"
-      },
-      {
-        "author": "쿠폰아까워",
-        "published": "5 시간 전",
-        "body": "간지 좆되긴해"
-      },
-      {
-        "author": "돌로레스",
-        "published": "5 시간 전",
-        "body": "이런쪽으로는 역병의사가 제일 억울해보임\n순수하게 환자 살리고 싶은 의사인데 무슨 인체실험하러 다니는 악마취급받잖음 ㅋㅋㅋ"
-      },
-      {
-        "author": "Young男",
-        "published": "3 시간 전",
-        "body": "역병이나 하회탈이나\n둘다 좆간지나긴 해"
-      }
-    ],
-    "archived_at": "2026-08-20T22:47:58"
+    "archived_at": "2026-08-20T22:47:58",
+    "archived_comment_count": 47,
+    "comment_archive_version": 2
   },
   {
     "id": "720195997",
@@ -3069,59 +1579,9 @@
     "votes": "85",
     "comments": "26",
     "published": "5 시간 전",
-    "archived_comments": [
-      {
-        "author": "아크릴",
-        "published": "5 시간 전",
-        "body": "아프가니스탄, 파키스탄 이런 국가보다 성평등지수가 낮다고 지랄해댐 ㅋㅋㅋ 그러면 그곳에 가서 살라고하면 입다뭄"
-      },
-      {
-        "author": "Asha",
-        "published": "5 시간 전",
-        "body": "완미"
-      },
-      {
-        "author": "파라부트",
-        "published": "5 시간 전",
-        "body": "면상은 봐줄만한데 페미인건 신기하네 골비었으면 다리나 벌릴것이지 시벌"
-      },
-      {
-        "author": "아뎁투스",
-        "published": "5 시간 전",
-        "body": "또 다른 연구 결과에 따르면, 나에게 100만원을 주는 것이 타당하다는 결과가 있다."
-      },
-      {
-        "author": "qO도Op",
-        "published": "5 시간 전",
-        "body": "각 나라 페미들을 싸움 붙이자"
-      },
-      {
-        "author": "번좋음",
-        "published": "5 시간 전",
-        "body": "ㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "쥬우너",
-        "published": "4 시간 전",
-        "body": "피해망상"
-      },
-      {
-        "author": "가입존내어렵",
-        "published": "2 시간 전",
-        "body": "64개국에 한국은 없나보네 ㅋ 분명 페미년들이 우리나라가 뭐든 다 꼴등이라고 하던데"
-      },
-      {
-        "author": "돈많이벌고싶다",
-        "published": "2 시간 전",
-        "body": "이슬람에서 운동하면 인정합니다."
-      },
-      {
-        "author": "하위헌스",
-        "published": "2 시간 전",
-        "body": ""
-      }
-    ],
-    "archived_at": "2026-08-20T22:48:05"
+    "archived_at": "2026-08-20T22:48:05",
+    "archived_comment_count": 26,
+    "comment_archive_version": 2
   },
   {
     "id": "720195102",
@@ -3131,14 +1591,9 @@
     "votes": "140",
     "comments": "51",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "참젖",
-        "published": "1 시간 전",
-        "body": "전우의 패배 소식을 들은 옆동네 캣맘들이 지원와서 저 캔 30개로 2차전을 시작 하고"
-      }
-    ],
-    "archived_at": "2026-08-20T22:48:13"
+    "archived_at": "2026-08-20T22:48:13",
+    "archived_comment_count": 1,
+    "comment_archive_version": 2
   },
   {
     "id": "720193667",
@@ -3148,59 +1603,9 @@
     "votes": "194",
     "comments": "186",
     "published": "14 시간 전",
-    "archived_comments": [
-      {
-        "author": "지옥의코만두",
-        "published": "9 시간 전",
-        "body": "쉽지않네;;"
-      },
-      {
-        "author": "zuzulia",
-        "published": "8 시간 전",
-        "body": "댓글 ㅈㄴ웃기네ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "Hitomi",
-        "published": "8 시간 전",
-        "body": "ㅋㅋㅋㅋ 깡이 좋네 저런 마인드로 나온게"
-      },
-      {
-        "author": "미야자키토모카",
-        "published": "7 시간 전",
-        "body": "난 박수를 보내주고싶은 적어도 본인은 스탑럴커는 아니라는거자나 ㅋㅋㅋㅋㅋㅋㅋ\n완벽하게 거를수있게 다 밝혀준것에 대해서는 높이 평가하고싶다 ㅋㅋ"
-      },
-      {
-        "author": "dkqndk",
-        "published": "4 시간 전",
-        "body": "돌려까기 천재시네요."
-      },
-      {
-        "author": "형왔다",
-        "published": "7 시간 전",
-        "body": "기러기는 요구한게 아니라 남자쪽에서 물어본거잖아"
-      },
-      {
-        "author": "수평선",
-        "published": "5 시간 전",
-        "body": "누가 말했는데 이쁜 애들이 착하다고... 사실이었어"
-      },
-      {
-        "author": "dkqndk",
-        "published": "4 시간 전",
-        "body": ".....각본이라고 말해줘. 저런 악마가 있다고?"
-      },
-      {
-        "author": "켛헤헿",
-        "published": "3 시간 전",
-        "body": "럴커가 아니라 인페스티드 테란이네 적어도 보고 피할순 있어서 다행"
-      },
-      {
-        "author": "미드커브",
-        "published": "2 시간 전",
-        "body": "종국엔 진짜 종교관 맞는 남자랑 결혼해서 잘 살더라"
-      }
-    ],
-    "archived_at": "2026-08-20T22:48:42"
+    "archived_at": "2026-08-20T22:48:42",
+    "archived_comment_count": 37,
+    "comment_archive_version": 2
   },
   {
     "id": "720191304",
@@ -3210,34 +1615,9 @@
     "votes": "138",
     "comments": "54",
     "published": "14 시간 전",
-    "archived_comments": [
-      {
-        "author": "번마",
-        "published": "11 시간 전",
-        "body": ""
-      },
-      {
-        "author": "아이스티",
-        "published": "10 시간 전",
-        "body": "군인들은 결혼을 일찍 하는 편이니..."
-      },
-      {
-        "author": "내일까지만살자",
-        "published": "9 시간 전",
-        "body": "연프 나가지말고 둘이 사귀면 되겠네"
-      },
-      {
-        "author": "고양이왕",
-        "published": "8 시간 전",
-        "body": "남자 머리 개작게 생겼네"
-      },
-      {
-        "author": "사람판별기",
-        "published": "6 분 전",
-        "body": "공간이라 때깔이 좋네 ㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:48:50"
+    "archived_at": "2026-08-20T22:48:50",
+    "archived_comment_count": 5,
+    "comment_archive_version": 2
   },
   {
     "id": "720190305",
@@ -3247,59 +1627,9 @@
     "votes": "102",
     "comments": "127",
     "published": "14 시간 전",
-    "archived_comments": [
-      {
-        "author": "약도라지청",
-        "published": "7 시간 전",
-        "body": "서울에서 대학 나오고 현재는 부산 근처 사는데 서울 갈 바에 일본 여행가는 듯"
-      },
-      {
-        "author": "놈달팽이",
-        "published": "7 시간 전",
-        "body": "서울고향이고 일때문에 지방온지 오랜데 굳이 올라갈이유가..?\n여기서태어났으면 속초정도나 좀 놀러가고 안갈거같은데\n바글거려서"
-      },
-      {
-        "author": "뇌절금지",
-        "published": "7 시간 전",
-        "body": "부산이면 안가봤을만도 하지 굳이 서울에 가야될 이유가 없음 서울에서 할 수 있는거 대부분 부산에서 할수 있잖아"
-      },
-      {
-        "author": "뭔닉네임이다있냐",
-        "published": "7 시간 전",
-        "body": "서울에 천만이나 사는데 뭔 부심인고"
-      },
-      {
-        "author": "씹새",
-        "published": "7 시간 전",
-        "body": "대도시는 살면서 한번씩은 다 가보게되지않나? 신기하네 ㄹㅇ"
-      },
-      {
-        "author": "보이차",
-        "published": "6 시간 전",
-        "body": "경조사 때문에라도 한번은 가봤어야 할 나이 아닌가"
-      },
-      {
-        "author": "고귀한요정",
-        "published": "5 시간 전",
-        "body": "근데 진짜 가난하면 못가보긴함 나도 23살에 처음가봄 무료 숙식 공부할수있는곳으로 경기도 갈 기회생겨서"
-      },
-      {
-        "author": "초코다이제",
-        "published": "5 시간 전",
-        "body": "반대로 서울토박이 중에 부산 광주 이런데 한번도 안가본 사람도 많을거같은데 ㅋㅋㅌㅌ"
-      },
-      {
-        "author": "로맥",
-        "published": "3 시간 전",
-        "body": "내가 그런 케이스인데ㅋㅋㅋㅋ 본문에 저 사람은 걍 정신병자인듯.."
-      },
-      {
-        "author": "초코다이제",
-        "published": "2 시간 전",
-        "body": "왜냐면 서울 토박이중에 많은 수가\n한시간이나 걸린다고? 하잖아\n사실 지방 여행 가보면 바보가 아닌이상 한시간 이내인데가 적다는설 알수밖에 없으니까 ㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:49:04"
+    "archived_at": "2026-08-20T22:49:04",
+    "archived_comment_count": 34,
+    "comment_archive_version": 2
   },
   {
     "id": "720189865",
@@ -3309,59 +1639,9 @@
     "votes": "122",
     "comments": "113",
     "published": "13 시간 전",
-    "archived_comments": [
-      {
-        "author": "카리브해물탕",
-        "published": "8 시간 전",
-        "body": "... 진짜 시팔 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "개붕야호",
-        "published": "8 시간 전",
-        "body": "그놈에 돈뿌리기 ㅋㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "하위헌스",
-        "published": "7 시간 전",
-        "body": ""
-      },
-      {
-        "author": "도톨도톨",
-        "published": "7 시간 전",
-        "body": "남이 낚은 물고기 입에 배달해주기"
-      },
-      {
-        "author": "행복은불행의소거",
-        "published": "7 시간 전",
-        "body": "자연소멸을 돕고 대규모 농사를 할 수 있도록 유도해야되는데 진짜 개좆같네 나라가.."
-      },
-      {
-        "author": "학대파",
-        "published": "7 시간 전",
-        "body": "진짜 기업하기 좆같은 나라야 ㅋㅋ"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "정부에서 얼마나 개지랄을 떨었길래 ㅋㅋ"
-      },
-      {
-        "author": "오늘도야근이다",
-        "published": "6 시간 전",
-        "body": "아니 초과 세수 생겼으면 나랏빚부터 어느정도 해결하는게 맞지 않나?\n이자나가는것도 어마어마 하다던데 ...."
-      },
-      {
-        "author": "국밥매니아",
-        "published": "5 시간 전",
-        "body": "나라빚 많다면서 빚은 안갚나"
-      },
-      {
-        "author": "냥팔자가상팔자",
-        "published": "3 시간 전",
-        "body": "이래서 능력되면 이민 국내 남을거면 미장 + 달러 + 금 + 상급지 부동산 있서야 됨 왼팔이 정권 잡으면 표퓰리즘으로 나라 작살낸다."
-      }
-    ],
-    "archived_at": "2026-08-20T22:49:11"
+    "archived_at": "2026-08-20T22:49:11",
+    "archived_comment_count": 13,
+    "comment_archive_version": 2
   },
   {
     "id": "720187869",
@@ -3371,59 +1651,9 @@
     "votes": "90",
     "comments": "91",
     "published": "3 시간 전",
-    "archived_comments": [
-      {
-        "author": "tmdgmlqkqh",
-        "published": "2 시간 전",
-        "body": "윗입다물고 아랫입"
-      },
-      {
-        "author": "sunyoung3070",
-        "published": "2 시간 전",
-        "body": "나 데이트 전날에 10시부터 새벽 4시까지 전화해본적 있는데\n나중에 가면 졸려서 내가 뭔말하는지 몰라ㅋㅋ"
-      },
-      {
-        "author": "번쩍필살검무",
-        "published": "2 시간 전",
-        "body": "사람마다 다름ㅋㅋ"
-      },
-      {
-        "author": "미크리트",
-        "published": "2 시간 전",
-        "body": "난 하루 일과 마치고 전여친이랑 영통 40분~1시간씩 할 때가 젤 행복했는데 이리저리 살다보니까 헤어졌네 쩝"
-      },
-      {
-        "author": "임페일",
-        "published": "2 시간 전",
-        "body": "1시간까지는 뭐\n그 이상으로 길어지는게 문제지"
-      },
-      {
-        "author": "420420420",
-        "published": "2 시간 전",
-        "body": "이거 진짜 존나 힘듦. 지금도 하고 있다 씨발"
-      },
-      {
-        "author": "약산성피부",
-        "published": "2 시간 전",
-        "body": "30~40분 넘어가면 통화 오래했다하고 끊자함"
-      },
-      {
-        "author": "수참치",
-        "published": "1 시간 전",
-        "body": "감쓰통, 일상대화 안해주면 여친 기분상하시잖아~\n한두번이야 괜찮은데 매일하면 지치긴 하다만 또 거절하자니 싸움나고 어렵다 어려워"
-      },
-      {
-        "author": "고양이왕",
-        "published": "1 시간 전",
-        "body": "그럼 남자랑 연애하던가"
-      },
-      {
-        "author": "앰플리파이드",
-        "published": "1 시간 전",
-        "body": "좋아서 통화하는거 말고\n하기싫은거 꾸역꾸역 할거면 연애를 왜함ㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:49:18"
+    "archived_at": "2026-08-20T22:49:18",
+    "archived_comment_count": 1,
+    "comment_archive_version": 2
   },
   {
     "id": "720187850",
@@ -3433,59 +1663,9 @@
     "votes": "118",
     "comments": "38",
     "published": "14 시간 전",
-    "archived_comments": [
-      {
-        "author": "섹근박근",
-        "published": "8 시간 전",
-        "body": "주던뎅"
-      },
-      {
-        "author": "死4死4",
-        "published": "7 시간 전",
-        "body": "기숙사 안다녀봄?"
-      },
-      {
-        "author": "했재와그랬재",
-        "published": "14 시간 전",
-        "body": "손해보면 병신된다는 마인드 때문에 피곤하게 사네.. 주작에 속아서 웃으면 자괴감들고 그런가?? 개그코너도 잘 짜여진 주작이고 예능도 작가들이 짜놓은 주작인데 그건 재밌게 봄? 작가들한테 놀아나는 기분 안 느껴지고?"
-      },
-      {
-        "author": "부리부리대마왕",
-        "published": "14 시간 전",
-        "body": "영화랑 소설 안보신다잖아~"
-      },
-      {
-        "author": "내가빅뱅이론",
-        "published": "14 시간 전",
-        "body": "나에게 주는 선물"
-      },
-      {
-        "author": "완전폐품아들",
-        "published": "14 시간 전",
-        "body": "개그에까지 주작타령하는거 참 불쌍한거 같음"
-      },
-      {
-        "author": "tmdgmlqkqh",
-        "published": "14 시간 전",
-        "body": "근데 저거 진짜임"
-      },
-      {
-        "author": "응구지오응앗뽀",
-        "published": "13 시간 전",
-        "body": "아 점심에 빅맥먹어야지"
-      },
-      {
-        "author": "어예쁘다",
-        "published": "11 시간 전",
-        "body": "군대에서 저녁으로 탕수육나온다길래 ㅈㄴ기대했는데 그날 취사지원걸려서  디지는줄"
-      },
-      {
-        "author": "꾸이와꾸스",
-        "published": "7 시간 전",
-        "body": "아니 햄버거라고 했으면 모를까 ㅋㅋㅋㅋ 빅맥이라고 했으면 눈치챘어야지."
-      }
-    ],
-    "archived_at": "2026-08-20T22:49:25"
+    "archived_at": "2026-08-20T22:49:25",
+    "archived_comment_count": 37,
+    "comment_archive_version": 2
   },
   {
     "id": "720186575",
@@ -3495,59 +1675,9 @@
     "votes": "222",
     "comments": "165",
     "published": "14 시간 전",
-    "archived_comments": [
-      {
-        "author": "즐기시게냅둬",
-        "published": "11 시간 전",
-        "body": "호두를 더 먹었어야지"
-      },
-      {
-        "author": "아무말이나함",
-        "published": "11 시간 전",
-        "body": "나도 주변에 경계선 의심되는 사람 있는데 퍼즐풀기나 보드게임은 곧잘하거든? 근데 일머리가 전혀 없고 자주 나사빠진 행동이나 말을 해. 이런것도 경계선일수있나? 유리가 아는 일반적인 아이큐검사는 그럭저럭 높게 나옴."
-      },
-      {
-        "author": "즐기시게냅둬",
-        "published": "11 시간 전",
-        "body": "다른건 정상범주지만 사회지능이랑 언어지능이 낮은 경우일걸\n알짤딱이나 의사소통이 잘 안됨"
-      },
-      {
-        "author": "로맥",
-        "published": "3 시간 전",
-        "body": "아는 동생중에 딱 그런 놈 하나가 있는데 걍 사회지능 언어지능이 낮은거였구나.."
-      },
-      {
-        "author": "미녀와야스",
-        "published": "10 시간 전",
-        "body": "경계선지능 이런건 일반 아이큐를 기준으로 하는거라 지능이 그렇게 측정된 시점에서 경계선인지 아닌지는 이미 답이 나온거고\nIq라 일컫는 일반지능이 여러 영역에 얼마나 영향력이 있는가는 여러 논의가 있지만 결국 사람, 영역마다 다른거고 이미 iq가 평균 범위로 나온 시점에서 걍 그냥 그쪽으로 일머리가 없다 라는 결론 말고는 딱히 할 얘기가 없을듯?"
-      },
-      {
-        "author": "epI3010",
-        "published": "3 시간 전",
-        "body": "ADHD같은거 아닌가...\n지인중에 좀 비슷한 사람 있었는데 ADHD검사 받고 ADHD판정받으셨음 그뒤로 약복용 꾸준히 하시더니 덜 그러심"
-      },
-      {
-        "author": "회사에서코고는중",
-        "published": "9 시간 전",
-        "body": "진지하게 돌고래랑 오목두면 이길 수 있음?"
-      },
-      {
-        "author": "level급발진",
-        "published": "8 시간 전",
-        "body": "성인 adhd 의심되서 대형병원에서 웩슬러 검사포함해서 종합심리검사? 받았는데\n아이큐 125에 상위 4프로 나오더라...\n근데 오신호? 충동억제 안되고 기억력 경계선 수준.....\nadhd 진단받고 콘서타 처방받고있는데 크게 도움되는지는 모르겟음"
-      },
-      {
-        "author": "으악숑",
-        "published": "6 시간 전",
-        "body": "그러면 체감이 안된다고 정신과 의사한테 말해서 약을 바꿔봐. adhd도 약 종류가 여러가지라 효과 없거나 부작용 너무 심하면 약 종류랑 용량 바꿔가면서 본인에게 적절한 약을 찾아가는 과정이 필요함"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "군대에서 경지장 의심되는애 인생 처음으로 겪어봤는데 쉽지 않더라"
-      }
-    ],
-    "archived_at": "2026-08-20T22:49:32"
+    "archived_at": "2026-08-20T22:49:32",
+    "archived_comment_count": 14,
+    "comment_archive_version": 2
   },
   {
     "id": "720185442",
@@ -3557,59 +1687,9 @@
     "votes": "139",
     "comments": "71",
     "published": "14 시간 전",
-    "archived_comments": [
-      {
-        "author": "Left",
-        "published": "11 시간 전",
-        "body": "부럽다 ㅠ"
-      },
-      {
-        "author": "헌트릭스",
-        "published": "11 시간 전",
-        "body": "다들 좋은 사람들이었나보네"
-      },
-      {
-        "author": "일하기싫어요",
-        "published": "11 시간 전",
-        "body": "부럽다...."
-      },
-      {
-        "author": "천체투영장치",
-        "published": "11 시간 전",
-        "body": ""
-      },
-      {
-        "author": "평세",
-        "published": "10 시간 전",
-        "body": "2000년대 초반에 실수령 300넘었으면 충성할만 함\n2000년대 중반에 삼성반도체 초봉이 3천 조금 넘었었음 진짜 엄청났네"
-      },
-      {
-        "author": "물질전달",
-        "published": "7 시간 전",
-        "body": "3천 안됐을걸ㅋㅋ 5x기 초반인데 3천대였음. 4x기면 2천대일거여"
-      },
-      {
-        "author": "챰새",
-        "published": "9 시간 전",
-        "body": "씹소설"
-      },
-      {
-        "author": "타잇타잇타잇",
-        "published": "9 시간 전",
-        "body": "소설이면 어때 혐오 조장도 아닌데"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "존나 부럽다는 생각이 든다.\n저 시절에 3천이면 대기업이랑 다를바 없고 저런 직장에서 계속 일해왔다는게 부러울뿐이네"
-      },
-      {
-        "author": "망고모찌",
-        "published": "5 시간 전",
-        "body": "20년 이상 고인물 회사는 그냥 텃세가 개 좆됨\n왜 고인물 밖에 없는지 생각해보면 알게됨"
-      }
-    ],
-    "archived_at": "2026-08-20T22:49:41"
+    "archived_at": "2026-08-20T22:49:41",
+    "archived_comment_count": 21,
+    "comment_archive_version": 2
   },
   {
     "id": "720185022",
@@ -3619,59 +1699,9 @@
     "votes": "151",
     "comments": "88",
     "published": "15 시간 전",
-    "archived_comments": [
-      {
-        "author": "봄동비빔밥",
-        "published": "10 시간 전",
-        "body": "돈을 또 왜주냐고"
-      },
-      {
-        "author": "얼죽아",
-        "published": "9 시간 전",
-        "body": "그새끼들이 그렇지 뭐 ㅋㅋ 탄압 했다간 정체성이 흔들리는데 돈 드려야지 ㅋㅋ 아이고 잘한다 씹새들아 ㅋㅋ"
-      },
-      {
-        "author": "잉어빵붕어킹",
-        "published": "9 시간 전",
-        "body": "금쪽이들 지랄하는건 대부분 부모탓이라던데 허허... ㅋㅋㅋㅋㅋ 떼를 쓰니 보상을 준다라 ㅋㅋ 오은영이 뒷산에서 몽둥이 깎아올듯"
-      },
-      {
-        "author": "이근8성장군대위형님",
-        "published": "9 시간 전",
-        "body": "그러지말고 롯데 개역전패한날 사직구장역에서 시위해봐.  그정도 깡다구 있음 인정해줄께"
-      },
-      {
-        "author": "NMNSe",
-        "published": "6 시간 전",
-        "body": "그냥 부산갔을때도 개털렸는데 그날 그지랄하면 사지분해됨ㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "대천왕중최약체",
-        "published": "9 시간 전",
-        "body": "시위목적이 예산타내는거였으니 당연한거지 뭐"
-      },
-      {
-        "author": "옴니아엑시노스",
-        "published": "9 시간 전",
-        "body": "억울하면 떼법해"
-      },
-      {
-        "author": "희망을버려라아세이",
-        "published": "9 시간 전",
-        "body": "꼬우면 너너도 사회 공공인프라에 적극적인 손해를 유발시키고 손괴를 일으켜라 들어주게 되어있다 무조건 ㅋㅋ"
-      },
-      {
-        "author": "형수저흥분데요",
-        "published": "9 시간 전",
-        "body": "이러니 서울 장기전세 20년 꿀빨앗던 놈들도 못나간다고 징징거리지 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "인도의일찍일어나는새",
-        "published": "8 시간 전",
-        "body": "이제 곧 장기전세도 같은 꼴 날 거 알제?ㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:49:49"
+    "archived_at": "2026-08-20T22:49:49",
+    "archived_comment_count": 37,
+    "comment_archive_version": 2
   },
   {
     "id": "720181776",
@@ -3681,59 +1711,9 @@
     "votes": "205",
     "comments": "145",
     "published": "15 시간 전",
-    "archived_comments": [
-      {
-        "author": "하위헌스",
-        "published": "10 시간 전",
-        "body": ""
-      },
-      {
-        "author": "BGM머신",
-        "published": "9 시간 전",
-        "body": "여자들 기훈단 입대 스타트 끊으면 다음단계 넘어가는건 쉬우니까 그러지 ㅋㅋㅋ 그리고 여군들 징병해서 자대 배치하는건 쉽지 않을듯 독립된 중대 대대에는 넣기도 애매하고 시설도 없고"
-      },
-      {
-        "author": "꼬길밟",
-        "published": "9 시간 전",
-        "body": "여자는 공익으로 대체복무하면 나라에서 준비할 것도 없이 바로 해결되는거 아니냐\n현역 입대 불가한 남자를 공익으로 배치할게 아니고"
-      },
-      {
-        "author": "김덕순화덕파스타",
-        "published": "8 시간 전",
-        "body": "감당 못하는 사고 개많이 일어난다. 군대도 안간년들이 간호사 문화라고 태움하는거 봐라. 민간 직업에서도 저지랄한느데 군대간다? 니들 이거 되겠냐? 오또케 하다가 사고 존나 크게 일어나고 보적보라고 지들끼리 육체적 정신적 괴롭혀서 날이면 날마다 목메달고 뒤지는 년들 개많이 나와서 시체 수습 자체가 어려워질 수 잇음. 계집을 뭔 군대에 보내냐. 그냥 시발 와서 밥이나하다가 가라고 그래."
-      },
-      {
-        "author": "좋아좋아좋아요",
-        "published": "8 시간 전",
-        "body": "반대로 그 정신머리는 군대를 안다녀와서일수도있음. 남자도 군대서 철드는데 여자라고...대한민국 여자들의 문제는 의무없는 권리만 줘서임."
-      },
-      {
-        "author": "김덕순화덕파스타",
-        "published": "8 시간 전",
-        "body": "이미 집안에서 우리 공주님하면서 오구오구 키운 영포티씹새끼들이 문제임 그냥. 정신머리 말하는데 어지간한 남자애들은 군대가기전에 철 안들었어도 대충 눈치껏 행동함."
-      },
-      {
-        "author": "좋아좋아좋아요",
-        "published": "8 시간 전",
-        "body": "그건 그세대 생각인거강느 지난 세대가 보기엔 군대 안갔다온 남자나 여자는 큰 차이가 있어보이진않음. 일단 군대를 다녀오면 이타심도 생기고, 조직에대한 이해 국가에대한 소속감등 지금보다 정신상태가 훨씬 건강해질듯....지금은 그냥 다른 종족임....80년대처럼 삶과 가정에 짓눌린 세대도아니고 물질적으론 엄청 풍요로운데, 스윗영포티가 오구오구로만 키워서 정신상태가 심각함. 이기심은 최고 감사지수는 세계최저...물질주의속에서만 만족을 찾는거같음. 남자여자가 이미 동등해졌는데 거기에 맞춰 국방을 같이 짋어져야함."
-      },
-      {
-        "author": "Literaly",
-        "published": "8 시간 전",
-        "body": "나는 군사훈련보단.. 민방위같은 전시 민간인 행동지침, 위급상황 생존법 교육에서 여자를 빼놓는 건 오히려 여자에 대한 차별이라는 생각은 해."
-      },
-      {
-        "author": "댜기",
-        "published": "8 시간 전",
-        "body": "전선에서 적절치 않으면 공익이라도 시켜서 후방 지원 훈련 시켜야지"
-      },
-      {
-        "author": "zuzulia",
-        "published": "7 시간 전",
-        "body": "1등시민이랑 꼴등시민이랑 같음??\n꼴등시민은 도구고 1등시민은 사람인데?? ㅋㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:50:01"
+    "archived_at": "2026-08-20T22:50:01",
+    "archived_comment_count": 48,
+    "comment_archive_version": 2
   },
   {
     "id": "720181416",
@@ -3743,59 +1723,9 @@
     "votes": "179",
     "comments": "121",
     "published": "15 시간 전",
-    "archived_comments": [
-      {
-        "author": "븅신",
-        "published": "10 시간 전",
-        "body": "올공이뭐임?"
-      },
-      {
-        "author": "버니버니짝짝",
-        "published": "10 시간 전",
-        "body": "올림픽공원아님?"
-      },
-      {
-        "author": "쓱간디",
-        "published": "10 시간 전",
-        "body": "저거 다 몰카 아니냐? 미친거 아님?"
-      },
-      {
-        "author": "사토준지",
-        "published": "10 시간 전",
-        "body": "자기전에 잠깐 유튜브 돌다보면 보여서 잠깐 보는데 리듬이 좋음. 저깄는 사람들 요새 밤에 날도 선선하겠다 솔직히 걍 심심해서 나가는 것 같음 ㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "하위헌스",
-        "published": "10 시간 전",
-        "body": ""
-      },
-      {
-        "author": "camelia",
-        "published": "9 시간 전",
-        "body": "딱 세친구 시절 나오는 감잡았어 급의 지나간유행어 언어를 보는 느낌인데..."
-      },
-      {
-        "author": "고양이왕",
-        "published": "8 시간 전",
-        "body": "멘트 하나하나가 주옥같네 ㅋㅋㅋ"
-      },
-      {
-        "author": "틀랄록",
-        "published": "8 시간 전",
-        "body": "사진에서 쉰내나네ㅋ"
-      },
-      {
-        "author": "sleeder",
-        "published": "6 시간 전",
-        "body": "더 틀딱 같잖아..."
-      },
-      {
-        "author": "비라쿤",
-        "published": "38 분 전",
-        "body": "와 진짜 쉰내난다 저길 왜가는거냐 ㅋㅋㅋㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:50:45"
+    "archived_at": "2026-08-20T22:50:45",
+    "archived_comment_count": 23,
+    "comment_archive_version": 2
   },
   {
     "id": "720179332",
@@ -3805,59 +1735,9 @@
     "votes": "149",
     "comments": "141",
     "published": "15 시간 전",
-    "archived_comments": [
-      {
-        "author": "뉴비곰",
-        "published": "13 시간 전",
-        "body": "그냥 야생고양이 다 없애면 생태계망하냐? 그게 가장궁긍하네"
-      },
-      {
-        "author": "팽드시에클",
-        "published": "12 시간 전",
-        "body": "안 망함 쟤가 있으면 망함"
-      },
-      {
-        "author": "일진교육미이수자",
-        "published": "12 시간 전",
-        "body": "영향 쥐좆만큼도 없을듯  쥐를 없애면 개좆망하겠지만"
-      },
-      {
-        "author": "오르다말아",
-        "published": "12 시간 전",
-        "body": "666 베리칩 없는 애들 다 잡아서 리셋하고 자기 반려동물들 동네가 함께 키우는 세상 만듭시다"
-      },
-      {
-        "author": "불꼬리",
-        "published": "12 시간 전",
-        "body": "냥"
-      },
-      {
-        "author": "곡광이",
-        "published": "11 시간 전",
-        "body": "뭔 지위가 있다는 거지"
-      },
-      {
-        "author": "하위헌스",
-        "published": "10 시간 전",
-        "body": ""
-      },
-      {
-        "author": "alcoholic",
-        "published": "8 시간 전",
-        "body": "나 어렸을 때는 도둑고양이라고 부르면서 내쫓거나 피해다녔는데 캣맘은 언제부터 생긴거지"
-      },
-      {
-        "author": "걱정만잔뜩인찐찌버거",
-        "published": "8 시간 전",
-        "body": "걍 고양이가 고양이지 뭔 길고양 들고양 ㅋㅋㅋㅋㅋ 길개 들개도 있다그러지그러냐"
-      },
-      {
-        "author": "마늘갈릭",
-        "published": "7 시간 전",
-        "body": "조만간 유해조수 지정하고 마리당 얼마씩 쳐줬으면"
-      }
-    ],
-    "archived_at": "2026-08-20T22:52:15"
+    "archived_at": "2026-08-20T22:52:15",
+    "archived_comment_count": 7,
+    "comment_archive_version": 2
   },
   {
     "id": "720179355",
@@ -3867,59 +1747,9 @@
     "votes": "145",
     "comments": "130",
     "published": "15 시간 전",
-    "archived_comments": [
-      {
-        "author": "김공도리",
-        "published": "11 시간 전",
-        "body": "참 거 삼성중공업도 똑같이했는데 유세는\n대우조선때도 거제 일 생기면 나섰음\n지역 대기업은 다 저런거 하는데 당연한게 바이럴 되네"
-      },
-      {
-        "author": "인도의일찍일어나는새",
-        "published": "6 시간 전",
-        "body": "그럼 넌 삼성중공업 바이럴글 올려!"
-      },
-      {
-        "author": "웜뱃똥",
-        "published": "10 시간 전",
-        "body": "청계산 데이다라.."
-      },
-      {
-        "author": "하위헌스",
-        "published": "10 시간 전",
-        "body": ""
-      },
-      {
-        "author": "고구마우유",
-        "published": "8 시간 전",
-        "body": "롸끈하셔"
-      },
-      {
-        "author": "사촌간볼빨기",
-        "published": "7 시간 전",
-        "body": "진짜 롸끈한거 하나는 알아줘야 함"
-      },
-      {
-        "author": "네모필라",
-        "published": "7 시간 전",
-        "body": "잘한거 맞는데 저놈의 트위터 파란딱지 붙으면 뭐든지 바이럴인가 의심감 ㅅㅂ ㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "노엘갤러거스하이플라잉버즈",
-        "published": "7 시간 전",
-        "body": "롸끈함은 남조선폭파집단 수괴평"
-      },
-      {
-        "author": "청계산데이다라",
-        "published": "7 시간 전",
-        "body": "일반직은 출근 했다는데 흠"
-      },
-      {
-        "author": "CCTV작동중",
-        "published": "25 분 전",
-        "body": "1번은 당연한거지 기상악화에도 일하다 사람 죽으면 기상악화때 작업중단된 피해 정도가 아니라 개월 단위로 샷다운될텐데..."
-      }
-    ],
-    "archived_at": "2026-08-20T22:52:27"
+    "archived_at": "2026-08-20T22:52:27",
+    "archived_comment_count": 31,
+    "comment_archive_version": 2
   },
   {
     "id": "720178792",
@@ -3929,54 +1759,9 @@
     "votes": "105",
     "comments": "59",
     "published": "14 시간 전",
-    "archived_comments": [
-      {
-        "author": "놀고먹고싶다아",
-        "published": "14 시간 전",
-        "body": "한방병원 4주면 그냥 안다친거나 다름없음"
-      },
-      {
-        "author": "포스파티딜세린",
-        "published": "14 시간 전",
-        "body": "대구지법 2023고단202 판결문 읽어보면 나오는데\n피해자가 공신력이 강한 상해진단서가 아니라\n피해자의 주관적 고통 표현에 크게 의존해서 공신력이 약한 한방병원 진료기록을 들고 온 탓에\n실제 진료기록과 비교해볼 때 피해자측의 주장과 달리 34일의 치료가 필요한 상해가 아니라고 판단된다는 내용이 길게 쓰여 있음"
-      },
-      {
-        "author": "b91nhjg0",
-        "published": "13 시간 전",
-        "body": "이거 개드립에도 반박글 올라왔던 것으로 기억하는데 아직도 선동용으로 쓰이는거 보면 참 그래"
-      },
-      {
-        "author": "란즈크네츠",
-        "published": "13 시간 전",
-        "body": "반박에 대한 재반박도 있음. 니 입맛에 맞는 사실만 취사선택 하지 마라."
-      },
-      {
-        "author": "프로네팔렘",
-        "published": "11 시간 전",
-        "body": "무조건 이심가자 제발"
-      },
-      {
-        "author": "포스파티딜세린",
-        "published": "10 시간 전",
-        "body": "진작에 갔고 결과는 1심의 판단이 판사 재량의 합리적인 범위를 벗어나지 않았다 판단되어 항소 기각\n대구지법 2023노3430"
-      },
-      {
-        "author": "프로네팔렘",
-        "published": "10 시간 전",
-        "body": "시발...."
-      },
-      {
-        "author": "어쩔",
-        "published": "9 시간 전",
-        "body": "어짜피 법대로 할건데 뭐 의미있나?"
-      },
-      {
-        "author": "잉어끵",
-        "published": "8 시간 전",
-        "body": "판결 위해 기계한테 먹이는 문서들의 단어랑 문장도\n사전작업 어떻게 하느냐에따라 아다르고 어다르고 하게\n이해할수도 있음.\n더구나 판결은 법대로하는게 아니고 판례가 꽤 씨게 작용함.\n그런데 최근 판결들이 다 이꼬라지인데\nAI가 기존 중요자료들을 뒤엎고 니들이 원하는 답이 나올거같냐?\nAI 유토피아같은건 없어"
-      }
-    ],
-    "archived_at": "2026-08-20T22:52:35"
+    "archived_at": "2026-08-20T22:52:35",
+    "archived_comment_count": 9,
+    "comment_archive_version": 2
   },
   {
     "id": "720175086",
@@ -3986,59 +1771,9 @@
     "votes": "108",
     "comments": "34",
     "published": "15 시간 전",
-    "archived_comments": [
-      {
-        "author": "안녕하세요반갑습니다",
-        "published": "11 시간 전",
-        "body": ""
-      },
-      {
-        "author": "꾸짖을갈보",
-        "published": "10 시간 전",
-        "body": "와 진짜 다행이다"
-      },
-      {
-        "author": "웜뱃똥",
-        "published": "10 시간 전",
-        "body": "다행이네"
-      },
-      {
-        "author": "알라후앜발",
-        "published": "9 시간 전",
-        "body": "저날 통영 섬에있었는데 진짜 미친듯이 비오긴하더라"
-      },
-      {
-        "author": "내일까지만살자",
-        "published": "9 시간 전",
-        "body": "할아버지 고향이 저 곤리도라\n나 어릴때 이사하고 나서도 곤리집이라고 불렸었는데"
-      },
-      {
-        "author": "잉어빵붕어킹",
-        "published": "8 시간 전",
-        "body": "와 허리까지만 쌓여도 이걸 치우는데 3시간이나 걸리는구나"
-      },
-      {
-        "author": "층에살아요",
-        "published": "8 시간 전",
-        "body": "와 정말 다행이다"
-      },
-      {
-        "author": "그까이꺼대충",
-        "published": "8 시간 전",
-        "body": "ㄷㄷ 다행이네."
-      },
-      {
-        "author": "명동발만두",
-        "published": "7 시간 전",
-        "body": "토사 압력이 들숨날숨 자가호흡으로 옥죄어 오다가 갈빗대 부러지는 걸 알았는지 몰라도...\n진짜 위험하다는 본능으로 살렸구만.. 효자다."
-      },
-      {
-        "author": "인생무상이요",
-        "published": "4 시간 전",
-        "body": "나도 저랬을것같네. 멋있다"
-      }
-    ],
-    "archived_at": "2026-08-20T22:52:46"
+    "archived_at": "2026-08-20T22:52:46",
+    "archived_comment_count": 34,
+    "comment_archive_version": 2
   },
   {
     "id": "720174457",
@@ -4048,59 +1783,9 @@
     "votes": "132",
     "comments": "66",
     "published": "16 시간 전",
-    "archived_comments": [
-      {
-        "author": "그웬스테이시",
-        "published": "11 시간 전",
-        "body": "900미리면 누군가의 과실로 책임질 문제도 아닌데 왜 저 지랄이냐"
-      },
-      {
-        "author": "아무말대연회",
-        "published": "10 시간 전",
-        "body": "사람이 죽었으니까. 책임을 씌울 부서를 찾는거임"
-      },
-      {
-        "author": "Mongrip",
-        "published": "11 시간 전",
-        "body": "거제가 어디에 잇는진 몰라도 좌측남쪽은 아닌가보네"
-      },
-      {
-        "author": "글렌모렌지시그넷",
-        "published": "10 시간 전",
-        "body": ""
-      },
-      {
-        "author": "진지병자",
-        "published": "11 시간 전",
-        "body": "3달치 비가 한방에 때려박혔는데 그걸 어케 하라고"
-      },
-      {
-        "author": "종합낚시인",
-        "published": "11 시간 전",
-        "body": "이렇게 책임질사람 찾아 조지는거 바뀌어야할텐데"
-      },
-      {
-        "author": "존재할수없는닉네임입니다",
-        "published": "9 시간 전",
-        "body": "자연재해로 봐야지 이 무슨"
-      },
-      {
-        "author": "망구리",
-        "published": "9 시간 전",
-        "body": "어떻게든 책임 안질려고 회피하는거봐라"
-      },
-      {
-        "author": "코드싫어",
-        "published": "7 시간 전",
-        "body": "당연한거아니냐? 사람이죽었는데 이걸 누가책임지고싶어하겠음 심지어 일개공무원이\n말단직원들한테 책임 싹다 떠넘기고 던지기하던거 선례로 수도없이 봐왔는데 본인보신은 본인이해야지"
-      },
-      {
-        "author": "열정",
-        "published": "8 시간 전",
-        "body": "저 산사태 사진 자주 본거같은데... 부산 어디 산사태 사진아님?"
-      }
-    ],
-    "archived_at": "2026-08-20T22:53:11"
+    "archived_at": "2026-08-20T22:53:11",
+    "archived_comment_count": 17,
+    "comment_archive_version": 2
   },
   {
     "id": "720174604",
@@ -4110,59 +1795,9 @@
     "votes": "147",
     "comments": "28",
     "published": "15 시간 전",
-    "archived_comments": [
-      {
-        "author": "수박은맛있어",
-        "published": "15 시간 전",
-        "body": "역시 비밀기지 하나 만드는건 국룰이지"
-      },
-      {
-        "author": "년차복학생",
-        "published": "14 시간 전",
-        "body": "어릴 때 베개랑 얇은 이불 가지고 쇼파 옆에 비밀 기지 만들고 그랬었는데 ㅋㅋㅋ 추억돋네."
-      },
-      {
-        "author": "헬다이버",
-        "published": "14 시간 전",
-        "body": "저 나잇대에 ㅋㅋㅋ진짜 저런거 좋아했지"
-      },
-      {
-        "author": "스크래치헬멧",
-        "published": "14 시간 전",
-        "body": "움막텐트에대한 본능이 있는걸까"
-      },
-      {
-        "author": "푸르딩딩",
-        "published": "12 시간 전",
-        "body": "박스로 화장실 만들어줬는데 1년 반 썼다 ㄹㅇ"
-      },
-      {
-        "author": "아니이개외안되",
-        "published": "12 시간 전",
-        "body": "늙크크때는 변두리마다 엄청큰 시멘트 하수배관 있어서 거기가 아지트였음"
-      },
-      {
-        "author": "캬루룽",
-        "published": "11 시간 전",
-        "body": "비밀기지의 로망이 클때"
-      },
-      {
-        "author": "오니기리죠",
-        "published": "10 시간 전",
-        "body": "밥 떠먹는거 졸귀네 진짜 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "로맥",
-        "published": "3 시간 전",
-        "body": "ㄹㅇㅋㅋㅋㅋㅋㅋㅋㅋㅋ 머리도 부스스 해가지고"
-      },
-      {
-        "author": "린미",
-        "published": "9 시간 전",
-        "body": "실내용 인디언 텐트 같은 거 파는 친구가 이거 은근 잘 팔린다고 이야기 하는 거 듣긴 함\n아무리 생각해도 용도가 애매한데 실내에서 아이들이 많이 쓴다고..."
-      }
-    ],
-    "archived_at": "2026-08-20T22:53:25"
+    "archived_at": "2026-08-20T22:53:25",
+    "archived_comment_count": 28,
+    "comment_archive_version": 2
   },
   {
     "id": "720173011",
@@ -4172,59 +1807,9 @@
     "votes": "180",
     "comments": "112",
     "published": "14 시간 전",
-    "archived_comments": [
-      {
-        "author": "잡고싶은허리",
-        "published": "10 시간 전",
-        "body": "ㄹㅇ 글만 봐도 꼽다ㅋㅋㅋㅋㅌㅋ 벌금이 잘못해서 혼난다고 생각해야되는데 돈을 냈으니 규칙을 초월하는 서비스 구매권을 샀다고 생각하는 놈들이 진짜 있더라."
-      },
-      {
-        "author": "pangloss",
-        "published": "9 시간 전",
-        "body": "그럼 30~50정도가 아니라 200~300 정도로 서비스 금액을 올리고 해당 금액의 일부를 얼집 교사 인센티브로 주면 딱 좋겠는데"
-      },
-      {
-        "author": "오타협회장",
-        "published": "6 시간 전",
-        "body": "선생님은 애를 좋아히서 교사를 하시는거에요,돈 벌기 위해서 하시는거에요?\n애를 볼모로 한 몫 잡으시려는거에요?\n강남 시터도 그렇게는 안받아요 선생님!\n선생님이 하시는 일이 그정도 값어치가 있다고 생각하세요?\n일단 이 레파토리로 위에 아동학대빔 반복임\n아직 헬적화 덜 됐구나\n돈이 문제가 아니야 저 종자들은ㅋㅋ"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "헬잘알"
-      },
-      {
-        "author": "번쩍필살검무",
-        "published": "11 시간 전",
-        "body": "저런사람도 가정을 이루는데"
-      },
-      {
-        "author": "쿠폰아까워",
-        "published": "10 시간 전",
-        "body": "한 명이 술 먹을 수 있지 나머지 한 명은 시발 뭐하는거임"
-      },
-      {
-        "author": "일본시골왜노자",
-        "published": "9 시간 전",
-        "body": "걍 음주운전에서 회식 엮이면 회사도 같이 불려가게만들면됨.\n총무/인사 부장쯤 끌려나가면 그떄부터는 회사가 회식하고 운전 못하게 필사적으로 막던가 걍 회식이 사라짐 ㅋ"
-      },
-      {
-        "author": "사진기능사",
-        "published": "8 시간 전",
-        "body": "내돈내고 택시태워보내고 씨발년소리들으면 같이 욕박고 ㅅㅂㄴ 아동학대로 신고한다."
-      },
-      {
-        "author": "잉어빵붕어킹",
-        "published": "8 시간 전",
-        "body": "술 못먹는 입장에선 진짜 술이 얼마나 맛있길래 애까지 버려두고 마실정도인지 참 신기하네"
-      },
-      {
-        "author": "로맥",
-        "published": "3 시간 전",
-        "body": "그냥 애를 낳으면 안 되는 미친년놈들이 본능에만 충실해서 싸지른거.. 애만 불쌍함"
-      }
-    ],
-    "archived_at": "2026-08-20T22:53:57"
+    "archived_at": "2026-08-20T22:53:57",
+    "archived_comment_count": 12,
+    "comment_archive_version": 2
   },
   {
     "id": "720172579",
@@ -4234,59 +1819,9 @@
     "votes": "107",
     "comments": "80",
     "published": "11 시간 전",
-    "archived_comments": [
-      {
-        "author": "비추누르면대머리됨",
-        "published": "9 시간 전",
-        "body": "야가다 실전학원 차리면 잘되것네 ㅋㅋ"
-      },
-      {
-        "author": "라이노5",
-        "published": "8 시간 전",
-        "body": "한두번듣다보면 금방 익숙해짐"
-      },
-      {
-        "author": "시라누이Q",
-        "published": "8 시간 전",
-        "body": "야리끼리~"
-      },
-      {
-        "author": "부뢀큰애로우",
-        "published": "8 시간 전",
-        "body": "현장 용어 솔직히 전문성 없어 보임"
-      },
-      {
-        "author": "무알콜맥주",
-        "published": "8 시간 전",
-        "body": "어이 막내 뿌레카랑 구랜다 가지고와라.\n빨리 시마이하고 야리끼리해야지"
-      },
-      {
-        "author": "Neuer",
-        "published": "7 시간 전",
-        "body": "겐사끼(=견삭기, 깔깔이, 라챗 렌치) 갖고 오라는 말 처음 들었을 때 존나 얼탔음"
-      },
-      {
-        "author": "파송송심영탁",
-        "published": "7 시간 전",
-        "body": "구루마 끌차 카트 대차 밀차 손수레\n이게 한 가지 물건 이름이라고 ㅋㅋㅋ"
-      },
-      {
-        "author": "파빵",
-        "published": "7 시간 전",
-        "body": "엘카 라고도 함 ㅋㅋ"
-      },
-      {
-        "author": "왕가슴",
-        "published": "7 시간 전",
-        "body": "그나마 삼성같은 대기업이 한국말이나 영어로 용어 다 바꿔줘서 정상화된게 저거임 예전엔 심각했음 ㅋㅋㅋ"
-      },
-      {
-        "author": "dagdha",
-        "published": "7 시간 전",
-        "body": "한국인도 배워야 함. ㅋㅋㅋㅋ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:54:11"
+    "archived_at": "2026-08-20T22:54:11",
+    "archived_comment_count": 30,
+    "comment_archive_version": 2
   },
   {
     "id": "720169890",
@@ -4296,59 +1831,9 @@
     "votes": "123",
     "comments": "117",
     "published": "14 시간 전",
-    "archived_comments": [
-      {
-        "author": "크리스폴",
-        "published": "11 시간 전",
-        "body": "한복입고 첫 촬영이라는 말이겠지\n진짜 억까 존나 심하네"
-      },
-      {
-        "author": "재밌는거웃긴거",
-        "published": "11 시간 전",
-        "body": "존나 억까의 끝이네 시발ㅋㅋ\n다만 나라뺏기면 법도 억까도 애미애비도 다 뒤지고 사라져서 의미가 없으니 인간으로서 할 수 있는 범죄중에 원탑이라고 할 수 있음.\n법도 나라가 존재해야 작동하는데 그 나라를 지우는데 일조를 하고 열심히 한손 거들던 족속들이라 솔직히 법대로 처리해야되는 이유를 모르겠음\n나라 팔아먹은 집안은 자손대대로 그냥 억까당하고 사는게 맞음. 싫으면 일본으로 이민가서 부귀영화 누리면 될듯\n그래도 억까같으면 일본도 일제강점기 시절 지랄했던 새끼들 거의 다 뒤졌는데 앞으로 일제강점기에 대한 불만은 다시는 꺼내지 마라 현재를 살아가는 일본인은 무슨죄가 있어서 징징거리는거 계속 들어야되냐"
-      },
-      {
-        "author": "비추누르면대머리됨",
-        "published": "11 시간 전",
-        "body": "진짜 기모노만 입었을지도...모르지 뭐\n친일파 집안인데"
-      },
-      {
-        "author": "12612",
-        "published": "11 시간 전",
-        "body": "이쁘고 어린 대체자는 많은데 뭘 ㅋ"
-      },
-      {
-        "author": "사관",
-        "published": "11 시간 전",
-        "body": "ㅋㅋㅋ...이지아처럼 조용히 있엇으면 아무도 안건드렸을텐데.........제손으로 부관참시를해서...ㅋㅋㅋ"
-      },
-      {
-        "author": "번쩍필살검무",
-        "published": "10 시간 전",
-        "body": "죽여야끝날거임? 무섭네"
-      },
-      {
-        "author": "기억조각하나",
-        "published": "10 시간 전",
-        "body": "죽어야 끝나는거 맞아 계속 그래왔지 ㅋㅋㅋ 이 사람 전에는 김새론이었고"
-      },
-      {
-        "author": "달콤한호빵",
-        "published": "8 시간 전",
-        "body": "그냥 배우일만 그만두면 끝날걸 ㅋㅋ"
-      },
-      {
-        "author": "현금흐름할인모형",
-        "published": "7 시간 전",
-        "body": "이런놈들은 하는 말이 똑같냐\n탬플릿이냐?"
-      },
-      {
-        "author": "놀고싶다",
-        "published": "6 시간 전",
-        "body": "안쓰럽다 생각도 드는데 또 속시원하기도 하고 그렇네\n일단 하던일 그만 두고 자숙한단 말로 숨으면 언젠간 잊힐텐데"
-      }
-    ],
-    "archived_at": "2026-08-20T22:54:18"
+    "archived_at": "2026-08-20T22:54:18",
+    "archived_comment_count": 17,
+    "comment_archive_version": 2
   },
   {
     "id": "720164990",
@@ -4358,29 +1843,9 @@
     "votes": "251",
     "comments": "154",
     "published": "19 시간 전",
-    "archived_comments": [
-      {
-        "author": "카케구루이",
-        "published": "10 시간 전",
-        "body": "아직 남아있었어???"
-      },
-      {
-        "author": "김덕순화덕파스타",
-        "published": "8 시간 전",
-        "body": "그냥 진짜 재들이 무서운건 호남이라고 말하면서 지역감정 계속 유발하고 갈라치기하고 있다는거임. 호남사람들도 치를 떠는 집단인데 멍청한애들이 호남은 반미구나 이러고 있는것도 웃김. 우리 개붕이들은 똑똑하니까 저딴 갈라치기에 넘어가지말고 그냥 재들은 빨갱이짓을 위해서 지역하나 잡아다가 끌고 대신 욕먹게 만들 방패막을 호남으로 잡았구나 생각하자."
-      },
-      {
-        "author": "인터넷",
-        "published": "8 시간 전",
-        "body": ""
-      },
-      {
-        "author": "ery",
-        "published": "8 시간 전",
-        "body": "저런거 보고도 저기에 짓겠냐?\n오히려 호남 반도체 못짓게 하려는 첨병 아님?\n근데 생각해 보자\n쟤네가 구호는 저래도 자기네 행동의 결과가 어떨지 모르는 애들이 아니거든?\n쟤네의 구호는 저래도 실제 목적은\n1. 기업이 못 들어오게 한다\n2. 혹은 들어와도 왕창 삥을 뜯는다\n두개고 어느쪽이건 목적 달성일거다 이거지\n그럼 생각해 보면 2번은 지네 밥그릇 채워지니까 이해가 되는데\n1번은 왜? 라는 생각이 들지?\n사람들이 경제적 여유가 생기면 정치적 스탠스가 변화하기 마련이라\n자기네들이 꽉 잡고 있는 집단에서 어떤 변화가 일어나는 걸 원치 않는거야\n비유하자면 표를 수확하는 농장 같은건데, 거기에 돈줄이 될 산업이 들어와서 돈좀 쥔 사람들이 생기는걸 원치 않는 것임\nstay hungry forever\n쟤네들은 바보가 아니야\n시위 첨하는것도 아니고 수십년간 시위하면서 자기들이 저렇게 행동할때 어떤 결과가 나올 거라는거 대강 예상하고 있음\n사람들이 저 집단을 보면서 이해를 못 하는 이유가, 저들의 이해관계가 우리 상식과 반대이기 때문임\n그리고 .. 저들은 저기 지역민들을 대표하지 않는다\n근데 같이 쌈싸먹히면서 욕받이가 되지\n그렇다고 '아직은' 호남 내에서 쟤네를 성토하면 인간 취급도 못 받는게 사실이라, 젊은 세대는 전부다 서울로 이주하는 것임\n근데 베이비붐 세대들이 죽고 나면 호남도 확 변할 수밖에 없다"
-      }
-    ],
-    "archived_at": "2026-08-20T22:54:41"
+    "archived_at": "2026-08-20T22:54:41",
+    "archived_comment_count": 4,
+    "comment_archive_version": 2
   },
   {
     "id": "720161698",
@@ -4390,59 +1855,9 @@
     "votes": "222",
     "comments": "40",
     "published": "22 시간 전",
-    "archived_comments": [
-      {
-        "author": "BlairAthol",
-        "published": "13 시간 전",
-        "body": "싸이, 버디버디가 죽어서 다행이야 ㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "momento",
-        "published": "13 시간 전",
-        "body": "맞긴함. 맨날 만나서 노는게 많았음 ㅋㅋㅋ"
-      },
-      {
-        "author": "콩냉이순장고",
-        "published": "13 시간 전",
-        "body": "정부가 해주는 아이디 비번 까먹은 내 흑역사 삭제 서비스\nhttps://www.privacy.go.kr/front/rghtFrgtFrt/selectRequestType.do"
-      },
-      {
-        "author": "님금임은벗거벌",
-        "published": "11 시간 전",
-        "body": "만 30세 미만만 가능..?"
-      },
-      {
-        "author": "쇼갱",
-        "published": "12 시간 전",
-        "body": "난 학교다닐때 스마트폰있었으면 대학못갔을거같음"
-      },
-      {
-        "author": "대사치",
-        "published": "11 시간 전",
-        "body": "흑역사 박제 여부가 중요한 게 아니고\n친구들과 바깥에서 뛰어놀 수 있었고\n사람간의 소셜 네트워킹이 다 대면관계였기 때문에\n나는 그 시절에 살 수 있어서 좋았다"
-      },
-      {
-        "author": "sitiydu",
-        "published": "11 시간 전",
-        "body": "난 지금도 행복해. 과거는 과거일뿐"
-      },
-      {
-        "author": "오나홀소믈리에",
-        "published": "11 시간 전",
-        "body": "내가 은밀한 병신이라 너무 다행이다"
-      },
-      {
-        "author": "레벨토끼",
-        "published": "11 시간 전",
-        "body": "그래서 페북 비공으로 돌리고 다 지움 어휴"
-      },
-      {
-        "author": "꾸짖을갈보",
-        "published": "10 시간 전",
-        "body": "아 아찔하노 ㅅㅂ"
-      }
-    ],
-    "archived_at": "2026-08-20T22:54:49"
+    "archived_at": "2026-08-20T22:54:49",
+    "archived_comment_count": 40,
+    "comment_archive_version": 2
   },
   {
     "id": "720320669",
@@ -4453,58 +1868,8 @@
     "comments": "53",
     "published": "1 시간 전",
     "archived_at": "2026-08-20T21:24:24",
-    "archived_comments": [
-      {
-        "author": "고추건조기",
-        "published": "1 시간 전",
-        "body": "돈 내놓으시면 안될까요?"
-      },
-      {
-        "author": "알파카털파카",
-        "published": "1 시간 전",
-        "body": "50프로도 씨발아까운데 100프로는ㅋㅋ 50프로 저거도 소비자보호어쩌고에 민원넣어서 받아낼 방법은 없나?"
-      },
-      {
-        "author": "dogdrip개드립",
-        "published": "14 분 전",
-        "body": "개지랄하면 받을 수 있을걸\n내가 숙박플랫폼에서 예약하자마자 취소했는데 규정상 수수료100%라 그래갖고 2주동안 싸워서 받아냄"
-      },
-      {
-        "author": "We",
-        "published": "34 분 전",
-        "body": "취소수수료 절반 하면 방값 50퍼센트 번거잖아?\n빈 방 30퍼센트만 할인해도 바로 예약될거 같은데...\n왜 저런다냐.\n30퍼센트로 안 되면 50퍼센트 내려서라도 손님 받으면 밑제는게 아니잖아"
-      },
-      {
-        "author": "코만도승",
-        "published": "6 분 전",
-        "body": "장사머리있는청년"
-      },
-      {
-        "author": "컬러브",
-        "published": "20 분 전",
-        "body": "애초에 받기 어렵다는 말이 뭔 말인지 모르겠음. 3일 전에 취소했고, 취소한 지 1시간만에 저 개소리를 지껄인 거잖아.\n3일이나 시간이 있고, 1시간만에 손님이 안 잡힌다는 확신이 어떻게 나오지?"
-      },
-      {
-        "author": "메이",
-        "published": "12 분 전",
-        "body": "두번 읽고 이해 안돼서 난독증 생긴줄 알았는데 뇌가 이해를 거부한거였네 ㅅㅂ"
-      },
-      {
-        "author": "엘프남",
-        "published": "12 분 전",
-        "body": "ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "黒江猛烈",
-        "published": "8 분 전",
-        "body": "머릿속에서 뭐가 어떻게 돌아갔길래\n저말이 나오지"
-      },
-      {
-        "author": "네비두라",
-        "published": "방금 전",
-        "body": "위약금 50%도 안아까워하는 인간이니 100% 다 받아보까?\n아니면 말고"
-      }
-    ]
+    "archived_comment_count": 1,
+    "comment_archive_version": 2
   },
   {
     "id": "720318670",
@@ -4515,58 +1880,8 @@
     "comments": "64",
     "published": "1 시간 전",
     "archived_at": "2026-08-20T21:24:36",
-    "archived_comments": [
-      {
-        "author": "번마",
-        "published": "1 시간 전",
-        "body": "그럼 번돈으로 어리고탱탱한 좆뱀하나 모시고 살면 되겠네\n하고싶은 애들 줄설것같은데"
-      },
-      {
-        "author": "wlsh",
-        "published": "1 시간 전",
-        "body": "능력적으로나 인간적으로는 대단한분은 맞음\n다만.... 39살에 자기랑 비슷한 남자가 대쉬해도 ㅇㅋ를 할까라는게 문제지"
-      },
-      {
-        "author": "드립좀",
-        "published": "1 시간 전",
-        "body": "이쁜데?????"
-      },
-      {
-        "author": "호잇호이호이",
-        "published": "1 시간 전",
-        "body": "자존감이 낮으면 더 만나기 힘들지 ㅠㅠ"
-      },
-      {
-        "author": "년차글쟁이",
-        "published": "57 분 전",
-        "body": "지금은 괜찮은데 문제는 30년 뒤임 내 친척 중에 혼자 사시는 분들이 몇 분 계셔서 종종 느낌\n커리어로는 자기 업계에서 탑 찍었는데 행복한지는 모르겠어 돈과 명예는 예전에 이미 다 얻었는데 가까운 가족들은 늙어서 다 죽고, 후사도 없고, 남은 것은 먼 친척들뿐임"
-      },
-      {
-        "author": "bittersalt",
-        "published": "45 분 전",
-        "body": "그 사람들이 행복한지는 모르겠다고 말하면서\n뒤에 더한 내용은 절대로 행복하지 못할거라는 결론이네\n그런걸 너가 함부로 평가하지는 마\n어떤 인생이든 다 그럴만한 사연이 있는거임\n이해는 못해줘도 가족 늙어서 다 죽고 후사도 없다는 말은 그냥 경멸에 불과함"
-      },
-      {
-        "author": "아생각이없",
-        "published": "41 분 전",
-        "body": "행복해 보이지 않더라 정도는 말할 수 있는거 아닌가"
-      },
-      {
-        "author": "bittersalt",
-        "published": "37 분 전",
-        "body": "상대가 경제적 부족함없이 사는게 행복한지 아니면 후사가 없어서 불행한지\n그리고 그 사람에게 스쳐간 인연들이 인생에 어떤 영향을 줬는지\n깊게 알고 싶지도 않고 아무것도 모르는 상태로\n가족들 늙어서 다 죽고 남은게 먼 친척밖에 없다고 말하는게\n행복해 보이진 않는거 같다라는 단순한 표현으로 보긴 힘들어보임\n나도 유부지만 자기만의 기준으로 보이는 남의 결핍으로 평가 박아버리는거 아주 오만한 사고방식임\n본인들 인생도 경우에 따라서 남이 보기에 비루해보일 수 있음"
-      },
-      {
-        "author": "아생각이없",
-        "published": "30 분 전",
-        "body": "그렇구나. 좋은말이네. 생각이 많아지네 나도 그렇게 살아야겠다 하는 생각도 좀 들었어\n아 궁금한게,  살다보면 내생각을 뱉진 않아도 속으로 상대방을 평가하거나 판단하게 되지 않아? 좋은사람, 별로인사람. 사기꾼느낌이라던가. 허세라던가. 그런거\n그런것도 내 스스로 섣불리 하지않도록 하며 사는게 바람직 한건가?\n아니면 그냥 그사람이 행복한지 아닌지 그런 부분만 한정해서 쉽게 판단하지 말아라는 뜻인거야?"
-      },
-      {
-        "author": "bittersalt",
-        "published": "26 분 전",
-        "body": "에포케 라는 단어가 있음\n순간적인 직관은 내가 조절할 수 없지만, 그 판단을 유보하기로 결심하는게 현명한 자세임\n그러나 별로인사람, 허세, 사짜느낌 같은 직접적으로 나에게 해를 끼칠 수도 있는 리스크는 절대적으로 논외.\n결론적으로 타인의 사적인 삶에 대한 섣부른 평가를 멈추라는 의미임. 그렇지 않으면 무조건 자신 또한 스스로의 평가대상이 되고 너나 할거없이 고통을 주고받는 관계가 됨"
-      }
-    ]
+    "archived_comment_count": 40,
+    "comment_archive_version": 2
   },
   {
     "id": "720315944",
@@ -4577,58 +1892,8 @@
     "comments": "47",
     "published": "1 시간 전",
     "archived_at": "2026-08-20T21:24:46",
-    "archived_comments": [
-      {
-        "author": "아니뭐해",
-        "published": "1 시간 전",
-        "body": "난 불가능해..."
-      },
-      {
-        "author": "msi",
-        "published": "53 분 전",
-        "body": "꼬치 -2"
-      },
-      {
-        "author": "ArmCut",
-        "published": "1 시간 전",
-        "body": "저거 잘못하면 발기부전오는데"
-      },
-      {
-        "author": "tarrsar",
-        "published": "1 시간 전",
-        "body": "심인성발기부전 레츠꼬"
-      },
-      {
-        "author": "못받은돈받아드려요",
-        "published": "1 시간 전",
-        "body": "서로 오픈되었으니깐 방법을 알려주자면,\n우선 비아를 먹어. 빈속에 먹으면 더 효과가 좋다. 그것만으로 120% 발기됨.\n그리고 콘 하나를 끼우고, 두 번째 콘은 귀두만 덮어. 그리고 세 번째 콘을 끼워. 젤 필수임. 즐쎅~"
-      },
-      {
-        "author": "패닉스네일",
-        "published": "41 분 전",
-        "body": "ㄷㄷㄷㄷ 삼콘일체"
-      },
-      {
-        "author": "아생각이없",
-        "published": "40 분 전",
-        "body": "이게 뭔 개소리임?"
-      },
-      {
-        "author": "렙에이거적을려고들어왔다",
-        "published": "29 분 전",
-        "body": "마왕성가기전에 풀무장하기"
-      },
-      {
-        "author": "마키마의반죽교실",
-        "published": "58 분 전",
-        "body": "위추 드립니다"
-      },
-      {
-        "author": "렙에이거적을려고들어왔다",
-        "published": "30 분 전",
-        "body": "위추드렸어요\n힘내요"
-      }
-    ]
+    "archived_comment_count": 12,
+    "comment_archive_version": 2
   },
   {
     "id": "720309060",
@@ -4639,58 +1904,8 @@
     "comments": "138",
     "published": "2 시간 전",
     "archived_at": "2026-08-20T21:24:59",
-    "archived_comments": [
-      {
-        "author": "기분좋은향기나는모코코",
-        "published": "1 시간 전",
-        "body": "차라리 딸배 하면서 서서히 그림그리는게 낫지 않을까?"
-      },
-      {
-        "author": "개붕맨",
-        "published": "1 시간 전",
-        "body": "딸배하다 다치면 짤쟁이도 못할수 있으니 전업해도 좋을거 같은데"
-      },
-      {
-        "author": "돼지키워요",
-        "published": "1 시간 전",
-        "body": "그림 올렸던 거 몇번 본 것 같고 잘 그린다고는 생각하는데 몇가지 쎄한 부분이 있다\n먹고 살려면 잘 그리는 것도 중요하지만 쳐내는 속도도 중요함. 일정한 퀄리티의 그림을 빠른 속도로 찍어내야 하는데\n전부터 올리는 그림을 보면 몇개의 그림을 꾸준히 재탕하고 있더라\n그린 것들 중 잘 뽑힌 걸 우려먹는 건지 바쁘고 속도가 안 나와서 새로 뭔가를 그릴 시간이 부족했는지 뭔지는 모르겠음\n내가 니 상황을 아는 것도 아니고 개드립에 올라온 몇몇 글로만 보기엔 그럼\nAI가 짤쟁이 시장을 거진 다 집어삼킨 요즘 살아남으려면 유명해지거나, 하드해지거나, 비주류로 가거나 해야 되는데\n어중간하게 잘 그린 그림 몇장만 가지고 미래를 이야기하기엔 뭔가 할 말이 없어짐\n뭐 자기 일이니까 자기가 알아서 하겠지만 커뮤에 잘 뽑힌거 한둘 올려서 추천받고 해 봐야\n결국 생활에 중요한 건 너한테 돈 써주는 사람들임. 커뮤 추천이 밥 먹여주는 건 아니니까\n다행히 배달이라는 게 직장 그만두는 것 만큼의 리스크가 있는 건 아니니까 일단 내키는대로 해 보되\n속도가 영 안 붙으면 취미 혹은 부업 정도로 여기는 게 좋음\n장르는 다르지만 도전이 쉬운 일 아니라는 건 잘 아니까 잘 되길 응원하겠음"
-      },
-      {
-        "author": "년째직진중",
-        "published": "1 시간 전",
-        "body": "얘는 아직도 이러고 있네"
-      },
-      {
-        "author": "중력자방사선사출장치",
-        "published": "1 시간 전",
-        "body": "형 픽시브 열어"
-      },
-      {
-        "author": "아기늑대",
-        "published": "1 시간 전",
-        "body": "이정도면 먹고 살만하겠는데"
-      },
-      {
-        "author": "ArmCut",
-        "published": "1 시간 전",
-        "body": "그림일은 일 멈추는 순간 일감도 멈추잖아... 홍보 진짜 열심히 해야할거야 ㅠㅠ\n너 진짜 응원한다 커미션 열리면 함 찾아갈게"
-      },
-      {
-        "author": "년차글쟁이",
-        "published": "46 분 전",
-        "body": "짤쟁이는 취미로 하는 것이 나을 것 같아"
-      },
-      {
-        "author": "보렷",
-        "published": "41 분 전",
-        "body": "딸쟁이는 나도 하고있어요"
-      },
-      {
-        "author": "ffmage",
-        "published": "21 분 전",
-        "body": "배달은 또 자기만 안전운전하는게 아니라 걍 운 없으면 빌런만나서 바로 즉사할수있으니 그게 위험함... 하도 커뮤나 쇼츠로 미친자들이 박아대는거봐서 개쫄림"
-      }
-    ]
+    "archived_comment_count": 12,
+    "comment_archive_version": 2
   },
   {
     "id": "720305530",
@@ -4701,58 +1916,8 @@
     "comments": "298",
     "published": "2 시간 전",
     "archived_at": "2026-08-20T21:25:09",
-    "archived_comments": [
-      {
-        "author": "메카다나카",
-        "published": "30 분 전",
-        "body": "데어 랑그릿사 데아빌"
-      },
-      {
-        "author": "saifdoan11",
-        "published": "21 분 전",
-        "body": "레데리2 취향에 맞는게 단하나도 없는데 이거이상 재밌게한게 없네"
-      },
-      {
-        "author": "월급대도",
-        "published": "20 분 전",
-        "body": "메이플 마비노기 야숨"
-      },
-      {
-        "author": "ffmage",
-        "published": "20 분 전",
-        "body": "나 겟앰프드랑 던파 ?   그땐 ㅈㄴ 개재밌었음.."
-      },
-      {
-        "author": "졸업성공자",
-        "published": "19 분 전",
-        "body": "몬스터헌터 2g"
-      },
-      {
-        "author": "아낙네수나문",
-        "published": "13 분 전",
-        "body": "아이온 성격상 혼자하는거 좋아해서 남들 파티로 깨는거 투클라를 돌려서든 솔플을 해서든 혼자 깼음\n아라카 티아마트성채 버다스 우다스 루드라 도저히 못깨는거는 중간보스만 깨는식\n아이온 인벤 메인에 혼자 최초 솔플 성공한거 올라가서 인터뷰도했었음"
-      },
-      {
-        "author": "고추튀김맛칩",
-        "published": "8 분 전",
-        "body": "테일즈위버가ㅜ없네"
-      },
-      {
-        "author": "상수동카우보이",
-        "published": "4 분 전",
-        "body": "카운터스트라이크"
-      },
-      {
-        "author": "절충",
-        "published": "3 분 전",
-        "body": "던파 그라나도 대항온"
-      },
-      {
-        "author": "배가고프구나",
-        "published": "2 분 전",
-        "body": "나도 와우. 하이잘 호드였는데 오베 마지막날 서버 전체 호드 연합해서 ㅜ.ㅜ 땜쟁이왕 한대 쳐봤을때의 그 순간을 아직도 잊지못함. 물론 미스떴지만 ㅋㅋㅋㅋ. 판다리아 나올때까지하다가 접었는데 아직도 길드 사람들이랑 연락하고 만나고 있음."
-      }
-    ]
+    "archived_comment_count": 7,
+    "comment_archive_version": 2
   },
   {
     "id": "720304764",
@@ -4763,58 +1928,8 @@
     "comments": "37",
     "published": "3 시간 전",
     "archived_at": "2026-08-20T21:25:22",
-    "archived_comments": [
-      {
-        "author": "자연인1호",
-        "published": "4 시간 전",
-        "body": "귀귀는 가짜광기고 진짜 광기는 저놈들 아닐까"
-      },
-      {
-        "author": "ediredo",
-        "published": "4 시간 전",
-        "body": "연재했으면 귀귀가 이겼는데"
-      },
-      {
-        "author": "못해도좋아",
-        "published": "3 시간 전",
-        "body": "그것도 무보수로ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "아이언호크",
-        "published": "3 시간 전",
-        "body": "조선일보 사장 캐릭 만들어서 연재했어야 했다"
-      },
-      {
-        "author": "천무하적",
-        "published": "4 시간 전",
-        "body": "만-신"
-      },
-      {
-        "author": "사실생각같은거안함",
-        "published": "3 시간 전",
-        "body": ""
-      },
-      {
-        "author": "크앙크앙악어",
-        "published": "3 시간 전",
-        "body": "귀귀 전시회 보러가니까 저거 신문도 걸어놨더라ㅋㅋㅋ"
-      },
-      {
-        "author": "칠월의솔",
-        "published": "2 시간 전",
-        "body": ""
-      },
-      {
-        "author": "게같은거",
-        "published": "1 시간 전",
-        "body": "귀귀 허접이었네 허접"
-      },
-      {
-        "author": "도도한여고생",
-        "published": "6 분 전",
-        "body": "백원불러봐ㅋㅋㅋㅋㅋㅋ"
-      }
-    ]
+    "archived_comment_count": 49,
+    "comment_archive_version": 2
   },
   {
     "id": "720294157",
@@ -4825,58 +1940,8 @@
     "comments": "82",
     "published": "4 시간 전",
     "archived_at": "2026-08-20T21:25:39",
-    "archived_comments": [
-      {
-        "author": "간손미의모험",
-        "published": "2 시간 전",
-        "body": "저거 목록에 3회 최종후기에선 결국 엄마랑 연 끊었다고 되어있는데?! 떡볶이 사준 이후로 또 뭔일있었던건가…"
-      },
-      {
-        "author": "Namelo",
-        "published": "2 시간 전",
-        "body": "동생이 남동생일까"
-      },
-      {
-        "author": "Rrrrre",
-        "published": "2 시간 전",
-        "body": "진짜 개병신년이네. 사회에서 도태되어야할 인자임"
-      },
-      {
-        "author": "뒤를Boy지마Boy",
-        "published": "1 시간 전",
-        "body": "가난을 욕하는건 아니지만.. 저정도 심연은 정말 가난한 케이스에서나 나오더라.."
-      },
-      {
-        "author": "초고추장",
-        "published": "1 시간 전",
-        "body": "와~... 가족 맞음?"
-      },
-      {
-        "author": "드립좀",
-        "published": "1 시간 전",
-        "body": "요야국좀"
-      },
-      {
-        "author": "카케구루이",
-        "published": "1 시간 전",
-        "body": "칠면조 닭다리로 타구봉법 마렵네 동생은 뭐할까\n나도 동생이지만 가족간에 마찰있음 화해시키려 애쓰는데"
-      },
-      {
-        "author": "꼬길밟",
-        "published": "1 시간 전",
-        "body": "집안이 개판나고 있는데 가만히 구경하는 아빠도 같이 엎드려야할듯"
-      },
-      {
-        "author": "선원",
-        "published": "34 분 전",
-        "body": "잊어먹을만하면 한번씩 하는 주작이라고 믿고싶을정도로 이상함\n근데 있을법해서 좀 슬프네 꽂히면 안푸는사람이 있는데 그게 부모자식이라니.."
-      },
-      {
-        "author": "옥수수수수염염차",
-        "published": "34 분 전",
-        "body": "저런 정서적학대속에서 자라다니.. 마음 아프구만.... 꼭 꼭 본인자아실현하고 잘먹고 잘살고 행복하길 바람."
-      }
-    ]
+    "archived_comment_count": 18,
+    "comment_archive_version": 2
   },
   {
     "id": "720289650",
@@ -4887,58 +1952,8 @@
     "comments": "69",
     "published": "5 시간 전",
     "archived_at": "2026-08-20T21:26:01",
-    "archived_comments": [
-      {
-        "author": "IUJOA",
-        "published": "2 시간 전",
-        "body": "혀는 ㅈㄴ 긴데 쟤들 절대 유출 못 할 것 같음"
-      },
-      {
-        "author": "고투헬",
-        "published": "2 시간 전",
-        "body": "저새끼들 말에 동조하는 인간들은 사실상 복돌이"
-      },
-      {
-        "author": "보리쌀보리",
-        "published": "2 시간 전",
-        "body": "개멋잇는데"
-      },
-      {
-        "author": "디쿠벵두",
-        "published": "1 시간 전",
-        "body": "무슨시발 지가 뭐 된다는듯 명령하고있네 비응신새끼가\n해봐야 도둑놈의새끼가"
-      },
-      {
-        "author": "초고추장",
-        "published": "1 시간 전",
-        "body": "정의의 사도?"
-      },
-      {
-        "author": "년째짖는중",
-        "published": "1 시간 전",
-        "body": "방법은 틀렸는데 메시지는 옳다. ㅈ같은 게임도 워낙 많아서리"
-      },
-      {
-        "author": "양태진짜나빠요",
-        "published": "1 시간 전",
-        "body": "그러면서 자기네 코인에 투자하라고 염병을 떨었다지..역시나 범법자 ㅅㄲ"
-      },
-      {
-        "author": "싸고좋은",
-        "published": "1 시간 전",
-        "body": "gta6를 오프라인으로 디스크로 판매하려면 사전처럼 존나 두꺼워지는거 아님?"
-      },
-      {
-        "author": "겨드랑이스마타",
-        "published": "44 분 전",
-        "body": "근데 2번은 캡콤의 주 장사방식이긴함ㅋㅋㅋ"
-      },
-      {
-        "author": "병원이오안심하세요",
-        "published": "40 분 전",
-        "body": "pc 버전으로 유출해서 모드 개발이 활성화 된다면"
-      }
-    ]
+    "archived_comment_count": 45,
+    "comment_archive_version": 2
   },
   {
     "id": "720287864",
@@ -4949,58 +1964,8 @@
     "comments": "91",
     "published": "5 시간 전",
     "archived_at": "2026-08-20T21:26:17",
-    "archived_comments": [
-      {
-        "author": "dkny7bbk",
-        "published": "3 시간 전",
-        "body": "행복하고 늘 건강하길 기원한다."
-      },
-      {
-        "author": "5천원백반컨셉충압살시키려가입",
-        "published": "3 시간 전",
-        "body": "60일된 쌍둥이 키우는 중인데.... 잘 오셨소 김공..."
-      },
-      {
-        "author": "하위헌스",
-        "published": "2 시간 전",
-        "body": ""
-      },
-      {
-        "author": "맛있게매운실비김치",
-        "published": "2 시간 전",
-        "body": "건강하고 씩씩하게 자라나렴!!!"
-      },
-      {
-        "author": "킴취마시써요",
-        "published": "1 시간 전",
-        "body": "아구 애가 이쁘네 아주 미인이되것어~ 나중에 드라마 주인공으로 나오것네~"
-      },
-      {
-        "author": "와이로와",
-        "published": "1 시간 전",
-        "body": "비추는 왜 박는거야?.... 어떤 정신세계를 가진 애들이 비추를 박는거지??\n너무 축하해 개붕쓰"
-      },
-      {
-        "author": "몽실",
-        "published": "1 시간 전",
-        "body": "왜 토스터기로 가린거냐?"
-      },
-      {
-        "author": "콩냉이순장고",
-        "published": "1 시간 전",
-        "body": ""
-      },
-      {
-        "author": "CCTV작동중",
-        "published": "55 분 전",
-        "body": "정말 고생했고 항상 축복속에서 건강하게 행복하게 자라렴 아기야"
-      },
-      {
-        "author": "콜타르",
-        "published": "34 분 전",
-        "body": "세상에 태어난 걸 축하해"
-      }
-    ]
+    "archived_comment_count": 32,
+    "comment_archive_version": 2
   },
   {
     "id": "720287304",
@@ -5011,58 +1976,8 @@
     "comments": "108",
     "published": "5 시간 전",
     "archived_at": "2026-08-20T21:26:36",
-    "archived_comments": [
-      {
-        "author": "난나킥",
-        "published": "4 시간 전",
-        "body": "엄청 비싼것도 아니고... 매일 팔기는 귀찮으니까 그냥 쌓아두는거죠 아니면 진짜로 취미로 모으는걸수도 있고"
-      },
-      {
-        "author": "우쥬설아",
-        "published": "3 시간 전",
-        "body": "일일보스고 한번 잡을때 보통 3~7개정도 떨궜던듯?\n다른 보스가 떨구는 기타템보다야 가격이 10만메소니까 맛은 있는데 막상 캐릭당 100만메소가 채 안나와서 굳이 매번 팔기도 귀찮고 그냥 쟁여두는 경우가 많았음\n황혼의이슬 순록의우유 인벤토리 꽉채워서 모으는 사람처럼\n'오 이걸로 인벤토리 채워볼까 ㅋㅋ'\n아니고서야 저렇게까지 모으는게 의미가 없음\n저 글쓴이도 1메소 된 김에 겸사겸사 30추,60추 받을 겸(=개드립 갈 겸) 쓴 글일지도...\n황혼의이슬이랑 순록의우유가 포션인데 얘네들이 돈 더 됨"
-      },
-      {
-        "author": "Santa",
-        "published": "3 시간 전",
-        "body": "계산때리니 10억메소가 10만메소 되버린거네 대충\n현금가치 고작 치킨 한마리값정도인데?"
-      },
-      {
-        "author": "렙에이거적을려고들어왔다",
-        "published": "1 시간 전",
-        "body": "노력과 시간을 추가하면 피눈물이지"
-      },
-      {
-        "author": "Santa",
-        "published": "1 시간 전",
-        "body": ""
-      },
-      {
-        "author": "렙에이거적을려고들어왔다",
-        "published": "1 시간 전",
-        "body": ""
-      },
-      {
-        "author": "양태진짜나빠요",
-        "published": "58 분 전",
-        "body": "저런 걸 공지나 유예기간도 안주고 패치한다고?..유저를 얼마나 ㅈ으로 보면"
-      },
-      {
-        "author": "추적나무",
-        "published": "49 분 전",
-        "body": "저걸로 돈벌겠다고 하는 유저가 정상유저가 아니니깐 ㅋㅋㅋㅋㅋ\n저짤에 스샷 찍어올린놈들도 나머지 템창꼬라지보면 수집광이라 모은거지 저걸로 돈벌겠다는 생각은 안함"
-      },
-      {
-        "author": "모닝푸딩",
-        "published": "39 분 전",
-        "body": ""
-      },
-      {
-        "author": "Vv연옥의사신vV",
-        "published": "10 분 전",
-        "body": ""
-      }
-    ]
+    "archived_comment_count": 34,
+    "comment_archive_version": 2
   },
   {
     "id": "720285002",
@@ -5073,58 +1988,8 @@
     "comments": "90",
     "published": "5 시간 전",
     "archived_at": "2026-08-20T21:26:50",
-    "archived_comments": [
-      {
-        "author": "닉볼때마다케겔운동",
-        "published": "4 시간 전",
-        "body": "저 여자에게 남편이란 뭐였을까...\n저 여자는 수술비를 안주고 꼽준 시점에서 그냥 돈에 미친 무언가인것같음"
-      },
-      {
-        "author": "년만에",
-        "published": "4 시간 전",
-        "body": "병신같은 련"
-      },
-      {
-        "author": "마쉬멜로",
-        "published": "3 시간 전",
-        "body": "요즘은 특유 재산이라 할지라도 결혼 후 그 재산이 유지 된 것을 공동 관리라고 판단해서 재산 분활 되니 생각들 잘해야 함.. 특유 재산은 상속받은 유산이나 복권 당첨 결혼 전 들고 있던 재산 등임"
-      },
-      {
-        "author": "카케구루이",
-        "published": "3 시간 전",
-        "body": "이야 ㅋㅋㅋㅋ 으메으징한 사람이네 진짜"
-      },
-      {
-        "author": "종이면봉",
-        "published": "3 시간 전",
-        "body": "아이도 없고 남자도 잘버는게 아닌데 전업주부부터 존망한거임"
-      },
-      {
-        "author": "설효림",
-        "published": "3 시간 전",
-        "body": "4년에 5억? 대충 3년은 명품같은거 사서 1억정도 쓰다가 나머지 1년 호빠에 다썼네"
-      },
-      {
-        "author": "맞춤법전도사",
-        "published": "2 시간 전",
-        "body": "내용과는 별개로 수술비가 없어서 수술 못받아서 죽는건 진짜야? 난 병원은 일단 환자 살리고 돈은 나중에 대충 상환처럼 청구하고 그런줄 알았는데 넘 야박하누"
-      },
-      {
-        "author": "Namelo",
-        "published": "2 시간 전",
-        "body": "그거도 각색한 부분이라고 생각합시다.."
-      },
-      {
-        "author": "맞춤법전도사",
-        "published": "1 시간 전",
-        "body": "그렇겠지..?"
-      },
-      {
-        "author": "네셔널디스커버리mlb이름만빌린옷",
-        "published": "1 시간 전",
-        "body": "진짜 바보네 대출금갚고 돈불릴생각을해야지 저게무슨"
-      }
-    ]
+    "archived_comment_count": 27,
+    "comment_archive_version": 2
   },
   {
     "id": "720284391",
@@ -5135,58 +2000,8 @@
     "comments": "69",
     "published": "5 시간 전",
     "archived_at": "2026-08-20T21:27:21",
-    "archived_comments": [
-      {
-        "author": "닉볼때마다케겔운동",
-        "published": "4 시간 전",
-        "body": "말이되냐.."
-      },
-      {
-        "author": "VSZMA",
-        "published": "4 시간 전",
-        "body": "약관이 무시무시하구나"
-      },
-      {
-        "author": "이개새끼짬뽕",
-        "published": "4 시간 전",
-        "body": "감히 어딜 노예새끼들이 돈을 벌려고 그래? 이건가?"
-      },
-      {
-        "author": "아카이브원",
-        "published": "4 시간 전",
-        "body": "ㅇㅇ 저당시 광기 존나 엄청났었음 나도 소액들고 저 파도를 탔지만 광기 그자체였음 ㅋㅋㅋㅋㅋ\n기관들은 얼마나 무서웠을까 싶음 개네 들고있는 돈이 겁나 클텐데 ㅋㅋ"
-      },
-      {
-        "author": "락스계",
-        "published": "4 시간 전",
-        "body": "당시 CEO는 좆격안당하냐?"
-      },
-      {
-        "author": "참젖",
-        "published": "3 시간 전",
-        "body": "그러게 엘리트 자녀가 암살 하는게 정석인대"
-      },
-      {
-        "author": "9srJOhtVrkx",
-        "published": "2 시간 전",
-        "body": "저거랑 국장 레버규제한거랑 별차이없음 매도 버튼만있는거지 ㅋㅋ"
-      },
-      {
-        "author": "드릴",
-        "published": "1 시간 전",
-        "body": "미국 세력은 불리하면 버튼을 없애버린다고 ㅇㅇ;;"
-      },
-      {
-        "author": "도로보",
-        "published": "1 시간 전",
-        "body": "매수버튼 삭제는 워낙 사상초유의 일이어서 로빈후드도 그 뒤에 아주 탈탈 털렸는데,\n실상은 보이지 않은 검은 손이 개미들 다 말려죽일려고 한게 아니고 사상초유의 스케일로 실제주가 + 파생상품이 오르락 내리락 하다보니 청산 위험이 너무 커져서 결제 관리하던 미국 국가청산기관(NSCC)이 로빈훗에 엄청난 금액을 증거금으로 요구했고, 증거금 낼 여력이 없던 로빈훗이 일단 매수버튼 감추기 해버린 것임\n게임스탑 사태 자체는 주도하던 공매도 세력(멜빈 캐피털 등)이 파산했고 처음 들어갔던 개미들은 돈도 ㅈㄴ 벌었고 회사도 온라인 사업으로 전환해서 잘나가고 있고 어느 정도 정의가 구현된 사례로 봄"
-      },
-      {
-        "author": "뚜뚜",
-        "published": "1 시간 전",
-        "body": "삼성인지 입력 잘못해서 공매도 문제된 사건 있지않나 어떤 만화로 봤는데..그거랑 비교하면 뭐가더 문제일까"
-      }
-    ]
+    "archived_comment_count": 32,
+    "comment_archive_version": 2
   },
   {
     "id": "720280661",
@@ -5197,18 +2012,8 @@
     "comments": "100",
     "published": "6 시간 전",
     "archived_at": "2026-08-20T21:27:51",
-    "archived_comments": [
-      {
-        "author": "춤추는삐에로",
-        "published": "1 시간 전",
-        "body": "중간에코끼리 에어컨설치 해놔도되는데"
-      },
-      {
-        "author": "아라그니아",
-        "published": "1 시간 전",
-        "body": "그거 효과 있으려면 컨베이어같은데 가만히 서있는, 시원한 바람이 닿는 범위에 있는 그런 사람이여야 함. 큰 공간에선 효과 없음"
-      }
-    ]
+    "archived_comment_count": 23,
+    "comment_archive_version": 2
   },
   {
     "id": "720275004",
@@ -5219,58 +2024,8 @@
     "comments": "95",
     "published": "4 시간 전",
     "archived_at": "2026-08-20T21:28:04",
-    "archived_comments": [
-      {
-        "author": "용라취사",
-        "published": "3 시간 전",
-        "body": "서영락 대리~화가 많이 나죠~?"
-      },
-      {
-        "author": "셋쇼마루",
-        "published": "3 시간 전",
-        "body": "ㅋㅋㅋㅋ류준열 왜 자꾸 미남 역할 주냐고"
-      },
-      {
-        "author": "바위게맛살",
-        "published": "3 시간 전",
-        "body": "이거 그냥 전혀 근거 없는 어그로 찌라시임"
-      },
-      {
-        "author": "AZ텍",
-        "published": "3 시간 전",
-        "body": "북한 ver.으로 찍는건가?"
-      },
-      {
-        "author": "B시클",
-        "published": "2 시간 전",
-        "body": "범죄도시2 냐고 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "9srJOhtVrkx",
-        "published": "2 시간 전",
-        "body": "아 보이스피싱팀이셔"
-      },
-      {
-        "author": "친절한뿅뿅",
-        "published": "2 시간 전",
-        "body": "이건 아니야..."
-      },
-      {
-        "author": "오진당",
-        "published": "1 시간 전",
-        "body": "조인성 미간이랑 인중에 총 맞은듯"
-      },
-      {
-        "author": "무슈슈",
-        "published": "1 시간 전",
-        "body": "검색해보니 뉴스기사는 하나도없고 스레드나 각종 커뮤서 캡처짤로 돌아다니는것만 있음\n더 찾아보니 여시서 퍼트린 루머라고 함"
-      },
-      {
-        "author": "번째유저",
-        "published": "43 분 전",
-        "body": "캄보디아에서 생긴일 ㅇㄷ?"
-      }
-    ]
+    "archived_comment_count": 23,
+    "comment_archive_version": 2
   },
   {
     "id": "720274570",
@@ -5281,58 +2036,8 @@
     "comments": "94",
     "published": "6 시간 전",
     "archived_at": "2026-08-20T21:28:31",
-    "archived_comments": [
-      {
-        "author": "이불뒤집어쓴시바",
-        "published": "5 시간 전",
-        "body": "아니 첫짤 엄지손가락 뭐임"
-      },
-      {
-        "author": "내할말만하고다님",
-        "published": "4 시간 전",
-        "body": "왜 병신들은 고양이를 좋아할까?"
-      },
-      {
-        "author": "락스계",
-        "published": "4 시간 전",
-        "body": "좆냥이도 비둘기처럼 유해조수 처리 ㅋㅋㅋ"
-      },
-      {
-        "author": "사일러스",
-        "published": "4 시간 전",
-        "body": "엄지손가락 신기하게생겼네"
-      },
-      {
-        "author": "OMOTO",
-        "published": "3 시간 전",
-        "body": "어디 서울대 수의과생이 고양이 유해조수라고 하니까 인스타 몰려가서 패던데"
-      },
-      {
-        "author": "독고무영",
-        "published": "2 시간 전",
-        "body": "살처분 ㄱ"
-      },
-      {
-        "author": "비싼연필",
-        "published": "1 시간 전",
-        "body": "개인적으로 하늘다람쥐는 사육 풀어줬으면 좋겠음..\n자연개체 기대수명이 3년남짓인가 그럴텐데\n사람이 키우면 10년이 넘어가던데"
-      },
-      {
-        "author": "MZ툴딱",
-        "published": "1 시간 전",
-        "body": "들개는 그렇게 정리해놓고 거양이는 참"
-      },
-      {
-        "author": "노란사탕",
-        "published": "1 시간 전",
-        "body": "고양이에 한해서 새총, 컴파운드보우, 올무 등등 허용해줘야 된다. 생태계 교란종 등록해서 사체1개당 1만원씩 매입해야됨 말도 안되는 tnr같은거에 한마리 할 금액이면 15마리의 고양이 사체가 됨\n15배의 효율적인 정책인데 왜 안하는지 모르겠다"
-      },
-      {
-        "author": "주관적인요정",
-        "published": "1 시간 전",
-        "body": "도시에 해충 넘치는거 다 고양이때문임"
-      }
-    ]
+    "archived_comment_count": 15,
+    "comment_archive_version": 2
   },
   {
     "id": "720271548",
@@ -5343,58 +2048,8 @@
     "comments": "80",
     "published": "6 시간 전",
     "archived_at": "2026-08-20T21:28:39",
-    "archived_comments": [
-      {
-        "author": "호야랑",
-        "published": "4 시간 전",
-        "body": "무한 유한도 구분못하는 지능의 인간이 무슨 사업을 한다고 ㅉㅉ"
-      },
-      {
-        "author": "콩콩이콩",
-        "published": "4 시간 전",
-        "body": "평점보고 가는사람들은 안갈듯"
-      },
-      {
-        "author": "수면양말",
-        "published": "4 시간 전",
-        "body": "모지리들 많네~ 그냥 더 달라면 더 주는거구나 하고 이해가 안되나"
-      },
-      {
-        "author": "번째가슴",
-        "published": "3 시간 전",
-        "body": "이래서 고졸까지 의무교육 해야됨\n중졸 새키들이 요리하고 딸배하고 그러니까 이꼴 나는거임"
-      },
-      {
-        "author": "샤크티나",
-        "published": "2 시간 전",
-        "body": "조건 리필 ㅋㅋㅋ"
-      },
-      {
-        "author": "OヮO",
-        "published": "1 시간 전",
-        "body": "성함이\n김무한 이겠지"
-      },
-      {
-        "author": "쀍킷",
-        "published": "1 시간 전",
-        "body": "무안리필아님?\n리필하면 무안주겠다"
-      },
-      {
-        "author": "GugugagaDoro",
-        "published": "1 시간 전",
-        "body": "유한리필로 살짝 틀면 되지"
-      },
-      {
-        "author": "개드립콘개드립",
-        "published": "1 시간 전",
-        "body": "물론 본문처럼 개노답은 아니더라도 무한리필은 정도껏먹어야한다고는 생각함 푸파까지 다 감안해주면 역으로 내가 무한리필을 더 비싸게 주고 먹어야하는 상황이러"
-      },
-      {
-        "author": "아이슈밤쾅",
-        "published": "5 분 전",
-        "body": "d이게 무슨말이지"
-      }
-    ]
+    "archived_comment_count": 46,
+    "comment_archive_version": 2
   },
   {
     "id": "720271437",
@@ -5405,58 +2060,8 @@
     "comments": "57",
     "published": "6 시간 전",
     "archived_at": "2026-08-20T21:28:48",
-    "archived_comments": [
-      {
-        "author": "아마도",
-        "published": "7 시간 전",
-        "body": "애초에 예수라고 주장하는 놈들이 수두룩한데 뭘로 어떻게 진짜 예수인지 구분할거임ㅋㅋㅋ"
-      },
-      {
-        "author": "일간알림수집중",
-        "published": "7 시간 전",
-        "body": "도박이네"
-      },
-      {
-        "author": "swiss",
-        "published": "7 시간 전",
-        "body": "아 저딴거 하던게 오늘 차단당한 그 사이트였어? ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "단톡경보기",
-        "published": "7 시간 전",
-        "body": ""
-      },
-      {
-        "author": "하위헌스",
-        "published": "5 시간 전",
-        "body": "https://youtu.be/deeBQZ8Aklc"
-      },
-      {
-        "author": "맛있는붕어빵",
-        "published": "3 시간 전",
-        "body": "역시 예측시장은 아직 인류가 이해하긴 너무 이르구만. 관련 반박글 쭉 읽어봤는데 그래서 예측시장이 부정확하다고 비난하는 글은 하나도 못봄. 왜냐하면 뉴스, 전문가 집단보다 더 잘맞추니까ㅋㅋ 도박이고 베팅이고 그런건 수단에 불과하고, 결국은 더 정확한 예측을 할 수 있다는게 예측시장의 본질임.\n도박이라고 비난하기 전에 잘 생각해봐라 국민들 세뇌하는 정치인, 언론사들은 얼마나 청렴하고 예측을 잘하는가. 금융권 리포트 백테스팅 한번 돌려봐라. 그들이 사라고 말했을때 진짜 올랐는지.\n예측시장에 돈걸고 잃은 사람들은 적어도 자기 신념에 책임이라도 진 사람들인데 세상에는 아가리만 털고 책임을 지지 않는 기생충같은 인간들이 너무나도 많다"
-      },
-      {
-        "author": "드드드든",
-        "published": "4 분 전",
-        "body": "글 왜케잘씀??"
-      },
-      {
-        "author": "근육질암스트롱",
-        "published": "2 시간 전",
-        "body": "예수재림 확율이 자민당 의석수 2위할 확율보다 높음ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "Kokptj",
-        "published": "48 분 전",
-        "body": "개인적으론 저런 허무맹랑한거 베팅하는거 다 좋은데, 기준을 어떻게 잡을지 정확하고 변경붕가하게 블록체인에다가 박아야한다고 보긴 함. 내가 예수라고 주장하면 그게 재림인가."
-      },
-      {
-        "author": "Kokptj",
-        "published": "43 분 전",
-        "body": "그리고 저거보고 도박이라 답 정해놓고 짖는 좆벌레 대가리 텅텅빈 금융문맹 새끼들은 검색이라도 하나 해보고 해라\nhttps://marketmarket.io/article/jesus-second-coming-probability-4-percent\n바로 나오는구만.\n이게 금융상품이에요. 병신 문맹 국평오새끼들아"
-      }
-    ]
+    "archived_comment_count": 26,
+    "comment_archive_version": 2
   },
   {
     "id": "720268542",
@@ -5467,58 +2072,8 @@
     "comments": "31",
     "published": "6 시간 전",
     "archived_at": "2026-08-20T21:29:22",
-    "archived_comments": [
-      {
-        "author": "망그러진곰",
-        "published": "7 시간 전",
-        "body": "Why did you say that name!!"
-      },
-      {
-        "author": "지금이안좋다",
-        "published": "7 시간 전",
-        "body": "마사..."
-      },
-      {
-        "author": "사촌간부랄빨기",
-        "published": "7 시간 전",
-        "body": "느금마사보단 개연성있네\n항상 '메이숙모'라고 불렀고 같은 피터파커니까"
-      },
-      {
-        "author": "퇴근하세요",
-        "published": "6 시간 전",
-        "body": "토비 맥과이어 존나 잘생겼다진짜"
-      },
-      {
-        "author": "아낙네수나문",
-        "published": "4 시간 전",
-        "body": "배대슈 슈퍼맨의 엄마를 배트맨이 구하러가는 병신같은 스토리 ㅠㅠ"
-      },
-      {
-        "author": "2만스피",
-        "published": "4 시간 전",
-        "body": "ㅋㅋ"
-      },
-      {
-        "author": "핫소스통",
-        "published": "3 시간 전",
-        "body": "배댓슈는 잭스나 각본 아니잖아"
-      },
-      {
-        "author": "마지막집",
-        "published": "2 시간 전",
-        "body": "뱃대슈에서 잭스나는 제작도 아니고 각본가도 아닌데"
-      },
-      {
-        "author": "콩냉이순장고",
-        "published": "1 시간 전",
-        "body": "느금마사ㅋㅋㅋㅋㅋ"
-      },
-      {
-        "author": "고질라",
-        "published": "25 분 전",
-        "body": "???: 오프닝에 죽는 언론인은 JJJ 편집장. 이는 전개를 예측할 수 없게 만든다"
-      }
-    ]
+    "archived_comment_count": 42,
+    "comment_archive_version": 2
   },
   {
     "id": "720264152",
@@ -5529,58 +2084,8 @@
     "comments": "86",
     "published": "6 시간 전",
     "archived_at": "2026-08-20T21:29:37",
-    "archived_comments": [
-      {
-        "author": "IPHONE12",
-        "published": "6 시간 전",
-        "body": "인천공항에 중국항공사에만 새치기 금지 방어막 세워놓은거 존나 웃김 진짜 ㅋㅋㅋㅋ"
-      },
-      {
-        "author": "영화의한장면",
-        "published": "5 시간 전",
-        "body": "엔저인데 왜 감소함?"
-      },
-      {
-        "author": "pacificWD",
-        "published": "5 시간 전",
-        "body": "https://www.hankyung.com/article/202606083289i\n중국인 감소로 빠진 일본 관광수지를 타 지역 관광객이 메꾸지는 못함. 전체적으로 전년 대비 감소했음.\n'일본 재무성이 8일 발표한 국제수지 통계에 따르면 4월 여행수지는 5465억 엔 흑자를 기록했다. 전년 동월 대비 25.2% 감소한 수치다.'\n'일본정부관광국(JNTO)에 따르면 4월 방일객 수는 369만2200명으로 전년 동월보다 5.5% 감소했다. 특히 중국인 관광객은 전년 대비 절반 수준으로 줄었다. 유럽 관광객 감소도 두드러졌다. 이탈리아는 34.2%, 스페인은 21.6% 각각 감소했다. 중동 지역 관광객 역시 21.4% 줄었다.'\n중국인 관광객 감소 + 이란전쟁으로 유럽 관광객 감소한 것이 원인. 한국인 관광객은 늘은 것으로 알고 있음."
-      },
-      {
-        "author": "성관계",
-        "published": "5 시간 전",
-        "body": "줄어들었는데도 그렇게 많았다고??"
-      },
-      {
-        "author": "사람은결국죽어",
-        "published": "5 시간 전",
-        "body": "요즘 틱톡 릴스보면 일본관련된거 ㅈㄴ많음.. 그냥 일본문화 초호황기라 애국중국인들만 손해봄"
-      },
-      {
-        "author": "뉴비곰",
-        "published": "4 시간 전",
-        "body": "우리나라도 그렇다던데 비행기가 한정적이라 그런건가? 왜 그렇게 되는거지?"
-      },
-      {
-        "author": "곰북이",
-        "published": "3 시간 전",
-        "body": "이번 에어로케이로 7시 비행기타고 가는데 시간이 이래서 그런가 처음으로 안기다리고 입국해봄 꽤 많이 가봤는데 이런적은 처음이였음"
-      },
-      {
-        "author": "초격아츠",
-        "published": "2 시간 전",
-        "body": "일본이 망했네 어쩌네 해도 관광객들 때문에 굶어죽진 않을듯"
-      },
-      {
-        "author": "니시미야코노미",
-        "published": "1 시간 전",
-        "body": "오버투어리즘 ㅈ되더라\n중국인 빠진게 이정돈데 100%들어오면 어디소도시여행이나 다녀야할듯"
-      },
-      {
-        "author": "네셔널디스커버리mlb이름만빌린옷",
-        "published": "1 시간 전",
-        "body": "중국관광객이 돈이 안되긴하네"
-      }
-    ]
+    "archived_comment_count": 46,
+    "comment_archive_version": 2
   },
   {
     "id": "720263902",
@@ -5591,57 +2096,7 @@
     "comments": "62",
     "published": "6 시간 전",
     "archived_at": "2026-08-20T21:30:46",
-    "archived_comments": [
-      {
-        "author": "Cursor",
-        "published": "7 시간 전",
-        "body": "무한도전 독침회수나 전진 셔틀콕도 대본이구나 ㄷㄷ"
-      },
-      {
-        "author": "아낙네수나문",
-        "published": "5 시간 전",
-        "body": "얻어 걸린거 그런건 어쩔수 없는거고 무도 야외촬영때는\n중소 소속사 여자얘들 일반인 코스프레 하면서 미니버스나 택시 대절해서 무한도전팀 버스 따라 다님\n버스 촬영씬때는 미리 한 정거장 앞에서 미리 타 있기까지함 ㅋㅋ\n예전에 패떳 대본이랑 무도 대본 유출됐을때 (팔을 올리면서) 이런 사소한 동작 하나까지 적혀있었음"
-      },
-      {
-        "author": "OMOTO",
-        "published": "4 시간 전",
-        "body": "그럼 연예인들 말고 작가를 까야하나 그런 쪽 논란이 생기면 ㅋㅋ"
-      },
-      {
-        "author": "아낙네수나문",
-        "published": "4 시간 전",
-        "body": "저런 논란 조차 마케팅에 시청률에 도움이니까 ... 이혼숙려캠프 이런커플들 보면 방송 출연횟수가 5회막이럼\n무슨 노니만 먹고 다이어트 성공했어요 프로그램나왔다가 생로병사에서는 비만 남편으로 나오다가\n이혼숙려캠프에 나와서 게임만하는 남편으로 나오다가 걍 씹 주작천지임"
-      },
-      {
-        "author": "가수아이유",
-        "published": "2 시간 전",
-        "body": "ㄹㅇ임ㅋㅋ 전문방송인들이라고 봐야함. 사실상 연반인\n주우재도 무슨 4차원에 쿨병걸린 이미지로 떴다보니 계속 그런 느낌으로 작가들이\n이렇게 말씀하시면 좋을것같아요 하면서 대본 밀어줄듯함\n예능은 특히 어떤 컨셉이 자리잡히면 계속 작가들이 그런쪽으로 요구한다더라"
-      },
-      {
-        "author": "글깨작",
-        "published": "2 시간 전",
-        "body": "기안은요?"
-      },
-      {
-        "author": "애니브리띵",
-        "published": "7 시간 전",
-        "body": "ㅇㄱㄸ네 왜냐면"
-      },
-      {
-        "author": "병우",
-        "published": "6 시간 전",
-        "body": "아니요 저희는 작전주가 아니라... 사실... 이게 코인을 상장 준비중이긴 한데... 하~\n이게 말이 나온김에 형님한테만 알려드리는건데.. 아직 거래소엔 안올라갔고 프리세일 단계거든요?\n개당 100원으로 잡았는데 상장가는 최소 300원부터 시작으로 예상하고 있어요!\n아! 물론 제가 \"무조건 3배 갑니다\" 이런식으로는 절대 말씀 못드리죠.. 투자에 무조건이란게 어디있어요?\n안그래요? 그런데 이미 초기 투자자들이 계속 들어오고 있고.. 거래소쪽 하고도 상장 협의가 진행중이라..\n저는 개인적으로 확신하고 있습니다. 형님한테 큰돈 넣으라는것도 아니에요 그냥 100만원 정도만 넣어보세요\n상장 확인하고 그 다음에 추가하셔도 됩니다."
-      },
-      {
-        "author": "셋쇼마루",
-        "published": "6 시간 전",
-        "body": "ㅋㅋㄱㅋㄱㅋㄱㅋㅋㄱㅋㄱㅋㅋㄱㅋㅋㅋㅋㅋㅋㅋ 편집도 웃기네"
-      },
-      {
-        "author": "포도음료",
-        "published": "4 시간 전",
-        "body": "테마주랑 햇갈린거 같은데 ㅋㅋ"
-      }
-    ]
+    "archived_comment_count": 24,
+    "comment_archive_version": 2
   }
 ]
