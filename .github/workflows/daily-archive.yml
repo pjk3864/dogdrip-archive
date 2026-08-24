@@ -19,10 +19,10 @@ jobs:
     timeout-minutes: 180
     steps:
       - name: Check out archive
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
           cache: pip
@@ -33,7 +33,7 @@ jobs:
         working-directory: dogdrip_bot
 
       - name: Archive new posts
-        run: python bot.py
+        run: xvfb-run --auto-servernum python bot.py
         working-directory: dogdrip_bot
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
