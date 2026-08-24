@@ -27,7 +27,8 @@ GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 MAX_ASSET_BYTES = 15 * 1024 * 1024
 HISTORICAL_ARCHIVE_TARGET = 400
 POSTS_PER_LIST_PAGE = 20
-MAX_POPULAR_PAGES = 20
+PAGER_WINDOW_SIZE = 10
+MAX_POPULAR_PAGES = 9
 COMMENT_ARCHIVE_VERSION = 2
 POPULAR_PAGE_DELAY_SECONDS = 2
 MANUAL_URLS_FILE = "manual_urls.txt"
@@ -109,6 +110,10 @@ def github_get_file(path, decode=True):
 
 def github_put_file(path, content, message, sha=None):
     """Create or update one repository file through GitHub's Contents API."""
+    # GitHub requires the current file SHA when replacing an existing file.
+    # Look it up here so every caller safely handles both new and old files.
+    if sha is None:
+        _, sha = github_get_file(path, decode=False)
     payload = {
         "message": message,
         "content": base64.b64encode(content).decode("ascii"),
@@ -117,6 +122,9 @@ def github_put_file(path, content, message, sha=None):
     if sha:
         payload["sha"] = sha
     response = requests.put(_github_url(path), headers=_github_headers(), json=payload, timeout=60)
+    if not response.ok:
+        print(f"GitHub 저장 오류 ({response.status_code}) - {path}")
+        print(response.text)
     response.raise_for_status()
 
 
@@ -124,6 +132,10 @@ def _open_list_browser():
     """Open a normal Chrome window for list pages that block plain HTTP clients."""
     options = Options()
     options.add_argument("--window-size=1280,900")
+    if os.environ.get("CI"):
+        options.add_argument("--headless=new")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
     try:
         return webdriver.Chrome(options=options)
     except Exception as error:
@@ -180,21 +192,21 @@ def get_manual_posts():
     return posts
 
 
-def get_popular_posts(limit=None, stop_ids=None):
-    """Collect popular posts through Chrome, stopping after known posts on updates."""
+def get_popular_posts(limit=None, after_id=None):
+    """Collect popular posts, scanning until a page has nothing newer than after_id."""
     posts = []
     seen_ids = set()
-    stop_ids = set(stop_ids or [])
     browser = _open_list_browser()
     try:
-        for page_number in range(1, MAX_POPULAR_PAGES + 1):
+        page_number = 1
+        while page_number <= MAX_POPULAR_PAGES:
             if limit is not None and len(posts) >= limit:
                 break
             if page_number > 1:
                 time.sleep(POPULAR_PAGE_DELAY_SECONDS)
             soup = BeautifulSoup(_get_popular_page_html(browser, page_number), "html.parser")
             page_posts = 0
-            page_has_known_post = False
+            page_has_new_post = False
             for anchor in soup.select("a.ed.title-link[data-document-srl]"):
                 document_id = anchor.get("data-document-srl")
                 title = anchor.get_text(strip=True)
@@ -203,8 +215,8 @@ def get_popular_posts(limit=None, stop_ids=None):
                 if not document_id or document_id in seen_ids or not title or not link or row is None:
                     continue
 
-                if document_id in stop_ids:
-                    page_has_known_post = True
+                if after_id is not None and int(document_id) > after_id:
+                    page_has_new_post = True
 
                 comments = anchor.find_next_sibling("span")
                 thumbnail = row.select_one("img.ed.webzine-thumbnail[src]")
@@ -229,8 +241,9 @@ def get_popular_posts(limit=None, stop_ids=None):
                 page_posts += 1
                 if limit is not None and len(posts) >= limit:
                     break
-            if page_posts == 0 or (stop_ids and page_has_known_post):
+            if page_posts == 0 or (after_id is not None and not page_has_new_post):
                 break
+            page_number += 1
     finally:
         browser.quit()
     return posts
@@ -385,10 +398,22 @@ def generate_index_html(entries, page_number=1):
 </a>'''
         )
 
-    pager = "".join(
+    pager_group_start = ((page_number - 1) // PAGER_WINDOW_SIZE) * PAGER_WINDOW_SIZE + 1
+    pager_group_end = min(pager_group_start + PAGER_WINDOW_SIZE - 1, total_pages)
+    pager_parts = []
+    if pager_group_start > 1:
+        pager_parts.append(
+            f'''<a class="page-link page-shift" href="{list_page_path(pager_group_start - 1)}" aria-label="이전 페이지 묶음">이전</a>'''
+        )
+    pager_parts.extend(
         f'''<a class="page-link{' current' if number == page_number else ''}" href="{list_page_path(number)}"{' aria-current="page"' if number == page_number else ''}>{number}</a>'''
-        for number in range(1, total_pages + 1)
+        for number in range(pager_group_start, pager_group_end + 1)
     )
+    if pager_group_end < total_pages:
+        pager_parts.append(
+            f'''<a class="page-link page-shift" href="{list_page_path(pager_group_end + 1)}" aria-label="다음 페이지 묶음">다음</a>'''
+        )
+    pager = "".join(pager_parts)
     updated_at = datetime.now().strftime("%Y-%m-%d %H:%M")
     return f'''<!doctype html>
 <html lang="ko">
@@ -403,8 +428,8 @@ def generate_index_html(entries, page_number=1):
     h1 {{ margin:0; font-size:17px; }} .updated {{ margin:0; padding:13px 20px; color:var(--muted); border-bottom:1px solid var(--line); font-size:12px; }}
     .post-row {{ display:block; min-height:62px; padding:19px 20px; color:inherit; text-decoration:none; border-bottom:1px solid var(--line); transition:background .15s; }}
     .post-row:hover, .post-row:focus-visible {{ background:#292e36; outline:none; }} .post-row.is-read .row-title {{ color:#777f8a; }} .row-title {{ display:block; overflow:hidden; font-size:18px; line-height:1.35; text-overflow:ellipsis; white-space:nowrap; }}
-    .pager {{ display:flex; justify-content:center; gap:6px; padding:24px 16px; }} .page-link {{ min-width:34px; padding:8px 10px; border:1px solid var(--line); border-radius:5px; color:var(--ink); text-align:center; text-decoration:none; font-size:14px; }} .page-link:hover,.page-link:focus-visible {{ border-color:var(--blue); color:var(--blue); outline:none; }} .page-link.current {{ background:var(--blue); border-color:var(--blue); color:#fff; pointer-events:none; }}
-    @media(max-width:640px) {{ header {{ height:50px; padding:0 14px; }} .updated {{ padding:11px 14px; }} .post-row {{ min-height:55px; padding:16px 14px; }} .row-title {{ font-size:16px; }} }}
+    .pager {{ display:flex; flex-wrap:wrap; justify-content:center; gap:6px; padding:24px 16px; }} .page-link {{ min-width:34px; padding:8px 10px; border:1px solid var(--line); border-radius:5px; color:var(--ink); text-align:center; text-decoration:none; font-size:14px; }} .page-link.page-shift {{ min-width:52px; }} .page-link:hover,.page-link:focus-visible {{ border-color:var(--blue); color:var(--blue); outline:none; }} .page-link.current {{ background:var(--blue); border-color:var(--blue); color:#fff; pointer-events:none; }}
+    @media(max-width:640px) {{ header {{ height:50px; padding:0 14px; }} .updated {{ padding:11px 14px; }} .post-row {{ min-height:55px; padding:16px 14px; }} .row-title {{ font-size:16px; }} .pager {{ gap:5px; padding:20px 10px; }} .page-link {{ min-width:32px; padding:7px 8px; }} }}
   </style>
 </head>
 <body><main class="site"><header><i class="fa-solid fa-list" aria-hidden="true"></i><h1>개드립 인기글 아카이브</h1></header><p class="updated">보관된 글 {len(entries)}개 · {page_number}/{total_pages} 페이지 · 마지막 수집 {updated_at}</p>{''.join(rows)}<nav class="pager" aria-label="목록 페이지">{pager}</nav></main>{READ_LIST_SCRIPT}</body>
@@ -527,40 +552,27 @@ def refresh_comments_for_existing_posts(entries):
 
 
 def archive_posts():
-    """Fill the archive to 400, then preserve every newly popular post."""
+    """Preserve every popular post created after the newest archived post."""
     entries, archive_sha = load_archive()
     known_ids = {entry["id"] for entry in entries}
     new_entries = []
 
     manual_posts = get_manual_posts()
-    historical_slots = max(0, HISTORICAL_ARCHIVE_TARGET - len(entries))
-    if manual_posts:
+    if entries:
+        newest_archived_id = max(int(entry["id"]) for entry in entries)
+        print(f"마지막 보관 글 {newest_archived_id} 이후의 새 글을 확인합니다.")
+        candidates = [
+            post
+            for post in get_popular_posts(after_id=newest_archived_id)
+            if int(post["id"]) > newest_archived_id and post["id"] not in known_ids
+        ]
+        print(f"새로 생성된 글 {len(candidates)}개를 확인했습니다.")
+    elif manual_posts:
         print(f"수동 목록에서 {len(manual_posts)}개 글을 확인했습니다.")
         candidates = manual_posts
-    elif historical_slots:
-        # First expansion: keep every newer popular post, then add older posts
-        # until the archive has 400 entries.
-        # Read extra list pages too, so new posts since the last run do not replace
-        # any of the requested 200 older additions.
-        scanned = get_popular_posts(
-            limit=HISTORICAL_ARCHIVE_TARGET + historical_slots
-        )
-        newest_archived_id = max((int(entry["id"]) for entry in entries), default=0)
-        newly_published = [
-            post
-            for post in scanned
-            if post["id"] not in known_ids and int(post["id"]) > newest_archived_id
-        ]
-        older_posts = [
-            post
-            for post in scanned
-            if post["id"] not in known_ids and int(post["id"]) <= newest_archived_id
-        ]
-        candidates = newly_published + older_posts[:historical_slots]
     else:
-        # Later runs: scan from the newest page through the first page that overlaps
-        # the archive, then keep every previously unseen popular post in that range.
-        candidates = get_popular_posts(stop_ids=known_ids)
+        # Empty repository bootstrap only. Subsequent runs never backfill old posts.
+        candidates = get_popular_posts(limit=HISTORICAL_ARCHIVE_TARGET)
 
     for post in candidates:
         if post["id"] in known_ids:
@@ -621,4 +633,3 @@ def archive_posts():
 
 if __name__ == "__main__":
     archive_posts()
-
