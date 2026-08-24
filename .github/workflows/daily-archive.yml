@@ -1,0 +1,40 @@
+name: Daily Dogdrip Archive
+
+on:
+  schedule:
+    # 17:00 UTC is 00:00 the next day in Bangkok (UTC+7).
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dogdrip-daily-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Check out archive
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: dogdrip_bot/requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+        working-directory: dogdrip_bot
+
+      - name: Archive new posts
+        run: python bot.py
+        working-directory: dogdrip_bot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
