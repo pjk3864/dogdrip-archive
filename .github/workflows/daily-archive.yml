@@ -2,8 +2,8 @@ name: Daily Dogdrip Archive
 
 on:
   schedule:
-    # 17:00 UTC is 00:00 the next day in Bangkok (UTC+7).
-    - cron: "0 17 * * *"
+    # 22:00 UTC is 05:00 the next day in Bangkok (UTC+7).
+    - cron: "0 22 * * *"
   workflow_dispatch:
 
 permissions:
