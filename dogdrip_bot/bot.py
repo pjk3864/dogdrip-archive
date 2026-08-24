@@ -617,8 +617,14 @@ def archive_posts():
         )
 
     entries = new_entries + entries
-    backfilled = refresh_comments_for_existing_posts(entries)
-    themed = apply_dark_theme_to_existing_posts(entries)
+    if os.environ.get("CI"):
+        # Scheduled runs only archive newly published posts. Legacy maintenance is
+        # intentionally left to an explicit local run so the daily job stays fast.
+        backfilled = 0
+        themed = 0
+    else:
+        backfilled = refresh_comments_for_existing_posts(entries)
+        themed = apply_dark_theme_to_existing_posts(entries)
     github_put_file(
         "archive.json",
         json.dumps(entries, ensure_ascii=False, indent=2).encode("utf-8"),
