@@ -29,7 +29,7 @@ HISTORICAL_ARCHIVE_TARGET = 400
 POSTS_PER_LIST_PAGE = 20
 PAGER_WINDOW_SIZE = 10
 MAX_POPULAR_PAGES = 9
-COMMENT_ARCHIVE_VERSION = 2
+COMMENT_ARCHIVE_VERSION = 3
 POPULAR_PAGE_DELAY_SECONDS = 2
 MANUAL_URLS_FILE = "manual_urls.txt"
 DOGDRIP_DOCUMENT_DELAY_SECONDS = 1.5
@@ -252,13 +252,39 @@ def get_popular_posts(limit=None, after_id=None):
 
 def _make_links_absolute(element):
     """Keep copied media and links usable from a GitHub Pages page."""
-    for child in element.select("img[src], a[href], video[src], source[src]"):
+    for image in element.select("img"):
+        source = next(
+            (
+                image.get(attribute)
+                for attribute in ("src", "data-src", "data-original", "data-lazy-src")
+                if image.get(attribute)
+            ),
+            "",
+        )
+        if source:
+            image["src"] = urljoin(DOGDRIP_ORIGIN, source)
+        image["loading"] = "lazy"
+
+    for child in element.select("a[href], video[src], source[src]"):
         attribute = "href" if child.name == "a" else "src"
         value = child.get(attribute)
         if value:
             child[attribute] = urljoin(DOGDRIP_ORIGIN, value)
-        if child.name == "img":
-            child["loading"] = "lazy"
+
+
+def _sanitize_comment_body(element):
+    """Remove active controls while preserving text, links, and Dogdripcon images."""
+    for unwanted in element.select(
+        "script, style, iframe, object, embed, form, input, button, textarea"
+    ):
+        unwanted.decompose()
+    for child in element.find_all(True):
+        for attribute in list(child.attrs):
+            if attribute.lower().startswith("on") or attribute.lower() == "srcdoc":
+                del child.attrs[attribute]
+        if child.name == "a":
+            child["rel"] = "noopener noreferrer"
+            child["target"] = "_blank"
 
 
 def _get_dogdrip_document(link):
@@ -301,11 +327,14 @@ def get_post_snapshot(link):
         published = item.select_one(".comment-bar .text-muted")
         if body is None:
             continue
+        _make_links_absolute(body)
+        _sanitize_comment_body(body)
         comments.append(
             {
                 "author": author.get_text(" ", strip=True) if author else "익명",
                 "published": published.get_text(" ", strip=True) if published else "",
                 "body": body.get_text("\n", strip=True),
+                "body_html": "".join(str(child) for child in body.contents),
             }
         )
     return {"title": title, "content": content_html, "comments": comments}
@@ -382,6 +411,18 @@ def localize_article_content(content_html, post_id):
     return str(soup)
 
 
+def localize_comment_media(comments, post_id):
+    """Archive Dogdripcon and other media embedded inside copied comments."""
+    localized = []
+    for comment in comments:
+        copied = dict(comment)
+        body_html = copied.get("body_html", "")
+        if body_html:
+            copied["body_html"] = localize_article_content(body_html, post_id)
+        localized.append(copied)
+    return localized
+
+
 def list_page_path(page_number):
     return "index.html" if page_number == 1 else f"page-{page_number}.html"
 
@@ -456,15 +497,15 @@ def generate_post_html(post):
     comments_html = generate_comments_html(post.get("archived_comments", []))
     return f'''<!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer"><title>{html.escape(post["title"])} · 개드립 아카이브</title>
-<style>body{{margin:0;background:#111317;color:#e9edf2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}}main{{max-width:960px;min-height:100vh;margin:auto;padding:28px 24px 48px;background:#202329}}.back,.source{{color:#4ba3ff;text-decoration:none;font-size:14px}}h1{{margin:20px 0 0;color:#f6f8fa;font-size:25px;line-height:1.42}}.meta{{margin:10px 0 20px;color:#9aa3ae;border-bottom:1px solid #363b43;padding-bottom:18px;font-size:13px}}.article{{font-size:16px;line-height:1.72;overflow-wrap:anywhere}}.article img,.article video{{display:block;max-width:100%;height:auto;margin:10px auto}}.article a{{color:#4ba3ff}}.archived-comments{{margin-top:42px;border-top:1px solid #363b43;padding-top:22px}}.archived-comments h2{{margin:0 0 14px;font-size:18px}}.comment{{padding:14px 0;border-top:1px solid #30353c}}.comment:first-of-type{{border-top:0}}.comment-meta{{margin:0 0 7px;color:#9aa3ae;font-size:13px}}.comment-author{{color:#e9edf2;font-weight:600}}.comment-body{{margin:0;white-space:pre-wrap;font-size:15px;line-height:1.6;overflow-wrap:anywhere}}@media(max-width:640px){{main{{padding:22px 16px 40px}}h1{{font-size:22px}}}}</style></head>
+<style>body{{margin:0;background:#111317;color:#e9edf2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}}main{{max-width:960px;min-height:100vh;margin:auto;padding:28px 24px 48px;background:#202329}}.back,.source{{color:#4ba3ff;text-decoration:none;font-size:14px}}h1{{margin:20px 0 0;color:#f6f8fa;font-size:25px;line-height:1.42}}.meta{{margin:10px 0 20px;color:#9aa3ae;border-bottom:1px solid #363b43;padding-bottom:18px;font-size:13px}}.article{{font-size:16px;line-height:1.72;overflow-wrap:anywhere}}.article img,.article video{{display:block;max-width:100%;height:auto;margin:10px auto}}.article a{{color:#4ba3ff}}.archived-comments{{margin-top:42px;border-top:1px solid #363b43;padding-top:22px}}.archived-comments h2{{margin:0 0 14px;font-size:18px}}.comment{{padding:14px 0;border-top:1px solid #30353c}}.comment:first-of-type{{border-top:0}}.comment-meta{{margin:0 0 7px;color:#9aa3ae;font-size:13px}}.comment-author{{color:#e9edf2;font-weight:600}}.comment-body{{margin:0;white-space:pre-wrap;font-size:15px;line-height:1.6;overflow-wrap:anywhere}}.comment-body img,.comment-body video{{display:block;max-width:100%;height:auto;margin:8px 0}}.comment-body a{{color:#4ba3ff}}@media(max-width:640px){{main{{padding:22px 16px 40px}}h1{{font-size:22px}}}}</style></head>
 <body data-post-id="{html.escape(post["id"], quote=True)}"><main><a class="back" href="../index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> 목록으로</a><h1>{html.escape(post["title"])}</h1><p class="meta"><i class="fa-regular fa-thumbs-up" aria-hidden="true"></i> {html.escape(post["votes"])} · <i class="fa-regular fa-comment" aria-hidden="true"></i> {html.escape(post["comments"])} · {html.escape(post["published"])} · <a class="source" href="{html.escape(post["source_url"], quote=True)}" target="_blank" rel="noopener noreferrer">원문</a></p><article class="article">{post["content"]}</article>{comments_html}</main>{READ_POST_SCRIPT}</body></html>'''
 
 
 def generate_comments_html(comments):
-    """Render copied text comments without copying Dogdrip page controls or scripts."""
+    """Render copied text and Dogdripcon without page controls or active scripts."""
     if comments:
         rows = "".join(
-            f'''<div class="comment"><p class="comment-meta"><span class="comment-author">{html.escape(comment["author"])}</span>{(" · " + html.escape(comment["published"])) if comment["published"] else ""}</p><p class="comment-body">{html.escape(comment["body"])}</p></div>'''
+            f'''<div class="comment"><p class="comment-meta"><span class="comment-author">{html.escape(comment["author"])}</span>{(" · " + html.escape(comment["published"])) if comment["published"] else ""}</p><div class="comment-body">{comment.get("body_html") or html.escape(comment["body"])}</div></div>'''
             for comment in comments
         )
         description = f"수집 당시 댓글 {len(comments)}개"
@@ -531,6 +572,7 @@ def refresh_comments_for_existing_posts(entries):
         print(f"전체 댓글 보관 중: {entry['title'][:30]}...")
         try:
             _, comments = get_post_details(entry["source_url"])
+            comments = localize_comment_media(comments, entry["id"])
             page, page_sha = github_get_file(f"posts/{entry['id']}.html")
             if page is None:
                 print("기존 글 파일을 찾지 못했습니다.")
@@ -582,7 +624,9 @@ def archive_posts():
         try:
             snapshot = get_post_snapshot(post["source_url"])
             post["title"] = snapshot["title"] or post["title"]
-            post["archived_comments"] = snapshot["comments"]
+            post["archived_comments"] = localize_comment_media(
+                snapshot["comments"], post["id"]
+            )
             post["comments"] = str(len(post["archived_comments"]))
             post["content"] = localize_article_content(snapshot["content"], post["id"])
             thumbnail_path = archive_asset(post["thumbnail_url"], post["id"])
