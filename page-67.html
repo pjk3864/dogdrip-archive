@@ -5,17 +5,18 @@
   <title>개드립 인기글 아카이브</title>
   <style>
     :root { --blue:#4ba3ff; --ink:#e9edf2; --muted:#9aa3ae; --line:#363b43; --panel:#202329; --panel-deep:#17191d; }
-    * { box-sizing:border-box; } body { margin:0; background:#111317; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif; }
+    * { box-sizing:border-box; } body { margin:0; background:#111317; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif; } .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
     .site { max-width:960px; min-height:100vh; margin:auto; background:var(--panel); }
     header { display:flex; align-items:center; gap:12px; height:54px; padding:0 20px; background:var(--panel-deep); border-bottom:1px solid var(--line); }
     h1 { margin:0; font-size:17px; } .updated { margin:0; padding:13px 20px; color:var(--muted); border-bottom:1px solid var(--line); font-size:12px; }
+    .search { display:flex; gap:8px; padding:12px 20px; border-bottom:1px solid var(--line); } .search input { flex:1; min-width:0; border:1px solid var(--line); border-radius:5px; background:#111317; color:var(--ink); padding:9px 10px; font:inherit; } .search input:focus { border-color:var(--blue); outline:2px solid color-mix(in srgb, var(--blue) 35%, transparent); } .search button { border:1px solid var(--blue); border-radius:5px; background:var(--blue); color:#fff; cursor:pointer; padding:9px 12px; font:inherit; } .search button[type="reset"] { background:transparent; border-color:var(--line); color:var(--ink); } .search-status { min-height:20px; margin:0; padding:0 20px 10px; color:var(--muted); font-size:13px; }
     .post-row { display:block; min-height:62px; padding:19px 20px; color:inherit; text-decoration:none; border-bottom:1px solid var(--line); transition:background .15s; }
     .post-row:hover, .post-row:focus-visible { background:#292e36; outline:none; } .post-row.is-read .row-title { color:#777f8a; } .row-title { display:block; overflow:hidden; font-size:18px; line-height:1.35; text-overflow:ellipsis; white-space:nowrap; }
     .pager { display:flex; flex-wrap:wrap; justify-content:center; gap:6px; padding:24px 16px; } .page-link { min-width:34px; padding:8px 10px; border:1px solid var(--line); border-radius:5px; color:var(--ink); text-align:center; text-decoration:none; font-size:14px; } .page-link.page-shift { min-width:52px; } .page-link:hover,.page-link:focus-visible { border-color:var(--blue); color:var(--blue); outline:none; } .page-link.current { background:var(--blue); border-color:var(--blue); color:#fff; pointer-events:none; }
-    @media(max-width:640px) { header { height:50px; padding:0 14px; } .updated { padding:11px 14px; } .post-row { min-height:55px; padding:16px 14px; } .row-title { font-size:16px; } .pager { gap:5px; padding:20px 10px; } .page-link { min-width:32px; padding:7px 8px; } }
+    @media(max-width:640px) { header { height:50px; padding:0 14px; } .updated,.search { padding-left:14px; padding-right:14px; } .search-status { padding-left:14px; padding-right:14px; } .post-row { min-height:55px; padding:16px 14px; } .row-title { font-size:16px; } .pager { gap:5px; padding:20px 10px; } .page-link { min-width:32px; padding:7px 8px; } }
   </style>
 </head>
-<body><main class="site"><header><i class="fa-solid fa-list" aria-hidden="true"></i><h1>개드립 인기글 아카이브</h1></header><p class="updated">보관된 글 1980개 · 67/99 페이지 · 마지막 수집 2026-09-04 22:46</p><a class="post-row" data-post-id="720918706" href="posts/720918706.html">
+<body><main class="site"><header><i class="fa-solid fa-list" aria-hidden="true"></i><h1>개드립 인기글 아카이브</h1></header><p class="updated">보관된 글 1980개 · 67/99 페이지 · 마지막 수집 2026-09-05 08:44</p><form class="search" id="archive-search" role="search"><label class="sr-only" for="archive-search-input">글 제목 검색</label><input id="archive-search-input" type="search" placeholder="글 제목으로 지난 글 찾기" autocomplete="off"><button type="submit">검색</button><button type="reset">초기화</button></form><p class="search-status" id="archive-search-status" aria-live="polite"></p><section id="archive-post-list"><a class="post-row" data-post-id="720918706" href="posts/720918706.html">
   <span class="row-title">제주 무수천서 시신 1구 발견…또다른 실종자</span>
 </a><a class="post-row" data-post-id="720915052" href="posts/720915052.html">
   <span class="row-title">월급 400 넘어야 해주는 아내.jpg</span>
@@ -55,7 +56,7 @@
   <span class="row-title">생각보다 뭔가뭔가인 박진영(jyp) 사이비 논란</span>
 </a><a class="post-row" data-post-id="720877776" href="posts/720877776.html">
   <span class="row-title">화교몰이 당하고 있는 여에스더</span>
-</a><nav class="pager" aria-label="목록 페이지"><a class="page-link page-shift" href="page-60.html" aria-label="이전 페이지 묶음">이전</a><a class="page-link" href="page-61.html">61</a><a class="page-link" href="page-62.html">62</a><a class="page-link" href="page-63.html">63</a><a class="page-link" href="page-64.html">64</a><a class="page-link" href="page-65.html">65</a><a class="page-link" href="page-66.html">66</a><a class="page-link current" href="page-67.html" aria-current="page">67</a><a class="page-link" href="page-68.html">68</a><a class="page-link" href="page-69.html">69</a><a class="page-link" href="page-70.html">70</a><a class="page-link page-shift" href="page-71.html" aria-label="다음 페이지 묶음">다음</a></nav></main><script id="archive-read-list">
+</a></section><section id="archive-search-results" hidden aria-label="검색 결과"></section><nav class="pager" aria-label="목록 페이지"><a class="page-link page-shift" href="page-60.html" aria-label="이전 페이지 묶음">이전</a><a class="page-link" href="page-61.html">61</a><a class="page-link" href="page-62.html">62</a><a class="page-link" href="page-63.html">63</a><a class="page-link" href="page-64.html">64</a><a class="page-link" href="page-65.html">65</a><a class="page-link" href="page-66.html">66</a><a class="page-link current" href="page-67.html" aria-current="page">67</a><a class="page-link" href="page-68.html">68</a><a class="page-link" href="page-69.html">69</a><a class="page-link" href="page-70.html">70</a><a class="page-link page-shift" href="page-71.html" aria-label="다음 페이지 묶음">다음</a></nav></main><script id="archive-read-list">
 (() => {
   const key = "dogdrip-archive-read-posts";
   try {
@@ -68,6 +69,56 @@
       });
     });
   } catch (_) {}
+})();
+</script><script id="archive-search">
+(() => {
+  const form = document.querySelector("#archive-search");
+  const input = document.querySelector("#archive-search-input");
+  const status = document.querySelector("#archive-search-status");
+  const results = document.querySelector("#archive-search-results");
+  const list = document.querySelector("#archive-post-list");
+  const pager = document.querySelector(".pager");
+  let entries;
+
+  const reset = () => {
+    results.hidden = true;
+    results.replaceChildren();
+    list.hidden = false;
+    pager.hidden = false;
+    status.textContent = "";
+  };
+  const showResult = (entry) => {
+    const link = document.createElement("a");
+    link.className = "post-row";
+    link.href = `posts/${entry.id}.html`;
+    link.dataset.postId = entry.id;
+    const title = document.createElement("span");
+    title.className = "row-title";
+    title.textContent = entry.title;
+    link.append(title);
+    return link;
+  };
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const query = input.value.trim().toLocaleLowerCase("ko-KR");
+    if (!query) return reset();
+    status.textContent = "검색 중…";
+    try {
+      entries ||= await fetch("archive.json", { cache: "force-cache" }).then((response) => {
+        if (!response.ok) throw new Error("archive index unavailable");
+        return response.json();
+      });
+      const matches = entries.filter((entry) => entry.title.toLocaleLowerCase("ko-KR").includes(query));
+      results.replaceChildren(...matches.map(showResult));
+      results.hidden = false;
+      list.hidden = true;
+      pager.hidden = true;
+      status.textContent = `“${input.value.trim()}” 검색 결과 ${matches.length}개`;
+    } catch (_) {
+      status.textContent = "검색 결과를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.";
+    }
+  });
+  form.addEventListener("reset", () => setTimeout(reset, 0));
 })();
 </script></body>
 </html>

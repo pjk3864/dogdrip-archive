@@ -30,6 +30,7 @@ POSTS_PER_LIST_PAGE = 20
 PAGER_WINDOW_SIZE = 10
 MAX_POPULAR_PAGES = 9
 COMMENT_ARCHIVE_VERSION = 3
+COMMENT_THREAD_VERSION = 1
 POPULAR_PAGE_DELAY_SECONDS = 2
 MANUAL_URLS_FILE = "manual_urls.txt"
 DOGDRIP_DOCUMENT_DELAY_SECONDS = 1.5
@@ -42,8 +43,59 @@ REQUEST_HEADERS = {
     )
 }
 DARK_POST_STYLE = '''<style id="archive-dark-theme">
-body{background:#111317!important;color:#e9edf2!important}main{background:#202329!important}.back,.source,.article a{color:#4ba3ff!important}h1{color:#f6f8fa!important}.meta{color:#9aa3ae!important;border-color:#363b43!important}.archived-comments{border-color:#363b43!important}.comment{border-color:#30353c!important}.comment-meta{color:#9aa3ae!important}.comment-author{color:#e9edf2!important}
+body{background:#111317!important;color:#e9edf2!important}main{background:#202329!important}.back,.source,.article a{color:#4ba3ff!important}h1{color:#f6f8fa!important}.meta{color:#9aa3ae!important;border-color:#363b43!important}.archived-comments{border-color:#363b43!important}.comment{border-color:#30353c!important}.comment-meta{color:#9aa3ae!important}.comment-author{color:#e9edf2!important}.comment.is-reply{margin-left:34px;padding-left:16px;border-left:2px solid #4ba3ff;background:#1b1e23}.comment-reply-label{color:#4ba3ff;font-size:12px;font-weight:600}
 </style>'''
+SEARCH_LIST_SCRIPT = '''<script id="archive-search">
+(() => {
+  const form = document.querySelector("#archive-search");
+  const input = document.querySelector("#archive-search-input");
+  const status = document.querySelector("#archive-search-status");
+  const results = document.querySelector("#archive-search-results");
+  const list = document.querySelector("#archive-post-list");
+  const pager = document.querySelector(".pager");
+  let entries;
+
+  const reset = () => {
+    results.hidden = true;
+    results.replaceChildren();
+    list.hidden = false;
+    pager.hidden = false;
+    status.textContent = "";
+  };
+  const showResult = (entry) => {
+    const link = document.createElement("a");
+    link.className = "post-row";
+    link.href = `posts/${entry.id}.html`;
+    link.dataset.postId = entry.id;
+    const title = document.createElement("span");
+    title.className = "row-title";
+    title.textContent = entry.title;
+    link.append(title);
+    return link;
+  };
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const query = input.value.trim().toLocaleLowerCase("ko-KR");
+    if (!query) return reset();
+    status.textContent = "검색 중…";
+    try {
+      entries ||= await fetch("archive.json", { cache: "force-cache" }).then((response) => {
+        if (!response.ok) throw new Error("archive index unavailable");
+        return response.json();
+      });
+      const matches = entries.filter((entry) => entry.title.toLocaleLowerCase("ko-KR").includes(query));
+      results.replaceChildren(...matches.map(showResult));
+      results.hidden = false;
+      list.hidden = true;
+      pager.hidden = true;
+      status.textContent = `“${input.value.trim()}” 검색 결과 ${matches.length}개`;
+    } catch (_) {
+      status.textContent = "검색 결과를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.";
+    }
+  });
+  form.addEventListener("reset", () => setTimeout(reset, 0));
+})();
+</script>'''
 READ_LIST_SCRIPT = '''<script id="archive-read-list">
 (() => {
   const key = "dogdrip-archive-read-posts";
@@ -335,6 +387,9 @@ def get_post_snapshot(link):
                 "published": published.get_text(" ", strip=True) if published else "",
                 "body": body.get_text("\n", strip=True),
                 "body_html": "".join(str(child) for child in body.contents),
+                # Dogdrip marks replies with the `depth` class. Preserve that
+                # relationship in the archive instead of flattening every comment.
+                "depth": 1 if "depth" in (item.get("class") or []) else 0,
             }
         )
     return {"title": title, "content": content_html, "comments": comments}
@@ -464,17 +519,18 @@ def generate_index_html(entries, page_number=1):
   <title>개드립 인기글 아카이브</title>
   <style>
     :root {{ --blue:#4ba3ff; --ink:#e9edf2; --muted:#9aa3ae; --line:#363b43; --panel:#202329; --panel-deep:#17191d; }}
-    * {{ box-sizing:border-box; }} body {{ margin:0; background:#111317; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif; }}
+    * {{ box-sizing:border-box; }} body {{ margin:0; background:#111317; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif; }} .sr-only {{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }}
     .site {{ max-width:960px; min-height:100vh; margin:auto; background:var(--panel); }}
     header {{ display:flex; align-items:center; gap:12px; height:54px; padding:0 20px; background:var(--panel-deep); border-bottom:1px solid var(--line); }}
     h1 {{ margin:0; font-size:17px; }} .updated {{ margin:0; padding:13px 20px; color:var(--muted); border-bottom:1px solid var(--line); font-size:12px; }}
+    .search {{ display:flex; gap:8px; padding:12px 20px; border-bottom:1px solid var(--line); }} .search input {{ flex:1; min-width:0; border:1px solid var(--line); border-radius:5px; background:#111317; color:var(--ink); padding:9px 10px; font:inherit; }} .search input:focus {{ border-color:var(--blue); outline:2px solid color-mix(in srgb, var(--blue) 35%, transparent); }} .search button {{ border:1px solid var(--blue); border-radius:5px; background:var(--blue); color:#fff; cursor:pointer; padding:9px 12px; font:inherit; }} .search button[type="reset"] {{ background:transparent; border-color:var(--line); color:var(--ink); }} .search-status {{ min-height:20px; margin:0; padding:0 20px 10px; color:var(--muted); font-size:13px; }}
     .post-row {{ display:block; min-height:62px; padding:19px 20px; color:inherit; text-decoration:none; border-bottom:1px solid var(--line); transition:background .15s; }}
     .post-row:hover, .post-row:focus-visible {{ background:#292e36; outline:none; }} .post-row.is-read .row-title {{ color:#777f8a; }} .row-title {{ display:block; overflow:hidden; font-size:18px; line-height:1.35; text-overflow:ellipsis; white-space:nowrap; }}
     .pager {{ display:flex; flex-wrap:wrap; justify-content:center; gap:6px; padding:24px 16px; }} .page-link {{ min-width:34px; padding:8px 10px; border:1px solid var(--line); border-radius:5px; color:var(--ink); text-align:center; text-decoration:none; font-size:14px; }} .page-link.page-shift {{ min-width:52px; }} .page-link:hover,.page-link:focus-visible {{ border-color:var(--blue); color:var(--blue); outline:none; }} .page-link.current {{ background:var(--blue); border-color:var(--blue); color:#fff; pointer-events:none; }}
-    @media(max-width:640px) {{ header {{ height:50px; padding:0 14px; }} .updated {{ padding:11px 14px; }} .post-row {{ min-height:55px; padding:16px 14px; }} .row-title {{ font-size:16px; }} .pager {{ gap:5px; padding:20px 10px; }} .page-link {{ min-width:32px; padding:7px 8px; }} }}
+    @media(max-width:640px) {{ header {{ height:50px; padding:0 14px; }} .updated,.search {{ padding-left:14px; padding-right:14px; }} .search-status {{ padding-left:14px; padding-right:14px; }} .post-row {{ min-height:55px; padding:16px 14px; }} .row-title {{ font-size:16px; }} .pager {{ gap:5px; padding:20px 10px; }} .page-link {{ min-width:32px; padding:7px 8px; }} }}
   </style>
 </head>
-<body><main class="site"><header><i class="fa-solid fa-list" aria-hidden="true"></i><h1>개드립 인기글 아카이브</h1></header><p class="updated">보관된 글 {len(entries)}개 · {page_number}/{total_pages} 페이지 · 마지막 수집 {updated_at}</p>{''.join(rows)}<nav class="pager" aria-label="목록 페이지">{pager}</nav></main>{READ_LIST_SCRIPT}</body>
+<body><main class="site"><header><i class="fa-solid fa-list" aria-hidden="true"></i><h1>개드립 인기글 아카이브</h1></header><p class="updated">보관된 글 {len(entries)}개 · {page_number}/{total_pages} 페이지 · 마지막 수집 {updated_at}</p><form class="search" id="archive-search" role="search"><label class="sr-only" for="archive-search-input">글 제목 검색</label><input id="archive-search-input" type="search" placeholder="글 제목으로 지난 글 찾기" autocomplete="off"><button type="submit">검색</button><button type="reset">초기화</button></form><p class="search-status" id="archive-search-status" aria-live="polite"></p><section id="archive-post-list">{''.join(rows)}</section><section id="archive-search-results" hidden aria-label="검색 결과"></section><nav class="pager" aria-label="목록 페이지">{pager}</nav></main>{READ_LIST_SCRIPT}{SEARCH_LIST_SCRIPT}</body>
 </html>'''
 
 
@@ -497,7 +553,7 @@ def generate_post_html(post):
     comments_html = generate_comments_html(post.get("archived_comments", []))
     return f'''<!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer"><title>{html.escape(post["title"])} · 개드립 아카이브</title>
-<style>body{{margin:0;background:#111317;color:#e9edf2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}}main{{max-width:960px;min-height:100vh;margin:auto;padding:28px 24px 48px;background:#202329}}.back,.source{{color:#4ba3ff;text-decoration:none;font-size:14px}}h1{{margin:20px 0 0;color:#f6f8fa;font-size:25px;line-height:1.42}}.meta{{margin:10px 0 20px;color:#9aa3ae;border-bottom:1px solid #363b43;padding-bottom:18px;font-size:13px}}.article{{font-size:16px;line-height:1.72;overflow-wrap:anywhere}}.article img,.article video{{display:block;max-width:100%;height:auto;margin:10px auto}}.article a{{color:#4ba3ff}}.archived-comments{{margin-top:42px;border-top:1px solid #363b43;padding-top:22px}}.archived-comments h2{{margin:0 0 14px;font-size:18px}}.comment{{padding:14px 0;border-top:1px solid #30353c}}.comment:first-of-type{{border-top:0}}.comment-meta{{margin:0 0 7px;color:#9aa3ae;font-size:13px}}.comment-author{{color:#e9edf2;font-weight:600}}.comment-body{{margin:0;white-space:pre-wrap;font-size:15px;line-height:1.6;overflow-wrap:anywhere}}.comment-body img,.comment-body video{{display:block;max-width:100%;height:auto;margin:8px 0}}.comment-body a{{color:#4ba3ff}}@media(max-width:640px){{main{{padding:22px 16px 40px}}h1{{font-size:22px}}}}</style></head>
+<style>body{{margin:0;background:#111317;color:#e9edf2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}}main{{max-width:960px;min-height:100vh;margin:auto;padding:28px 24px 48px;background:#202329}}.back,.source{{color:#4ba3ff;text-decoration:none;font-size:14px}}h1{{margin:20px 0 0;color:#f6f8fa;font-size:25px;line-height:1.42}}.meta{{margin:10px 0 20px;color:#9aa3ae;border-bottom:1px solid #363b43;padding-bottom:18px;font-size:13px}}.article{{font-size:16px;line-height:1.72;overflow-wrap:anywhere}}.article img,.article video{{display:block;max-width:100%;height:auto;margin:10px auto}}.article a{{color:#4ba3ff}}.archived-comments{{margin-top:42px;border-top:1px solid #363b43;padding-top:22px}}.archived-comments h2{{margin:0 0 14px;font-size:18px}}.comment{{padding:14px 0;border-top:1px solid #30353c}}.comment:first-of-type{{border-top:0}}.comment.is-reply{{margin-left:34px;padding-left:16px;border-left:2px solid #4ba3ff;background:#1b1e23}}.comment-reply-label{{color:#4ba3ff;font-size:12px;font-weight:600}}.comment-meta{{margin:0 0 7px;color:#9aa3ae;font-size:13px}}.comment-author{{color:#e9edf2;font-weight:600}}.comment-body{{margin:0;white-space:pre-wrap;font-size:15px;line-height:1.6;overflow-wrap:anywhere}}.comment-body img,.comment-body video{{display:block;max-width:100%;height:auto;margin:8px 0}}.comment-body a{{color:#4ba3ff}}@media(max-width:640px){{main{{padding:22px 16px 40px}}h1{{font-size:22px}}.comment.is-reply{{margin-left:18px;padding-left:12px}}}}</style></head>
 <body data-post-id="{html.escape(post["id"], quote=True)}"><main><a class="back" href="../index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> 목록으로</a><h1>{html.escape(post["title"])}</h1><p class="meta"><i class="fa-regular fa-thumbs-up" aria-hidden="true"></i> {html.escape(post["votes"])} · <i class="fa-regular fa-comment" aria-hidden="true"></i> {html.escape(post["comments"])} · {html.escape(post["published"])} · <a class="source" href="{html.escape(post["source_url"], quote=True)}" target="_blank" rel="noopener noreferrer">원문</a></p><article class="article">{post["content"]}</article>{comments_html}</main>{READ_POST_SCRIPT}</body></html>'''
 
 
@@ -505,7 +561,7 @@ def generate_comments_html(comments):
     """Render copied text and Dogdripcon without page controls or active scripts."""
     if comments:
         rows = "".join(
-            f'''<div class="comment"><p class="comment-meta"><span class="comment-author">{html.escape(comment["author"])}</span>{(" · " + html.escape(comment["published"])) if comment["published"] else ""}</p><div class="comment-body">{comment.get("body_html") or html.escape(comment["body"])}</div></div>'''
+            f'''<div class="comment{' is-reply' if comment.get("depth", 0) else ''}" data-depth="{int(comment.get("depth", 0))}"><p class="comment-meta">{'<span class="comment-reply-label">↳ 답글</span> · ' if comment.get("depth", 0) else ''}<span class="comment-author">{html.escape(comment["author"])}</span>{(" · " + html.escape(comment["published"])) if comment["published"] else ""}</p><div class="comment-body">{comment.get("body_html") or html.escape(comment["body"])}</div></div>'''
             for comment in comments
         )
         description = f"수집 당시 댓글 {len(comments)}개"
@@ -594,6 +650,34 @@ def refresh_comments_for_existing_posts(entries):
     return updated
 
 
+def refresh_comment_threading(entries):
+    """One-time, explicitly requested refresh that preserves reply depth."""
+    updated = 0
+    for entry in entries:
+        if entry.get("comment_thread_version") == COMMENT_THREAD_VERSION:
+            continue
+        print(f"댓글 스레드 구조 보관 중: {entry['title'][:30]}...")
+        try:
+            _, comments = get_post_details(entry["source_url"])
+            comments = localize_comment_media(comments, entry["id"])
+            page, page_sha = github_get_file(f"posts/{entry['id']}.html")
+            if page is None:
+                print("기존 글 파일을 찾지 못했습니다.")
+                continue
+            github_put_file(
+                f"posts/{entry['id']}.html",
+                add_comments_to_archived_page(page.decode("utf-8"), comments).encode("utf-8"),
+                f"Preserve comment threads for {entry['id']}",
+                page_sha,
+            )
+            entry["archived_comment_count"] = len(comments)
+            entry["comment_thread_version"] = COMMENT_THREAD_VERSION
+            updated += 1
+        except requests.RequestException as error:
+            print(f"댓글 스레드 보관 실패: {error}")
+    return updated
+
+
 def archive_posts():
     """Preserve every popular post created after the newest archived post."""
     entries, archive_sha = load_archive()
@@ -669,6 +753,11 @@ def archive_posts():
     else:
         backfilled = refresh_comments_for_existing_posts(entries)
         themed = apply_dark_theme_to_existing_posts(entries)
+    threaded = (
+        refresh_comment_threading(entries)
+        if not os.environ.get("CI") and os.environ.get("REFRESH_COMMENT_THREADS") == "1"
+        else 0
+    )
     github_put_file(
         "archive.json",
         json.dumps(entries, ensure_ascii=False, indent=2).encode("utf-8"),
@@ -678,7 +767,8 @@ def archive_posts():
     build_list_pages(entries)
     print(
         f"아카이브 완료: 새 글 {len(new_entries)}개, "
-        f"댓글 추가 {backfilled}개, 기존 글 화면 업데이트 {themed}개, 총 {len(entries)}개"
+        f"댓글 추가 {backfilled}개, 스레드 갱신 {threaded}개, "
+        f"기존 글 화면 업데이트 {themed}개, 총 {len(entries)}개"
     )
 
 
