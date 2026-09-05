@@ -31,6 +31,7 @@ PAGER_WINDOW_SIZE = 10
 MAX_POPULAR_PAGES = 9
 COMMENT_ARCHIVE_VERSION = 3
 COMMENT_THREAD_VERSION = 1
+RECENT_THREAD_REFRESH_COUNT = 200
 POPULAR_PAGE_DELAY_SECONDS = 2
 MANUAL_URLS_FILE = "manual_urls.txt"
 DOGDRIP_DOCUMENT_DELAY_SECONDS = 1.5
@@ -650,10 +651,13 @@ def refresh_comments_for_existing_posts(entries):
     return updated
 
 
-def refresh_comment_threading(entries):
-    """One-time, explicitly requested refresh that preserves reply depth."""
+def refresh_comment_threading(entries, limit=RECENT_THREAD_REFRESH_COUNT):
+    """Explicitly requested refresh that stores reply depth only on the
+    newest ``RECENT_THREAD_REFRESH_COUNT`` entries (archive is newest-first);
+    pass ``limit=None`` to refresh every pending entry."""
     updated = 0
-    for entry in entries:
+    window = entries if limit is None else entries[: limit]
+    for entry in window:
         if entry.get("comment_thread_version") == COMMENT_THREAD_VERSION:
             continue
         print(f"댓글 스레드 구조 보관 중: {entry['title'][:30]}...")
@@ -741,6 +745,7 @@ def archive_posts():
                 "archived_at": datetime.now().isoformat(timespec="seconds"),
                 "archived_comment_count": len(post["archived_comments"]),
                 "comment_archive_version": COMMENT_ARCHIVE_VERSION,
+                "comment_thread_version": COMMENT_THREAD_VERSION,
             }
         )
 
