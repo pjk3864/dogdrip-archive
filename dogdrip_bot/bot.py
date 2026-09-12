@@ -157,7 +157,22 @@ def github_get_file(path, decode=True):
         return None, None
     response.raise_for_status()
     payload = response.json()
-    content = base64.b64decode(payload["content"]) if decode else None
+    content = None
+    if decode:
+        # The Contents API omits the inline base64 payload for files larger than
+        # 1 MB. archive.json eventually crosses that threshold, so use its raw
+        # download URL instead of mistaking an empty `content` field for a file
+        # containing no JSON.
+        if payload.get("encoding") == "base64" and payload.get("content"):
+            content = base64.b64decode(payload["content"])
+        elif payload.get("download_url"):
+            raw_response = requests.get(
+                payload["download_url"], headers=_github_headers(), timeout=60
+            )
+            raw_response.raise_for_status()
+            content = raw_response.content
+        else:
+            raise RuntimeError(f"GitHub 파일 내용을 읽을 수 없습니다: {path}")
     return content, payload["sha"]
 
 
