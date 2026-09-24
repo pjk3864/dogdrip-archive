@@ -19,7 +19,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 DOGDRIP_URL = "https://www.dogdrip.net/?mid=dogdrip&sort_index=popular"
-DOGDRIP_FALLBACK_URL = "https://www.dogdrip.net/dogdrip?sort_index=popular"
+DOGDRIP_FALLBACK_URL = "https://www.dogdrip.net/dogdrip"
 DOGDRIP_ORIGIN = "https://www.dogdrip.net"
 GITHUB_USERNAME = "pjk3864"
 REPO_NAME = "dogdrip-archive"
@@ -216,7 +216,7 @@ def _open_list_browser():
 
 def _get_popular_page_html(browser, page_number):
     """Load one popular-posts page through the same Chrome engine as a user."""
-    browser.get(f"{DOGDRIP_FALLBACK_URL}&page={page_number}")
+    browser.get(f"{DOGDRIP_FALLBACK_URL}?page={page_number}")
     try:
         WebDriverWait(browser, 20).until(
             lambda current: current.find_elements(
