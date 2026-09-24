@@ -1,5 +1,7 @@
 """Archive Dogdrip popular posts as standalone GitHub Pages files."""
 
+import atexit
+
 import base64
 import hashlib
 import html
@@ -35,8 +37,8 @@ RECENT_THREAD_REFRESH_COUNT = 200
 POPULAR_PAGE_DELAY_SECONDS = 2
 MANUAL_URLS_FILE = "manual_urls.txt"
 DOGDRIP_DOCUMENT_DELAY_SECONDS = 1.5
-DOGDRIP_RETRY_DELAY_SECONDS = 60
 _last_dogdrip_document_request = 0.0
+_document_browser = None
 REQUEST_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -130,7 +132,7 @@ def _class_contains(expected):
 
 def canonical_post_url(url):
     """Remove list-page query parameters that can trigger an access block."""
-    match = re.search(r"/dogdrip/(\d+)", url)
+    match = re.search(r"/(?:dogdrip/)?(\d+)(?:/)?$", urlparse(url).path)
     if not match:
         return url
     return f"{DOGDRIP_ORIGIN}/dogdrip/{match.group(1)}"
@@ -355,29 +357,60 @@ def _sanitize_comment_body(element):
             child["target"] = "_blank"
 
 
-def _get_dogdrip_document(link):
-    """Request one article at a measured pace to avoid stressing the source site."""
+def _close_document_browser():
+    """Close the reusable article browser when the archive process exits."""
+    global _document_browser
+    if _document_browser is not None:
+        try:
+            _document_browser.quit()
+        finally:
+            _document_browser = None
+
+
+atexit.register(_close_document_browser)
+
+
+def _get_document_browser():
+    """Return one warmed Chrome session for article pages protected by Cloudflare."""
+    global _document_browser
+    if _document_browser is None:
+        _document_browser = _open_list_browser()
+        _get_popular_page_html(_document_browser, 1)
+    return _document_browser
+
+
+def _get_dogdrip_document_html(link):
+    """Load one article in Chrome at a measured pace and return its HTML."""
     global _last_dogdrip_document_request
-    for attempt in range(3):
+    last_error = None
+    for attempt in range(2):
+        browser = _get_document_browser()
         wait_seconds = DOGDRIP_DOCUMENT_DELAY_SECONDS - (
             time.monotonic() - _last_dogdrip_document_request
         )
         if wait_seconds > 0:
             time.sleep(wait_seconds)
-        response = requests.get(canonical_post_url(link), headers=REQUEST_HEADERS, timeout=30)
-        _last_dogdrip_document_request = time.monotonic()
-        if response.status_code != 429:
-            response.raise_for_status()
-            return response
-        print(f"글 요청이 잠시 제한되었습니다. {DOGDRIP_RETRY_DELAY_SECONDS}초 뒤 재시도합니다...")
-        time.sleep(DOGDRIP_RETRY_DELAY_SECONDS)
-    response.raise_for_status()
+        try:
+            browser.get(canonical_post_url(link))
+            _last_dogdrip_document_request = time.monotonic()
+            WebDriverWait(browser, 30).until(
+                lambda current: current.find_elements(
+                    "css selector", "div.rhymix_content.xe_content[class^='document_']"
+                )
+            )
+            return browser.page_source
+        except Exception as error:
+            last_error = error
+            _close_document_browser()
+            if attempt == 0:
+                print("글 페이지를 다시 열기 위해 Chrome 세션을 재시작합니다...")
+                time.sleep(5)
+    raise RuntimeError(f"개드립 글을 열지 못했습니다: {canonical_post_url(link)}") from last_error
 
 
 def get_post_snapshot(link):
     """Fetch one article, its title, body, and every visible comment in one request."""
-    response = _get_dogdrip_document(link)
-    soup = BeautifulSoup(response.content, "html.parser")
+    soup = BeautifulSoup(_get_dogdrip_document_html(link), "html.parser")
     title_node = soup.select_one('meta[property="og:title"]')
     title = title_node.get("content", "").strip() if title_node else ""
     title = re.sub(r"\s*[-|]\s*DogDrip.*$", "", title, flags=re.IGNORECASE)
@@ -661,7 +694,7 @@ def refresh_comments_for_existing_posts(entries):
             entry["archived_comment_count"] = len(comments)
             entry["comment_archive_version"] = COMMENT_ARCHIVE_VERSION
             updated += 1
-        except requests.RequestException as error:
+        except (requests.RequestException, RuntimeError) as error:
             print(f"댓글 보관 실패: {error}")
     return updated
 
@@ -692,7 +725,7 @@ def refresh_comment_threading(entries, limit=RECENT_THREAD_REFRESH_COUNT):
             entry["archived_comment_count"] = len(comments)
             entry["comment_thread_version"] = COMMENT_THREAD_VERSION
             updated += 1
-        except requests.RequestException as error:
+        except (requests.RequestException, RuntimeError) as error:
             print(f"댓글 스레드 보관 실패: {error}")
     return updated
 
@@ -702,6 +735,7 @@ def archive_posts():
     entries, archive_sha = load_archive()
     known_ids = {entry["id"] for entry in entries}
     new_entries = []
+    failed_post_ids = []
 
     manual_posts = get_manual_posts()
     if entries:
@@ -739,8 +773,9 @@ def archive_posts():
                 generate_post_html(post).encode("utf-8"),
                 f"Archive post {post['id']}",
             )
-        except requests.RequestException as error:
+        except (requests.RequestException, RuntimeError) as error:
             print(f"글 보관 실패: {error}")
+            failed_post_ids.append(post["id"])
             continue
 
         new_entries.append(
@@ -762,6 +797,12 @@ def archive_posts():
                 "comment_archive_version": COMMENT_ARCHIVE_VERSION,
                 "comment_thread_version": COMMENT_THREAD_VERSION,
             }
+        )
+
+    if failed_post_ids:
+        raise RuntimeError(
+            f"신규 글 {len(candidates)}개 중 {len(failed_post_ids)}개 보관에 실패했습니다: "
+            + ", ".join(failed_post_ids[:10])
         )
 
     entries = new_entries + entries
