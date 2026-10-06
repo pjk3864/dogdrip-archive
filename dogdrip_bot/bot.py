@@ -152,9 +152,52 @@ def _github_url(path):
     return f"https://api.github.com/repos/{GITHUB_USERNAME}/{REPO_NAME}/contents/{path}"
 
 
+def _github_request(method, url, **kwargs):
+    """Retry transient GitHub failures without retrying permission errors."""
+    for attempt in range(6):
+        response = None
+        try:
+            response = requests.request(method, url, headers=_github_headers(), **kwargs)
+            transient = response.status_code in (429, 500, 502, 503, 504) or (
+                response.status_code == 403 and (
+                    "timed out validating rule" in response.text.lower()
+                    or "secondary rate limit" in response.text.lower()
+                    or response.headers.get("X-RateLimit-Remaining") == "0"
+                )
+            )
+            if not transient or attempt == 5:
+                return response
+        except (requests.Timeout, requests.ConnectionError):
+            if attempt == 5:
+                raise
+        delay = min(60, 2 ** (attempt + 1))
+        if response is not None:
+            try:
+                delay = max(delay, float(response.headers.get("Retry-After", 0)))
+            except ValueError:
+                pass
+            if response.headers.get("X-RateLimit-Remaining") == "0":
+                delay = max(delay, float(response.headers.get("X-RateLimit-Reset", 0)) - time.time() + 1)
+        # A PUT may have succeeded even when its response was lost.
+        # Reconcile the blob before retrying to avoid stale-SHA failures.
+        if method == "PUT":
+            probe = _github_request("GET", url, timeout=30)
+            if probe.status_code == 200:
+                current_sha = probe.json()["sha"]
+                content = base64.b64decode(kwargs["json"]["content"])
+                expected_sha = hashlib.sha1(b"blob " + str(len(content)).encode() + b"\0" + content).hexdigest()
+                if current_sha == expected_sha:
+                    return probe
+                kwargs["json"]["sha"] = current_sha
+            elif probe.status_code != 404:
+                probe.raise_for_status()
+        print(f"GitHub {method} 일시 오류: {delay:.0f}초 후 재시도 ({attempt + 1}/5)", flush=True)
+        time.sleep(delay)
+
+
 def github_get_file(path, decode=True):
     """Return (content bytes or None, SHA or None) for a repository file."""
-    response = requests.get(_github_url(path), headers=_github_headers(), timeout=30)
+    response = _github_request("GET", _github_url(path), timeout=30)
     if response.status_code == 404:
         return None, None
     response.raise_for_status()
@@ -168,8 +211,8 @@ def github_get_file(path, decode=True):
         if payload.get("encoding") == "base64" and payload.get("content"):
             content = base64.b64decode(payload["content"])
         elif payload.get("download_url"):
-            raw_response = requests.get(
-                payload["download_url"], headers=_github_headers(), timeout=60
+            raw_response = _github_request(
+                "GET", payload["download_url"], timeout=60
             )
             raw_response.raise_for_status()
             content = raw_response.content
@@ -191,7 +234,7 @@ def github_put_file(path, content, message, sha=None):
     }
     if sha:
         payload["sha"] = sha
-    response = requests.put(_github_url(path), headers=_github_headers(), json=payload, timeout=60)
+    response = _github_request("PUT", _github_url(path), json=payload, timeout=60)
     if not response.ok:
         print(f"GitHub 저장 오류 ({response.status_code}) - {path}")
         print(response.text)
@@ -738,6 +781,8 @@ def archive_posts():
     failed_post_ids = []
 
     manual_posts = get_manual_posts()
+    pending_content, _ = github_get_file("pending_posts.json")
+    pending_posts = json.loads(pending_content.decode("utf-8")) if pending_content else []
     if entries:
         newest_archived_id = max(int(entry["id"]) for entry in entries)
         print(f"마지막 보관 글 {newest_archived_id} 이후의 새 글을 확인합니다.")
@@ -754,6 +799,11 @@ def archive_posts():
         # Empty repository bootstrap only. Subsequent runs never backfill old posts.
         candidates = get_popular_posts(limit=HISTORICAL_ARCHIVE_TARGET)
 
+    candidates = list({post["id"]: post for post in pending_posts + candidates
+                       if post["id"] not in known_ids}.values())
+    # Persist the queue first so interruption or later errors cannot lose posts.
+    github_put_file("pending_posts.json", json.dumps(candidates, ensure_ascii=False).encode("utf-8"),
+                    "Checkpoint pending archive posts")
     for post in candidates:
         if post["id"] in known_ids:
             continue
@@ -799,13 +849,7 @@ def archive_posts():
             }
         )
 
-    if failed_post_ids:
-        raise RuntimeError(
-            f"신규 글 {len(candidates)}개 중 {len(failed_post_ids)}개 보관에 실패했습니다: "
-            + ", ".join(failed_post_ids[:10])
-        )
-
-    entries = new_entries + entries
+    entries = sorted(new_entries + entries, key=lambda entry: int(entry["id"]), reverse=True)
     if os.environ.get("CI"):
         # Scheduled runs only archive newly published posts. Legacy maintenance is
         # intentionally left to an explicit local run so the daily job stays fast.
@@ -826,6 +870,16 @@ def archive_posts():
         archive_sha,
     )
     build_list_pages(entries)
+    completed_ids = {entry["id"] for entry in entries}
+    remaining = [post for post in candidates if post["id"] not in completed_ids]
+    github_put_file("pending_posts.json", json.dumps(remaining, ensure_ascii=False).encode("utf-8"),
+                    "Save remaining archive posts for retry")
+    if failed_post_ids:
+        raise RuntimeError(
+            f"성공한 새 글 {len(new_entries)}개는 목록에 반영했습니다. "
+            f"실패 {len(failed_post_ids)}개는 다음 실행에서 재시도합니다: "
+            + ", ".join(failed_post_ids[:10])
+        )
     print(
         f"아카이브 완료: 새 글 {len(new_entries)}개, "
         f"댓글 추가 {backfilled}개, 스레드 갱신 {threaded}개, "
