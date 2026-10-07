@@ -39,15 +39,6 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Use workflow-based publishing
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          if [ "$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq .build_type)" != "workflow" ]; then
-            gh api --method PUT "repos/${GITHUB_REPOSITORY}/pages" -f build_type=workflow --jq .build_type
-          fi
-
       - name: Build site with preserved external media
         run: python dogdrip_bot/build_site.py --output _site
 
