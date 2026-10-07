@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Check out archive
         uses: actions/checkout@v5
+        with:
+          sparse-checkout: dogdrip_bot
 
       - name: Set up Python
         uses: actions/setup-python@v6

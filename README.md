@@ -13,3 +13,9 @@
 $env:REFRESH_COMMENT_THREADS = "1"
 py -3.11 dogdrip_bot\bot.py
 ```
+
+## 오래된 글 별도 보관
+
+가장 오래된 글 1076개와 첨부파일 약 2.03GB는 비공개 저장용 레포 [dogdrip-archive-old](https://github.com/pjk3864/dogdrip-archive-old)로 옮겼습니다. 해당 글은 현재 사이트 목록에서 제외되며, 저장용 레포는 Pages로 배포하지 않습니다.
+
+cold-storage.json에 이전 범위와 검증된 보관 커밋이 기록되어 있습니다. 기존 Git 이력은 유지되므로 저장소 전체 이력 용량은 바로 줄지 않습니다. 현재 배포 대상에서 제거한 용량만 감소합니다.
