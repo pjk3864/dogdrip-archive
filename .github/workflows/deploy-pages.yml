@@ -1,0 +1,52 @@
+name: Deploy Dogdrip Site
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Daily Dogdrip Archive]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/deploy-pages.yml
+      - dogdrip_bot/build_site.py
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: dogdrip-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out site files
+        uses: actions/checkout@v5
+        with:
+          sparse-checkout: |
+            posts
+            dogdrip_bot
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site with preserved external media
+        run: python dogdrip_bot/build_site.py --output _site
+
+      - name: Upload small site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v5
