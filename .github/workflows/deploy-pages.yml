@@ -49,6 +49,11 @@ jobs:
         with:
           path: _site
 
+      - name: Wait for branch-based Pages runs
+        run: python dogdrip_bot/wait_for_pages.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
       - name: Deploy site
         id: deployment
         continue-on-error: true
