@@ -1,5 +1,6 @@
 """Stop competing branch-based runs so the small Actions site deploys last."""
 import json
+import datetime
 import os
 import time
 import urllib.error
@@ -26,9 +27,18 @@ def wait():
             request = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(request, timeout=30) as response:
                 runs = json.load(response)['workflow_runs']
-            competing.extend(run['id'] for run in runs
-                             if run['id'] != current_run
-                             and run['name'] == 'pages build and deployment')
+            for run in runs:
+                if run['id'] == current_run or run['name'] != 'pages build and deployment':
+                    continue
+                created = run.get('created_at')
+                # Dynamic Pages can retain orphaned, jobless queue entries for days.
+                # They are not active deployments; still stop every in-progress run.
+                if status != 'in_progress' and created:
+                    started = datetime.datetime.fromisoformat(created.replace('Z', '+00:00'))
+                    if datetime.datetime.now(datetime.timezone.utc) - started > datetime.timedelta(hours=6):
+                        print(f'Skipping stale Pages queue entry {run["id"]}.', flush=True)
+                        continue
+                competing.append(run['id'])
         if not competing:
             print('No competing branch-based Pages runs; retrying deployment.')
             return
