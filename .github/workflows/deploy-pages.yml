@@ -10,9 +10,11 @@ on:
     paths:
       - .github/workflows/deploy-pages.yml
       - dogdrip_bot/build_site.py
+      - dogdrip_bot/wait_for_pages.py
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -24,10 +26,10 @@ jobs:
   deploy:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment_retry.outputs.page_url || steps.deployment.outputs.page_url }}
     steps:
       - name: Check out site files
         uses: actions/checkout@v5
@@ -49,4 +51,16 @@ jobs:
 
       - name: Deploy site
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait for competing Pages deployment before retry
+        if: steps.deployment.outcome == 'failure'
+        run: python dogdrip_bot/wait_for_pages.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Retry site deployment
+        if: steps.deployment.outcome == 'failure'
+        id: deployment_retry
         uses: actions/deploy-pages@v5
