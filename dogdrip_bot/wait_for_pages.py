@@ -1,7 +1,8 @@
-"""Wait for branch-based Pages runs before retrying an Actions deployment."""
+"""Stop competing branch-based runs so the small Actions site deploys last."""
 import json
 import os
 import time
+import urllib.error
 import urllib.request
 
 
@@ -14,6 +15,7 @@ def wait():
         'X-GitHub-Api-Version': '2022-11-28',
     }
     deadline = time.monotonic() + 600
+    cancelled = set()
     # A conflicting deployment may take a moment to appear in the runs API.
     time.sleep(30)
     while True:
@@ -30,6 +32,20 @@ def wait():
         if not competing:
             print('No competing branch-based Pages runs; retrying deployment.')
             return
+        for run_id in competing:
+            if run_id not in cancelled:
+                url = (os.environ.get('GITHUB_API_URL', 'https://api.github.com')
+                       + f'/repos/{repository}/actions/runs/{run_id}/cancel')
+                request = urllib.request.Request(url, headers=headers, method='POST')
+                try:
+                    with urllib.request.urlopen(request, timeout=30):
+                        pass
+                except urllib.error.HTTPError as error:
+                    # It may have completed between listing and cancellation.
+                    if error.code != 409:
+                        raise
+                cancelled.add(run_id)
+                print(f'Stopped competing branch-based Pages run {run_id}.', flush=True)
         if time.monotonic() >= deadline:
             raise TimeoutError('Competing Pages runs did not finish within 10 minutes.')
         print(f'Waiting for Pages runs: {competing}', flush=True)

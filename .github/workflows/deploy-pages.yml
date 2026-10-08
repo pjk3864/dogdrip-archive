@@ -14,7 +14,7 @@ on:
 
 permissions:
   contents: read
-  actions: read
+  actions: write
   pages: write
   id-token: write
 
@@ -49,7 +49,7 @@ jobs:
         with:
           path: _site
 
-      - name: Wait for branch-based Pages runs
+      - name: Stop competing branch-based Pages runs
         run: python dogdrip_bot/wait_for_pages.py
         env:
           GITHUB_TOKEN: ${{ github.token }}
