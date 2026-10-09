@@ -873,13 +873,15 @@ def archive_posts():
         if not os.environ.get("CI") and os.environ.get("REFRESH_COMMENT_THREADS") == "1"
         else 0
     )
-    github_put_file(
-        "archive.json",
-        json.dumps(entries, ensure_ascii=False, indent=2).encode("utf-8"),
-        f"Update archive index ({len(new_entries)} new posts)",
-        archive_sha,
-    )
-    build_list_pages(entries)
+    # Retrying an unavailable post must not rewrite every unchanged list page.
+    if new_entries or backfilled or themed or threaded:
+        github_put_file(
+            "archive.json",
+            json.dumps(entries, ensure_ascii=False, indent=2).encode("utf-8"),
+            f"Update archive index ({len(new_entries)} new posts)",
+            archive_sha,
+        )
+        build_list_pages(entries)
     completed_ids = {entry["id"] for entry in entries}
     remaining = [post for post in candidates if post["id"] not in completed_ids]
     github_put_file("pending_posts.json", json.dumps(remaining, ensure_ascii=False).encode("utf-8"),
