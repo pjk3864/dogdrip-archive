@@ -5,6 +5,11 @@ on:
     # 03:00 UTC is 10:00 in Bangkok (UTC+7).
     - cron: "0 3 * * *"
   workflow_dispatch:
+    inputs:
+      pending_only:
+        description: Retry only already queued posts
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -39,4 +44,5 @@ jobs:
         working-directory: dogdrip_bot
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ARCHIVE_PENDING_ONLY: ${{ inputs.pending_only && '1' || '0' }}
 

@@ -434,11 +434,17 @@ def _get_dogdrip_document_html(link):
         if wait_seconds > 0:
             time.sleep(wait_seconds)
         try:
-            browser.get(canonical_post_url(link))
+            # A post moved out of the popular board may only open at its short URL.
+            document_url = canonical_post_url(link)
+            if attempt == 1:
+                document_id = re.search(r"/(\d+)(?:[/?#]|$)", document_url)
+                if document_id:
+                    document_url = f"{DOGDRIP_ORIGIN}/{document_id.group(1)}"
+            browser.get(document_url)
             _last_dogdrip_document_request = time.monotonic()
             WebDriverWait(browser, 30).until(
                 lambda current: current.find_elements(
-                    "css selector", "div.rhymix_content.xe_content[class^='document_']"
+                    "css selector", "div.rhymix_content.xe_content[class*='document_']"
                 )
             )
             return browser.page_source
@@ -457,7 +463,7 @@ def get_post_snapshot(link):
     title_node = soup.select_one('meta[property="og:title"]')
     title = title_node.get("content", "").strip() if title_node else ""
     title = re.sub(r"\s*[-|]\s*DogDrip.*$", "", title, flags=re.IGNORECASE)
-    content = soup.select_one("div.rhymix_content.xe_content[class^='document_']")
+    content = soup.select_one("div.rhymix_content.xe_content[class*='document_']")
     if content is None:
         content_html = "<p>본문을 불러오지 못했습니다.</p>"
     else:
@@ -783,7 +789,10 @@ def archive_posts():
     manual_posts = get_manual_posts()
     pending_content, _ = github_get_file("pending_posts.json")
     pending_posts = json.loads(pending_content.decode("utf-8")) if pending_content else []
-    if entries:
+    if os.environ.get("ARCHIVE_PENDING_ONLY") == "1":
+        candidates = []
+        print(f"기존 재시도 목록 {len(pending_posts)}개만 확인합니다.")
+    elif entries:
         newest_archived_id = max(int(entry["id"]) for entry in entries)
         print(f"마지막 보관 글 {newest_archived_id} 이후의 새 글을 확인합니다.")
         candidates = [
@@ -799,6 +808,7 @@ def archive_posts():
         # Empty repository bootstrap only. Subsequent runs never backfill old posts.
         candidates = get_popular_posts(limit=HISTORICAL_ARCHIVE_TARGET)
 
+    fresh_ids = {post['id'] for post in candidates if post['id'] not in known_ids}
     candidates = list({post["id"]: post for post in pending_posts + candidates
                        if post["id"] not in known_ids}.values())
     # Persist the queue first so interruption or later errors cannot lose posts.
@@ -875,11 +885,20 @@ def archive_posts():
     github_put_file("pending_posts.json", json.dumps(remaining, ensure_ascii=False).encode("utf-8"),
                     "Save remaining archive posts for retry")
     if failed_post_ids:
-        raise RuntimeError(
+        message = (
             f"성공한 새 글 {len(new_entries)}개는 목록에 반영했습니다. "
             f"실패 {len(failed_post_ids)}개는 다음 실행에서 재시도합니다: "
             + ", ".join(failed_post_ids[:10])
         )
+        # A retained retry must not mark an otherwise healthy daily run as failed.
+        # Failure to archive any newly discovered post still signals an outage.
+        if (fresh_ids and not any(entry['id'] in fresh_ids for entry in new_entries)) or not entries:
+            raise RuntimeError(message)
+        print(f"::warning::{message}")
+        summary = os.environ.get('GITHUB_STEP_SUMMARY')
+        if summary:
+            with open(summary, 'a', encoding='utf-8') as output:
+                output.write(f"### 수집 결과\n\n{message}\n\n재시도 목록은 보존됐습니다.\n")
     print(
         f"아카이브 완료: 새 글 {len(new_entries)}개, "
         f"댓글 추가 {backfilled}개, 스레드 갱신 {threaded}개, "
