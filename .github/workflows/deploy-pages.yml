@@ -14,9 +14,10 @@ on:
   push:
     branches: [main]
     paths:
-      - .github/workflows/deploy-pages.yml
-      - dogdrip_bot/build_site.py
-      - dogdrip_bot/wait_for_pages.py
+      - '.github/workflows/**'
+      - 'dogdrip_bot/**'
+      - README.md
+      - cold-storage.json
 
 permissions:
   contents: read
