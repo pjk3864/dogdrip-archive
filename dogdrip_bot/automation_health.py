@@ -175,7 +175,7 @@ def public_manifest():
 
 def check():
     current = now_local()
-    deployment_only = os.environ.get('RECOVERY_TRIGGER') == 'Deploy Dogdrip Site'
+    deployment_only = os.environ.get('RECOVERY_TRIGGER', '').startswith('Deploy Dogdrip Site')
     if not deployment_only and current.hour >= 10 and not healthy_today(read_status(), current):
         history = runs('daily-archive.yml')
         recover_workflow('daily-archive.yml', history)
@@ -188,5 +188,21 @@ def check():
         print('Public site matches the current archive. No recovery needed.')
 
 
+def deployment_gate():
+    should_deploy = True
+    if os.environ.get('GITHUB_EVENT_NAME') == 'workflow_run':
+        with open(os.environ['GITHUB_EVENT_PATH']) as source:
+            run_id = json.load(source)['workflow_run']['id']
+        jobs = api('GET', f'actions/runs/{run_id}/jobs?per_page=100')['jobs']
+        should_deploy = not any(
+            step['name'] == 'Archive new posts' and step.get('conclusion') == 'skipped'
+            for job in jobs for step in job.get('steps', [])
+        )
+    with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+        output.write('deploy=' + str(should_deploy).lower() + '\n')
+    print('Deploy current archive.' if should_deploy else 'Collection skipped; no redundant deployment.')
+
+
 if __name__ == '__main__':
-    {'complete': complete, 'gate': gate, 'wait': wait_until_ten, 'check': check}[sys.argv[1]]()
+    {'complete': complete, 'gate': gate, 'wait': wait_until_ten, 'check': check,
+     'deployment-gate': deployment_gate}[sys.argv[1]]()
