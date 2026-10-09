@@ -2,6 +2,7 @@
 import base64
 import datetime
 import hashlib
+import http.client
 import json
 import os
 import re
@@ -44,7 +45,8 @@ def api(method, path, payload=None):
                 delay = min(60, max(2 ** (attempt + 1), float(error.headers.get('Retry-After', 0))))
             except ValueError:
                 delay = 2 ** (attempt + 1)
-        except (urllib.error.URLError, TimeoutError, ConnectionError):
+        except (urllib.error.URLError, TimeoutError, ConnectionError,
+                http.client.IncompleteRead, json.JSONDecodeError):
             if attempt == 4:
                 raise
             delay = 2 ** (attempt + 1)
@@ -68,6 +70,15 @@ def read_status():
         return {}
 
 
+def archive_sha():
+    # Contents responses inline the large JSON file; a root tree is metadata only.
+    tree = api('GET', 'git/trees/main')
+    if tree.get('truncated'):
+        raise RuntimeError('Root Git tree is truncated; cannot verify archive version.')
+    return next(entry['sha'] for entry in tree['tree']
+                if entry['path'] == 'archive.json' and entry['type'] == 'blob')
+
+
 def healthy_today(status, current):
     if status.get('timezone') != str(current.tzinfo) or status.get('local_date') != current.date().isoformat():
         return False
@@ -87,7 +98,7 @@ def complete():
         'local_date': current.date().isoformat(), 'timezone': str(current.tzinfo),
         'completed_at': current.astimezone(datetime.timezone.utc).isoformat(timespec='seconds'),
         'run_id': os.environ.get('GITHUB_RUN_ID', 'maintenance'),
-        'archive_sha': api('GET', 'contents/archive.json')['sha'],
+        'archive_sha': archive_sha(),
     }
     content = json.dumps(record, indent=2).encode()
     expected_sha = hashlib.sha1(b'blob ' + str(len(content)).encode() + b'\0' + content).hexdigest()
@@ -168,7 +179,8 @@ def public_manifest():
         with urllib.request.urlopen(url, timeout=30) as response:
             record = json.load(response)
             return record if isinstance(record, dict) else {}
-    except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError):
+    except (urllib.error.URLError, TimeoutError, ConnectionError,
+            http.client.IncompleteRead, ValueError):
         print('::warning::Could not confirm the public deployment; checking recovery.')
         return {}
 
@@ -181,8 +193,8 @@ def check():
         recover_workflow('daily-archive.yml', history)
         # Wait for the collection's workflow_run event to publish its new archive.
         return
-    archive_sha = api('GET', 'contents/archive.json')['sha']
-    if public_manifest().get('archive_sha') != archive_sha:
+    expected_sha = archive_sha()
+    if public_manifest().get('archive_sha') != expected_sha:
         recover_workflow('deploy-pages.yml', runs('deploy-pages.yml'))
     else:
         print('Public site matches the current archive. No recovery needed.')
