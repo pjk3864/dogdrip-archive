@@ -1,32 +1,23 @@
 """Stop competing branch-based runs so the small Actions site deploys last."""
-import json
 import datetime
 import os
 import time
 import urllib.error
-import urllib.request
+from automation_health import api
 
 
 def wait():
-    repository = os.environ['GITHUB_REPOSITORY']
     current_run = int(os.environ['GITHUB_RUN_ID'])
-    headers = {
-        'Authorization': 'Bearer ' + os.environ['GITHUB_TOKEN'],
-        'Accept': 'application/vnd.github+json',
-        'X-GitHub-Api-Version': '2022-11-28',
-    }
     deadline = time.monotonic() + 600
-    cancelled = set()
+    cancelled = {}
+    forced = set()
     # A conflicting deployment may take a moment to appear in the runs API.
     time.sleep(30)
     while True:
         competing = []
+        in_progress = set()
         for status in ('queued', 'in_progress', 'waiting', 'pending'):
-            url = (os.environ.get('GITHUB_API_URL', 'https://api.github.com')
-                   + f'/repos/{repository}/actions/runs?status={status}&per_page=100')
-            request = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(request, timeout=30) as response:
-                runs = json.load(response)['workflow_runs']
+            runs = api('GET', f'actions/runs?status={status}&per_page=100')['workflow_runs']
             for run in runs:
                 if run['id'] == current_run or run['name'] != 'pages build and deployment':
                     continue
@@ -39,23 +30,30 @@ def wait():
                         print(f'Skipping stale Pages queue entry {run["id"]}.', flush=True)
                         continue
                 competing.append(run['id'])
+                if status == 'in_progress':
+                    in_progress.add(run['id'])
         if not competing:
             print('No competing branch-based Pages runs; retrying deployment.')
             return
         for run_id in competing:
             if run_id not in cancelled:
-                url = (os.environ.get('GITHUB_API_URL', 'https://api.github.com')
-                       + f'/repos/{repository}/actions/runs/{run_id}/cancel')
-                request = urllib.request.Request(url, headers=headers, method='POST')
                 try:
-                    with urllib.request.urlopen(request, timeout=30):
-                        pass
+                    api('POST', f'actions/runs/{run_id}/cancel')
                 except urllib.error.HTTPError as error:
                     # It may have completed between listing and cancellation.
                     if error.code != 409:
                         raise
-                cancelled.add(run_id)
+                cancelled[run_id] = time.monotonic()
                 print(f'Stopped competing branch-based Pages run {run_id}.', flush=True)
+            elif (run_id in in_progress and run_id not in forced
+                  and time.monotonic() - cancelled[run_id] >= 90):
+                try:
+                    api('POST', f'actions/runs/{run_id}/force-cancel')
+                except urllib.error.HTTPError as error:
+                    if error.code != 409:
+                        raise
+                forced.add(run_id)
+                print(f'Forced completion of stalled legacy run {run_id}.', flush=True)
         if time.monotonic() >= deadline:
             raise TimeoutError('Competing Pages runs did not finish within 10 minutes.')
         print(f'Waiting for Pages runs: {competing}', flush=True)

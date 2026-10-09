@@ -91,6 +91,9 @@ def build(source, output):
     (output / '.nojekyll').touch()
     (output / 'deployment.json').write_text(json.dumps({
         'commit': commit, 'post_count': len(entries), 'collected_at': collected,
+        'archive_sha': subprocess.check_output(
+            ['git', '-C', str(source), 'rev-parse', 'HEAD:archive.json'], text=True
+        ).strip(),
         'media_source': raw_base, 'media_references': references,
     }, ensure_ascii=False, indent=2), encoding='utf-8')
     size = sum(path.stat().st_size for path in output.rglob('*') if path.is_file())

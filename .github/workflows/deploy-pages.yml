@@ -1,7 +1,13 @@
 name: Deploy Dogdrip Site
+run-name: Deploy Dogdrip Site (recovery ${{ inputs.recovery_attempt || 0 }})
 
 on:
   workflow_dispatch:
+    inputs:
+      recovery_attempt:
+        description: Automatic recovery attempt
+        type: number
+        default: 0
   workflow_run:
     workflows: [Daily Dogdrip Archive]
     types: [completed]
