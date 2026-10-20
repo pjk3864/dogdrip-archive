@@ -13,6 +13,7 @@ import urllib.request
 from zoneinfo import ZoneInfo
 
 STATUS_PATH = 'automation-status.json'
+START_HOUR = 9
 ACTIVE = {'queued', 'in_progress', 'pending', 'waiting', 'requested'}
 
 
@@ -89,7 +90,7 @@ def healthy_today(status, current):
         finished = datetime.datetime.fromisoformat(completed).astimezone(current.tzinfo)
     except (ValueError, TypeError):
         return False
-    return finished.hour >= 10
+    return finished.hour >= START_HOUR
 
 
 def complete():
@@ -133,17 +134,17 @@ def gate():
     print('Collect today.' if should_run else 'Today already completed; skip duplicate collection.')
 
 
-def wait_until_ten():
+def wait_until_collection():
     current = now_local()
-    target = current.replace(hour=10, minute=0, second=0, microsecond=0)
+    target = current.replace(hour=START_HOUR, minute=0, second=0, microsecond=0)
     delay = max(0, (target - current).total_seconds())
     if delay > 20 * 60:
         raise RuntimeError('Unexpected schedule time; refusing an hours-long runner wait.')
     if delay:
-        print(f'Preparing for 10:00 {current.tzinfo}; collection starts in {delay:.0f}s.', flush=True)
+        print(f'Preparing for {START_HOUR:02d}:00 {current.tzinfo}; collection starts in {delay:.0f}s.', flush=True)
         time.sleep(delay)
     else:
-        print(f'Starting collection now; target was 10:00 {current.tzinfo}.', flush=True)
+        print(f'Starting collection now; target was {START_HOUR:02d}:00 {current.tzinfo}.', flush=True)
 
 
 def runs(workflow):
@@ -188,7 +189,7 @@ def public_manifest():
 def check():
     current = now_local()
     deployment_only = os.environ.get('RECOVERY_TRIGGER', '').startswith('Deploy Dogdrip Site')
-    if not deployment_only and current.hour >= 10 and not healthy_today(read_status(), current):
+    if not deployment_only and current.hour >= START_HOUR and not healthy_today(read_status(), current):
         history = runs('daily-archive.yml')
         recover_workflow('daily-archive.yml', history)
         # Wait for the collection's workflow_run event to publish its new archive.
@@ -216,5 +217,5 @@ def deployment_gate():
 
 
 if __name__ == '__main__':
-    {'complete': complete, 'gate': gate, 'wait': wait_until_ten, 'check': check,
+    {'complete': complete, 'gate': gate, 'wait': wait_until_collection, 'check': check,
      'deployment-gate': deployment_gate}[sys.argv[1]]()

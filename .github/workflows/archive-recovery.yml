@@ -2,9 +2,8 @@ name: Check Dogdrip Automation
 
 on:
   schedule:
-    # Bangkok 10:05, 10:20, 10:45 and 11:15: bounded backups to the 10:00 collection.
-    - cron: "5,20,45 3 * * *"
-    - cron: "15 4 * * *"
+    # Check all day, away from the busy hour boundary. Collection starts only after 09:00 Bangkok.
+    - cron: "7,22,37,52 * * * *"
   workflow_run:
     workflows: [Daily Dogdrip Archive, Deploy Dogdrip Site]
     types: [completed]

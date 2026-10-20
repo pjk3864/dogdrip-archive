@@ -3,8 +3,8 @@ run-name: Daily Dogdrip Archive (${{ inputs.pending_only && 'pending retry' || '
 
 on:
   schedule:
-    # Prepare at 09:50 Bangkok; the collection step waits until 10:00.
-    - cron: "50 2 * * *"
+    # Prepare at 08:50 Bangkok; the collection step waits until 09:00.
+    - cron: "50 1 * * *"
   workflow_dispatch:
     inputs:
       pending_only:
