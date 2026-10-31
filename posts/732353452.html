@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer"><title>가상 신경망에서 가상 CPU를 재현하는 AI 모델, Qwenputer 발표. · 개드립 아카이브</title>
+<style>body{margin:0;background:#111317;color:#e9edf2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}main{max-width:960px;min-height:100vh;margin:auto;padding:28px 24px 48px;background:#202329}.back,.source{color:#4ba3ff;text-decoration:none;font-size:14px}h1{margin:20px 0 0;color:#f6f8fa;font-size:25px;line-height:1.42}.meta{margin:10px 0 20px;color:#9aa3ae;border-bottom:1px solid #363b43;padding-bottom:18px;font-size:13px}.article{font-size:16px;line-height:1.72;overflow-wrap:anywhere}.article img,.article video{display:block;max-width:100%;height:auto;margin:10px auto}.article a{color:#4ba3ff}.archived-comments{margin-top:42px;border-top:1px solid #363b43;padding-top:22px}.archived-comments h2{margin:0 0 14px;font-size:18px}.comment{padding:14px 0;border-top:1px solid #30353c}.comment:first-of-type{border-top:0}.comment.is-reply{margin-left:34px;padding-left:16px;border-left:2px solid #4ba3ff;background:#1b1e23}.comment-reply-label{color:#4ba3ff;font-size:12px;font-weight:600}.comment-meta{margin:0 0 7px;color:#9aa3ae;font-size:13px}.comment-author{color:#e9edf2;font-weight:600}.comment-body{margin:0;white-space:pre-wrap;font-size:15px;line-height:1.6;overflow-wrap:anywhere}.comment-body img,.comment-body video{display:block;max-width:100%;height:auto;margin:8px 0}.comment-body a{color:#4ba3ff}@media(max-width:640px){main{padding:22px 16px 40px}h1{font-size:22px}.comment.is-reply{margin-left:18px;padding-left:12px}}</style></head>
+<body data-post-id="732353452"><main><a class="back" href="../index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> 목록으로</a><h1>가상 신경망에서 가상 CPU를 재현하는 AI 모델, Qwenputer 발표.</h1><p class="meta"><i class="fa-regular fa-thumbs-up" aria-hidden="true"></i> 55 · <i class="fa-regular fa-comment" aria-hidden="true"></i> 7 · 12 시간 전 · <a class="source" href="https://www.dogdrip.net/732353452" target="_blank" rel="noopener noreferrer">원문</a></p><article class="article"><div class="document_732353452_0 rhymix_content xe_content" data-dnv-loaded="false" data-dnv-processed="true"><p><img alt="2.png" data-dnv-applied="true" data-dnv-loaded="true" loading="lazy" src="../assets/732353452/42c82646ad4c955a.png" style=""/></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>복잡한 계산을 정확히 수행할 수 있도록 AI 모델 자체에</p>
+<p> </p>
+<p>CPU 기능을 추가한 AI 모델이 나왔다.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>일반적으로 대형 언어 모델은 입력 문장의 다음 단어나 글자를</p>
+<p> </p>
+<p>예측하여 응답을 생성한다.</p>
+<p> </p>
+<p>이 때문에 큰 숫자를 곱하는 것과 같이 정밀한 계산이 필요한 상황에서는</p>
+<p> </p>
+<p>잘못된 답이 나오는 경우가 많다.</p>
+<p> </p>
+<p>일반적인 해결책은 AI가 파이썬 같은 외부 도구를 호출해</p>
+<p> </p>
+<p>계산 결과를 가져오는 것이다.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>이번에 공개된 모델은 이 문제를 해결하기 위해 외부 컴퓨팅 툴 대신</p>
+<p> </p>
+<p>자체적인 CPU 기능을 AI 모델 자체에 통합한 게 특징이다.</p>
+<p> </p>
+<p>CPU는 RISC-V라는 개방형 명령어 집합 아키텍처를 채택하며,</p>
+<p> </p>
+<p>32비트 RV32IM과 일부 확장 명령어를 구현한다.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>이로 인해 산술 연산뿐만 아니라 C 또는 마이크로파이썬으로</p>
+<p> </p>
+<p>작성된 프로그램도 AI 모델 내에서 실행하는 게 가능하다.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>이를 통해 해당 모델은 1800만번에 달하는 명령어 연속 처리에서</p>
+<p> </p>
+<p>한번도 오류를 일으키지 않았다.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>다만 문제점도 매우 명확하다.</p>
+<p> </p>
+<p>아직 실험적인 기능이라 가상 CPU가 계산을 처리하는 속도가</p>
+<p> </p>
+<p>다른 모델들에 비해 몇배에서 몇십배 더 걸린다는 점.</p>
+<p> </p>
+<p>그래서 이 가상 CPU의 처리 속도를 높이는 게 다음 목표라고 한다.</p>
+<p> </p>
+<p>또한 해당 모델은 현재 CPU 구현을 넘어 모델 자체적으로</p>
+<p> </p>
+<p>파일을 저장하는 저장 장치 메커니즘도 구현할 예정.</p></div></article><!-- archived-comments:start --><section class="archived-comments"><h2><i class="fa-regular fa-comments" aria-hidden="true"></i> 댓글</h2><p class="comment-meta">수집 당시 댓글 7개</p><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">독고무영</span> · 9 시간 전</p><div class="comment-body"><p>거상 ㅇㄷ감</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">이오타쿠노미새키들</span> · 8 시간 전</p><div class="comment-body"><p>Ai 결과를 환각없이 도출하기 위해 인력 대신 ai를 쓴다는거지..?</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">벌레쟁이</span> · 7 시간 전</p><div class="comment-body"><p>저게 일반적인 ai 이용에 있어선 툴콜링 대비 무슨 이점 있냐 전기낭비다 한전직원이 떼끼놈 렌치들고 머가리 깡! 할거 같은 일이래도, 정확도 99.9%도 용납 못하는 사용례가 있을거임 (예를 들면 기상측정??).<br/>계산 정확도를 100%로 만들어야 하는 케이스에 한정적으로 쓰이지 않을까 싶음 </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">입만열면그짓말이자동으로</span> · 3 시간 전</p><div class="comment-body"><p>하씨 그냥 호출하는게 아무리봐도 좋은데</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">입만열면그짓말이자동으로</span> · 3 시간 전</p><div class="comment-body"><p>llm과 호출도구를 항상 세트로 만들면 되는거 아님? 내부호출도구로 만들면??</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">아니뭐해</span> · 2 시간 전</p><div class="comment-body"><p>본문도 댓글도 시발 뭔소릴 하는지 모르겠네</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">던킨제로자두</span> · 12 분 전</p><div class="comment-body"><span class="dogcon-double-container"><img alt="icon_9" class="dogcon-display dogcon-double-first dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="726819495" data-dogcon-srl="726819486" data-title="내가쓸고양이콘" loading="lazy" src="../assets/732353452/8f9e285d3ba07039.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="내가쓸고양이콘"/><img alt="icon_59" class="dogcon-display dogcon-double-second dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="728175831" data-dogcon-srl="728175830" data-title="내가쓸고양이콘2" loading="lazy" src="../assets/732353452/f01320555013d456.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="내가쓸고양이콘2"/></span></div></div></section><!-- archived-comments:end --></main><script id="archive-read-post">
+(() => {
+  const key = "dogdrip-archive-read-posts";
+  try {
+    const read = new Set(JSON.parse(localStorage.getItem(key) || "[]"));
+    read.add(document.body.dataset.postId);
+    localStorage.setItem(key, JSON.stringify([...read]));
+  } catch (_) {}
+})();
+</script></body></html>
