@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer"><title>가짜퍼리냐 진짜퍼리냐 · 개드립 아카이브</title>
+<style>body{margin:0;background:#111317;color:#e9edf2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}main{max-width:960px;min-height:100vh;margin:auto;padding:28px 24px 48px;background:#202329}.back,.source{color:#4ba3ff;text-decoration:none;font-size:14px}h1{margin:20px 0 0;color:#f6f8fa;font-size:25px;line-height:1.42}.meta{margin:10px 0 20px;color:#9aa3ae;border-bottom:1px solid #363b43;padding-bottom:18px;font-size:13px}.article{font-size:16px;line-height:1.72;overflow-wrap:anywhere}.article img,.article video{display:block;max-width:100%;height:auto;margin:10px auto}.article a{color:#4ba3ff}.archived-comments{margin-top:42px;border-top:1px solid #363b43;padding-top:22px}.archived-comments h2{margin:0 0 14px;font-size:18px}.comment{padding:14px 0;border-top:1px solid #30353c}.comment:first-of-type{border-top:0}.comment.is-reply{margin-left:34px;padding-left:16px;border-left:2px solid #4ba3ff;background:#1b1e23}.comment-reply-label{color:#4ba3ff;font-size:12px;font-weight:600}.comment-meta{margin:0 0 7px;color:#9aa3ae;font-size:13px}.comment-author{color:#e9edf2;font-weight:600}.comment-body{margin:0;white-space:pre-wrap;font-size:15px;line-height:1.6;overflow-wrap:anywhere}.comment-body img,.comment-body video{display:block;max-width:100%;height:auto;margin:8px 0}.comment-body a{color:#4ba3ff}@media(max-width:640px){main{padding:22px 16px 40px}h1{font-size:22px}.comment.is-reply{margin-left:18px;padding-left:12px}}</style></head>
+<body data-post-id="732808504"><main><a class="back" href="../index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> 목록으로</a><h1>가짜퍼리냐 진짜퍼리냐</h1><p class="meta"><i class="fa-regular fa-thumbs-up" aria-hidden="true"></i> 29 · <i class="fa-regular fa-comment" aria-hidden="true"></i> 48 · 11 시간 전 · <a class="source" href="https://www.dogdrip.net/732808504" target="_blank" rel="noopener noreferrer">원문</a></p><article class="article"><div class="document_732808504_0 rhymix_content xe_content" data-dnv-loaded="false" data-dnv-processed="true"><p><img alt="가짜 퍼리 vs 진짜 퍼리.png" data-dnv-applied="true" data-dnv-loaded="true" loading="lazy" src="../assets/732808504/1810d80f16cb8d79.png" style=""/></p>
+<p><!--#JSPLUGIN:handlebars--><script>
+	var poll_alert_lang = "설문에 응할 항목을 선택하여 주세요. (설문조사 마다 필수 선택항목이 다를 수 있습니다.)";
+	var poll_checkcount_lang = "필수 항목 수";
+	var poll_member_lang = "%s 항목을 선택한 사용자";
+	jQuery(document).ready(function() {
+			var data = {"caniadditem":false,"poll":{"is_polled":0,"poll_count":387,"poll_type":0,"stop_date":"2026-12-02","poll":{"732808753":{"poll_index_srl":732808753,"title":"\ub2f9\uc2e0\uc740 \uc5b4\ub290 \ucabd?","checkcount":1,"poll_count":387,"item":[{"poll_item_srl":732808754,"poll_index_srl":732808753,"title":"\uac00\uc9dc\ud37c\ub9ac","poll_count":191,"add_user_srl":0,"my_item":false},{"poll_item_srl":732808755,"poll_index_srl":732808753,"title":"\uc9c4\uc9dc\ud37c\ub9ac","poll_count":196,"add_user_srl":0,"my_item":false}]}},"poll_srl":732808752}};
+			if (data.poll.is_polled == 0) {
+				loadRxDefaultPoll(732808752,data);
+			}
+			else {
+				loadRxDefaultPollResult(732808752,data);
+			}
+		});
+</script>
+</p><div class="rx_poll_default_wrap" style="width:400px">
+<div class="pollWidget" id="poll_732808752" style="display: block;">
+<script id="entry-template-732808752" type="text/x-handlebars-template">
+			{{#each questions as |question questionid|}}
+				<div class="poll_vote">
+					<input type="hidden" name="checkcount_{{question.poll_index_srl}}" value="{{question.checkcount}}" />
+					<div class="title">Q : {{question.title}}</div>
+
+					{{#if question.isMultipleChoice}}
+					<div class="checkcount">
+	필수 항목 수 : {{question.checkcount}}
+					</div>
+					{{/if}}
+
+					{{#each question.items as |item itemid|}}
+					<div class="poll_item">
+						<label for="item_{{item.poll_item_srl}}">
+							{{#if question.isMultipleChoice}}
+							<input type="checkbox" name="item_{{question.poll_srl}}_{{question.poll_index_srl}}" value="{{item.poll_item_srl}}" id="item_{{item.poll_item_srl}}" />
+							{{else}}
+							<input type="radio" name="item_{{question.poll_srl}}_{{question.poll_index_srl}}" value="{{item.poll_item_srl}}" id="item_{{item.poll_item_srl}}" />
+							{{/if}}
+							{{item.title}}
+						</label>
+						{{#if item.my_item}}
+						<input type="button" value="x" title="항목 삭제" onclick="deleteRxDefaultItem({{question.poll_srl}},{{question.poll_index_srl}},{{item.poll_item_srl}}); return false;" class="btn poll_item_delete" />
+						{{/if}}
+					</div>
+					{{/each}}
+					{{#if question.additem}}
+					<div class="poll_item_add">
+						<input type="text" name="new_item" id="new_item_{{question.poll_index_srl}}" class="poll_item_add" placeholder="항목을 추가할 수 있습니다." /> <input type="button" value="+" title="항목 추가" onclick="addRxDefaultItem({{question.poll_srl}},{{question.poll_index_srl}}); return false;" style="float: right;" class="btn poll_item_add" />
+					</div>
+					{{/if}}
+				</div>
+			{{/each}}
+		</script>
+<form action="/" method="post" onsubmit="return doRxDefaultPoll(this)"><input name="error_return_url" type="hidden" value="/732808504"/><input name="mid" type="hidden" value="dogdrip"/><input name="ruleset" type="hidden" value="poll"/>
+<input name="module" type="hidden" value="poll"/>
+<input name="act" type="hidden" value="procPoll"/>
+<input name="poll_srl" type="hidden" value="732808752"/>
+<input name="poll_srl_indexes" type="hidden" value=""/>
+<input name="skin" type="hidden" value=""/>
+<input name="success_return_url" type="hidden" value="/732808504"/>
+<input name="xe_validator_id" type="hidden" value="widgets/pollWidget/skins/default/form/732808752"/>
+<section class="rx_poll_default">
+<div class="rx_poll_header">
+<div style="float:left">
+	설문조사 종료일: <time class="rx_poll_h_strong" id="stop_date_732808752">2026-12-02</time>
+</div>
+</div>
+<div class="rx_poll_content" id="poll_content_732808752">
+<div class="poll_vote">
+<input name="checkcount_732808753" type="hidden" value="1"/>
+<div class="title">Q : 당신은 어느 쪽?</div>
+<div class="poll_item">
+<label for="item_732808754">
+<input id="item_732808754" name="item_732808752_732808753" type="radio" value="732808754"/>
+							가짜퍼리
+						</label>
+</div>
+<div class="poll_item">
+<label for="item_732808755">
+<input id="item_732808755" name="item_732808752_732808753" type="radio" value="732808755"/>
+							진짜퍼리
+						</label>
+</div>
+</div>
+</div>
+<div class="poll_button">
+<input class="btn" onclick="loadRxDefaultPollResult(732808752); return false;" type="button" value="결과 보기"/>
+<input class="btn" type="submit" value="설문 참여"/>
+</div>
+</section>
+<input name="_rx_csrf_token" type="hidden" value="le0NSs6JbrEgHSbU"/></form>
+</div>
+<div class="pollWidget poll_box" id="poll_732808752_result" style="display:none;">
+<script id="entry-template-result-732808752" type="text/x-handlebars-template">
+			{{#each questions as |question questionid|}}
+			<div class="title">{{question.title}} ({{question.poll_count}})</div>
+			{{#each question.items as |item itemid|}}
+			<div class="rx_poll_default_item">
+				<div class="item_text">
+					{{#if question.showMembers}}
+					<strong>{{item.number}}</strong> <a href="#" onclick="showRxDefaultPollMember({{question.poll_srl}},{{item.poll_item_srl}});return false;">{{item.title}}</a>
+					{{else}}
+					<strong>{{item.number}}</strong> {{item.title}}
+					{{/if}}
+				</div>
+
+				<div class="item_bar">
+					{{#if item.isVote}}
+						<div class="item_bar" title="{{item.per}}%" style="width:{{item.per}}%;height:22px;">&nbsp;</div>
+					{{else}}
+						<div class="item_bar" style="width:1px;height:22px;">&nbsp;</div>
+					{{/if}}
+					<div class="item_bar_text">{{item.poll_count}}</strong> ({{item.per}}%)</div>
+				</div>
+			</div>
+			{{/each}}
+			{{/each}}
+		</script>
+<script id="entry-template-members-732808752" type="text/x-handlebars-template">
+			{{#each members as |member memberid|}}
+			{{#if member.isImage}}
+			<li><img src="{{member.profile_image}}" width="16" height="16" /> <a href="#popup_menu_area" class="member_{{member.member_srl}}" onclick="return false">{{member.nick_name}}</a></li>
+			{{else}}
+			<li><img class="dummy" src="{{dummy_profile}}" width="16" height="16" /> <a href="#popup_menu_area" class="member_{{member.member_srl}}" onclick="return false">{{member.nick_name}}</a></li>
+			{{/if}}
+			{{/each}}
+			{{#if isPage}}
+			<input type="button" id="btn_load_more_{{poll_item_srl}}" value="더보기" onclick="showRxDefaultPollMemberNext({{poll_srl}},{{poll_item_srl}});return false;" style="width:100%;" class="btn" />
+			{{/if}}
+		</script>
+<section class="rx_poll_default">
+<div class="rx_poll_header">
+<div style="float:left">
+	설문조사 종료일: <time class="rx_poll_h_strong" id="stop_date_result_732808752"></time>
+</div>
+<div style="float:right">
+	참가자: <span class="rx_poll_h_strong" id="poll_count_result_732808752"></span>
+</div>
+</div>
+<div class="rx_poll_content" id="poll_content_732808752_result">
+</div>
+<div class="rx_poll_footer" id="poll_732808752_result_button" style="width:100%;display: none;">
+<div class="poll_button">
+<input class="btn" onclick="loadRxDefaultPoll(732808752); return false;" type="button" value="투표 화면으로 가기"/>
+</div>
+</div>
+<div class="rx_poll_footer" id="poll_732808752_gotoresult_button" style="width:100%;display: none;">
+<div class="poll_button">
+<input class="btn" onclick="loadRxDefaultPollResult(732808752); return false;" type="button" value="결과 보기"/>
+</div>
+</div>
+</section>
+</div>
+</div>
+<p></p></div></article><!-- archived-comments:start --><section class="archived-comments"><h2><i class="fa-regular fa-comments" aria-hidden="true"></i> 댓글</h2><p class="comment-meta">수집 당시 댓글 48개</p><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">배방구</span> · 20 시간 전</p><div class="comment-body"><p>왜 좋아하는 척도 안한다는 선택지가 없냐 ㅋㅋ</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>내가 본 개드립은 다 퍼리 조아를 외치던데..</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">부두술사</span> · 20 시간 전</p><div class="comment-body"><img alt="8fa6f70443a0c663f4fecab24c9bc43b" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="719565781" data-dogcon-srl="719565772" data-title="자주쓰는 잡탕콘" loading="lazy" src="../assets/732808504/30f589d7898dcf2f.gif" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="자주쓰는 잡탕콘"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">아도니스</span> · 20 시간 전</p><div class="comment-body"><p>동물 귀랑 꼬리까지만 가능</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">트라진</span> · 20 시간 전</p><div class="comment-body"><p>아니 근데 왜 꼬추로 예시로 들였냐. 게이퍼리색들아</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>내가 본 개드립은 다 고추 조아를 외치던데..</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">뜌땨이뜌뜌땨</span> · 17 시간 전</p><div class="comment-body"><p>오른쪽이 고추인지는 아직 모르는거지 </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">좆ᅟᅠ</span> · 20 시간 전</p><div class="comment-body"><p>안좋아해</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">초뒤에개드립폭파됨</span> · 20 시간 전</p><div class="comment-body"><p>네코미미 까지는 ㄱㅊ</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">남로당프락치</span> · 20 시간 전</p><div class="comment-body"><p>곰에 박은 환웅 이래 퍼리는 민족정신이다<br/>반박시 이완용</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">잠만자</span> · 20 시간 전</p><div class="comment-body"><p>좋아하는척도 안하고 좋아하지도 않아</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">인간실격짐승합격</span> · 20 시간 전</p><div class="comment-body"><p>나 사실 퍼리 아님 동물만 좋아함</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">돈부리</span> · 19 시간 전</p><div class="comment-body"><p>2d는 좋은데 퍼슈트는 아직 거리감있음</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">뜌땨이뜌뜌땨</span> · 17 시간 전</p><div class="comment-body"><p>집에 퍼슈트 ３벌 보유 </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">행운의편지</span> · 12 시간 전</p><div class="comment-body"><p>퍼슈트 없으면 가짜털박이</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">깔짝충</span> · 12 시간 전</p><div class="comment-body"><p>사실 난 가짜퍼리야. 아, 보추사랑은 진짜야ㅎ</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">쮸보봅</span> · 12 시간 전</p><div class="comment-body"><span class="dogcon-double-container"><img alt="icon_8" class="dogcon-display dogcon-double-first dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="726819494" data-dogcon-srl="726819486" data-title="내가쓸고양이콘" loading="lazy" src="../assets/732808504/0217ebb469285286.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="내가쓸고양이콘"/><img alt="icon_21" class="dogcon-display dogcon-double-second dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="726819507" data-dogcon-srl="726819486" data-title="내가쓸고양이콘" loading="lazy" src="../assets/732808504/5d5e1d3088d813e9.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="내가쓸고양이콘"/></span></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">나요즘형아가남자로보여</span> · 9 시간 전</p><div class="comment-body"><img alt="34" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="366766835" data-dogcon-srl="366766167" data-title="원신 카즈하콘" loading="lazy" src="../assets/732808504/bc1b23eb41135474.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="원신 카즈하콘"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">왁타버스</span> · 12 시간 전</p><div class="comment-body"><p>와우 종족 선택 시 늑대인간 처음으로 고름</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">Magnolia</span> · 12 시간 전</p><div class="comment-body"><p>왜 예시가 남자나 게이야</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">퍼리임</span> · 12 시간 전</p><div class="comment-body"><p>진짜죠 </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">쮸보봅</span> · 12 시간 전</p><div class="comment-body"><p>보추 퍼리 게이 레즈 다꺼져 오직 순애만이 남을것이다</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">십장생</span> · 12 시간 전</p><div class="comment-body"><p>퍼리 별론데</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">야니네코</span> · 12 시간 전</p><div class="comment-body"><span class="dogcon-double-container"><img alt="icon_42" class="dogcon-display dogcon-double-first dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="698695519" data-dogcon-srl="698695477" data-title="아기토끼 자오콘 -1-" loading="lazy" src="../assets/732808504/3abac0722851bad8.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="아기토끼 자오콘 -1-"/><img alt="icon_43" class="dogcon-display dogcon-double-second dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="698695520" data-dogcon-srl="698695477" data-title="아기토끼 자오콘 -1-" loading="lazy" src="../assets/732808504/13ec554eaebd56c5.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="아기토끼 자오콘 -1-"/></span></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">십장생</span> · 12 시간 전</p><div class="comment-body"><img alt="25" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="452161839" data-dogcon-srl="452161814" data-title="자주쓰는 페페콘 2022 ①" loading="lazy" src="../assets/732808504/d63231dbe3cdfccc.gif" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="자주쓰는 페페콘 2022 ①"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">야니네코</span> · 12 시간 전</p><div class="comment-body"><span class="dogcon-double-container"><img alt="icon_77" class="dogcon-display dogcon-double-first dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="699549345" data-dogcon-srl="699549320" data-title="아기토끼 자오콘 -2-" loading="lazy" src="../assets/732808504/0e3df88f6278812a.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="아기토끼 자오콘 -2-"/><img alt="icon_78" class="dogcon-display dogcon-double-second dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="699549346" data-dogcon-srl="699549320" data-title="아기토끼 자오콘 -2-" loading="lazy" src="../assets/732808504/e39a594e97b053ac.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="아기토끼 자오콘 -2-"/></span></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">아다만타이트</span> · 12 시간 전</p><div class="comment-body"><img alt="icon_54" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="699549323" data-dogcon-srl="699549320" data-title="아기토끼 자오콘 -2-" loading="lazy" src="../assets/732808504/c256f4a59bab45ff.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="아기토끼 자오콘 -2-"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">마리의붕어싸만코</span> · 12 시간 전</p><div class="comment-body"><p>제길! 주토피아가 날!!!</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">전산실김씨</span> · 12 시간 전</p><div class="comment-body"><p>5대5 황금비율 뭐냐 ㄷㄷ</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">코드싫어</span> · 12 시간 전</p><div class="comment-body"><p>이게 왜 엄대엄찍고있냐 미친놈들아..</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">검은흰둥이</span> · 12 시간 전</p><div class="comment-body"><p>회사에 진짜 퍼리좋아하는 남자 20살짜리있는데.. 말할때마다 너무 찐스러움이 뭍어남..<br/>배경화면이 퍼리더라 그래서 알게됨..</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">요나</span> · 12 시간 전</p><div class="comment-body"><img alt="IMG_3974" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="704858251" data-dogcon-srl="704858234" data-title="주판 퍼리" loading="lazy" src="../assets/732808504/eab8639e811e4d12.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="주판 퍼리"/></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">번정도운것같아</span> · 12 시간 전</p><div class="comment-body"><span class="dogcon-double-container"><img alt="icon_1" class="dogcon-display dogcon-double-first dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="402866118" data-dogcon-srl="402866117" data-title="캬돌이콘 V5" loading="lazy" src="../assets/732808504/2dee5451f8c740b5.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="캬돌이콘 V5"/><img alt="icon_2" class="dogcon-display dogcon-double-second dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="402866119" data-dogcon-srl="402866117" data-title="캬돌이콘 V5" loading="lazy" src="../assets/732808504/c534c9b3418fe5c9.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="캬돌이콘 V5"/></span></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">번정도운것같아</span> · 12 시간 전</p><div class="comment-body"><p>엄대엄 ㄷㄷ</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">비숑은산책중</span> · 12 시간 전</p><div class="comment-body"><img alt="icon_1" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="598038892" data-dogcon-srl="598038890" data-title="그럼죽어 디럭스" loading="lazy" src="../assets/732808504/b412b08be61402f3.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="그럼죽어 디럭스"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">전립선개발자</span> · 11 시간 전</p><div class="comment-body"><p>진짜 퍼리는 자기 털로 만든 스웨터 있을거 같지 않냐</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">수간나새끼</span> · 11 시간 전</p><div class="comment-body"><img alt="1000132102" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="649786670" data-dogcon-srl="649786668" data-title="보이키서콘" loading="lazy" src="../assets/732808504/652259744ea06b9d.gif" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="보이키서콘"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">개똥말똥소똥</span> · 10 시간 전</p><div class="comment-body"><img alt="icon_1" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="238741305" data-dogcon-srl="238741304" data-title="만갤콘" loading="lazy" src="../assets/732808504/5fe5791feccab204.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="만갤콘"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">섹시코만도</span> · 10 시간 전</p><div class="comment-body"><p>골고루 먹어야 착한 어른이에요</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">고구마고양이</span> · 8 시간 전</p><div class="comment-body"><img alt="1000132117" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="649786685" data-dogcon-srl="649786668" data-title="보이키서콘" loading="lazy" src="../assets/732808504/186e185cbb08dc07.gif" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="보이키서콘"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">번쩍필살검무</span> · 8 시간 전</p><div class="comment-body"><p>꺼져 초콜릿이나 쳐먹어</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">이거보인다면기분탓임</span> · 5 시간 전</p><div class="comment-body"><p>세상에이게뭐노...<br/>ㄹㅇ똥게이드립넷<br/>글마다 보추 퍼리 거근 쇼타 가지 이런거만 자꾸 올라올때부터 짐작했다</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">털박이협회원</span> · 4 시간 전</p><div class="comment-body"><p>실망이 큽니다 개붕이들..</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">OㅅO짱킹갓존재OㅁO</span> · 4 시간 전</p><div class="comment-body"><p>4발짐승까지는 가능</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">김치만듀</span> · 4 시간 전</p><div class="comment-body"><p>적당한 모든 분야 퍼먹긴 하는데 </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">퍼리좋아청년</span> · 4 시간 전</p><div class="comment-body"><img alt="파누흐믓" class="dogcon-display dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="488005133" data-dogcon-srl="488005131" data-title="파누콘2023" loading="lazy" src="../assets/732808504/8147d9dac392fdb9.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="파누콘2023"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">겨드랑이스마타</span> · 2 시간 전</p><div class="comment-body"><p>ㄲㅈ난백합조아임</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">시라누이Q</span> · 1 시간 전</p><div class="comment-body"><span class="dogcon-double-container"><img alt="동가1" class="dogcon-display dogcon-double-first dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="646882843" data-dogcon-srl="646882039" data-title="더블잡탕콘 2.0" loading="lazy" src="../assets/732808504/0a4ef70c2d7c0dd7.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="더블잡탕콘 2.0"/><img alt="동가2" class="dogcon-display dogcon-double-second dogcon-clickable" data-dnv-applied="true" data-dnv-loaded="true" data-dogcon-file-srl="646882844" data-dogcon-srl="646882039" data-title="더블잡탕콘 2.0" loading="lazy" src="../assets/732808504/86c96c5b74b58914.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="더블잡탕콘 2.0"/></span></div></div></section><!-- archived-comments:end --></main><script id="archive-read-post">
+(() => {
+  const key = "dogdrip-archive-read-posts";
+  try {
+    const read = new Set(JSON.parse(localStorage.getItem(key) || "[]"));
+    read.add(document.body.dataset.postId);
+    localStorage.setItem(key, JSON.stringify([...read]));
+  } catch (_) {}
+})();
+</script></body></html>
