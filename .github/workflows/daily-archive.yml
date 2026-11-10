@@ -3,8 +3,8 @@ run-name: Daily Dogdrip Archive (${{ inputs.pending_only && 'pending retry' || '
 
 on:
   schedule:
-    # Prepare at 08:50 Bangkok; the collection step waits until 09:00.
-    - cron: "50 1 * * *"
+    # Bangkok UTC+7: daily 10:00. GitHub may delay scheduled execution.
+    - cron: "0 3 * * *"
   workflow_dispatch:
     inputs:
       pending_only:
@@ -56,22 +56,18 @@ jobs:
         run: python -m pip install -r requirements.txt
         working-directory: dogdrip_bot
 
+      - name: Regression tests
+        if: steps.guard.outputs.run == 'true'
+        run: python -m unittest discover -v
+        working-directory: dogdrip_bot
+
       - name: Archive new posts
         if: steps.guard.outputs.run == 'true'
         run: |
           if [ "${{ github.event_name }}" = schedule ]; then
             python automation_health.py wait
           fi
-          for attempt in 1 2 3; do
-            if xvfb-run --auto-servernum python bot.py; then
-              exit 0
-            fi
-            if [ "$attempt" = 3 ]; then
-              exit 1
-            fi
-            echo "::warning::수집 중단: 재시도 목록을 보존하고 ${attempt}차 재시도합니다."
-            sleep "$((attempt * 30))"
-          done
+          xvfb-run --auto-servernum python -u bot.py
         working-directory: dogdrip_bot
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -82,4 +78,5 @@ jobs:
         run: python dogdrip_bot/automation_health.py complete
         env:
           GITHUB_TOKEN: ${{ github.token }}
+
 
