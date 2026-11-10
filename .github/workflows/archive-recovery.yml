@@ -2,7 +2,7 @@ name: Check Dogdrip Automation
 
 on:
   schedule:
-    # Check all day, away from the busy hour boundary. Collection starts only after 09:00 Bangkok.
+    # Check all day, away from the busy hour boundary. Collection starts only after 10:00 Bangkok.
     - cron: "7,22,37,52 * * * *"
   workflow_run:
     workflows: [Daily Dogdrip Archive, Deploy Dogdrip Site]
@@ -34,3 +34,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           RECOVERY_TRIGGER: ${{ github.event.workflow_run.name }}
+
