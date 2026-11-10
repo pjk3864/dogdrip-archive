@@ -251,7 +251,9 @@ def _open_list_browser():
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
     try:
-        return webdriver.Chrome(options=options)
+        browser = webdriver.Chrome(options=options)
+        browser.set_page_load_timeout(45)
+        return browser
     except Exception as error:
         raise RuntimeError(
             "Chrome 목록 수집을 시작하지 못했습니다. "
@@ -450,6 +452,7 @@ def _get_dogdrip_document_html(link):
             return browser.page_source
         except Exception as error:
             last_error = error
+            print(f"본문 로딩 오류 ({type(error).__name__}): {str(error)[:300]}", flush=True)
             _close_document_browser()
             if attempt == 0:
                 print("글 페이지를 다시 열기 위해 Chrome 세션을 재시작합니다...")
@@ -781,10 +784,11 @@ def refresh_comment_threading(entries, limit=RECENT_THREAD_REFRESH_COUNT):
 
 def archive_posts():
     """Preserve every popular post created after the newest archived post."""
-    entries, archive_sha = load_archive()
+    entries, _ = load_archive()
     known_ids = {entry["id"] for entry in entries}
     new_entries = []
     failed_post_ids = []
+    consecutive_failures = 0
 
     manual_posts = get_manual_posts()
     pending_content, _ = github_get_file("pending_posts.json")
@@ -811,6 +815,7 @@ def archive_posts():
     fresh_ids = {post['id'] for post in candidates if post['id'] not in known_ids}
     candidates = list({post["id"]: post for post in pending_posts + candidates
                        if post["id"] not in known_ids}.values())
+    candidates.sort(key=lambda post: int(post["id"]), reverse=True)
     # Persist the queue first so interruption or later errors cannot lose posts.
     github_put_file("pending_posts.json", json.dumps(candidates, ensure_ascii=False).encode("utf-8"),
                     "Checkpoint pending archive posts")
@@ -836,8 +841,13 @@ def archive_posts():
         except (requests.RequestException, RuntimeError) as error:
             print(f"글 보관 실패: {error}")
             failed_post_ids.append(post["id"])
+            consecutive_failures += 1
+            if consecutive_failures >= 3:
+                print("원문 접근이 3회 연속 실패해 성공분을 먼저 반영하고 나머지는 보존합니다.", flush=True)
+                break
             continue
 
+        consecutive_failures = 0
         new_entries.append(
             {
                 key: post[key]
@@ -857,6 +867,13 @@ def archive_posts():
                 "comment_archive_version": COMMENT_ARCHIVE_VERSION,
                 "comment_thread_version": COMMENT_THREAD_VERSION,
             }
+        )
+        # A later timeout must not hide posts whose pages were already saved.
+        github_put_file(
+            "archive.json",
+            json.dumps(sorted(new_entries + entries, key=lambda entry: int(entry["id"]), reverse=True),
+                       ensure_ascii=False, indent=2).encode("utf-8"),
+            f"Checkpoint archived post {post['id']}",
         )
 
     entries = sorted(new_entries + entries, key=lambda entry: int(entry["id"]), reverse=True)
@@ -879,9 +896,9 @@ def archive_posts():
             "archive.json",
             json.dumps(entries, ensure_ascii=False, indent=2).encode("utf-8"),
             f"Update archive index ({len(new_entries)} new posts)",
-            archive_sha,
         )
-        build_list_pages(entries)
+        if not os.environ.get("CI"):
+            build_list_pages(entries)
     completed_ids = {entry["id"] for entry in entries}
     remaining = [post for post in candidates if post["id"] not in completed_ids]
     github_put_file("pending_posts.json", json.dumps(remaining, ensure_ascii=False).encode("utf-8"),
@@ -910,3 +927,4 @@ def archive_posts():
 
 if __name__ == "__main__":
     archive_posts()
+
