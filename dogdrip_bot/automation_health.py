@@ -13,7 +13,7 @@ import urllib.request
 from zoneinfo import ZoneInfo
 
 STATUS_PATH = 'automation-status.json'
-START_HOUR = 9
+START_HOUR = 10
 ACTIVE = {'queued', 'in_progress', 'pending', 'waiting', 'requested'}
 
 
@@ -219,3 +219,4 @@ def deployment_gate():
 if __name__ == '__main__':
     {'complete': complete, 'gate': gate, 'wait': wait_until_collection, 'check': check,
      'deployment-gate': deployment_gate}[sys.argv[1]]()
+
