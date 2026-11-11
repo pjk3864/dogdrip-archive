@@ -38,6 +38,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
+          ref: main
           sparse-checkout: dogdrip_bot
       - name: Check whether collection actually ran
         id: gate
@@ -57,6 +58,7 @@ jobs:
       - name: Check out site files
         uses: actions/checkout@v5
         with:
+          ref: main
           sparse-checkout: |
             posts
             dogdrip_bot
