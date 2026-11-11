@@ -75,6 +75,27 @@ class DailyArchiveTests(unittest.TestCase):
             self.assertIs(bot._open_list_browser(), chrome.return_value)
             chrome.return_value.set_page_load_timeout.assert_called_once_with(45)
 
+    def test_public_article_uses_http_without_starting_chrome(self):
+        page = '<div class="document_123_0 rhymix_content xe_content">body</div>'
+        with patch.object(bot.requests, "get") as get, \
+             patch.object(bot, "_get_document_browser") as browser, \
+             patch.object(bot, "_last_dogdrip_document_request", 0):
+            get.return_value.text = page
+            self.assertEqual(bot._get_dogdrip_document_html("https://www.dogdrip.net/123"), page)
+            browser.assert_not_called()
+
+    def test_http_challenge_page_falls_back_to_chrome(self):
+        with patch.object(bot.requests, "get") as get, \
+             patch.object(bot, "_get_document_browser") as browser, \
+             patch.object(bot, "WebDriverWait") as wait, \
+             patch.object(bot.time, "sleep"), \
+             patch.object(bot, "_last_dogdrip_document_request", 0):
+            get.return_value.text = '<html><title>Just a moment...</title></html>'
+            browser.return_value.page_source = "browser article"
+            self.assertEqual(bot._get_dogdrip_document_html("https://www.dogdrip.net/123"), "browser article")
+            browser.return_value.get.assert_called_once()
+            wait.return_value.until.assert_called_once()
+
     def test_collection_marker_requires_completion_after_ten_bangkok(self):
         zone = datetime.timezone(datetime.timedelta(hours=7), "Asia/Bangkok")
         current = datetime.datetime(2026, 11, 12, 12, tzinfo=zone)
