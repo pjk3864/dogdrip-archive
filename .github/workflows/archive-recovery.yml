@@ -48,8 +48,8 @@ jobs:
       group: dogdrip-daily-archive
       cancel-in-progress: false
     env:
-      RECOVERY_BRANCH: recovery/current-first-20261111
-      RECORD_COMPLETE: 'false'
+      RECOVERY_BRANCH: recovery/current-rest-20261111
+      RECORD_COMPLETE: 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
@@ -62,7 +62,7 @@ jobs:
             posts
       - name: Import preserved posts and media
         run: |
-          git fetch --depth=1 --filter=blob:none origin "$RECOVERY_BRANCH"
+          git fetch --depth=1 --no-filter origin "$RECOVERY_BRANCH"
           python .github/scripts/import_local_snapshot.py FETCH_HEAD
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
