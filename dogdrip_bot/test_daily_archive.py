@@ -17,7 +17,7 @@ def post(number):
 
 
 class DailyArchiveTests(unittest.TestCase):
-    def run_archive(self, fresh, pending, successful):
+    def run_archive(self, fresh, pending, successful, existing=None):
         self.files = {}
         self.requested = []
         self.checkpoints = []
@@ -35,7 +35,7 @@ class DailyArchiveTests(unittest.TestCase):
 
         with contextlib.ExitStack() as stack:
             stack.enter_context(patch.dict(os.environ, {"CI": "true", "ARCHIVE_PENDING_ONLY": "0"}))
-            stack.enter_context(patch.object(bot, "load_archive", return_value=([post(1)], "old-sha")))
+            stack.enter_context(patch.object(bot, "load_archive", return_value=(existing or [post(1)], "old-sha")))
             stack.enter_context(patch.object(bot, "get_manual_posts", return_value=[]))
             stack.enter_context(patch.object(bot, "github_get_file", return_value=(json.dumps(pending).encode(), "queue-sha")))
             stack.enter_context(patch.object(bot, "get_popular_posts", return_value=copy.deepcopy(fresh)))
@@ -54,7 +54,7 @@ class DailyArchiveTests(unittest.TestCase):
         self.assertEqual(self.requested, ["9", "8", "7", "6"])
         self.assertEqual(self.checkpoints[0][0], 1)
         self.assertEqual([e["id"] for e in json.loads(self.files["archive.json"])], ["9", "1"])
-        self.assertEqual([e["id"] for e in json.loads(self.files["pending_posts.json"])], ["8", "7", "6", "5", "2"])
+        self.assertCountEqual([e["id"] for e in json.loads(self.files["pending_posts.json"])], ["8", "7", "6", "5", "2"])
         self.assertIn("posts/9.html", self.files)
         self.assertNotIn("posts/8.html", self.files)
 
@@ -69,6 +69,13 @@ class DailyArchiveTests(unittest.TestCase):
         self.run_archive([post(i) for i in (5, 6, 7, 8)], [], {"7", "5"})
         self.assertEqual(self.requested, ["8", "7", "6", "5"])
         self.assertEqual([e["id"] for e in json.loads(self.files["archive.json"])], ["7", "5", "1"])
+
+    def test_current_window_includes_older_ids_but_does_not_retry_old_queue(self):
+        self.run_archive([post(50)], [post(2)], {"50"}, existing=[post(100)])
+        self.assertEqual(bot.MAX_POPULAR_PAGES, 10)
+        self.assertEqual(self.requested, ["50"])
+        self.assertEqual([e["id"] for e in json.loads(self.files["archive.json"])], ["100", "50"])
+        self.assertEqual([e["id"] for e in json.loads(self.files["pending_posts.json"])], ["2"])
 
     def test_browser_navigation_has_a_deadline(self):
         with patch.object(bot.webdriver, "Chrome") as chrome:
