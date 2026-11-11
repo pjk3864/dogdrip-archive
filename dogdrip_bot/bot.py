@@ -425,8 +425,23 @@ def _get_document_browser():
 
 
 def _get_dogdrip_document_html(link):
-    """Load one article in Chrome at a measured pace and return its HTML."""
+    """Read public article HTML, using Chrome only when plain HTTP cannot read it."""
     global _last_dogdrip_document_request
+    wait_seconds = DOGDRIP_DOCUMENT_DELAY_SECONDS - (
+        time.monotonic() - _last_dogdrip_document_request
+    )
+    if wait_seconds > 0:
+        time.sleep(wait_seconds)
+    try:
+        response = requests.get(canonical_post_url(link), headers=REQUEST_HEADERS, timeout=30)
+        _last_dogdrip_document_request = time.monotonic()
+        response.raise_for_status()
+        if BeautifulSoup(response.text, "html.parser").select_one(
+            "div.rhymix_content.xe_content[class*='document_']"
+        ):
+            return response.text
+    except requests.RequestException as error:
+        print(f"일반 본문 요청 실패: {error}", flush=True)
     last_error = None
     for attempt in range(2):
         browser = _get_document_browser()
