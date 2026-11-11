@@ -30,7 +30,7 @@ MAX_ASSET_BYTES = 15 * 1024 * 1024
 HISTORICAL_ARCHIVE_TARGET = 400
 POSTS_PER_LIST_PAGE = 20
 PAGER_WINDOW_SIZE = 10
-MAX_POPULAR_PAGES = 9
+MAX_POPULAR_PAGES = 10
 COMMENT_ARCHIVE_VERSION = 3
 COMMENT_THREAD_VERSION = 1
 RECENT_THREAD_REFRESH_COUNT = 200
@@ -798,7 +798,7 @@ def refresh_comment_threading(entries, limit=RECENT_THREAD_REFRESH_COUNT):
 
 
 def archive_posts():
-    """Preserve every popular post created after the newest archived post."""
+    """Archive the current ten pages; retry older queued posts only when requested."""
     entries, _ = load_archive()
     known_ids = {entry["id"] for entry in entries}
     new_entries = []
@@ -812,12 +812,11 @@ def archive_posts():
         candidates = []
         print(f"기존 재시도 목록 {len(pending_posts)}개만 확인합니다.")
     elif entries:
-        newest_archived_id = max(int(entry["id"]) for entry in entries)
-        print(f"마지막 보관 글 {newest_archived_id} 이후의 새 글을 확인합니다.")
+        print("현재 인기글 목록 1~10페이지에서 미보관 글을 확인합니다.")
         candidates = [
             post
-            for post in get_popular_posts(after_id=newest_archived_id)
-            if int(post["id"]) > newest_archived_id and post["id"] not in known_ids
+            for post in get_popular_posts()
+            if post["id"] not in known_ids
         ]
         print(f"새로 생성된 글 {len(candidates)}개를 확인했습니다.")
     elif manual_posts:
@@ -828,11 +827,13 @@ def archive_posts():
         candidates = get_popular_posts(limit=HISTORICAL_ARCHIVE_TARGET)
 
     fresh_ids = {post['id'] for post in candidates if post['id'] not in known_ids}
-    candidates = list({post["id"]: post for post in pending_posts + candidates
+    queued_posts = list({post["id"]: post for post in pending_posts + candidates
                        if post["id"] not in known_ids}.values())
+    if os.environ.get("ARCHIVE_PENDING_ONLY") == "1":
+        candidates = queued_posts
     candidates.sort(key=lambda post: int(post["id"]), reverse=True)
     # Persist the queue first so interruption or later errors cannot lose posts.
-    github_put_file("pending_posts.json", json.dumps(candidates, ensure_ascii=False).encode("utf-8"),
+    github_put_file("pending_posts.json", json.dumps(queued_posts, ensure_ascii=False).encode("utf-8"),
                     "Checkpoint pending archive posts")
     for post in candidates:
         if post["id"] in known_ids:
@@ -915,7 +916,7 @@ def archive_posts():
         if not os.environ.get("CI"):
             build_list_pages(entries)
     completed_ids = {entry["id"] for entry in entries}
-    remaining = [post for post in candidates if post["id"] not in completed_ids]
+    remaining = [post for post in queued_posts if post["id"] not in completed_ids]
     github_put_file("pending_posts.json", json.dumps(remaining, ensure_ascii=False).encode("utf-8"),
                     "Save remaining archive posts for retry")
     if failed_post_ids:
