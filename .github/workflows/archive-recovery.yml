@@ -48,8 +48,8 @@ jobs:
       group: dogdrip-daily-archive
       cancel-in-progress: false
     env:
-      RECOVERY_BRANCH: recovery/current-rest-20261111
-      RECORD_COMPLETE: 'true'
+      RECOVERY_BRANCH: recovery/past-20261111
+      RECORD_COMPLETE: 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
