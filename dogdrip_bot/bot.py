@@ -37,6 +37,7 @@ RECENT_THREAD_REFRESH_COUNT = 200
 POPULAR_PAGE_DELAY_SECONDS = 2
 MANUAL_URLS_FILE = "manual_urls.txt"
 DOGDRIP_DOCUMENT_DELAY_SECONDS = 1.5
+MAX_PENDING_RETRIES_PER_RUN = 15
 _last_dogdrip_document_request = 0.0
 _document_browser = None
 REQUEST_HEADERS = {
@@ -161,6 +162,7 @@ def _github_request(method, url, **kwargs):
             transient = response.status_code in (429, 500, 502, 503, 504) or (
                 response.status_code == 403 and (
                     "timed out validating rule" in response.text.lower()
+                    or "rule did not run because of a timeout" in response.text.lower()
                     or "secondary rate limit" in response.text.lower()
                     or response.headers.get("X-RateLimit-Remaining") == "0"
                 )
@@ -191,7 +193,8 @@ def _github_request(method, url, **kwargs):
                 kwargs["json"]["sha"] = current_sha
             elif probe.status_code != 404:
                 probe.raise_for_status()
-        print(f"GitHub {method} 일시 오류: {delay:.0f}초 후 재시도 ({attempt + 1}/5)", flush=True)
+        status = response.status_code if response is not None else "connection"
+        print(f"GitHub {method} transient status={status}; retry after {delay:.0f}s ({attempt + 1}/5)", flush=True)
         time.sleep(delay)
 
 
@@ -424,6 +427,22 @@ def _get_document_browser():
     return _document_browser
 
 
+def _browser_diagnostic(browser, phase, error):
+    """Bounded diagnostics only: no page HTML, cookies, or query parameters."""
+    try:
+        parsed = urlparse(browser.current_url)
+        safe_url = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+        page = browser.page_source[:100000].lower()
+        challenge = any(token in page for token in (
+            "just a moment", "access denied", "cloudflare",
+            "too many requests", "verify you are human", "error 403"))
+        status = "possible_challenge" if challenge else "body_missing_or_delayed"
+        print(f"Chrome {phase}: {type(error).__name__} "
+              f"status={status} url={safe_url}", flush=True)
+    except Exception:
+        print(f"Chrome {phase}: {type(error).__name__}; diagnostics unavailable", flush=True)
+
+
 def _get_dogdrip_document_html(link):
     """Read public article HTML, using Chrome only when plain HTTP cannot read it."""
     global _last_dogdrip_document_request
@@ -440,8 +459,11 @@ def _get_dogdrip_document_html(link):
             "div.rhymix_content.xe_content[class*='document_']"
         ):
             return response.text
+    except requests.HTTPError as error:
+        status = error.response.status_code if error.response is not None else "unknown"
+        print(f"Source HTTP status={status} url={canonical_post_url(link)}", flush=True)
     except requests.RequestException as error:
-        print(f"일반 본문 요청 실패: {error}", flush=True)
+        print(f"Source transport error={type(error).__name__}", flush=True)
     last_error = None
     for attempt in range(2):
         browser = _get_document_browser()
@@ -450,6 +472,7 @@ def _get_dogdrip_document_html(link):
         )
         if wait_seconds > 0:
             time.sleep(wait_seconds)
+        phase = "navigation"
         try:
             # A post moved out of the popular board may only open at its short URL.
             document_url = canonical_post_url(link)
@@ -459,6 +482,7 @@ def _get_dogdrip_document_html(link):
                     document_url = f"{DOGDRIP_ORIGIN}/{document_id.group(1)}"
             browser.get(document_url)
             _last_dogdrip_document_request = time.monotonic()
+            phase = "body_selector"
             WebDriverWait(browser, 30).until(
                 lambda current: current.find_elements(
                     "css selector", "div.rhymix_content.xe_content[class*='document_']"
@@ -467,7 +491,7 @@ def _get_dogdrip_document_html(link):
             return browser.page_source
         except Exception as error:
             last_error = error
-            print(f"본문 로딩 오류 ({type(error).__name__}): {str(error)[:300]}", flush=True)
+            _browser_diagnostic(browser, phase, error)
             _close_document_browser()
             if attempt == 0:
                 print("글 페이지를 다시 열기 위해 Chrome 세션을 재시작합니다...")
@@ -483,7 +507,7 @@ def get_post_snapshot(link):
     title = re.sub(r"\s*[-|]\s*DogDrip.*$", "", title, flags=re.IGNORECASE)
     content = soup.select_one("div.rhymix_content.xe_content[class*='document_']")
     if content is None:
-        content_html = "<p>본문을 불러오지 못했습니다.</p>"
+        raise RuntimeError(f"Missing article body: {canonical_post_url(link)}")
     else:
         _make_links_absolute(content)
         content_html = str(content)
@@ -830,8 +854,15 @@ def archive_posts():
     queued_posts = list({post["id"]: post for post in pending_posts + candidates
                        if post["id"] not in known_ids}.values())
     if os.environ.get("ARCHIVE_PENDING_ONLY") == "1":
-        candidates = queued_posts
-    candidates.sort(key=lambda post: int(post["id"]), reverse=True)
+        candidates = sorted(queued_posts, key=lambda p: int(p["id"]), reverse=True)
+    else:
+        fresh = sorted(candidates, key=lambda p: int(p["id"]), reverse=True)
+        old = sorted(
+            (p for p in pending_posts if p["id"] not in known_ids
+             and p["id"] not in fresh_ids),
+            key=lambda p: int(p["id"]), reverse=True,
+        )
+        candidates = fresh + old[:MAX_PENDING_RETRIES_PER_RUN]
     # Persist the queue first so interruption or later errors cannot lose posts.
     github_put_file("pending_posts.json", json.dumps(queued_posts, ensure_ascii=False).encode("utf-8"),
                     "Checkpoint pending archive posts")
@@ -841,6 +872,15 @@ def archive_posts():
         print(f"새 글 보관 중: {post['title'][:30]}...")
         try:
             snapshot = get_post_snapshot(post["source_url"])
+        except (requests.RequestException, RuntimeError) as error:
+            print(f"Source failure: {type(error).__name__}: {error}", flush=True)
+            failed_post_ids.append(post["id"])
+            consecutive_failures += 1
+            if consecutive_failures >= 3:
+                print("Three source failures; leaving outstanding posts queued.", flush=True)
+                break
+            continue
+        try:
             post["title"] = snapshot["title"] or post["title"]
             post["archived_comments"] = localize_comment_media(
                 snapshot["comments"], post["id"]
@@ -855,13 +895,8 @@ def archive_posts():
                 f"Archive post {post['id']}",
             )
         except (requests.RequestException, RuntimeError) as error:
-            print(f"글 보관 실패: {error}")
-            failed_post_ids.append(post["id"])
-            consecutive_failures += 1
-            if consecutive_failures >= 3:
-                print("원문 접근이 3회 연속 실패해 성공분을 먼저 반영하고 나머지는 보존합니다.", flush=True)
-                break
-            continue
+            print(f"Storage failure: {type(error).__name__}: {error}", flush=True)
+            raise
 
         consecutive_failures = 0
         new_entries.append(
