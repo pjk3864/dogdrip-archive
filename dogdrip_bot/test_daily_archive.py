@@ -70,12 +70,42 @@ class DailyArchiveTests(unittest.TestCase):
         self.assertEqual(self.requested, ["8", "7", "6", "5"])
         self.assertEqual([e["id"] for e in json.loads(self.files["archive.json"])], ["7", "5", "1"])
 
-    def test_current_window_includes_older_ids_but_does_not_retry_old_queue(self):
+    def test_current_window_retries_older_queue_without_dropping_it(self):
         self.run_archive([post(50)], [post(2)], {"50"}, existing=[post(100)])
         self.assertEqual(bot.MAX_POPULAR_PAGES, 10)
-        self.assertEqual(self.requested, ["50"])
+        self.assertEqual(self.requested, ["50", "2"])
         self.assertEqual([e["id"] for e in json.loads(self.files["archive.json"])], ["100", "50"])
         self.assertEqual([e["id"] for e in json.loads(self.files["pending_posts.json"])], ["2"])
+
+    def test_pending_retry_is_bounded_after_current_posts(self):
+        self.run_archive([post(100)], [post(i) for i in range(2, 24)], {"100"})
+        self.assertEqual(self.requested[0], "100")
+        self.assertEqual(len(self.requested), 4)  # three source failures trigger backoff
+        self.assertEqual(len(json.loads(self.files["pending_posts.json"])), 22)
+
+    def test_github_rule_timeout_is_transient(self):
+        from unittest.mock import Mock
+        from requests import Response
+        transient = Mock(spec=Response)
+        transient.status_code = 403
+        transient.text = '{"message":"The rule did not run because of a timeout."}'
+        transient.headers = {}
+        final = Mock(spec=Response)
+        final.status_code = 200
+        final.text = '{}'
+        final.headers = {}
+        with patch.object(bot.requests, "request", side_effect=[transient, final]) as request, \
+             patch.object(bot, "_github_headers", return_value={}), \
+             patch.object(bot.time, "sleep") as sleep:
+            result = bot._github_request("GET", "https://api.github.com/test")
+        self.assertIs(result, final)
+        self.assertEqual(request.call_count, 2)
+        sleep.assert_called_once()
+
+    def test_missing_article_body_raises_instead_of_archiving_placeholder(self):
+        with patch.object(bot, "_get_dogdrip_document_html", return_value="<html><body></body></html>"):
+            with self.assertRaisesRegex(RuntimeError, "Missing article body"):
+                bot.get_post_snapshot("https://www.dogdrip.net/123")
 
     def test_browser_navigation_has_a_deadline(self):
         with patch.object(bot.webdriver, "Chrome") as chrome:
