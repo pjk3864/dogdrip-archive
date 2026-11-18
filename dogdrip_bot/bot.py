@@ -825,6 +825,18 @@ def archive_posts():
     """Archive the current ten pages; retry older queued posts only when requested."""
     entries, _ = load_archive()
     known_ids = {entry["id"] for entry in entries}
+    cold_content, _ = github_get_file("cold-storage.json")
+    if cold_content:
+        policy = json.loads(cold_content.decode("utf-8"))
+        if not isinstance(policy, dict):
+            raise ValueError("Invalid local archive policy")
+        if policy.get("storage") == "local":
+            local_ids = policy.get("post_ids")
+            if not isinstance(local_ids, list) or any(
+                not isinstance(value, str) or not re.fullmatch(r"[0-9]+", value) for value in local_ids
+            ):
+                raise ValueError("Invalid locally archived post IDs")
+            known_ids.update(local_ids)
     new_entries = []
     failed_post_ids = []
     consecutive_failures = 0
@@ -978,4 +990,3 @@ def archive_posts():
 
 if __name__ == "__main__":
     archive_posts()
-

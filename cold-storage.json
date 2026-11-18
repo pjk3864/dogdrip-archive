@@ -1,5 +1,5 @@
 {
-  "repository": "pjk3864/dogdrip-archive-old",
+  "repository": null,
   "commit": "7ac5861c8d7e42b5f1747a7dff0e6cadc8a7a857",
   "source_commit": "79ba57b1d8454f7c96d4cdbba3357ed73c32782e",
   "post_ids": [
@@ -8231,5 +8231,16 @@
       "moved_bytes": 1002163158,
       "file_count": 2802
     }
-  ]
+  ],
+  "storage": "local",
+  "former_repository": "pjk3864/dogdrip-archive-old",
+  "local_archive_id": "dogdrip-old-7ac5861c",
+  "local_verification": {
+    "posts": 4100,
+    "files": 30087,
+    "bytes": 8035698517,
+    "source_tree": "04903ed6b93b4a01b8e986488273d0c8ae8123a0",
+    "verified_at_utc": "2026-11-18T06:47:17Z",
+    "proof_sha256": "7f93a32e7f0291776f3375ae66a3f0bef86cfef5b79c8ea63b327025f0b9750f"
+  }
 }

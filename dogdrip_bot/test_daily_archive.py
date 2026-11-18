@@ -17,7 +17,7 @@ def post(number):
 
 
 class DailyArchiveTests(unittest.TestCase):
-    def run_archive(self, fresh, pending, successful, existing=None):
+    def run_archive(self, fresh, pending, successful, existing=None, cold=None, pending_only=False, manual=None):
         self.files = {}
         self.requested = []
         self.checkpoints = []
@@ -34,10 +34,12 @@ class DailyArchiveTests(unittest.TestCase):
                 self.checkpoints.append((len(self.requested), json.loads(content)))
 
         with contextlib.ExitStack() as stack:
-            stack.enter_context(patch.dict(os.environ, {"CI": "true", "ARCHIVE_PENDING_ONLY": "0"}))
-            stack.enter_context(patch.object(bot, "load_archive", return_value=(existing or [post(1)], "old-sha")))
-            stack.enter_context(patch.object(bot, "get_manual_posts", return_value=[]))
-            stack.enter_context(patch.object(bot, "github_get_file", return_value=(json.dumps(pending).encode(), "queue-sha")))
+            stack.enter_context(patch.dict(os.environ, {"CI": "true", "ARCHIVE_PENDING_ONLY": "1" if pending_only else "0"}))
+            stack.enter_context(patch.object(bot, "load_archive", return_value=([post(1)] if existing is None else existing, "old-sha")))
+            stack.enter_context(patch.object(bot, "get_manual_posts", return_value=manual or []))
+            stack.enter_context(patch.object(bot, "github_get_file", side_effect=lambda path: (
+                (json.dumps(cold).encode(), "cold-sha") if path == "cold-storage.json" and cold is not None else
+                (json.dumps(pending).encode(), "queue-sha") if path == "pending_posts.json" else (None, None))))
             stack.enter_context(patch.object(bot, "get_popular_posts", return_value=copy.deepcopy(fresh)))
             stack.enter_context(patch.object(bot, "get_post_snapshot", side_effect=snapshot))
             stack.enter_context(patch.object(bot, "localize_comment_media", return_value=[]))
@@ -57,6 +59,34 @@ class DailyArchiveTests(unittest.TestCase):
         self.assertCountEqual([e["id"] for e in json.loads(self.files["pending_posts.json"])], ["8", "7", "6", "5", "2"])
         self.assertIn("posts/9.html", self.files)
         self.assertNotIn("posts/8.html", self.files)
+
+    def test_local_posts_are_not_reuploaded_from_current_list_or_queue(self):
+        self.run_archive([post(9), post(10)], [post(9), post(2)], {"10", "2"},
+                         cold={"storage": "local", "post_ids": ["9"]})
+        self.assertEqual(self.requested, ["10", "2"])
+        self.assertNotIn("posts/9.html", self.files)
+        self.assertEqual(json.loads(self.files["pending_posts.json"]), [])
+
+    def test_local_posts_are_not_reuploaded_in_pending_only_run(self):
+        self.run_archive([], [post(9), post(2)], {"2"}, pending_only=True,
+                         cold={"storage": "local", "post_ids": ["9"]})
+        self.assertEqual(self.requested, ["2"])
+
+    def test_manual_bootstrap_preserves_local_only_posts(self):
+        self.run_archive([], [], {"10"}, existing=[], manual=[post(9), post(10)],
+                         cold={"storage": "local", "post_ids": ["9"]})
+        self.assertEqual(self.requested, ["10"])
+        self.assertNotIn("posts/9.html", self.files)
+
+    def test_legacy_cold_policy_does_not_change_collection(self):
+        self.run_archive([post(9)], [], {"9"}, cold={"repository": "owner/old", "post_ids": ["9"]})
+        self.assertEqual(self.requested, ["9"])
+
+    def test_invalid_local_policy_fails_before_any_upload(self):
+        with self.assertRaisesRegex(ValueError, "Invalid locally archived"):
+            self.run_archive([post(9)], [], {"9"}, cold={"storage": "local", "post_ids": [9]})
+        self.assertEqual(self.requested, [])
+        self.assertEqual(self.files, {})
 
     def test_total_outage_preserves_queue_and_signals_failure(self):
         with self.assertRaisesRegex(RuntimeError, "성공한 새 글 0개"):
