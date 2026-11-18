@@ -64,7 +64,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install regression test dependencies
-        run: python -m pip install -r requirements.txt
+        run: python -m pip install -r dogdrip_bot/requirements.txt
       - name: Apply verified local-only cold archive policy
         run: |
           git fetch --depth=1 --no-filter origin 255abe25e9a0fcb4c703d74398356edd4edaf022
