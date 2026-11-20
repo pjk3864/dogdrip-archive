@@ -20,7 +20,7 @@ on:
       - cold-storage.json
 
 permissions:
-  contents: read
+  contents: write
   actions: write
   pages: write
   id-token: write
@@ -68,6 +68,22 @@ jobs:
 
       - name: Build site with preserved external media
         run: python dogdrip_bot/build_site.py --output _site
+
+      - name: Sync generated list pages to repository
+        run: |
+          git fetch origin main
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse FETCH_HEAD)" ]; then
+            echo "Main changed during build; preserving changes and retrying on the next deployment."
+            exit 1
+          fi
+          python dogdrip_bot/sync_repository_lists.py _site
+          git add --sparse -- index.html page-*.html
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Update repository archive list pages'
+            git push origin HEAD:main
+          fi
 
       - name: Upload small site artifact
         uses: actions/upload-pages-artifact@v4
