@@ -2,6 +2,9 @@ name: Daily Dogdrip Archive
 run-name: Daily Dogdrip Archive (${{ inputs.pending_only && 'pending retry' || 'full collection' }}; recovery ${{ inputs.recovery_attempt || 0 }})
 
 on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/daily-archive.yml']
   schedule:
     # Bangkok UTC+7: daily 10:00. GitHub may delay scheduled execution.
     - cron: "0 3 * * *"
@@ -28,6 +31,7 @@ concurrency:
 
 jobs:
   archive:
+    if: github.event_name != 'push' || github.event.head_commit.message == 'Run GitHub Python collector diagnostic 2026-11-21'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
