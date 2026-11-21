@@ -1,4 +1,4 @@
-name: Diagnose Dogdrip Source Access
+﻿name: Diagnose Dogdrip Source Access
 run-name: Diagnose Dogdrip Source Access 2026-11-21
 
 on:
@@ -27,4 +27,5 @@ jobs:
           sudo apt-get install -y -qq chromium-browser || sudo apt-get install -y -qq chromium
 
       - name: Run source diagnostics
-        run: python dogdrip_bot/diagnose_source.py
+        run: xvfb-run --auto-servernum python -u dogdrip_bot/diagnose_source.py
+
