@@ -93,7 +93,9 @@ def main():
         print(f'  egress IP={requests.get("https://api.ipify.org", timeout=15).text}')
     except Exception as error:
         print(f'  egress IP unavailable: {type(error).__name__}')
-    print(f'  chrome={webdriver.Chrome().capabilities.get("browserVersion", "?")}')
+    probe = new_browser()
+    print(f'  chrome={probe.capabilities.get("browserVersion", "?")}')
+    probe.quit()
     print()
 
     print('=== TEST 1: plain requests (no browser) ===')
