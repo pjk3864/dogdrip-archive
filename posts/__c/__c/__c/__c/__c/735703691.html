@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer"><title>옵시디언 + 안티그래비티로 AI 소설싸개 만들었다. · 개드립 아카이브</title>
+<style>body{margin:0;background:#111317;color:#e9edf2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}main{max-width:960px;min-height:100vh;margin:auto;padding:28px 24px 48px;background:#202329}.back,.source{color:#4ba3ff;text-decoration:none;font-size:14px}h1{margin:20px 0 0;color:#f6f8fa;font-size:25px;line-height:1.42}.meta{margin:10px 0 20px;color:#9aa3ae;border-bottom:1px solid #363b43;padding-bottom:18px;font-size:13px}.article{font-size:16px;line-height:1.72;overflow-wrap:anywhere}.article img,.article video{display:block;max-width:100%;height:auto;margin:10px auto}.article a{color:#4ba3ff}.archived-comments{margin-top:42px;border-top:1px solid #363b43;padding-top:22px}.archived-comments h2{margin:0 0 14px;font-size:18px}.comment{padding:14px 0;border-top:1px solid #30353c}.comment:first-of-type{border-top:0}.comment.is-reply{margin-left:34px;padding-left:16px;border-left:2px solid #4ba3ff;background:#1b1e23}.comment-reply-label{color:#4ba3ff;font-size:12px;font-weight:600}.comment-meta{margin:0 0 7px;color:#9aa3ae;font-size:13px}.comment-author{color:#e9edf2;font-weight:600}.comment-body{margin:0;white-space:pre-wrap;font-size:15px;line-height:1.6;overflow-wrap:anywhere}.comment-body img,.comment-body video{display:block;max-width:100%;height:auto;margin:8px 0}.comment-body a{color:#4ba3ff}@media(max-width:640px){main{padding:22px 16px 40px}h1{font-size:22px}.comment.is-reply{margin-left:18px;padding-left:12px}}</style><style id="archive-dark-theme">
+body{background:#111317!important;color:#e9edf2!important}main{background:#202329!important}.back,.source,.article a{color:#4ba3ff!important}h1{color:#f6f8fa!important}.meta{color:#9aa3ae!important;border-color:#363b43!important}.archived-comments{border-color:#363b43!important}.comment{border-color:#30353c!important}.comment-meta{color:#9aa3ae!important}.comment-author{color:#e9edf2!important}.comment.is-reply{margin-left:34px;padding-left:16px;border-left:2px solid #4ba3ff;background:#1b1e23}.comment-reply-label{color:#4ba3ff;font-size:12px;font-weight:600}
+</style></head>
+<body data-post-id="735703691"><main><a class="back" href="../index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> 목록으로</a><h1>옵시디언 + 안티그래비티로 AI 소설싸개 만들었다.</h1><p class="meta"><i class="fa-regular fa-thumbs-up" aria-hidden="true"></i> 44 · <i class="fa-regular fa-comment" aria-hidden="true"></i> 16 · 46 분 전 · <a class="source" href="https://www.dogdrip.net/735703691" target="_blank" rel="noopener noreferrer">원문</a></p><article class="article"><div class="document_735703691_0 rhymix_content xe_content"><p>요즘 쓰는 메모 프로그램(옵시디언)에 AI 에이전트 터미널(안티그래비티) 연동해서 <strong>전용 소설 집필 플러그인</strong> 하나 직접 깎아봄.</p>
+<p>그냥 LLM에 "소설 써줘" 하는 수준은 몇화만 지나도 설정 다 까먹고 정합성, 퀄리티 개박살나서, 아예 <strong>기획 → 집필 → 설정 검수 → 다음 화 인수인계</strong>까지 사이드바 버튼 하나로 굴러가게 파이프라인을 짰음.</p>
+<p> </p>
+<p><strong>핵심 기능 요약:</strong></p>
+<ol>
+<li>
+<p><strong>기획부터 위키 자동 생성까지 (1탭)</strong></p>
+<ul>
+<li>아이디어 노트에 뻘글처럼 설정 대충 적어두고 버튼 누르면 알아서 구체화 → 화별 개요 → <strong>세계관/인물 위키 파일</strong>까지 자동으로 파줌.</li>
+<li>본문 쓰기 전에 <strong>사전 정합성 체크</strong>로 설정 충돌 먼저 걸러냄.</li>
+</ul>
+</li>
+<li>
+<p><strong>모델 이원화 집필 + 위키 자동 동기화 (2탭)</strong></p>
+<ul>
+<li>기획·요약·검수는 빠른 모델로 돌리고, <strong>본문 집필이나 힘줘야 하는 수정에만 고성능 모델</strong> 쓰게 옵션 분리함.</li>
+<li>수정 리포트 적어서 고치면 <strong>바뀐 내용에 맞춰 설정집(위키)까지 자동으로 같이 업데이트</strong>됨.</li>
+</ul>
+</li>
+<li>
+<p><strong>설정 오류 체크박스 해결 &amp; 다음 화 브리핑 (3탭)</strong></p>
+<ul>
+<li>다 쓰고 나면 AI가 설정 모순 잡아내서 <strong>해결 옵션을 체크박스로 여러 개 제시</strong>해 줌.</li>
+<li>내가 맘에 드는 해결책에만 체크하고 확정 누르면, 본문 반영 + 화 확정 + <strong>다음 화 집필용 브리핑 노트</strong>까지 자동으로 뽑아둠.</li>
+</ul>
+</li>
+<li>
+<p><strong>드래그 구간 핀포인트 수정 (4탭)</strong></p>
+<ul>
+<li>본문이든 캐릭터 설정이든 마음에 안 드는 문단만 <strong>마우스로 슥 드래그해서</strong> "말투 좀 더 시니컬하게" 같은 지시 넣으면 그 부분만 깔끔하게 고쳐줌.</li>
+</ul>
+</li>
+<li>
+<p><strong>다작 지원</strong></p>
+<ul>
+<li>버튼 하나로 새 소설 프로젝트 파면 작품마다 <strong>문체 가이드·설정집·원고 폴더가 완전히 격리</strong>돼서 여러 작품 동시에 굴릴 수 있음.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="image.png" loading="lazy" src="../assets/735703691/a62fbce77637b1f6.png" style=""/></p>
+<p>예전처럼 AI랑 복붙하면서 "아까 그 캐릭터 죽었잖아 시발아" 하고 싸울 일이 없어져서 꽤 만족 중임.</p>
+<p>완전 자동은 아니라서 써놓고 수정 여러번 돌려야되고, 수기로 마음에 안드는 장면은 수정해주고 있기는 한데, 그건 AI도 남이라서 글이 마음에 안드니까 어쩔 수 없는 것 같고.</p>
+<p>아무튼 기본적인 뼈대 자체는 이제 딸깍으로도 충분히 세울 수 있음.</p>
+<p>1화분량 아이디어 + 제작 + 수정까지 1시간에 6000자 정도 제작 가능한데 토큰은 집필에만 프론티어 모델쓰니까 거의 무료나 다름없이 뽑을 수 있음.</p>
+<p> </p>
+<p>이제 상상력만 받쳐주면 웹소설 공장장 가능할 듯 ㅋㅋ</p></div></article><!-- archived-comments:start --><section class="archived-comments"><h2><i class="fa-regular fa-comments" aria-hidden="true"></i> 댓글</h2><p class="comment-meta">수집 당시 댓글 16개</p><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">Byte</span> · 40 분 전</p><div class="comment-body"><p>결국 장기기억 문제와 떡밥 회수 , 변형사건, 등이 해결이 안됨 . 해당 부분은 고생했고 열심히 했지만, 5500자 분량 10화치만 이어져도 빌빌거릴 거임, 결국 장기기억 저장소 따로 빼고, 장기기억 출력시스템을 뽑아서 100화까지는 어찌저찌 가겠지만 100화 이전에 계속 엔딩내는 것 아니면 불가능하고, 신규사건 캐릭터 대사 느낌이 계속 쓰다보면 거기서 거길거임. 예를들면 분석적인 캐릭터 라고 적어봐, 기계처럼 내뱉고 몇%니 확률이 어쩌고 저쩌고 만 내뱉는데 그런 것들 잘 안잡힌다. 잡으려면 결국 토큰이고.  하지만 고생추</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>그걸 옵시디언에 여러곳에 나눠서 저장하고 읽어들일 때 정합성체크 여러번 돌려서 디테일 맞추는 중.</p>
+<p> </p>
+<p>어투는 최근 대사 잘라서 넣어가면서 정합성 맞추고.</p>
+<p> </p>
+<p>근데 사람이 써도 100화나 쓰면 디테일 빠지는 거 어쩔 수 없지 않나? </p>
+<p> </p>
+<p>나는 이거 30회 정도까지가 한계일 거 같던데</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">Aaa1123</span> · 20 분 전</p><div class="comment-body"><p>100화 넘게 디테일이 안 빠지니까 글써서 먹고 사는거지.</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">달달구리</span> · 37 분 전</p><div class="comment-body"><p>난 내가 예전에 만든 개똥 업무용 코드 바이브코딩으로 개조하려고 바이브코딩용 툴을 바이브코딩으로 만드는중</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">켈로그스파클</span> · 36 분 전</p><div class="comment-body"><p>쇠맛때매 되겠나</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>그건 네거티브 프롬프트랑 메모리(오프라인)로 학습해서 개요때 잘 해야 돼</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">니소그</span> · 33 분 전</p><div class="comment-body"><p>공장장이 이미 수천명 있고 제품은 수십만개가 쏟아져서...</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">해석odl</span> · 32 분 전</p><div class="comment-body"><p>오호 나도 요즘 소설 좀 장편으로 길게 뽑아볼가 싶었는데 요금제 뭐씀? 토큰 널널해?</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">허리디스커</span> · 30 분 전</p><div class="comment-body"><p>나도 요즘 취향맞는 소설 없는데 어케하는건지 궁금하네</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">사람말을들으라고</span> · 28 분 전</p><div class="comment-body"><p>소설보다는 텍스트게임 느낌이네</p>
+<p>이걸로 돈벌려고만 안한다면야...</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">품절남</span> · 21 분 전</p><div class="comment-body"><p>요즘은 설정같은거 만들면 .md파일로 설정집 자동으로 생성하라고하면 안되나?</p>
+<p>코딩은 그렇게하고있는데 소설은 그게안되나?</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">외노자주린이</span> · 20 분 전</p><div class="comment-body"><p>요즘 이런걸 바퀴를 발명했다 하더라</p>
+<p>근데 바퀴 발명하는 게 재미있긴 해</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">Desi</span> · 19 분 전</p><div class="comment-body"><p>결국 문피아 노피아 쌀먹하겠다는 거자나.. </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">던킨제로자두</span> · 19 분 전</p><div class="comment-body"><p>이제 10화 연재중지 빌런 쌀먹양산 드가자 ~</p>
+<p>개쩌는 소재? 터져서 없어짐 수고하세요</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">사골곰탕</span> · 4 분 전</p><div class="comment-body"><p>ai rp/소설관련 프로그램은 이미 정형화된게 있어서.</p>
+<p>ai한테 물어봐도 제법 추천해줌.</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>뭐라고? 나의 이 개고생은 뭐였지</p></div></div></section><!-- archived-comments:end --></main><script id="archive-read-post">
+(() => {
+  const key = "dogdrip-archive-read-posts";
+  try {
+    const read = new Set(JSON.parse(localStorage.getItem(key) || "[]"));
+    read.add(document.body.dataset.postId);
+    localStorage.setItem(key, JSON.stringify([...read]));
+  } catch (_) {}
+})();
+</script></body></html>

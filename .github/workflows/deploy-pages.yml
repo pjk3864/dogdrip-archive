@@ -1,0 +1,113 @@
+name: Deploy Dogdrip Site
+run-name: Deploy Dogdrip Site (recovery ${{ inputs.recovery_attempt || 0 }})
+
+on:
+  workflow_dispatch:
+    inputs:
+      recovery_attempt:
+        description: Automatic recovery attempt
+        type: number
+        default: 0
+  workflow_run:
+    workflows: [Daily Dogdrip Archive]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'dogdrip_bot/**'
+      - README.md
+      - cold-storage.json
+
+permissions:
+  contents: write
+  actions: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: dogdrip-pages
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      deploy: ${{ steps.gate.outputs.deploy }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          sparse-checkout: dogdrip_bot
+      - name: Check whether collection actually ran
+        id: gate
+        run: python dogdrip_bot/automation_health.py deployment-gate
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+  deploy:
+    needs: prepare
+    if: needs.prepare.outputs.deploy == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment_retry.outputs.page_url || steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out site files
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          sparse-checkout: |
+            posts
+            dogdrip_bot
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site with preserved external media
+        run: python dogdrip_bot/build_site.py --output _site
+
+      - name: Sync generated list pages to repository
+        run: |
+          git fetch origin main
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse FETCH_HEAD)" ]; then
+            echo "Main changed during build; preserving changes and retrying on the next deployment."
+            exit 1
+          fi
+          python dogdrip_bot/sync_repository_lists.py _site
+          git add --sparse -- index.html page-*.html
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Update repository archive list pages'
+            git push origin HEAD:main
+          fi
+
+      - name: Upload small site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Stop competing branch-based Pages runs
+        run: python dogdrip_bot/wait_for_pages.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Deploy site
+        id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait for competing Pages deployment before retry
+        if: steps.deployment.outcome == 'failure'
+        run: python dogdrip_bot/wait_for_pages.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Retry site deployment
+        if: steps.deployment.outcome == 'failure'
+        id: deployment_retry
+        uses: actions/deploy-pages@v5
+
