@@ -8,9 +8,6 @@ on:
         description: Automatic recovery attempt
         type: number
         default: 0
-  workflow_run:
-    workflows: [Daily Dogdrip Archive]
-    types: [completed]
   push:
     branches: [main]
     paths:
@@ -18,6 +15,9 @@ on:
       - 'dogdrip_bot/**'
       - README.md
       - cold-storage.json
+      - 'posts/**'
+      - 'assets/**'
+      - archive.json
 
 permissions:
   contents: write
