@@ -4,6 +4,7 @@ import ast
 import datetime
 import html
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -24,7 +25,10 @@ def build(source, output):
     ).strip()
     if not re.fullmatch(r'[0-9a-f]{40}', commit):
         raise ValueError('Expected a complete Git commit SHA')
-    raw_base = f'https://raw.githubusercontent.com/pjk3864/dogdrip-archive/{commit}/'
+    # Derive the repository from the environment so the same code works for
+    # both the original archive and the 5 GB live-window repository.
+    slug = os.environ.get('GITHUB_REPOSITORY', 'pjk3864/dogdrip-archive')
+    raw_base = f'https://raw.githubusercontent.com/{slug}/{commit}/'
     assets = set(subprocess.check_output(
         ['git', '-C', str(source), 'ls-tree', '-r', '--name-only', 'HEAD', 'assets'],
         text=True,
