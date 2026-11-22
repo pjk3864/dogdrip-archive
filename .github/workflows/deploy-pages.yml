@@ -61,6 +61,7 @@ jobs:
           ref: main
           sparse-checkout: |
             posts
+            assets
             dogdrip_bot
 
       - name: Configure Pages
