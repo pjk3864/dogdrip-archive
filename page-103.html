@@ -5,58 +5,57 @@
   <title>개드립 인기글 아카이브</title>
   <style>
     :root { --blue:#4ba3ff; --ink:#e9edf2; --muted:#9aa3ae; --line:#363b43; --panel:#202329; --panel-deep:#17191d; }
-    * { box-sizing:border-box; } body { margin:0; background:#111317; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif; } .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+    * { box-sizing:border-box; } body { margin:0; background:#111317; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif; }
     .site { max-width:960px; min-height:100vh; margin:auto; background:var(--panel); }
     header { display:flex; align-items:center; gap:12px; height:54px; padding:0 20px; background:var(--panel-deep); border-bottom:1px solid var(--line); }
     h1 { margin:0; font-size:17px; } .updated { margin:0; padding:13px 20px; color:var(--muted); border-bottom:1px solid var(--line); font-size:12px; }
-    .search { display:flex; gap:8px; padding:12px 20px; border-bottom:1px solid var(--line); } .search input { flex:1; min-width:0; border:1px solid var(--line); border-radius:5px; background:#111317; color:var(--ink); padding:9px 10px; font:inherit; } .search input:focus { border-color:var(--blue); outline:2px solid color-mix(in srgb, var(--blue) 35%, transparent); } .search button { border:1px solid var(--blue); border-radius:5px; background:var(--blue); color:#fff; cursor:pointer; padding:9px 12px; font:inherit; } .search button[type="reset"] { background:transparent; border-color:var(--line); color:var(--ink); } .search-status { min-height:20px; margin:0; padding:0 20px 10px; color:var(--muted); font-size:13px; }
     .post-row { display:block; min-height:62px; padding:19px 20px; color:inherit; text-decoration:none; border-bottom:1px solid var(--line); transition:background .15s; }
     .post-row:hover, .post-row:focus-visible { background:#292e36; outline:none; } .post-row.is-read .row-title { color:#777f8a; } .row-title { display:block; overflow:hidden; font-size:18px; line-height:1.35; text-overflow:ellipsis; white-space:nowrap; }
     .pager { display:flex; flex-wrap:wrap; justify-content:center; gap:6px; padding:24px 16px; } .page-link { min-width:34px; padding:8px 10px; border:1px solid var(--line); border-radius:5px; color:var(--ink); text-align:center; text-decoration:none; font-size:14px; } .page-link.page-shift { min-width:52px; } .page-link:hover,.page-link:focus-visible { border-color:var(--blue); color:var(--blue); outline:none; } .page-link.current { background:var(--blue); border-color:var(--blue); color:#fff; pointer-events:none; }
-    @media(max-width:640px) { header { height:50px; padding:0 14px; } .updated,.search { padding-left:14px; padding-right:14px; } .search-status { padding-left:14px; padding-right:14px; } .post-row { min-height:55px; padding:16px 14px; } .row-title { font-size:16px; } .pager { gap:5px; padding:20px 10px; } .page-link { min-width:32px; padding:7px 8px; } }
+    @media(max-width:640px) { header { height:50px; padding:0 14px; } .updated { padding:11px 14px; } .post-row { min-height:55px; padding:16px 14px; } .row-title { font-size:16px; } .pager { gap:5px; padding:20px 10px; } .page-link { min-width:32px; padding:7px 8px; } }
   </style>
 </head>
-<body><main class="site"><header><i class="fa-solid fa-list" aria-hidden="true"></i><h1>개드립 인기글 아카이브</h1></header><p class="updated">보관된 글 2465개 · 103/124 페이지 · 마지막 수집 2026-11-24 03:11</p><form class="search" id="archive-search" role="search"><label class="sr-only" for="archive-search-input">글 제목 검색</label><input id="archive-search-input" type="search" placeholder="글 제목으로 지난 글 찾기" autocomplete="off"><button type="submit">검색</button><button type="reset">초기화</button></form><p class="search-status" id="archive-search-status" aria-live="polite"></p><section id="archive-post-list"><a class="post-row" data-post-id="734022728" href="posts/734022728.html">
-  <span class="row-title">일론 머스크가 개쩌는 이유</span>
-</a><a class="post-row" data-post-id="734022602" href="posts/734022602.html">
-  <span class="row-title">📈  깡통 찬 사람들이 주식하다가 망하는 이유 📉</span>
-</a><a class="post-row" data-post-id="734022352" href="posts/734022352.html">
-  <span class="row-title">미래예측형 AI 쓰던 사람 대참사</span>
-</a><a class="post-row" data-post-id="734022174" href="posts/734022174.html">
-  <span class="row-title">2011년 상하이 영사 스캔들</span>
-</a><a class="post-row" data-post-id="734021932" href="posts/734021932.html">
-  <span class="row-title">얼른 일어나 가야돼</span>
-</a><a class="post-row" data-post-id="734021903" href="posts/734021903.html">
-  <span class="row-title">중국산 에어프라이어를 구매하고 후회하는 블라인 ㄷ</span>
-</a><a class="post-row" data-post-id="734021780" href="posts/734021780.html">
-  <span class="row-title">[단독] SNS 퍼진 딸 성희롱 사진..신고하자. &quot;평일에 하세요&quot; 답변</span>
-</a><a class="post-row" data-post-id="734021499" href="posts/734021499.html">
-  <span class="row-title">남자들이 자기만큼만 일했으면 좋겠다는 트짹이</span>
-</a><a class="post-row" data-post-id="734021132" href="posts/734021132.html">
-  <span class="row-title">오빠 일어나 가야돼</span>
-</a><a class="post-row" data-post-id="734021122" href="posts/734021122.html">
-  <span class="row-title">LOL) 멘탈이 나간거 같다는 도란</span>
-</a><a class="post-row" data-post-id="734020589" href="posts/734020589.html">
-  <span class="row-title">📈  밸류는 무조건 후행적입니다. 한국시장에서는 절대로 보지 마십쇼 🙅</span>
-</a><a class="post-row" data-post-id="734020147" href="posts/734020147.html">
-  <span class="row-title">장혁 놀라운  사실. JPG</span>
-</a><a class="post-row" data-post-id="734019836" href="posts/734019836.html">
-  <span class="row-title">오피셜) 일론머스크가 공장을 더 짓지 않는 이유</span>
-</a><a class="post-row" data-post-id="734017499" href="posts/734017499.html">
-  <span class="row-title">슨황 아이폰 배경화면 근황</span>
-</a><a class="post-row" data-post-id="734017153" href="posts/734017153.html">
-  <span class="row-title">👩 이런 여자가 꼬시는데 거절할 남자 몇이나 될까?</span>
-</a><a class="post-row" data-post-id="734017112" href="posts/734017112.html">
-  <span class="row-title">외모가 상향 평준화되고 있다는 치어리더 업계</span>
-</a><a class="post-row" data-post-id="734016673" href="posts/734016673.html">
-  <span class="row-title">연금 받을 나이가 된 김장훈</span>
-</a><a class="post-row" data-post-id="734016238" href="posts/734016238.html">
-  <span class="row-title">대관령 다운힐에서 바이크들 다 제끼는 시티100 할배</span>
-</a><a class="post-row" data-post-id="734015996" href="posts/734015996.html">
-  <span class="row-title">자작 가습기 만든거 보구가</span>
-</a><a class="post-row" data-post-id="734015220" href="posts/734015220.html">
-  <span class="row-title">속보) 마한, 진한 고대 유물 발견!</span>
-</a></section><section id="archive-search-results" hidden aria-label="검색 결과"></section><nav class="pager" aria-label="목록 페이지"><a class="page-link page-shift" href="page-100.html" aria-label="이전 페이지 묶음">이전</a><a class="page-link" href="page-101.html">101</a><a class="page-link" href="page-102.html">102</a><a class="page-link current" href="page-103.html" aria-current="page">103</a><a class="page-link" href="page-104.html">104</a><a class="page-link" href="page-105.html">105</a><a class="page-link" href="page-106.html">106</a><a class="page-link" href="page-107.html">107</a><a class="page-link" href="page-108.html">108</a><a class="page-link" href="page-109.html">109</a><a class="page-link" href="page-110.html">110</a><a class="page-link page-shift" href="page-111.html" aria-label="다음 페이지 묶음">다음</a></nav></main><script id="archive-read-list">
+<body><main class="site"><header><i class="fa-solid fa-list" aria-hidden="true"></i><h1>개드립 인기글 아카이브</h1></header><p class="updated">보관된 글 2497개 · 103/125 페이지 · 마지막 수집 2026-11-24 15:09</p><a class="post-row" data-post-id="734037150" href="posts/734037150.html">
+  <span class="row-title">오른쪽이 거절한 거다 / 거절한 적 없다 갈리는 대화라는데..jpg</span>
+</a><a class="post-row" data-post-id="734036834" href="posts/734036834.html">
+  <span class="row-title">극한극한 쏘카 알바 ㄷㄷ</span>
+</a><a class="post-row" data-post-id="734036392" href="posts/734036392.html">
+  <span class="row-title">속보) 현대차 빅호재 떳다-!</span>
+</a><a class="post-row" data-post-id="734036106" href="posts/734036106.html">
+  <span class="row-title">일본, 환율 방어에 7월 30일 하루 68조 원 투입</span>
+</a><a class="post-row" data-post-id="734035541" href="posts/734035541.html">
+  <span class="row-title">🇯🇵) 일본, 근로기준법의 ‘여성보호’ 규정 전면 폐지</span>
+</a><a class="post-row" data-post-id="734035447" href="posts/734035447.html">
+  <span class="row-title">ㅇㅎ) 와...</span>
+</a><a class="post-row" data-post-id="734035009" href="posts/734035009.html">
+  <span class="row-title">문신한 사람은 증명하며 살아야 한다</span>
+</a><a class="post-row" data-post-id="734034223" href="posts/734034223.html">
+  <span class="row-title">이투스 이도 강의 종강 안내 공지 올라옴</span>
+</a><a class="post-row" data-post-id="734033391" href="posts/734033391.html">
+  <span class="row-title">ㅇㅎ) 술자리 계산하라니까 여사친 반응</span>
+</a><a class="post-row" data-post-id="734032550" href="posts/734032550.html">
+  <span class="row-title">의학 소설 댓글 근황.jpg</span>
+</a><a class="post-row" data-post-id="734031910" href="posts/734031910.html">
+  <span class="row-title">서양식 물삼겹 먹방 근황</span>
+</a><a class="post-row" data-post-id="734031855" href="posts/734031855.html">
+  <span class="row-title">약혐) 15년 묵은 피지 짜내기 근황</span>
+</a><a class="post-row" data-post-id="734031800" href="posts/734031800.html">
+  <span class="row-title">한 중 일 대통합</span>
+</a><a class="post-row" data-post-id="734030669" href="posts/734030669.html">
+  <span class="row-title">식욕이 사라져서 슬프다는 사람</span>
+</a><a class="post-row" data-post-id="734029816" href="posts/734029816.html">
+  <span class="row-title">토끼조선) 고통의 원인을 파괴하는 치료법</span>
+</a><a class="post-row" data-post-id="734029485" href="posts/734029485.html">
+  <span class="row-title">⚛️  양자역학이 미친 이론인 이유</span>
+</a><a class="post-row" data-post-id="734029230" href="posts/734029230.html">
+  <span class="row-title">🇪🇺 유럽 난민 이슈의 스타트는 미국의 중동 참전이다 🇺🇸</span>
+</a><a class="post-row" data-post-id="734029125" href="posts/734029125.html">
+  <span class="row-title">아이티 갱단 : 무승로 하지 않을래?</span>
+</a><a class="post-row" data-post-id="734029007" href="posts/734029007.html">
+  <span class="row-title">블랙핑크 지수도 비싸서 못먹는 디저트의 가격</span>
+</a><a class="post-row" data-post-id="734028732" href="posts/734028732.html">
+  <span class="row-title">친구 없는게 전 세계적인 트렌드</span>
+</a><nav class="pager" aria-label="목록 페이지"><a class="page-link page-shift" href="page-100.html" aria-label="이전 페이지 묶음">이전</a><a class="page-link" href="page-101.html">101</a><a class="page-link" href="page-102.html">102</a><a class="page-link current" href="page-103.html" aria-current="page">103</a><a class="page-link" href="page-104.html">104</a><a class="page-link" href="page-105.html">105</a><a class="page-link" href="page-106.html">106</a><a class="page-link" href="page-107.html">107</a><a class="page-link" href="page-108.html">108</a><a class="page-link" href="page-109.html">109</a><a class="page-link" href="page-110.html">110</a><a class="page-link page-shift" href="page-111.html" aria-label="다음 페이지 묶음">다음</a></nav></main><script id="archive-read-list">
 (() => {
   const key = "dogdrip-archive-read-posts";
   try {
@@ -69,56 +68,6 @@
       });
     });
   } catch (_) {}
-})();
-</script><script id="archive-search">
-(() => {
-  const form = document.querySelector("#archive-search");
-  const input = document.querySelector("#archive-search-input");
-  const status = document.querySelector("#archive-search-status");
-  const results = document.querySelector("#archive-search-results");
-  const list = document.querySelector("#archive-post-list");
-  const pager = document.querySelector(".pager");
-  let entries;
-
-  const reset = () => {
-    results.hidden = true;
-    results.replaceChildren();
-    list.hidden = false;
-    pager.hidden = false;
-    status.textContent = "";
-  };
-  const showResult = (entry) => {
-    const link = document.createElement("a");
-    link.className = "post-row";
-    link.href = `posts/${entry.id}.html`;
-    link.dataset.postId = entry.id;
-    const title = document.createElement("span");
-    title.className = "row-title";
-    title.textContent = entry.title;
-    link.append(title);
-    return link;
-  };
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const query = input.value.trim().toLocaleLowerCase("ko-KR");
-    if (!query) return reset();
-    status.textContent = "검색 중…";
-    try {
-      entries ||= await fetch("archive.json", { cache: "force-cache" }).then((response) => {
-        if (!response.ok) throw new Error("archive index unavailable");
-        return response.json();
-      });
-      const matches = entries.filter((entry) => entry.title.toLocaleLowerCase("ko-KR").includes(query));
-      results.replaceChildren(...matches.map(showResult));
-      results.hidden = false;
-      list.hidden = true;
-      pager.hidden = true;
-      status.textContent = `“${input.value.trim()}” 검색 결과 ${matches.length}개`;
-    } catch (_) {
-      status.textContent = "검색 결과를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.";
-    }
-  });
-  form.addEventListener("reset", () => setTimeout(reset, 0));
 })();
 </script></body>
 </html>
