@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer"><title>출근길 엘레베이터 탄다? 못탄다? · 개드립 아카이브</title>
+<style>body{margin:0;background:#111317;color:#e9edf2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}main{max-width:960px;min-height:100vh;margin:auto;padding:28px 24px 48px;background:#202329}.back,.source{color:#4ba3ff;text-decoration:none;font-size:14px}h1{margin:20px 0 0;color:#f6f8fa;font-size:25px;line-height:1.42}.meta{margin:10px 0 20px;color:#9aa3ae;border-bottom:1px solid #363b43;padding-bottom:18px;font-size:13px}.article{font-size:16px;line-height:1.72;overflow-wrap:anywhere}.article img,.article video{display:block;max-width:100%;height:auto;margin:10px auto}.article a{color:#4ba3ff}.archived-comments{margin-top:42px;border-top:1px solid #363b43;padding-top:22px}.archived-comments h2{margin:0 0 14px;font-size:18px}.comment{padding:14px 0;border-top:1px solid #30353c}.comment:first-of-type{border-top:0}.comment.is-reply{margin-left:34px;padding-left:16px;border-left:2px solid #4ba3ff;background:#1b1e23}.comment-reply-label{color:#4ba3ff;font-size:12px;font-weight:600}.comment-meta{margin:0 0 7px;color:#9aa3ae;font-size:13px}.comment-author{color:#e9edf2;font-weight:600}.comment-body{margin:0;white-space:pre-wrap;font-size:15px;line-height:1.6;overflow-wrap:anywhere}.comment-body img,.comment-body video{display:block;max-width:100%;height:auto;margin:8px 0}.comment-body a{color:#4ba3ff}@media(max-width:640px){main{padding:22px 16px 40px}h1{font-size:22px}.comment.is-reply{margin-left:18px;padding-left:12px}}</style></head>
+<body data-post-id="736668526"><main><a class="back" href="../index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> 목록으로</a><h1>출근길 엘레베이터 탄다? 못탄다?</h1><p class="meta"><i class="fa-regular fa-thumbs-up" aria-hidden="true"></i> 41 · <i class="fa-regular fa-comment" aria-hidden="true"></i> 25 · 18 분 전 · <a class="source" href="https://www.dogdrip.net/736668526" target="_blank" rel="noopener noreferrer">원문</a></p><article class="article"><div class="document_736668526_0 rhymix_content xe_content"><p><img alt="ecc8155f-e686-4952-92f2-f0df94b73164_20261125114134_JocC6.webp" loading="lazy" src="../assets/736668526/c77dcc30d2349f67.webp" style=""/></p>
+<p><!--#JSPLUGIN:handlebars--><script>
+	var poll_alert_lang = "설문에 응할 항목을 선택하여 주세요. (설문조사 마다 필수 선택항목이 다를 수 있습니다.)";
+	var poll_checkcount_lang = "필수 항목 수";
+	var poll_member_lang = "%s 항목을 선택한 사용자";
+	jQuery(document).ready(function() {
+			var data = {"caniadditem":false,"poll":{"is_polled":0,"poll_count":1330,"poll_type":0,"stop_date":"2026-12-26","poll":{"736669821":{"poll_index_srl":736669821,"title":"\ub2f9\uc2e0\uc774\ub77c\uba74","checkcount":1,"poll_count":1330,"item":[{"poll_item_srl":736669822,"poll_index_srl":736669821,"title":"\ubc14\ub85c \uc62c\ub77c \ud0c4\ub2e4","poll_count":1111,"add_user_srl":0,"my_item":false},{"poll_item_srl":736669823,"poll_index_srl":736669821,"title":"\uc808\ub300 \ubabb \ud0c4\ub2e4","poll_count":219,"add_user_srl":0,"my_item":false}]}},"poll_srl":736669820}};
+			if (data.poll.is_polled == 0) {
+				loadRxDefaultPoll(736669820,data);
+			}
+			else {
+				loadRxDefaultPollResult(736669820,data);
+			}
+		});
+</script>
+<div class="rx_poll_default_wrap" style="width:400px">
+<div class="pollWidget" id="poll_736669820" style="display:none;">
+<script id="entry-template-736669820" type="text/x-handlebars-template">
+			{{#each questions as |question questionid|}}
+				<div class="poll_vote">
+					<input type="hidden" name="checkcount_{{question.poll_index_srl}}" value="{{question.checkcount}}" />
+					<div class="title">Q : {{question.title}}</div>
+
+					{{#if question.isMultipleChoice}}
+					<div class="checkcount">
+	필수 항목 수 : {{question.checkcount}}
+					</div>
+					{{/if}}
+
+					{{#each question.items as |item itemid|}}
+					<div class="poll_item">
+						<label for="item_{{item.poll_item_srl}}">
+							{{#if question.isMultipleChoice}}
+							<input type="checkbox" name="item_{{question.poll_srl}}_{{question.poll_index_srl}}" value="{{item.poll_item_srl}}" id="item_{{item.poll_item_srl}}" />
+							{{else}}
+							<input type="radio" name="item_{{question.poll_srl}}_{{question.poll_index_srl}}" value="{{item.poll_item_srl}}" id="item_{{item.poll_item_srl}}" />
+							{{/if}}
+							{{item.title}}
+						</label>
+						{{#if item.my_item}}
+						<input type="button" value="x" title="항목 삭제" onclick="deleteRxDefaultItem({{question.poll_srl}},{{question.poll_index_srl}},{{item.poll_item_srl}}); return false;" class="btn poll_item_delete" />
+						{{/if}}
+					</div>
+					{{/each}}
+					{{#if question.additem}}
+					<div class="poll_item_add">
+						<input type="text" name="new_item" id="new_item_{{question.poll_index_srl}}" class="poll_item_add" placeholder="항목을 추가할 수 있습니다." /> <input type="button" value="+" title="항목 추가" onclick="addRxDefaultItem({{question.poll_srl}},{{question.poll_index_srl}}); return false;" style="float: right;" class="btn poll_item_add" />
+					</div>
+					{{/if}}
+				</div>
+			{{/each}}
+		</script>
+<form action="/" method="post" onsubmit="return doRxDefaultPoll(this)"><input name="error_return_url" type="hidden" value="/736668526"/><input name="mid" type="hidden" value="dogdrip"/><input name="ruleset" type="hidden" value="poll"/>
+<input name="module" type="hidden" value="poll"/>
+<input name="act" type="hidden" value="procPoll"/>
+<input name="poll_srl" type="hidden" value="736669820"/>
+<input name="poll_srl_indexes" type="hidden" value=""/>
+<input name="skin" type="hidden" value=""/>
+<input name="success_return_url" type="hidden" value="/736668526"/>
+<input name="xe_validator_id" type="hidden" value="widgets/pollWidget/skins/default/form/736669820"/>
+<section class="rx_poll_default">
+<div class="rx_poll_header">
+<div style="float:left">
+	설문조사 종료일: <time class="rx_poll_h_strong" id="stop_date_736669820"></time>
+</div>
+</div>
+<div class="rx_poll_content" id="poll_content_736669820">
+</div>
+<div class="poll_button">
+<input class="btn" onclick="loadRxDefaultPollResult(736669820); return false;" type="button" value="결과 보기"/>
+<input class="btn" type="submit" value="설문 참여"/>
+</div>
+</section>
+</form>
+</div>
+<div class="pollWidget poll_box" id="poll_736669820_result" style="display:none;">
+<script id="entry-template-result-736669820" type="text/x-handlebars-template">
+			{{#each questions as |question questionid|}}
+			<div class="title">{{question.title}} ({{question.poll_count}})</div>
+			{{#each question.items as |item itemid|}}
+			<div class="rx_poll_default_item">
+				<div class="item_text">
+					{{#if question.showMembers}}
+					<strong>{{item.number}}</strong> <a href="#" onclick="showRxDefaultPollMember({{question.poll_srl}},{{item.poll_item_srl}});return false;">{{item.title}}</a>
+					{{else}}
+					<strong>{{item.number}}</strong> {{item.title}}
+					{{/if}}
+				</div>
+
+				<div class="item_bar">
+					{{#if item.isVote}}
+						<div class="item_bar" title="{{item.per}}%" style="width:{{item.per}}%;height:22px;">&nbsp;</div>
+					{{else}}
+						<div class="item_bar" style="width:1px;height:22px;">&nbsp;</div>
+					{{/if}}
+					<div class="item_bar_text">{{item.poll_count}}</strong> ({{item.per}}%)</div>
+				</div>
+			</div>
+			{{/each}}
+			{{/each}}
+		</script>
+<script id="entry-template-members-736669820" type="text/x-handlebars-template">
+			{{#each members as |member memberid|}}
+			{{#if member.isImage}}
+			<li><img src="{{member.profile_image}}" width="16" height="16" /> <a href="#popup_menu_area" class="member_{{member.member_srl}}" onclick="return false">{{member.nick_name}}</a></li>
+			{{else}}
+			<li><img class="dummy" src="{{dummy_profile}}" width="16" height="16" /> <a href="#popup_menu_area" class="member_{{member.member_srl}}" onclick="return false">{{member.nick_name}}</a></li>
+			{{/if}}
+			{{/each}}
+			{{#if isPage}}
+			<input type="button" id="btn_load_more_{{poll_item_srl}}" value="더보기" onclick="showRxDefaultPollMemberNext({{poll_srl}},{{poll_item_srl}});return false;" style="width:100%;" class="btn" />
+			{{/if}}
+		</script>
+<section class="rx_poll_default">
+<div class="rx_poll_header">
+<div style="float:left">
+	설문조사 종료일: <time class="rx_poll_h_strong" id="stop_date_result_736669820"></time>
+</div>
+<div style="float:right">
+	참가자: <span class="rx_poll_h_strong" id="poll_count_result_736669820"></span>
+</div>
+</div>
+<div class="rx_poll_content" id="poll_content_736669820_result">
+</div>
+<div class="rx_poll_footer" id="poll_736669820_result_button" style="width:100%;display: none;">
+<div class="poll_button">
+<input class="btn" onclick="loadRxDefaultPoll(736669820); return false;" type="button" value="투표 화면으로 가기"/>
+</div>
+</div>
+<div class="rx_poll_footer" id="poll_736669820_gotoresult_button" style="width:100%;display: none;">
+<div class="poll_button">
+<input class="btn" onclick="loadRxDefaultPollResult(736669820); return false;" type="button" value="결과 보기"/>
+</div>
+</div>
+</section>
+</div>
+</div>
+</p></div></article><!-- archived-comments:start --><section class="archived-comments"><h2><i class="fa-regular fa-comments" aria-hidden="true"></i> 댓글</h2><p class="comment-meta">수집 당시 댓글 25개</p><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">메이저리거노시환</span> · 22 분 전</p><div class="comment-body"><p>현재 양다리라서 들키면 안되는 상황만 아니면 탄다</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">홈키파</span> · 21 분 전</p><div class="comment-body"><p>오히려 좋아 분냄새 향수냄새 최대한 맡으려고 후각세포 다끌어와야지</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">머에영</span> · 21 분 전</p><div class="comment-body"><p>바로 ㄱㄱ</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">비비비더더더</span> · 11 분 전</p><div class="comment-body"><p>님아 말을 좀 심하게 하시네요 진정하세요</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">IceOreo</span> · 21 분 전</p><div class="comment-body"><p>그냥 안녕하세요 하고 타면 돼지 뭔...</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">스네크</span> · 21 분 전</p><div class="comment-body"><p>뭘야려 꼬우면 내려 </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">사랑해요고양이</span> · 20 분 전</p><div class="comment-body"><p>올라 타야지</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">늒네와쪄염</span> · 20 분 전</p><div class="comment-body"><p>걍 타면 되는건데 </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">경기도화성갈끄니까</span> · 19 분 전</p><div class="comment-body"><img alt="the-rock-smell" class="dogcon-display dogcon-clickable" data-dogcon-file-srl="439040529" data-dogcon-srl="439040496" data-title="업계포상콘" loading="lazy" src="../assets/736668526/37778fa4fce9084d.gif" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="업계포상콘"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">청소하자</span> · 18 분 전</p><div class="comment-body"><p>게이가 아니고서야</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">이것도너프해보시지</span> · 17 분 전</p><div class="comment-body"><p>올라타고 바로 부부붓 똥방구갈김</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">메카다나카</span> · 15 분 전</p><div class="comment-body"><img alt="24" class="dogcon-display dogcon-clickable" data-dogcon-file-srl="452367368" data-dogcon-srl="452367339" data-title="자주쓰는 페페콘 2022 ④" loading="lazy" src="../assets/736668526/a176179b1d3151cb.gif" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="자주쓰는 페페콘 2022 ④"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">오뒷세이아</span> · 15 분 전</p><div class="comment-body"><p>야이씨 회사 지각 하고 싶어?</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">이렀게않돼나요</span> · 15 분 전</p><div class="comment-body"><p>바로 왼쪽누나한테 넘어져야겠는데</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">족저근막염</span> · 15 분 전</p><div class="comment-body"><p>달콤해보이면 거의다 지옥임 </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">이런젠장</span> · 14 분 전</p><div class="comment-body"><p>왜 못 타는데 ㅂㅅ임?</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">Kia</span> · 12 분 전</p><div class="comment-body"><p>내가 타면 아무 일도 안일어날걸..</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">들켜서바꿈</span> · 11 분 전</p><div class="comment-body"><p>후움 찐따들은 이런걸로 고민하는군요 </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">스크랩용임</span> · 10 분 전</p><div class="comment-body"><img alt="03" class="dogcon-display dogcon-clickable" data-dogcon-file-srl="732080317" data-dogcon-srl="732080314" data-title="희노애락 페페콘 디럭스" loading="lazy" src="../assets/736668526/b98dfa340125bbbc.jpg" style="width:100px;height:100px;object-fit:cover;border-radius:3px;" title="희노애락 페페콘 디럭스"/></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">너어는지인짜</span> · 9 분 전</p><div class="comment-body"><p>올라탄다</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">조강현</span> · 8 분 전</p><div class="comment-body"><p>타면, 내리고 문 닫히려고 할 때 들리게 뒷담 깔 듯</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">배틀딱</span> · 7 분 전</p><div class="comment-body"><p>타면 불행해진다</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">전복</span> · 6 분 전</p><div class="comment-body"><p>먼저 올라가세요 (싱긋) </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">IUJOA</span> · 4 분 전</p><div class="comment-body"><p>탈 공간까지 만들어 줬는데 안 탄다고?? 얼마나 샤이한거냐</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">티그용접사</span> · 방금 전</p><div class="comment-body"><p>향수 화장품 냄새 때문에  흡 하고 숨참아야지</p></div></div></section><!-- archived-comments:end --></main><script id="archive-read-post">
+(() => {
+  const key = "dogdrip-archive-read-posts";
+  try {
+    const read = new Set(JSON.parse(localStorage.getItem(key) || "[]"));
+    read.add(document.body.dataset.postId);
+    localStorage.setItem(key, JSON.stringify([...read]));
+  } catch (_) {}
+})();
+</script></body></html>
