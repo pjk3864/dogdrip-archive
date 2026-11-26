@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer"><title>사양별 지원 로컬 ai 및 엔진 (26년 11월 25일 현재) · 개드립 아카이브</title>
+<style>body{margin:0;background:#111317;color:#e9edf2;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}main{max-width:960px;min-height:100vh;margin:auto;padding:28px 24px 48px;background:#202329}.back,.source{color:#4ba3ff;text-decoration:none;font-size:14px}h1{margin:20px 0 0;color:#f6f8fa;font-size:25px;line-height:1.42}.meta{margin:10px 0 20px;color:#9aa3ae;border-bottom:1px solid #363b43;padding-bottom:18px;font-size:13px}.article{font-size:16px;line-height:1.72;overflow-wrap:anywhere}.article img,.article video{display:block;max-width:100%;height:auto;margin:10px auto}.article a{color:#4ba3ff}.archived-comments{margin-top:42px;border-top:1px solid #363b43;padding-top:22px}.archived-comments h2{margin:0 0 14px;font-size:18px}.comment{padding:14px 0;border-top:1px solid #30353c}.comment:first-of-type{border-top:0}.comment.is-reply{margin-left:34px;padding-left:16px;border-left:2px solid #4ba3ff;background:#1b1e23}.comment-reply-label{color:#4ba3ff;font-size:12px;font-weight:600}.comment-meta{margin:0 0 7px;color:#9aa3ae;font-size:13px}.comment-author{color:#e9edf2;font-weight:600}.comment-body{margin:0;white-space:pre-wrap;font-size:15px;line-height:1.6;overflow-wrap:anywhere}.comment-body img,.comment-body video{display:block;max-width:100%;height:auto;margin:8px 0}.comment-body a{color:#4ba3ff}@media(max-width:640px){main{padding:22px 16px 40px}h1{font-size:22px}.comment.is-reply{margin-left:18px;padding-left:12px}}</style></head>
+<body data-post-id="736535478"><main><a class="back" href="../index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> 목록으로</a><h1>사양별 지원 로컬 ai 및 엔진 (26년 11월 25일 현재)</h1><p class="meta"><i class="fa-regular fa-thumbs-up" aria-hidden="true"></i> 54 · <i class="fa-regular fa-comment" aria-hidden="true"></i> 27 · 14 시간 전 · <a class="source" href="https://www.dogdrip.net/736535478" target="_blank" rel="noopener noreferrer">원문</a></p><article class="article"><div class="document_736535478_0 rhymix_content xe_content"><p>사양별 지원 로컬 ai 및 엔진 (26년 11월 25일 현재)</p>
+<p> </p>
+<p>1편 : (12~16gb vram / 64gb dram 필요) 대형 로컬 ai가 일반 게이밍 pc에서도 구동되기 시작함.   <a href="https://www.dogdrip.net/728784997">https://www.dogdrip.net/728784997</a><br/>
+2편 : (12~16gb vram / 64gb dram 필요) Strata 놈들은 763B 짜리 초거대 지능 DeepSeek-V4.1-Flash-1017도 구동시키기 시작했음. <a href="https://www.dogdrip.net/732031133">https://www.dogdrip.net/732031133</a></p>
+<p>3편 (8gb vram / 32~64gb dram 필요) 이제 8GB VRAM 그래픽카드로도 거대 로컬 AI를 작동시킬 수 있게 됨. <a href="https://www.dogdrip.net/733597102">https://www.dogdrip.net/733597102</a></p>
+<p>4편 (8gb vram / 32~64gb dram 필요) 아까 8GB로 180B 로컬 AI 실험후 가지고 오겠다는 결과값. <a href="https://www.dogdrip.net/733669901">https://www.dogdrip.net/733669901</a></p>
+<p>5편 젠슨황의 축출에 따른 로컬 ai 단종 설. <a href="https://www.dogdrip.net/734761542">https://www.dogdrip.net/734761542</a><br/>
+6편 8gb vram / 32gb dram 으로 중형 로컬 ai를 돌려보자. <a href="https://www.dogdrip.net/734775177">https://www.dogdrip.net/734775177</a></p>
+<p>7편 4gb vram / 16gb dram 으로 중소형 로컬 ai를 돌려보자. <a href="https://www.dogdrip.net/735059197">https://www.dogdrip.net/735059197</a><br/>
+8편 음란 마귀들을 위한 로컬 ai [uncensored] <a href="https://www.dogdrip.net/735106755">https://www.dogdrip.net/735106755</a><br/>
+9편 용량별 추천 로컬 ai 정리. https://www.dogdrip.net/735264117</p>
+<p><br/>
+========================================<br/>
+<br/>
+맨 위 요약 <br/>
+<br/>
+<strong>1. 기본형 (12gb vram, 48gb dram) strata =가장 범용성있고, 딸깍 누르는 것 만으로 사용이 쉬운 엔진=</strong><br/>
+2. 존나 큰거 써보고 싶다. project-maya =초대형ai용 엔진=(초고속, 대용량 m2 필요)<br/>
+3. 나는 50 시리즈 gpu를 쓴다.  basalt =50 계열 전용 엔진=(50계열 gpu 필요)<br/>
+4. 나는 Qwen3.8-27B 만 쓰겠다! yasakani =Qwen3.8-27B 전용엔진=(엔비디아 계열 30계열 이상 16vram 이상 gpu 필요)<br/>
+5. 8gb vram 밖에 없지만 어떻게든 Qwen3.8-Flash-Next를 사용해 보고 싶어! sync-strata (8+vram, 24dram 필요, 전용 양자화 모델)<br/>
+<strong>6. 나는 8gb vram에 32gb dram을 가지고 있다. PolyStrata (8+gb vram, 32+gb dram) 해당 사양에서 가장 성능과 범용성이 좋음. </strong></p>
+<p>7. 나는 vram이 4~6gb 밖에 없어! 4gbVramStrata (4~6gb, 16~32gb dram) </p>
+<p><strong>8. 나는 4gb도 없어! 정말 적은 vram 으로도 고성능 llm을 그것도 아무것도 설치 안하고 써보고 싶다.  Ternary Bonsai 2</strong><br/>
+9. 나는 애플임. TensorFold<br/>
+<br/>
+========================================<br/>
+<br/>
+1. 계층별 메모리를 선도하고 있는 strata<br/>
+<br/>
+https://github.com/niko1221/strata<br/>
+<br/>
+strata는 많은 gpu와 거의 모든 운영체계를 지원하기 때문에 각 사양에 딱 맞는 설정을 제공해주고 있지는 못함. <br/>
+<br/>
+하지만 어째든 대부분의 os와 많은 gpu를 지원하니 기본형으로 두면 됨. </p>
+<p> </p>
+<p>윈도우, 리눅스, 맥을 모두 지원하고, 많은 gpu를 지원해. <br/>
+<br/>
+업데이트도 잘해주고, 설치나 업그레이드도 딸깍 한번에 되니깐 굉장히 편함. <br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/7b27c342484fdf95.png" style=""/></p>
+<p> </p>
+<p>단 8gb 이상 vram을 가진 gpu로 쓸 수 있다고 주장하지만,<br/>
+<br/>
+실제 측정해본 결과 strata는 vram 12gb 이상이 되어야 실사용이 가능하고, 그 이하는 그냥 아무리 느려도 사용해본다. 에 그침. <br/>
+<br/>
+지원 ai는 예전에 지원하던 초대형 모델인 DeepSeek-V4.1-Flash-1017은  이제 지원을 종료했고(이미 받아놓은 경우에는 사용 가능) <br/>
+<br/>
+기본형인 Qwen3.8-Flash-Next / Qwen3.6-35B-A3B 이외에 2가지를 추가했어. <br/>
+<br/>
+그리고 지난번 측정 때 8gb 로 Qwen3.8-Flash-Next는 구동되고, <br/>
+<br/>
+Qwen3.6-35B-A3B는 구동 되지 않던 걸 수정해서 Qwen3.6-35B-A3B도 아주 아주 느리지만 간신히 구동이 되게 되었음. <br/>
+<br/>
+Tencent Hy4-Flash 텐센트의 최신 모델(26년 11월 공개)로 220b 중 12b가 활성 전문가고, 1m 컨텍스트를 지원해.  <br/>
+<br/>
+8gb 그래픽 카드 부터 가능하다고 주장하지만 글쎄... <br/>
+<br/>
+Inkling 2 Mini 역시 Thinking Machines Lab의 최신 모델(26년 11월 공개)로 26.4b 중 3.4b가 활성 전문가고, 1m 컨텍스트를 지원해.  </p>
+<p> </p>
+<p>이건 24gb 그래픽카드 부터 되지만 자기들은 4gb 그래픽카드 부터 되게 개량을 했다고 함. <br/>
+<br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/9cbfb16e05cd4307.png" style=""/></p>
+<p> </p>
+<p> </p>
+<p>하지만 4gb vram 으로도 가능하다고 한 Inkling 2 Mini sq-10도 8gb 그래픽카드로 실사용 했을 때 11톡 정도 나왔으니까 <br/>
+<br/>
+4gb로는 가동만 된다 뿐이지 거의 사용 불가능 수준일거야. </p>
+<p> </p>
+<p>==========================================<br/>
+<br/>
+2. 초거대 로컬 모델들을 어떻게든 돌려보자. <br/>
+<br/>
+https://github.com/mw00/project-maya<br/>
+<br/>
+project-maya는 거대모델들을 느리더라도 작동시켜 보자. 라는 방식이야. <br/>
+<br/>
+윈도우랑 리눅스, 실험적으로 맥os를 지원해. <br/>
+<br/>
+여러 gpu 도 지원 하지만, 마야는 초대형 모델들을 사용하기 위해서 초고속 대용량 ssd를 강력하게 요구함. <br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/cb7d9451856453e4.png" style=""/></p>
+<p> </p>
+<p><br/>
+초대형 로컬 ai를 vram이나 dram 에 상주 시킬 수 없는 사람들을 위해서 만들어진 거니까 당연한거겠지. <br/>
+<br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/2ba75c692d5b7e16.png" style=""/></p>
+<p> </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/b7a9fd5f6348a9a9.png" style=""/></p>
+<p> </p>
+<p>물론 더 많은 vram이나 dram를 가진 사람의 장비에서는 더 빨라짐 </p>
+<p><br/>
+3. 나는 50 시리즈 그래픽카드를 가지고 있다. basalt<br/>
+<br/>
+50시리즈 블랙웰, 보다 정확하게는 sm_120를 집중적으로 지원하는 엔진인 basalt<br/>
+<br/>
+메인 gpu 이외에 vram 제공용 보조 gpu는 40 시리즈 정도까지는 가능함. <br/>
+<br/>
+https://github.com/jesdga95/basalt</p>
+<p><br/>
+블랙웰 전용 엔진을 사용해서 strata 보다 훨씬 빠르다! 를 주장함. <br/>
+<br/>
+일반적으로 strata 보다 빠른건 맞는거 같은데, 모든 경우에 빠르지는 않은거 같고, 비슷하게 측정될 때도 있음. <br/>
+<br/>
+현재 실험적으로 Linux Arm64이랑 sm_121 계열인df DGX Spark/GB10도 추가 중<br/>
+<br/>
+지원 모델은 strata가 지원하는 3종에 추가로 지원이 종료된 DeepSeek-V4.1-Flash-1017도 유지되고 있음. <br/>
+<br/>
+그리고 qwen-3.8-27b 도 지원중. </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/e788defd979ec0fc.png" style=""/></p>
+<p> </p>
+<p>4. 엔비디아 gpu로 Qwen3.8-27B 만 쓰겠다! yasakani</p>
+<p><br/>
+yasakani는 Qwen3.8-27B만 강력하게 사용하기 위한 전용엔진임. <br/>
+<br/>
+https://github.com/yasakani-dev/yasakani<br/>
+<br/>
+전용엔진인 만큼 Qwen3.8-27B 하나를 아주 빠르고 성능 좋게 사용할 수 있는 방식임. <br/>
+<br/>
+gpu도 많이 가려서 <br/>
+<br/>
+5090을 기준으로 설계 되었고, 40/50 시리즈에서 16gb 이상, 30시리즈에서는 3090/3090ti만 사용가능함. <br/>
+<br/>
+윈도우 11로만 쓸 수 있는데, 일부 개발자는 리눅스 빌드를 만들어서 쓰기도 함. <br/>
+<br/>
+현재 Inkling-2 Mini 도 실험적으로 추가 지원을 하고 있음. <br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/3ba6cd00415a9ac5.png" style=""/></p>
+<p> </p>
+<p>5. 8gb vram 밖에 없지만 어떻게든 Qwen3.8-Flash-Next를 사용해 보고 싶어! sync-strata<br/>
+<br/>
+Qwen3.8-Flash-Next 모델만 직접 쓰는 전용 엔진임. <br/>
+<br/>
+https://github.com/hiruhiru2005/sync-strata<br/>
+<br/>
+윈도우 10/11, 리눅스 그리고 30/40 계열 8gb 이상 gpu를 기준으로 만들어진 전용 엔진. </p>
+<p><br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/0488f9d1deeb635e.png" style=""/></p>
+<p> </p>
+<p>vram 조건이 타이트 한 만큼,<br/>
+<br/>
+범용 모델이 아니라 전용 양자화 모델을 사용하고,<br/>
+<br/>
+이 전용 양자화 모델은 저스펙 장비로도 사용하기 위해서 일부 전문가 그룹을 생략했음. <br/>
+<br/>
+그러니까 같은 Qwen3.8-Flash-Next 이라고 동일 성능은 아니라는거. <br/>
+<br/>
+속도가 더 빠르게 나오지만, 성능은 떨어짐. <br/>
+<br/>
+dram에 맞춰서 어떤 양자화 모델을 사용해야 되는지도 정해져 있음. <br/>
+<br/>
+8gb vram에 24gb dram 으로 Qwen3.8-Flash-Next의 가동이 가능하다는건 굉장한건데, 실측은 안해봤음. </p>
+<p> </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/d59f79d736145c16.png" style=""/></p>
+<p>6. 나는 8gb vram에 32gb dram을 가지고 있다. PolyStrata<br/>
+<br/>
+https://github.com/simplexai-labs/PolyStrata<br/>
+<br/>
+위에서 Strata 로는 Qwen3.6-35B-A3B가 가동이 된다 수준이지 거의 실사용 불가능 수준이었지만 <br/>
+<br/>
+PolyStrata 로는 긴 컨텍스트로  40톡이 찍혀서 실사용에 편할 수준임. <br/>
+<br/>
+지원하는 ai도 많아서 좋긴 한데, 지난번에 말했다 시피 엔진만 집중 개발하는 쪽이라서<br/>
+<br/>
+로컬ai로 사용하려면 직접 업데이트를 하고, 오픈 코드 등으로 별도 api 를 사용해야 하는 불편이 있음. <br/>
+<br/>
+그나마 기존에는 형식적으로 테스트해볼 수 있는 간단한 대화창이라도 있었는데 최신 업데이트에서는 그 대화창까지 없앴음. <br/>
+<br/>
+엔진 개발에만 집중하겠다는 거겠지. <br/>
+<br/>
+그런데 저 성능에서는 제일 성능과 속도가 나오는 엔진임. <br/>
+<br/>
+아래는 제작진이 제시하는 짧은 대화로 최적화해서 나온 속도. <br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/a3b6d477ea985689.png" style=""/></p>
+<p><br/>
+위에서 Strata에서는 4gb 용인 sq-10도 11톡 수준이라고 말했던 Inkling 2 Mini도 <br/>
+<br/>
+PolyStrata에서는 4비트 양자화 기준으로도 전문가 점유량 vram 4.5gb, dram 27gb만 먹으면서 30톡 수준의 준수한 성능을 보여줌. <br/>
+<br/>
+(전문가 점유량은 vram 전체 점유량은 아니니까 여전히 8gb vram이 필요함) <br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/fd88e33b35a6792d.png" style=""/></p>
+<p> </p>
+<p>7. 나는 vram이 4~6gb 밖에 없어! 4gbVramStrata<br/>
+<br/>
+https://github.com/RandoTeam/4gbVramStrata</p>
+<p><br/>
+Strata도 12gb는 필요하다! <br/>
+<br/>
+PolyStrata도 8gb는 필요하다! <br/>
+<br/>
+하지만 나는 4~6gb 밖에 없다. 라는 사람들을 위해서 4gb에 최적화 되고, 6gb까지 지원하는 엔진.<br/>
+<br/>
+(그 이상도 못쓰는건 아닌데, 그 이상은 위의 다른 엔진들을 쓰는게 더 좋음) </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/5678e36027ea4275.png" style=""/></p>
+<p> </p>
+<p>4gb vram에 32gb dram에 32k 컨텍스트로 나온 성능. <br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/262a445bb0d651da.png" style=""/><br/>
+<br/>
+4gb vram에 16gb dram 으로는 Clover-35B-A3B-Preview APEX-I-NANOPLUS, LFM2.5-24B-A2B UD-Q3_K_XL 정도가 가능할 거임. <br/>
+<br/>
+8. 나는 4gb도 안된다. 정말 적은 vram 으로도 로컬 llm을 그것도 아무것도 설치 안하고 써보고 싶다.  Ternary Bonsai 2<br/>
+ </p>
+<p><a href="https://www.dogdrip.net/links.php?url=https%3A%2F%2Fprismml-eng.github.io%2FTalk%2F" rel="noreferrer noopener" target="_blank">https://prismml-eng.github.io/Talk/</a></p>
+<p><br/>
+prismml엔진은 설치 안해도 홈페이지에서 vram에 모델 올려서 사용할 수 있으니까 어느정도 성능인지 직접 써봐. <br/>
+<br/>
+2b 모델은 794mb 면 됨. </p>
+<p> </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/a6a643d40b6dd0cd.png" style=""/></p>
+<p> </p>
+<p>그래도 직접 설치를 해서 사용해보는게 더 성능이나 편의성 면에서 좋겠지. <br/>
+<br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/d0a32cef0c1e524d.png" style=""/></p>
+<p> </p>
+<p>2b 모델을 올려서 웹으로 써봤는데 2b긴 해도 338톡이라는 속도가 나옴.<br/>
+ </p>
+<p><br/>
+9. 나는 애플. TensorFold<br/>
+<br/>
+https://github.com/ashhart/TensorFold</p>
+<p> </p>
+<p>맥os를 기본 타겟으로 만든 엔진인데, <br/>
+<br/>
+굳이 윈도우나 리눅스로 gpu를 가지고 사용하려면 추가 빌드를 써서 사용 할 수는 있음. <br/>
+<br/>
+하지만 위의 다른 것들을 쓰는게 나을 듯. <br/>
+<br/>
+ </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/dc3d7471f391b86c.png" style=""/></p>
+<p> </p>
+<p><img alt="image.png" loading="lazy" src="../assets/736535478/7b19a5d21c778aca.png" style=""/><br/>
+<br/>
+ </p>
+<p> </p>
+<p> </p></div></article><!-- archived-comments:start --><section class="archived-comments"><h2><i class="fa-regular fa-comments" aria-hidden="true"></i> 댓글</h2><p class="comment-meta">수집 당시 댓글 27개</p><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>사람들이 잘 안가는 길은 다 이유가 있더라. ㅠ.ㅠ </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">그치만이렇게하지않으면</span> · 15 시간 전</p><div class="comment-body"><p>맥북프로 m5 24gb</p>
+<p>5080vram 기억안남 램 64gb</p>
+<p>은 머가야좋을까</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>맥은 Strata + Inkling SQ-15, </p>
+<p> </p>
+<p>5080+64gb는 위에서 말한 것 처럼  Strata로 찍먹한 후 50 계열 특화인 Basalt 랑 YASAKANI</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">jiysnm</span> · 15 시간 전</p><div class="comment-body"><p>그림의 떡이다...</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>Ternary Bonsai 2를 인터넷에서 직접 올려서 사용해봐. </p>
+<p> </p>
+<p>https://prismml-eng.github.io/Talk/</p>
+<p> </p>
+<p>설치 안하고도 내 장비에서 어떤식으로 구동되는지 보이니까 판단이 가능할거임. </p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">jiysnm</span> · 12 시간 전</p><div class="comment-body"><p>내 유일한 친구인 1070은 ai용도가 아니야</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>앞에 1070에 적어준 거 다시. </p>
+<p> </p>
+<p>10번대는 지원이 오래전에 지나서 지원해주는 아래 경로를 이용해야 됨.</p>
+<p> </p>
+<p>해당 스펙이면 PolyStrata 중 CUDA 12 engine 빌드가 최적 계열임.</p>
+<p> </p>
+<p>하지만 다른 것들 처럼 딸각으로 설치하는 게 아니라 터미널 불러서</p>
+<p> </p>
+<p>START-HERE.bat --setup --cuda 12</p>
+<p> </p>
+<p>명령어를 사용해야 된다고 구형 gpu 지원문서에 나와있음.</p>
+<p> </p>
+<p>https://github.com/simplexai-labs/PolyStrata/blob/main/docs/OLDER_GPUS.md</p>
+<p> </p>
+<p>내가 직접 해본 게 아니니 딸깍으로 해보고 1070을 못잡으면 터미널 불러서 해당 명령을 실행해.</p>
+<p> </p>
+<p>https://www.dogdrip.net/734775177</p>
+<p> </p>
+<p>에서 설명한대로 오픈코드를 깔고,</p>
+<p> </p>
+<p>[http://127.0.0.1:8080/ 에는 PolyStrata가 돌아가고 있어. 이 모델의 모델 카드는 https://github.com/simplexai-labs/PolyStrata 이야. PolyStrata 엔진의 로컬 모델을 이 프로그램 open code 에서 돌아가게 만들어.]</p>
+<p> </p>
+<p>를 실행해서 오픈코드에서 작동 되게 해야 됨.</p>
+<p> </p>
+<p>==============</p>
+<p> </p>
+<p>Strata의 Pascal CUDA 12 + Inkling SQ-10 (정식지원, 딱깍으로 설치 가능하지만 위에서 실측한 것 처럼 속도가 많이 느릴 거임, 최적화 기능 적극 활용 필수)</p>
+<p> </p>
+<p>Sync-Strata의 CUDA 12 + Flash-Next- Sync-S (지원하지만 실기기 지원 미검증 이라고 표현되어 있음)</p>
+<p> </p>
+<p>Project Maya의 Pascal (이건 할 수 있다 라는 선에서 이야기 하는 거고 안하는 걸 추천, 실험경로랑 소스가 제시되어 있음.)</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">jiysnm</span> · 11 시간 전</p><div class="comment-body"><p>안히ㅣ 내가 안해봤겠냐고. 1070으로는 속도도 안나오고 출력물도 이상하게 나와요. 인사말에 대답하는것도 거의 뭔 1시간걸림. 그거조차 일본어랑 한국어 섞인 이상한 대답으로 함. 실험용으로 돌릴수있다 수준이지 이걸로 뭔가 가치있는걸 할수가없음. 전기가 아까움. 물리적으로 안되는건 안되는거다. </p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>ㅠ.ㅜ 안타깝네. </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">아지태</span> · 15 시간 전</p><div class="comment-body"><p>AMD는 답없어??ㅠ</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>정확한 사양이 없으니 기본적인것만 </p>
+<p> </p>
+<p>strata</p>
+<p> </p>
+<p>AMD Radeon RX 6800 / 6900 / 7700 / 7800 / 7900, RX 9060 / 9070, AI PRO R9700</p>
+<p>AMD Ryzen AI Max · Strix Halo</p>
+<p> </p>
+<p>PolyStrata </p>
+<p> </p>
+<p>Qwen3.8-Flash-Next 랑 Tencent Hy4-Flash랑  AMD as a beta 라고 쓰여진 ai들</p>
+<p> </p>
+<p>project-maya</p>
+<p> </p>
+<p>AMD: RX 7900 XT / XTX, Radeon AI PRO R9700 / RX 9070, Strix Halo and Gorgon Halo (Radeon 8060S / 8065S); </p>
+<p> </p>
+<p>정도가 지원함. </p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">아지태</span> · 6 시간 전</p><div class="comment-body"><p>오!!! 고마워!!!</p>
+<p>AMD Ryzen AI Max Strix Halo 128gb야</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">철학전공자</span> · 15 시간 전</p><div class="comment-body"><p>3090 으로 로컬 ai돌려서 돈벌고싶다</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>로컬 ai가 무료 ai보다 성능이 낮은 시점에서 그건 무리인 데숭. </p>
+<p> </p>
+<p>사용해보려면 ram에 따라서 Strata / YASAKANI / PolyStrata </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">에라드래곤</span> · 15 시간 전</p><div class="comment-body"><p>4090 24GB / 64GB DRAM / 윈도우 10인데 어떤 걸 쓰는게 좋음?</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>제일 간편하게 Strata</p>
+<p> </p>
+<p>여러 모델 사용 PolyStrata</p>
+<p> </p>
+<p>빠른 스피드 YASAKANI </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">가리봉동복실이</span> · 15 시간 전</p><div class="comment-body"><p>우왕 신기하당</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">살색고추</span> · 12 시간 전</p><div class="comment-body"><p>글카좀 좋은거살걸</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>그런 당신에게 4~6gb vram 으로도 구동이 가능한 4gbVramStrata와 </p>
+<p> </p>
+<p>그 이하로도 구동이 가능한 Ternary Bonsai 2가 있습니다. </p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">다크루트</span> · 8 시간 전</p><div class="comment-body"><p>5090에 램은32g 인데.</p>
+<p>모드개발하다보니 코덱스 100달러 요금인데도 사용량모자르더라.</p>
+<p>로컬에다가 몇가지 작업 맡기고 싶은데. 괜찮은거 없을까?</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>basalt나 YASAKANI로 qwen 3.8-27b 혹은 Inkling 2 Mini</p>
+<p> </p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">다크루트</span> · 8 시간 전</p><div class="comment-body"><p>와 좆고수...  혹시 캐릭터 챗  무검열로 하려고 gemma-4-26B-A4B Heretic 했는데 더 나은거 추천해줄 수있음?</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">익명</span></p><div class="comment-body"><p>https://www.dogdrip.net/735106755</p>
+<p> </p>
+<p>나는 무검열 캐릭터챗을 하고 있지 않지만, 원리를 설명해줄게. </p>
+<p> </p>
+<p>로컬 ai들은 기본적으로 점잖은 ai 비서 들로 훈련을 받기 때문에,</p>
+<p> </p>
+<p>검열을 하든 안하든 거부반응만 줄어들 뿐이지, 대단한 반응이 나오지 않아. </p>
+<p> </p>
+<p>무검열로 하고 싶을 때는 중요한 게 검열을 없애는 게 아니라 원하는 롤플레잉을 학습한 ai를 고르는 거임. </p>
+<p> </p>
+<p>위에 보면 어떤 방식으로 선택하면 되는지 설명해놨으니까 모델 카드를 보고 원하는 걸 선택하면 됨. </p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">다크루트</span> · 8 시간 전</p><div class="comment-body"><p>ㄱㅅㄱㅅ</p></div></div><div class="comment is-reply" data-depth="1"><p class="comment-meta"><span class="comment-reply-label">↳ 답글</span> · <span class="comment-author">배부른배짱이</span> · 4 시간 전</p><div class="comment-body"><p>5080+5060ti 16gb+ 96gb로 basalt에 q3.8fn nvfp4 dq8 돌리는데 워커로 쓸만함.</p>
+<p>램이 애매해서 qwen3.8 27b모델들중에 페이블 증류한 버전찾아서 dspine 붙여쓰면 괜찮음</p>
+<p>램만 96기가로 늘리면 내거랑 동일한모델로 넌 짧은디코드 250이상 나올거 같음</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">맛있는고구마</span> · 8 시간 전</p><div class="comment-body"><p>아하 이해했어</p></div></div><div class="comment" data-depth="0"><p class="comment-meta"><span class="comment-author">개드립콘쓰려고가입</span> · 5 시간 전</p><div class="comment-body"><p>맥북 m3칩 500gb 32gb ram 으로도 가능해?</p></div></div></section><!-- archived-comments:end --></main><script id="archive-read-post">
+(() => {
+  const key = "dogdrip-archive-read-posts";
+  try {
+    const read = new Set(JSON.parse(localStorage.getItem(key) || "[]"));
+    read.add(document.body.dataset.postId);
+    localStorage.setItem(key, JSON.stringify([...read]));
+  } catch (_) {}
+})();
+</script></body></html>
